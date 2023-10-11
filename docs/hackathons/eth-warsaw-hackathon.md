@@ -6,7 +6,7 @@ sidebar_position: 1
 
 This document provides documentation for integrating Chronicle Oracles into their ETH Warsaw Hackathon projects.
 
-:::warn
+:::caution
 If you have any questions, don’t hesitate to reach out to our booth, or anyone wearing Chronicle hoodies
 :::
 
