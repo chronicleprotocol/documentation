@@ -62,7 +62,7 @@ There are alternative RPC providers that you can use as well which aim to be as 
 
 * this list is not exhaustive, and Chronicle is in no way affiliated with any managed providers, these are just suggestions.
 
-You can provide these variables with `.env` as well Take a look at [this](quickstart.md) section. The installer will create kubernetes secrets that are used in the helm release and feed services.
+You can provide these variables with `.env` as well Take a look at the `.env` section. The installer will create kubernetes secrets that are used in the helm release and feed services.
 
 ### Retrieve the installation script and make it executable
 
