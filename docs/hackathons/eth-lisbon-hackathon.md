@@ -87,7 +87,7 @@ You can find the whole interface definition [here](https://github.com/chroniclep
 | WSTETH/USD    | [0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab](https://sepolia.etherscan.io/address/0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab#code) |
 | YFI/USD       | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://sepolia.etherscan.io/address/0x0893EcE705639112C1871DcE88D87D81540D0199#code) |
 
-## Smart Contract Addresses on zkEVM/Polygon netowrk
+## Smart Contract Addresses on zkEVM/Polygon network
 
 | Contract Name | Contract Address on zkEVM network                                                                                                |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
