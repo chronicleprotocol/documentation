@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Chronicle Protocol Docs',
-  tagline: 'Oracles are cool',
+  tagline: 'Cost-efficient. Verifiable Data.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
