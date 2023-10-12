@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 
-# ETH Warsaw Hackathon
+# ETH Lisbon Hackathon
 
-This document provides documentation for integrating Chronicle Oracles into their ETH Warsaw Hackathon projects.
+This document provides documentation for integrating Chronicle Oracles into ETH Lisbon Hackathon projects.
 
 :::caution
-If you have any questions, don’t hesitate to reach out to our booth, or anyone wearing Chronicle hoodies
+If you have any questions, don’t hesitate to reach out to our booth, [Discord](https://discord.gg/CjgvJ9EspJ), or anyone wearing Chronicle hoodies
 :::
 
 ## Chronicle Protocol Contracts
@@ -20,7 +20,7 @@ Scribe is an efficient Schnorr multi-signature based Oracle. Its Chronicle’s n
 
 ### Self-Kisser
 
-Chronicle oracle’s read functions are protected by a whitelist.
+Chronicle oracle read functions are protected by a whitelist.
 
 However, via the `SelfKisser` contract you can whitelist (we call it `kiss`) yourself permissionless.
 
