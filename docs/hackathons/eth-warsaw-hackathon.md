@@ -6,9 +6,8 @@ sidebar_position: 1
 
 This document provides documentation for integrating Chronicle Oracles into ETH Lisbon Hackathon projects.
 
-:::caution
+
 If you have any questions, don’t hesitate to reach out to our booth, [Discord](https://discord.gg/CjgvJ9EspJ), or anyone wearing Chronicle hoodies
-:::
 
 ## Chronicle Protocol Contracts
 
