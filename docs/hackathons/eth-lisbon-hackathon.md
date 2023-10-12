@@ -13,8 +13,11 @@ If you have any questions, don’t hesitate to reach out to our booth, [Discord]
 
 ### Scribe
 
-Scribe is an efficient Schnorr multi-signature based Oracle. Its Chronicle’s new Oracle version enabling more than 60% gas savings.
+Scribe is an efficient Schnorr multi-signature based Oracle, the first of its kind. It's Chronicle’s new Oracle with a fixed gas cost, enabling more than 60% gas savings versus other Oracles, and 80% versus Chainlink, enabling scalability. Chronicle Oracle integration is plug-and-play with the Chainlink and Maker interfaces. 
 
+Although not relevant to the hackathon, all data delivered by a Chronicle Oracle on mainnet is verifiable via The Chronicle, try it out here: [Chronicle Dashboard](https://chroniclelabs.org/dashboard)
+
+Scribe details:
 [https://github.com/chronicleprotocol/scribe](https://github.com/chronicleprotocol/scribe)
 
 ### Self-Kisser
