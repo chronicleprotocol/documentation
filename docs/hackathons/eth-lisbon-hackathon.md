@@ -87,6 +87,18 @@ You can find the whole interface definition [here](https://github.com/chroniclep
 | WSTETH/USD    | [0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab](https://sepolia.etherscan.io/address/0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab#code) |
 | YFI/USD       | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://sepolia.etherscan.io/address/0x0893EcE705639112C1871DcE88D87D81540D0199#code) |
 
+## Smart Contract Addresses on zkEVM/Polygon network
+
+| Contract Name | Contract Address on zkEVM network                                                                                                |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| BTC/USD | [0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c](https://zkevm.polygonscan.com/address/0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c#code) |
+| DSR/RATE | [0x729af3A41AE9E707e7AE421569C4b9c632B66a0c](https://zkevm.polygonscan.com/address/0x729af3A41AE9E707e7AE421569C4b9c632B66a0c#code) |
+| ETH/USD | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://zkevm.polygonscan.com/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660#code) |
+| MATIC/USD | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://zkevm.polygonscan.com/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18#code) |
+| SDAI/DAI | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://zkevm.polygonscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491#code) |
+| SDAI/ETH | [0x05aB94eD168b5d18B667cFcbbA795789C750D893](https://zkevm.polygonscan.com/address/0x05aB94eD168b5d18B667cFcbbA795789C750D893#code) |
+| SDAI/MATIC | [0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA](https://zkevm.polygonscan.com/address/0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA#code) |
+
 ## Some General Stuff
 
 * How to install foundry?
