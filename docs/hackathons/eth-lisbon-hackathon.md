@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# ETH Lisbon Hackathon
+# ETH Lisbon Hackathon (3rd-5th November, 2023)
 
 This document provides documentation for integrating Chronicle Oracles into ETH Lisbon Hackathon projects.
 
