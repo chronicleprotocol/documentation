@@ -6,7 +6,6 @@ sidebar_position: 1
 
 This document provides documentation for integrating Chronicle Oracles into ETH Lisbon Hackathon projects.
 
-
 If you have any questions, don’t hesitate to reach out to our booth, [Discord](https://discord.gg/CjgvJ9EspJ), or anyone wearing Chronicle hoodies
 
 ## ETH Lisbon Bounties
@@ -25,49 +24,62 @@ Type: Pooled prize
 
 ### Scribe
 
-Scribe is an efficient Schnorr multi-signature based Oracle, the first of its kind. It's Chronicle’s new Oracle with a fixed gas cost, enabling more than 60% gas savings versus other Oracles, and 80% versus Chainlink, enabling scalability. Chronicle Oracle integration is plug-and-play with the Chainlink and Maker interfaces. 
+Scribe is an efficient Schnorr multi-signature-based Oracle, marking a significant improvement in gas efficiency. Unlike i'ts counterparts, Scribe boasts of a fixed gas cost, translating to over `60% gas savings` compared to other Oracles, and a remarkable `80% savings` versus Chainlink. This gas thriftiness improves scalability of Oracles.
 
-Although not relevant to the hackathon, all data delivered by a Chronicle Oracle on mainnet is verifiable via The Chronicle, try it out here: [Chronicle Dashboard](https://chroniclelabs.org/dashboard)
+Also, the seamless integration of Chronicle Oracle with Chainlink and Maker interfaces is a plug-and-play affair, a smooth transition for developers used to these platforms.
 
-Scribe details:
-[https://github.com/chronicleprotocol/scribe](https://github.com/chronicleprotocol/scribe)
+Although not relevant to the hackathon, it's worthy of mentioning that all data delivered by a Chronicle Oracle on mainnet is verifiable via The [Chronicle Dashboard](https://chroniclelabs.org/dashboard).
 
-### Self-Kisser
+Scribe Public Repo: [https://github.com/chronicleprotocol/scribe](https://github.com/chronicleprotocol/scribe)
 
-Chronicle oracle read functions are protected by a whitelist.
+### CAST
 
-However, via the `SelfKisser` contract you can whitelist (we call it `kiss`) yourself permissionless.
+Cast is a command-line interface (CLI) tool designed by the Foundry team to streamline your interaction with the Ethereum Virtual Machine (EVM). Whether you're making smart contract calls, sending transactions, or retriving any type of chain data, cast can help with that. You can read more [Here](https://book.getfoundry.sh/reference/cast/cast).
 
-How to kiss yourself (ie `msg.sender`)?
+### Self-Kisser: Permissionless Whitelisting
+
+Chronicle safeguards oracle read functions with a whitelist, ensuring controlled access to critical data. However, the SelfKisser contract unfolds a posibility where you can whitelist yourself (or as whimsically termed, "kiss") yourself :).
+
+How to give yourself a kiss i.e., `msg.sender`?
+
+Run the following command:
 
 ```bash
 $ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address)()" <oracle address you want you use>
 ```
 
-Verify you are whitelisted (returns `1` ie `true` if whitelisted) :
+To verify your whitelisted status:
 
 ```bash
 $ cast call <oracle address> "tolled(address)" <your address>
+```
+
+Response:
+
+```bash
 0x0000000000000000000000000000000000000000000000000000000000000001
 ```
 
-For more info, see the `SelfKisser` repo:
+A return value of `1 (true)` confirms your whitelisted status.
 
-[https://github.com/chronicleprotocol/self-kisser](https://github.com/chronicleprotocol/self-kisser/blob/main/docs/Management.md#management)
+For more info, see the `SelfKisser` repo: [https://github.com/chronicleprotocol/self-kisser](https://github.com/chronicleprotocol/self-kisser/blob/main/docs/Management.md#management)
 
-### The IChronicle Interface - or how to read Chronicle Oracles?
+### Reading Chronicle Oracles through the `IChronicle` Interface
 
-The easiest way to read the oracle is…. `read() returns (uint)`.
+Interacting with the oracle is easy. The `read()` function lays it out plain and simple, returning a `uint` value representing the data you are tying to get:
 
 ```bash
 $ cast call 0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660 "read()(uint)"
+```
+
+Response:
+
+```bash
 1656870000000000045440
 ```
 
-
-
 :::info
-You can find the whole interface definition [here](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol)
+For a detailed outline of the interface and additional functionalities click [here](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol)
 :::
 
 ## Smart Contract Addresses on Sepolia network
@@ -104,30 +116,30 @@ You can find the whole interface definition [here](https://github.com/chroniclep
 
 ## Smart Contract Addresses on zkEVM/Polygon network
 
-| Contract Name | Contract Address on zkEVM network                                                                                                |
-| ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| BTC/USD | [0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c](https://zkevm.polygonscan.com/address/0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c#code) |
-| DSR/RATE | [0x729af3A41AE9E707e7AE421569C4b9c632B66a0c](https://zkevm.polygonscan.com/address/0x729af3A41AE9E707e7AE421569C4b9c632B66a0c#code) |
-| ETH/USD | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://zkevm.polygonscan.com/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660#code) |
-| MATIC/USD | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://zkevm.polygonscan.com/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18#code) |
-| SDAI/DAI | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://zkevm.polygonscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491#code) |
-| SDAI/ETH | [0x05aB94eD168b5d18B667cFcbbA795789C750D893](https://zkevm.polygonscan.com/address/0x05aB94eD168b5d18B667cFcbbA795789C750D893#code) |
-| SDAI/MATIC | [0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA](https://zkevm.polygonscan.com/address/0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA#code) |
+| Contract Name | Contract Address on zkEVM network                                                                                                   |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| BTC/USD       | [0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c](https://zkevm.polygonscan.com/address/0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c#code) |
+| DSR/RATE      | [0x729af3A41AE9E707e7AE421569C4b9c632B66a0c](https://zkevm.polygonscan.com/address/0x729af3A41AE9E707e7AE421569C4b9c632B66a0c#code) |
+| ETH/USD       | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://zkevm.polygonscan.com/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660#code) |
+| MATIC/USD     | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://zkevm.polygonscan.com/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18#code) |
+| SDAI/DAI      | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://zkevm.polygonscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491#code) |
+| SDAI/ETH      | [0x05aB94eD168b5d18B667cFcbbA795789C750D893](https://zkevm.polygonscan.com/address/0x05aB94eD168b5d18B667cFcbbA795789C750D893#code) |
+| SDAI/MATIC    | [0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA](https://zkevm.polygonscan.com/address/0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA#code) |
 
-## Some General Stuff
+## General Setup Enquires:
 
-* How to install foundry?
-  * [https://getfoundry.sh](https://getfoundry.sh/)
-* How to get Sepolia ETH?
-  * [https://www.infura.io/faucet/sepolia](https://www.infura.io/faucet/sepolia)
-  * [https://sepoliafaucet.com/](https://sepoliafaucet.com/)
-* Got a Sepolia RPC handy?
-  * [chainlist.org](https://chainlist.org/chain/11155111)
-* How to create a test wallet?
-  * `cast new wallet`
+- Foundry Setup:
+  - [https://getfoundry.sh](https://getfoundry.sh/)
+- Sepolia ETH:
+  - [https://www.infura.io/faucet/sepolia](https://www.infura.io/faucet/sepolia)
+  - [https://sepoliafaucet.com/](https://sepoliafaucet.com/)
+- Sepolia RPC:
+  - [chainlist.org](https://chainlist.org/chain/11155111)
+- Create A Test Wallet:
+  - `cast new wallet`
 
-## Some more Scribe Background Info
+## More on Scribe:
 
-* [Eth Magician Post](https://ethereum-magicians.org/t/an-efficient-schnorr-multi-signature-implementation/15510)
-* [Twitter Thread](https://twitter.com/merkleplant\_eth/status/1693652385980379593)
-* [Scribe's docs](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md)
+- [Eth Magician Post](https://ethereum-magicians.org/t/an-efficient-schnorr-multi-signature-implementation/15510)
+- [Twitter Thread](https://twitter.com/merkleplant_eth/status/1693652385980379593)
+- [Scribe's docs](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md)
