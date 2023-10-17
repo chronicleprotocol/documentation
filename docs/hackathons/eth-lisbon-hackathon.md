@@ -16,16 +16,17 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 ### Bounty 1: Most Innovative Chronicle Oracle Integration
 
 **Objective:** Rewarding the most creative integration of a Chronicle Oracle.
-**Description:** The prize will go to the team with the most innovative integration of a Chronicle Oracle on one of the supported chains (Sepoila (Ethereum), Polygon zkEVM (mainnet), Gnosis Chain (mainnet)). The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
+
+**Description:** The prize will go to the team with the most innovative integration of a Chronicle Oracle on one of the supported chains (Sepoila (Ethereum), Polygon zkEVM (testnet), Gnosis Chain (mainnet)). The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
 
 **Reward:** $2000 DAI <br/>
 **Type:** Winner takes all
 
-### Bounty 2 Integrate a Chronicle Oracle
+### Bounty 2: Integrate a Chronicle Oracle
 
 **Objective:** Rewarding successful integrations of a Chronicle Oracle.
 
-**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains: Sepoila (Ethereum), Polygon zkEVM (mainnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
+**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains: Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
 
 **Reward:** $3000 DAI <br/>
 **Type:** Pooled prize
