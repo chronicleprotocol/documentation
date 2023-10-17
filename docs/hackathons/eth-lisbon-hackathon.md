@@ -8,7 +8,9 @@ sidebar_position: 1
 
 Welcome to the ETH Lisbon Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
 
+:::info
 For any inquiries, feel free to reach out at our booth, join our [Discord](https://discord.gg/CjgvJ9EspJ), or walk up to anyone wearing a Chronicle hoodies
+:::
 
 ## Chronicle Oracle Integration Bounties
 ### Bounty 1: Most Innovative Chronicle Oracle Integration
