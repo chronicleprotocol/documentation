@@ -125,17 +125,29 @@ For a detailed outline of the interface and additional functionalities click [he
 | WSTETH/USD    | [0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab](https://sepolia.etherscan.io/address/0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab#code) |
 | YFI/USD       | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://sepolia.etherscan.io/address/0x0893EcE705639112C1871DcE88D87D81540D0199#code) |
 
-## Smart Contract Addresses on zkEVM/Polygon network
+## Smart Contract Addresses on Polygon zkEVM Testnet
 
-| Contract Name | Contract Address on zkEVM network                                                                                                   |
+| Contract Name | Contract Address on zkEVM Testnet                                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| BTC/USD       | [0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c](https://zkevm.polygonscan.com/address/0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c#code) |
-| DSR/RATE      | [0x729af3A41AE9E707e7AE421569C4b9c632B66a0c](https://zkevm.polygonscan.com/address/0x729af3A41AE9E707e7AE421569C4b9c632B66a0c#code) |
-| ETH/USD       | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://zkevm.polygonscan.com/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660#code) |
-| MATIC/USD     | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://zkevm.polygonscan.com/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18#code) |
-| SDAI/DAI      | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://zkevm.polygonscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491#code) |
-| SDAI/ETH      | [0x05aB94eD168b5d18B667cFcbbA795789C750D893](https://zkevm.polygonscan.com/address/0x05aB94eD168b5d18B667cFcbbA795789C750D893#code) |
-| SDAI/MATIC    | [0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA](https://zkevm.polygonscan.com/address/0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA#code) |
+| Greenhouse       | [0xef4758510E03204c1ccB0d90403726fc825385f7](https://testnet-zkevm.polygonscan.com/address/0xef4758510e03204c1ccb0d90403726fc825385f7#code) |
+| AAVE/USD       | [0xED4C91FC28B48E2Cf98b59668408EAeE44665511](https://testnet-zkevm.polygonscan.com/address/0xED4C91FC28B48E2Cf98b59668408EAeE44665511#code) |
+| ARB/USD      | [0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2](https://testnet-zkevm.polygonscan.com/address/0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2#code) |
+| BNB/USD       | [0x6931FB9C54958f77873ceC4536EaC56F561d2dC4](https://testnet-zkevm.polygonscan.com/address/0x6931FB9C54958f77873ceC4536EaC56F561d2dC4#code) |
+| CRV/USD     | [0x7B6E473f1CeB8b7100C9F7d58879e7211Bc48f32](https://testnet-zkevm.polygonscan.com/address/0x7B6E473f1CeB8b7100C9F7d58879e7211Bc48f32#code) |
+| DAI/USD      | [0x16984396EE0903782Ba8e6ebfA7DD356B0cA3841](https://testnet-zkevm.polygonscan.com/address/0x16984396EE0903782Ba8e6ebfA7DD356B0cA3841#code) |
+| LDO/USD      | [0x3aeF92049C9401094A9f75259430F4771143F0C3](https://testnet-zkevm.polygonscan.com/address/0x3aeF92049C9401094A9f75259430F4771143F0C3#code) |
+| LINK/USD    | [0x4EDdF05CfAd20f1E39ed4CB067bdfa831dAeA9fE](https://testnet-zkevm.polygonscan.com/address/0x4eddf05cfad20f1e39ed4cb067bdfa831daea9fe#code) |
+| MATIC/USD    | [0x06997AadB30d51eAdBAA7836f7a0F177474fc235](https://testnet-zkevm.polygonscan.com/address/0x06997AadB30d51eAdBAA7836f7a0F177474fc235#code) |
+| RETH/USD    | [0xEff79d34f24Bb36eD8FB6c4CbaD5De293fdCf66F](https://testnet-zkevm.polygonscan.com/address/0xEff79d34f24Bb36eD8FB6c4CbaD5De293fdCf66F#code) |
+| SDAI/USD    | [0xB6EE756124e88e12585981DdDa9E6E3bf3C4487D](https://testnet-zkevm.polygonscan.com/address/0xB6EE756124e88e12585981DdDa9E6E3bf3C4487D#code) |
+| SNX/USD    | [0x6Ab51f7E684923CE051e784D382A470b0fa834Be](https://testnet-zkevm.polygonscan.com/address/0x6Ab51f7E684923CE051e784D382A470b0fa834Be#code) |
+| SOL/USD    | [0x11ceEcca4d49f596E0Df781Af237CDE741ad2106](https://testnet-zkevm.polygonscan.com/address/0x11ceecca4d49f596e0df781af237cde741ad2106#code) |
+| UNI/USD    | [0xfE051Bc90D3a2a825fA5172181f9124f8541838c](https://testnet-zkevm.polygonscan.com/address/0xfE051Bc90D3a2a825fA5172181f9124f8541838c#code) |
+| USDC/USD    | [0xfef7a1Eb17A095E1bd7723cBB1092caba34f9b1C](https://testnet-zkevm.polygonscan.com/address/0xfef7a1eb17a095e1bd7723cbb1092caba34f9b1c#code) |
+| USDT/USD    | [0xF78A4e093Cd2D9F57Bb363Cc4edEBcf9bF3325ba](https://testnet-zkevm.polygonscan.com/address/0xF78A4e093Cd2D9F57Bb363Cc4edEBcf9bF3325ba#code) |
+| WBTC/USD    | [0x39C899178F4310705b12888886884b361CeF26C7](https://testnet-zkevm.polygonscan.com/address/0x39C899178F4310705b12888886884b361CeF26C7#code) |
+| WSTETH/ETH    | [0x67E93d37B57747686F22f2F2f0a8aAd253199B38](https://testnet-zkevm.polygonscan.com/address/0x67E93d37B57747686F22f2F2f0a8aAd253199B38#code) |
+| WSTETH/USD    | [0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34](https://testnet-zkevm.polygonscan.com/address/0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34#code) |
 
 ## General Setup Enquires:
 
