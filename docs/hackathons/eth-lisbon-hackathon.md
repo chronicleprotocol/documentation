@@ -13,6 +13,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 :::
 
 ## Chronicle Oracle Integration Bounties
+
 ### Bounty 1: Most Innovative Chronicle Oracle Integration
 
 **Objective:** Rewarding the most creative integration of a Chronicle Oracle.
@@ -147,6 +148,16 @@ For a detailed outline of the interface and additional functionalities click [he
 | WBTC/USD    | [0x39C899178F4310705b12888886884b361CeF26C7](https://testnet-zkevm.polygonscan.com/address/0x39C899178F4310705b12888886884b361CeF26C7#code) |
 | WSTETH/ETH    | [0x67E93d37B57747686F22f2F2f0a8aAd253199B38](https://testnet-zkevm.polygonscan.com/address/0x67E93d37B57747686F22f2F2f0a8aAd253199B38#code) |
 | WSTETH/USD    | [0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34](https://testnet-zkevm.polygonscan.com/address/0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34#code) |
+
+## Smart Contract Addresses on Gnosis Network
+
+| Contract Name | Contract Address on Gnosis Network                                                                                                   |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| BTC/USD       | [0x898D1aB819a24880F636416df7D1493C94143262](https://testnet-zkevm.polygonscan.com/address/0xED4C91FC28B48E2Cf98b59668408EAeE44665511#code) |
+| DAI/USD      | [0x64596dEb187A1F4dD73240474A18e854AEAe22f7](https://testnet-zkevm.polygonscan.com/address/0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2#code) |
+| ETH/USD       | [0x5E16CA75000fb2B9d7B1184Fa24fF5D938a345Ef](https://testnet-zkevm.polygonscan.com/address/0x6931FB9C54958f77873ceC4536EaC56F561d2dC4#code) |
+| GNO/USD     | [0x92D2E219f7175dce742Bc1aF65c25D11E0e9095e](https://testnet-zkevm.polygonscan.com/address/0x7B6E473f1CeB8b7100C9F7d58879e7211Bc48f32#code) |
+| WSTETH/ETH      | [0xe189932051328bAf256bea646c01D0898258C4A9](https://testnet-zkevm.polygonscan.com/address/0x16984396EE0903782Ba8e6ebfA7DD356B0cA3841#code) |
 
 ## General Setup Enquires:
 
