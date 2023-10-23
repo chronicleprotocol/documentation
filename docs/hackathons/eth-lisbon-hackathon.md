@@ -129,7 +129,6 @@ For a detailed outline of the interface and additional functionalities click [he
 
 | Contract Name | Contract Address on zkEVM Testnet                                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Greenhouse       | [0xef4758510E03204c1ccB0d90403726fc825385f7](https://testnet-zkevm.polygonscan.com/address/0xef4758510e03204c1ccb0d90403726fc825385f7#code) |
 | AAVE/USD       | [0xED4C91FC28B48E2Cf98b59668408EAeE44665511](https://testnet-zkevm.polygonscan.com/address/0xED4C91FC28B48E2Cf98b59668408EAeE44665511#code) |
 | ARB/USD      | [0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2](https://testnet-zkevm.polygonscan.com/address/0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2#code) |
 | BNB/USD       | [0x6931FB9C54958f77873ceC4536EaC56F561d2dC4](https://testnet-zkevm.polygonscan.com/address/0x6931FB9C54958f77873ceC4536EaC56F561d2dC4#code) |
