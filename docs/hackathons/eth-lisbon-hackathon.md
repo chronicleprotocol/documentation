@@ -148,16 +148,40 @@ For a detailed outline of the interface and additional functionalities click [he
 | WBTC/USD    | [0x39C899178F4310705b12888886884b361CeF26C7](https://testnet-zkevm.polygonscan.com/address/0x39C899178F4310705b12888886884b361CeF26C7#code) |
 | WSTETH/ETH    | [0x67E93d37B57747686F22f2F2f0a8aAd253199B38](https://testnet-zkevm.polygonscan.com/address/0x67E93d37B57747686F22f2F2f0a8aAd253199B38#code) |
 | WSTETH/USD    | [0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34](https://testnet-zkevm.polygonscan.com/address/0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34#code) |
+| YFI/USD    | [0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34](https://testnet-zkevm.polygonscan.com/address/0x16978358A8D6C7C8cA758F433685A5E8D988dfD4#code) |
 
 ## Smart Contract Addresses on Gnosis Network
 
 | Contract Name | Contract Address on Gnosis Network                                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| BTC/USD       | [0x898D1aB819a24880F636416df7D1493C94143262](https://testnet-zkevm.polygonscan.com/address/0xED4C91FC28B48E2Cf98b59668408EAeE44665511#code) |
-| DAI/USD      | [0x64596dEb187A1F4dD73240474A18e854AEAe22f7](https://testnet-zkevm.polygonscan.com/address/0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2#code) |
-| ETH/USD       | [0x5E16CA75000fb2B9d7B1184Fa24fF5D938a345Ef](https://testnet-zkevm.polygonscan.com/address/0x6931FB9C54958f77873ceC4536EaC56F561d2dC4#code) |
-| GNO/USD     | [0x92D2E219f7175dce742Bc1aF65c25D11E0e9095e](https://testnet-zkevm.polygonscan.com/address/0x7B6E473f1CeB8b7100C9F7d58879e7211Bc48f32#code) |
-| WSTETH/ETH      | [0xe189932051328bAf256bea646c01D0898258C4A9](https://testnet-zkevm.polygonscan.com/address/0x16984396EE0903782Ba8e6ebfA7DD356B0cA3841#code) |
+| AAVE/USD       | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://gnosisscan.io/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717#code) |
+| ARB/USD      | [0x579BfD0581beD0d18fBb0Ebab099328d451552DD](https://gnosisscan.io/address/0x579bfd0581bed0d18fbb0ebab099328d451552dd#code) |
+| AVAX/USD    | [0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688](https://gnosisscan.io/address/0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688#code) |
+| BNB/USD       | [0x26EE3E8b618227C1B735D8D884d52A852410019f](https://gnosisscan.io/address/0x26EE3E8b618227C1B735D8D884d52A852410019f#code) |
+| BTC/USD    | [0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c](https://gnosisscan.io/address/0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c#code) |
+| CRV/USD     | [0xf29a932ae56bB96CcACF8d1f2Da9028B01c8F030](https://gnosisscan.io/address/0xf29a932ae56bb96ccacf8d1f2da9028b01c8f030#code) |
+| DAI/USD      | [0xa7aA6a860D17A89810dE6e6278c58EB21Fa00fc4](https://gnosisscan.io/address/0xa7aA6a860D17A89810dE6e6278c58EB21Fa00fc4#code) |
+| DSR/RATE      | [0x729af3A41AE9E707e7AE421569C4b9c632B66a0c](https://gnosisscan.io/address/0x729af3a41ae9e707e7ae421569c4b9c632b66a0c#code) |
+| ETH/BTC      | [0x1804969b296E89C1ddB1712fA99816446956637e](https://gnosisscan.io/address/0x1804969b296E89C1ddB1712fA99816446956637e#code) |
+| ETH/USD      | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://gnosisscan.io/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660#code) |
+| GNO/USD    | [0xA28dCaB66FD25c668aCC7f232aa71DA1943E04b8](https://gnosisscan.io/address/0xA28dCaB66FD25c668aCC7f232aa71DA1943E04b8#code) |
+| IBTA/USD    | [0x07487b0Bf28801ECD15BF09C13e32FBc87572e81](https://gnosisscan.io/address/0x07487b0Bf28801ECD15BF09C13e32FBc87572e81#code) |
+| LDO/USD    | [0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E](h) |
+| LINK/USD    | [0xecB89B57A60ac44E06ab1B767947c19b236760c3](https://gnosisscan.io/address/0xecB89B57A60ac44E06ab1B767947c19b236760c3#code) |
+| MATIC/USD    | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://gnosisscan.io/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18#code) |
+| MKR/USD    | [0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d](https://gnosisscan.io/address/0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d#code) |
+| OP/USD    | [0xfadF055f6333a4ab435D2D248aEe6617345A4782](https://gnosisscan.io/address/0xfadf055f6333a4ab435d2d248aee6617345a4782#code) |
+| RETH/USD    | [0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263](https://gnosisscan.io/address/0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263#code) |
+| SDAI/DAI    | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://gnosisscan.io/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491#code) |
+| SDAI/MATIC    | [0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA](https://gnosisscan.io/address/0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA#code) |
+| SOL/USD    | [0x4D1e6f39bbfcce8b471171b8431609b83f3a096D](https://gnosisscan.io/address/0x4D1e6f39bbfcce8b471171b8431609b83f3a096D#code) |
+| UNI/USD    | [0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5](https://gnosisscan.io/address/0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5#code) |
+| SNX/USD    | [0xD20f1eC72bA46b6126F96c5a91b6D3372242cE98](https://gnosisscan.io/address/0xD20f1eC72bA46b6126F96c5a91b6D3372242cE98#code) |
+| USDC/USD    | [0x1173da1811a311234e7Ab0A33B4B7B646Ff42aEC](https://gnosisscan.io/address/0x1173da1811a311234e7ab0a33b4b7b646ff42aec#code) |
+| USDT/USD    | [0x0bd446021Ab95a2ABd638813f9bDE4fED3a5779a](https://gnosisscan.io/address/0x0bd446021ab95a2abd638813f9bde4fed3a5779a#code) |
+| WBTC/USD    | [0xA7226d85CE5F0DE97DCcBDBfD38634D6391d0584](https://gnosisscan.io/address/0xa7226d85ce5f0de97dccbdbfd38634d6391d0584#code) |
+| WSTETH/USD    | [0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab](https://gnosisscan.io/address/0xc9bb81d3668f03ec9109bbca77d32423deccf9ab#code) |
+| YFI/USD    | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://gnosisscan.io/address/0x0893EcE705639112C1871DcE88D87D81540D0199#codee) |
 
 ## General Setup Enquires:
 
