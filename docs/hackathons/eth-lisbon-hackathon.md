@@ -166,7 +166,7 @@ For a detailed outline of the interface and additional functionalities click [he
 | ETH/USD      | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://gnosisscan.io/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660#code) |
 | GNO/USD    | [0xA28dCaB66FD25c668aCC7f232aa71DA1943E04b8](https://gnosisscan.io/address/0xA28dCaB66FD25c668aCC7f232aa71DA1943E04b8#code) |
 | IBTA/USD    | [0x07487b0Bf28801ECD15BF09C13e32FBc87572e81](https://gnosisscan.io/address/0x07487b0Bf28801ECD15BF09C13e32FBc87572e81#code) |
-| LDO/USD    | [0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E](h) |
+| LDO/USD    | [0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E](https://gnosisscan.io/address/0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E#code) |
 | LINK/USD    | [0xecB89B57A60ac44E06ab1B767947c19b236760c3](https://gnosisscan.io/address/0xecB89B57A60ac44E06ab1B767947c19b236760c3#code) |
 | MATIC/USD    | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://gnosisscan.io/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18#code) |
 | MKR/USD    | [0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d](https://gnosisscan.io/address/0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d#code) |
@@ -183,7 +183,7 @@ For a detailed outline of the interface and additional functionalities click [he
 | WSTETH/USD    | [0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab](https://gnosisscan.io/address/0xc9bb81d3668f03ec9109bbca77d32423deccf9ab#code) |
 | YFI/USD    | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://gnosisscan.io/address/0x0893EcE705639112C1871DcE88D87D81540D0199#codee) |
 
-## General Setup Enquires:
+## General Setup Enquires
 
 - Foundry Setup:
   - [https://getfoundry.sh](https://getfoundry.sh/)
@@ -195,7 +195,7 @@ For a detailed outline of the interface and additional functionalities click [he
 - Create A Test Wallet:
   - `cast new wallet`
 
-## More on Scribe:
+## More on Scribe
 
 - [Eth Magician Post](https://ethereum-magicians.org/t/an-efficient-schnorr-multi-signature-implementation/15510)
 - [Twitter Thread](https://twitter.com/merkleplant_eth/status/1693652385980379593)
