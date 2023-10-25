@@ -21,6 +21,15 @@ It will attempt to install:
 * Server needs to be deployed into a public subnet (ie have a public IP)
 * [​](https://docs.k3s.io/installation/requirements#inbound-rules-for-k3s-server-nodes)At **LEAST** ports the following ports must be accessible from the internet:
 
+| Protocol | Port | Description |
+|----------|------|----------------|
+| TCP     | 6443  | K3s supervisor and Kubernetes API Server |
+| TCP     | 8000  | chronicle/ghost |
+| TCP     | 8001  | chronicle/musig |
+| UDP     | 8472  | Required for Flannel VXLAN |
+| TCP     | 10250 | Kubelet metrics |
+| SSH     | 22    | SSH access to the host |
+
 :::caution
 This installation process assumes you have a fresh bare-bones ubuntu instance/VPS. If you need simple VPS hosting, we suggest using a provider like [Digital Ocean](https://digitalocean.com/), and spinning up a droplet, or [AWS EC2](https://aws.amazon.com/pm/ec2/) instance provided its in a public subnet. [Linode](https://www.vultr.com/), [Vultr](https://www.vultr.com/), [OVH](https://www.ovhcloud.com/en/) etc are also great providers.
 :::
