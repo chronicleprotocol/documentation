@@ -29,8 +29,20 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
 
-**Reward:** $3000 DAI <br/>
+**Reward:** $2500 DAI <br/>
 **Type:** Pooled prize
+
+### Bounty 3: Build with a Chronicle Oracle on The Polyogon zkEVM
+
+**Objective:** Rewarding the most innovative Integration of a Chronicle Oracle on The Polyogon zkEVM.
+
+**Description:** Two teams will be awarded for integrating one or more Chronicle Oracles in a project built on Polygon zkEVM testnet. 'DeFi' and 'Public Good' projects are preferred. The Oracle integration must be integral to the operation of the build to be considered. Please see the Chronicle ETH Lisbon Hackathon Docs for a complete list of available Oracles.
+
+**Reward:** $1000 ($500 from Chronicle/$500 from Polygon).<br/>
+- 1st Prize: $600 <br/>
+- 2nd Prize: $400 <br/>
+
+**Type:** First and Second Prize
 
 ## Chronicle Protocol Contracts
 
