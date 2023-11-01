@@ -9,7 +9,7 @@ sidebar_position: 1
 Welcome to the ETH Lisbon Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
 
 :::info
-For any inquiries, feel free to reach out at our booth, join our [Discord](https://discord.gg/CjgvJ9EspJ), or walk up to anyone wearing a Chronicle hoodies
+For any inquiries, feel free to reach out at our booth, join our [Discord](https://discord.gg/CjgvJ9EspJ), or walk up to anyone wearing a Chronicle hoodie
 :::
 
 ## Chronicle Oracle Integration Bounties
@@ -27,32 +27,44 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Objective:** Rewarding successful integrations of a Chronicle Oracle.
 
-**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains: Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
+**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
 
-**Reward:** $3000 DAI <br/>
+**Reward:** $2500 DAI <br/>
 **Type:** Pooled prize
+
+### Bounty 3: Build with a Chronicle Oracle on The Polyogon zkEVM
+
+**Objective:** Rewarding the most innovative Integration of a Chronicle Oracle on The Polyogon zkEVM.
+
+**Description:** Two teams will be awarded for integrating one or more Chronicle Oracles in a project built on Polygon zkEVM testnet. 'DeFi' and 'Public Good' projects are preferred. The Oracle integration must be integral to the operation of the build to be considered. Please see the Chronicle ETH Lisbon Hackathon Docs for a complete list of available Oracles.
+
+**Reward:** $1000 ($500 from Chronicle/$500 from Polygon).<br/>
+- 1st Prize: $600 <br/>
+- 2nd Prize: $400 <br/>
+
+**Type:** First and Second Prize
 
 ## Chronicle Protocol Contracts
 
 ### Scribe
 
-Scribe is an efficient Schnorr multi-signature-based Oracle, marking a significant improvement in gas efficiency. Unlike i'ts counterparts, Scribe boasts of a fixed gas cost, translating to over `60% gas savings` compared to other Oracles, and a remarkable `80% savings` versus Chainlink. This gas thriftiness improves scalability of Oracles.
+Scribe is an efficient Schnorr multi-signature-based Oracle, marking a significant improvement in gas efficiency. Unlike its counterparts, Scribe boasts of a fixed gas cost, translating to over `60% gas savings` compared to other Oracles and a remarkable `80% savings` versus Chainlink. This gas thriftiness improves the scalability of Oracles.
 
 Also, the seamless integration of Chronicle Oracle with Chainlink and Maker interfaces is a plug-and-play affair, a smooth transition for developers used to these platforms.
 
-Although not relevant to the hackathon, it's worthy of mentioning that all data delivered by a Chronicle Oracle on mainnet is verifiable via The [Chronicle Dashboard](https://chroniclelabs.org/dashboard).
+Although not relevant to the hackathon, it's worth mentioning that all data delivered by a Chronicle Oracle on the mainnet is verifiable via The [Chronicle Dashboard](https://chroniclelabs.org/dashboard).
 
 Scribe Public Repo: [https://github.com/chronicleprotocol/scribe](https://github.com/chronicleprotocol/scribe)
 
 ### CAST
 
-Cast is a command-line interface (CLI) tool designed by the Foundry team to streamline your interaction with the Ethereum Virtual Machine (EVM). Whether you're making smart contract calls, sending transactions, or retriving any type of chain data, cast can help with that. You can read more [Here](https://book.getfoundry.sh/reference/cast/cast).
+Cast is a command-line interface (CLI) tool designed by the Foundry team to streamline your interaction with the Ethereum Virtual Machine (EVM). Whether you're making smart contract calls, sending transactions, or retrieving any chain data, cast can help with that. You can read more [Here](https://book.getfoundry.sh/reference/cast/cast).
 
 ### Self-Kisser: Permissionless Whitelisting
 
-Chronicle safeguards oracle read functions with a whitelist, ensuring controlled access to critical data. However, the SelfKisser contract unfolds a posibility where you can whitelist yourself (or as whimsically termed, "kiss") yourself :).
+Chronicle safeguards Oracle read functions with a whitelist, ensuring controlled access to critical data. However, the SelfKisser contract unfolds a possibility where you can whitelist yourself (or, as whimsically termed, "kiss") yourself :).
 
-How to give yourself a kiss i.e., `msg.sender`?
+How do you kiss yourself, i.e., `msg.sender`?
 
 Run the following command:
 
@@ -78,7 +90,7 @@ For more info, see the `SelfKisser` repo: [https://github.com/chronicleprotocol/
 
 ### Reading Chronicle Oracles through the `IChronicle` Interface
 
-Interacting with the oracle is easy. The `read()` function lays it out plain and simple, returning a `uint` value representing the data you are tying to get:
+Interacting with the oracle is easy. The `read()` function lays it out plain and simple, returning a `uint` value representing the data you are trying to get:
 
 ```bash
 $ cast call 0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660 "read()(uint)"
@@ -91,7 +103,7 @@ Response:
 ```
 
 :::info
-For a detailed outline of the interface and additional functionalities click [here](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol)
+For a detailed outline of the interface and additional functionalities, click [here](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol)
 :::
 
 ## Smart Contract Addresses on Sepolia network
