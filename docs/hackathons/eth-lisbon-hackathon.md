@@ -27,7 +27,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Objective:** Rewarding successful integrations of a Chronicle Oracle.
 
-**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
+**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $2500 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
 
 **Reward:** $2500 DAI <br/>
 **Type:** Pooled prize
