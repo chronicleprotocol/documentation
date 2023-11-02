@@ -106,6 +106,41 @@ Response:
 For a detailed outline of the interface and additional functionalities, click [here](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol)
 :::
 
+## Whitelising your address via Etherscan
+
+To whitelist your address or other addresses for a Chronicle Oracle on Etherscan, follow these steps:
+
+1. Navigate to the Self-kisser contract on Etherscan using the contract address provided: [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)
+
+2. Click on the `Contract` tab and then on `Write Contract`.
+
+3. You'll have to hit the `Connect to Web3` button to connect your wallet.
+
+4. Scroll down to the `selfKiss` function and enter the Oracle address you wish to interact with in the `oracle (address)` field. Then, click Write.
+
+That should send you a popup message on your wallet to sign. Once signed, it should take a few seconds for your address to be whitelisted.
+
+### Reading from Smart Contracts
+
+1. Go to the `Read Contract` tab and locate the `tolled` function.
+2. Enter your wallet address in the `who (address)` field.
+3. Hit `Query`. The data returned will be displayed below, which should look like this:
+
+```solidity
+[ tolled(address) method Response ]
+    bool :  true
+```
+
+#### Additional Notes
+
+- Ensure you have a sufficient amount of tokens in your wallet to cover gas fees for transactions.
+- Ensure your wallet is connected to the correct network corresponding to the contract you are interacting with.
+
+### Useful Links
+
+- [Self-kisser Contract on Sepolia network](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)
+- [How To Use Read/Write Contract Features on Etherscan](https://info.etherscan.com/how-to-use-read-or-write-contract-features-on-etherscan/)
+
 ## Smart Contract Addresses on Sepolia network
 
 | Contract Name | Contract Address on Sepolia network                                                                                                |
