@@ -106,7 +106,7 @@ Response:
 For a detailed outline of the interface and additional functionalities, click [here](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol)
 :::
 
-## Whitelising your address via Etherscan
+## Whitelisting your address via Etherscan
 
 To whitelist your address or other addresses for a Chronicle Oracle on Etherscan, follow these steps:
 
