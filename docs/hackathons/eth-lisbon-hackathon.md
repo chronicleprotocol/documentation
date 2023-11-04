@@ -177,6 +177,7 @@ That should send you a popup message on your wallet to sign. Once signed, it sho
 
 | Contract Name | Contract Address on zkEVM Testnet                                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Self-kisser   | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code) |
 | AAVE/USD       | [0xED4C91FC28B48E2Cf98b59668408EAeE44665511](https://testnet-zkevm.polygonscan.com/address/0xED4C91FC28B48E2Cf98b59668408EAeE44665511#code) |
 | ARB/USD      | [0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2](https://testnet-zkevm.polygonscan.com/address/0x7dE6Df8E4c057eD9baE215F347A0339D603B09B2#code) |
 | BNB/USD       | [0x6931FB9C54958f77873ceC4536EaC56F561d2dC4](https://testnet-zkevm.polygonscan.com/address/0x6931FB9C54958f77873ceC4536EaC56F561d2dC4#code) |
@@ -201,6 +202,7 @@ That should send you a popup message on your wallet to sign. Once signed, it sho
 
 | Contract Name | Contract Address on Gnosis Network                                                                                                   |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Self-kisser   | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code) |
 | AAVE/USD       | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://gnosisscan.io/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717#code) |
 | ARB/USD      | [0x579BfD0581beD0d18fBb0Ebab099328d451552DD](https://gnosisscan.io/address/0x579bfd0581bed0d18fbb0ebab099328d451552dd#code) |
 | AVAX/USD    | [0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688](https://gnosisscan.io/address/0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688#code) |
