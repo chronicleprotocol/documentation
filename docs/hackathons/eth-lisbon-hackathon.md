@@ -49,7 +49,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 ### Scribe
 
-Scribe is an efficient Schnorr multi-signature-based Oracle, marking a significant improvement in gas efficiency. Unlike its counterparts, Scribe boasts of a fixed gas cost, translating to over `60% gas savings` compared to other Oracles and a remarkable `80% savings` versus Chainlink. This gas thriftiness improves the scalability of Oracles.
+Scribe is an efficient Schnorr multi-signature-based Oracle with enhanced gas efficiency. Providing nearly constant gas costs on Layer 2s, On Layer 1s, Scribe boasts of a fixed gas costs, leading to substantial savings—over 60% relative to competing Oracles and an impressive 80% compared to Chainlink. This approach to gas management significantly boosts the scalability of Oracle services.
 
 Also, the seamless integration of Chronicle Oracle with Chainlink and Maker interfaces is a plug-and-play affair, a smooth transition for developers used to these platforms.
 
