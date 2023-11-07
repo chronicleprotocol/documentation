@@ -401,12 +401,21 @@ You can view the functions responsible for setting kubeconfig [here](https://git
 
 If you need further debugging, please retrieve the container logs, and some base info and provide it to the chronicle team for assistance:
 
+:::tip
+Make sure that you set `FEED_NAME` to match your feed in question, and run these commands from the correct user so that `$HOME/$FEED_NAME/generated-values.yaml` resolves to the correct file.
+:::
+
 ```
-kubectl logs deployment/ghost -n <feedname> > ghost.log
-kubectl logs deployment/musig -n <feedname> > musig.log
-kubectl logs deployment/tor-proxy -n <feedname> > tor-proxy.log
-kubectl get svc -n <feedname> > services.log
-tar czf feed-debug.tar.gz ghost.log musig.log tor-proxy.log services.log /path/to/generated-values.yaml
+export FEED_NAME=<CHANGE_ME>
+cd /tmp
+kubectl logs deployment/ghost -n $FEED_NAME > ghost.log
+kubectl logs deployment/musig -n $FEED_NAME > musig.log
+kubectl logs deployment/tor-proxy -n $FEED_NAME > tor-proxy.log
+kubectl exec -ti deployments/tor-proxy -n $FEED_NAME -- cat /usr/local/etc/tor/torrc > torrc
+kubectl get svc -n --all-namespaces > services.log
+kubectl get pods --all-namespaces > all-pods.log
+helm list --all-namespaces > all-helm-releases.log
+tar czf feed-debug.tar.gz torrc ghost.log musig.log tor-proxy.log services.log all-helm-releases.log all-pods.log $HOME/$FEED_NAME/generated-values.yaml
 ```
 
 The above commands will get logs for each of the pods running, the state of the services, as well as the generated-values.yaml for your feed, and bundle it into a tarball `feed-debug.tar.gz` (Please change the values / paths accordingly)
