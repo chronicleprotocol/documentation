@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# ETHGlobal Istanbul Hackathon Guide
+# ETHGlobal Istanbul Guide
 
 Welcome to the ETHGlobal Istanbul Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
 
@@ -18,8 +18,12 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Description:** The prize will go to the two teams with the most innovative integration of Scribe, Chronicle's new Optimistic Schnorr Oracle. Supported chains include: Ethereum Sepolia, Polygon zkEVM testnet, and Gnosis Chain Mainnet; solutions must utilize the Oracle smart contract. The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
 
-**Reward:** 1st Place: $4500 DAI, 2nd Place: $2500 DAI <br/>
-**Type:** 1st & 2nd Place
+**Reward:**
+
+- **1st Place**:
+  - **Reward**: $4500 DAI
+- **2nd Place**:
+  - **Reward**: $2500 DAI
 
 ### Bounty 2: Integrate a Chronicle Oracle
 
