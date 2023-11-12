@@ -2,43 +2,58 @@
 sidebar_position: 1
 ---
 
-# ETHGlobal Istanbul Hackathon Guide
+# ETH Lisbon Hackathon Guide
 
-Welcome to the ETHGlobal Istanbul Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
+![ETH Lisbon Hackathon](https://pbs.twimg.com/media/F43NCzgWMAAiQNi?format=png&name=large)
+
+Welcome to the ETH Lisbon Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
 
 :::info
 For any inquiries, feel free to reach out at our booth, join our [Discord](https://discord.gg/CjgvJ9EspJ), or walk up to anyone wearing a Chronicle hoodie
 :::
 
-## Chronicle Bounties
+## Chronicle Oracle Integration Bounties
 
 ### Bounty 1: Most Innovative Chronicle Oracle Integration
 
 **Objective:** Rewarding the most creative integration of a Chronicle Oracle.
 
-**Description:** The prize will go to the two teams with the most innovative integration of Scribe, Chronicle's new Optimistic Schnorr Oracle. Supported chains include: Ethereum Sepolia, Polygon zkEVM testnet, and Gnosis Chain Mainnet; solutions must utilize the Oracle smart contract. The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
+**Description:** The prize will go to the team with the most innovative integration of a Chronicle Oracle on one of the supported chains (Sepoila (Ethereum), Polygon zkEVM (testnet), Gnosis Chain (mainnet)). The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
 
-**Reward:** 1st Place: $4500 DAI, 2nd Place: $2500 DAI <br/>
-**Type:** 1st & 2nd Place
+**Reward:** $2000 DAI <br/>
+**Type:** Winner takes all
 
 ### Bounty 2: Integrate a Chronicle Oracle
 
-**Objective:** Rewarding successful integrations of Chronicle's new Optimistic Schnorr Oracle.
+**Objective:** Rewarding successful integrations of a Chronicle Oracle.
 
-**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration must utilize the Oracle smart contract and should be crucial to the product or project's operation, serving a legitimate purpose.
+**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $2500 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
 
-**Reward:** $3000 DAI <br/>
+**Reward:** $2500 DAI <br/>
 **Type:** Pooled prize
+
+### Bounty 3: Build with a Chronicle Oracle on The Polyogon zkEVM
+
+**Objective:** Rewarding the most innovative Integration of a Chronicle Oracle on The Polyogon zkEVM.
+
+**Description:** Two teams will be awarded for integrating one or more Chronicle Oracles in a project built on Polygon zkEVM testnet. 'DeFi' and 'Public Good' projects are preferred. The Oracle integration must be integral to the operation of the build to be considered. Please see the Chronicle ETH Lisbon Hackathon Docs for a complete list of available Oracles.
+
+**Reward:** $1000 ($500 from Chronicle/$500 from Polygon).<br/>
+
+- 1st Prize: $600 <br/>
+- 2nd Prize: $400 <br/>
+
+**Type:** First and Second Prize
 
 ## Chronicle Protocol Contracts
 
 ### Scribe
 
-Scribe is an efficient Schnorr multi-signature-based Oracle with enhanced gas efficiency. Providing nearly constant gas costs on Layer 2s and on Layer 1s, Scribe boasts of fixed gas costs, leading to substantial savings—over 60% relative to competing Oracles and an impressive 80% compared to Chainlink. This approach to gas management significantly boosts the scalability of the Oracle.
+Scribe is an efficient Schnorr multi-signature-based Oracle with enhanced gas efficiency. Providing nearly constant gas costs on Layer 2s, On Layer 1s, Scribe boasts of a fixed gas costs, leading to substantial savings—over 60% relative to competing Oracles and an impressive 80% compared to Chainlink. This approach to gas management significantly boosts the scalability of Oracle services.
 
-The Chronicle Scribe Oracle interface is plug-and-play with Chainlink and Maker Oracles, providing a smooth transition for developers used to these platforms.
+Also, the seamless integration of Chronicle Oracle with Chainlink and Maker interfaces is a plug-and-play affair, a smooth transition for developers used to these platforms.
 
-All data delivered by a Chronicle Oracle on mainnet is verifiable via The [Chronicle Dashboard](https://chroniclelabs.org/dashboard).
+Although not relevant to the hackathon, it's worth mentioning that all data delivered by a Chronicle Oracle on the mainnet is verifiable via The [Chronicle Dashboard](https://chroniclelabs.org/dashboard).
 
 Scribe Public Repo: [https://github.com/chronicleprotocol/scribe](https://github.com/chronicleprotocol/scribe)
 
@@ -193,9 +208,9 @@ That should send you a popup message on your wallet to sign. Once signed, it sho
 | WSTETH/USD    | [0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34](https://testnet-zkevm.polygonscan.com/address/0x8Ba43F8Fa2fC13D7EEDCeb9414CDbB6643483C34#code) |
 | YFI/USD       | [0x16978358A8D6C7C8cA758F433685A5E8D988dfD4](https://testnet-zkevm.polygonscan.com/address/0x16978358A8D6C7C8cA758F433685A5E8D988dfD4#code) |
 
-## Smart Contract Addresses on Gnosis Mainnet
+## Smart Contract Addresses on Gnosis Network
 
-| Contract Name | Contract Address on Gnosis Mainnet                                                                                         |
+| Contract Name | Contract Address on Gnosis Network                                                                                          |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Self-kisser   | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://gnosisscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code) |
 | AAVE/USD      | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://gnosisscan.io/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717#code) |
