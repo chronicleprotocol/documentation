@@ -110,7 +110,7 @@ To whitelist your address or other addresses for a Chronicle Oracle on Etherscan
 
 That should send you a popup message on your wallet to sign. Once signed, it should take a few seconds for your address to be whitelisted.
 
-### Reading from Smart Contracts
+### Reading an Oracle
 
 1. Go to the `Read Contract` tab and locate the `tolled` function.
 2. Enter your wallet address in the `who (address)` field.
@@ -120,6 +120,8 @@ That should send you a popup message on your wallet to sign. Once signed, it sho
 [ tolled(address) method Response ]
     bool :  true
 ```
+
+To see an example of how to read an oracle via Solidity, check out our [`OracleReader`](https://github.com/chronicleprotocol/OracleReader-Example) example.
 
 #### Additional Notes
 
