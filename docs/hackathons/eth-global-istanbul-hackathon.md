@@ -16,7 +16,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Objective:** Rewarding the most creative integration of a Chronicle Oracle.
 
-**Description:** The prize will go to the two teams with the most innovative integration of Scribe, Chronicle's new Optimistic Schnorr Oracle. Supported chains include: Ethereum Sepolia, Polygon zkEVM testnet, and Gnosis Chain Mainnet; solutions must utilize the Oracle smart contract. The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
+**Description:** The prize will go to the two teams with the most innovative integration of Scribe, Chronicle's new Optimistic Schnorr Oracle. Supported chains include: Ethereum Sepolia, Polygon zkEVM testnet, and Gnosis Chain Mainnet. Note that solutions must utilize at least one Oracle smart contract. The innovation should stem from the use case of the Oracle, i.e., the idea or utility of the project.
 
 **Reward:**
 
@@ -29,7 +29,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Objective:** Rewarding successful integrations of Chronicle's new Optimistic Schnorr Oracle.
 
-**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration must utilize the Oracle smart contract and should be crucial to the product or project's operation, serving a legitimate purpose.
+**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepolia (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $3000 DAI reward pool. The integration must utilize at least one Oracle smart contract and should be crucial to the product or project's operation, serving a legitimate purpose.
 
 **Reward:** $3000 DAI <br/>
 **Type:** Pooled prize
@@ -48,7 +48,7 @@ Scribe Public Repo: [https://github.com/chronicleprotocol/scribe](https://github
 
 ### CAST
 
-Cast is a command-line interface (CLI) tool designed by the Foundry team to streamline your interaction with the Ethereum Virtual Machine (EVM). Whether you're making smart contract calls, sending transactions, or retrieving any chain data, cast can help with that. You can read more [Here](https://book.getfoundry.sh/reference/cast/cast).
+Cast is a command-line interface (CLI) tool designed by the Foundry team to streamline your interaction with the Ethereum Virtual Machine (EVM). Whether you're making smart contract calls, sending transactions, or retrieving any chain data, cast can help with that. You can read more [here](https://book.getfoundry.sh/reference/cast/cast).
 
 ### Self-Kisser: Permissionless Whitelisting
 
@@ -236,12 +236,12 @@ That should send you a popup message on your wallet to sign. Once signed, it sho
 
 - Foundry Setup:
   - [https://getfoundry.sh](https://getfoundry.sh/)
-- Sepolia ETH:
+- List of Sepolia ETH Faucets:
   - [https://www.infura.io/faucet/sepolia](https://www.infura.io/faucet/sepolia)
   - [https://sepoliafaucet.com/](https://sepoliafaucet.com/)
-- Sepolia RPC:
+- List of Sepolia RPCs:
   - [chainlist.org](https://chainlist.org/chain/11155111)
-- Create A Test Wallet:
+- Create a Test Wallet:
   - `cast new wallet`
 
 ## More on Scribe
