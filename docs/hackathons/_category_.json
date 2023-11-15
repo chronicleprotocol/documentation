@@ -1,8 +1,8 @@
 {
   "label": "Hackathons",
-  "position": 2,
+  "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Hackathon specific docs",
+    "description": "Hackathon specific docs"
   }
 }

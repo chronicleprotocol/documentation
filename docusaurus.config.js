@@ -65,7 +65,7 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'chronicleSidebar',
             position: 'left',
             label: 'Docs',
           },
@@ -79,15 +79,15 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Feeds',
-                to: '/docs/category/feeds',
-              },
-            ],
-          },
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Feeds',
+          //       to: '/docs/category/feeds',
+          //     },
+          //   ],
+          // },
           {
             title: 'Community',
             items: [
