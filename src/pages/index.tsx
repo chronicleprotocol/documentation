@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/hackathons/">
+            to="/docs/intro">
             Dive into our documentation 📖
           </Link>
         </div>
@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="description: Oracles often falter in scalability, lack transparency and true decentralization, making them slow and difficult to implement. Chronicle changes this... <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
