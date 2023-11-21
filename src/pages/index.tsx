@@ -30,8 +30,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="description: Oracles often falter in scalability, lack transparency and true decentralization, making them slow and difficult to implement. Chronicle changes this... <head />">
+      title={`${siteConfig.title}`}
+      description="Powering MakerDAO since 2017, Chronicle recently launched a novel new Oracle delivering cost-efficient & verifiable data. <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
