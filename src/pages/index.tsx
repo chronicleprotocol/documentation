@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/hackathons/">
+            to="/docs/intro">
             Dive into our documentation 📖
           </Link>
         </div>
@@ -30,8 +30,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Powering MakerDAO since 2017, Chronicle recently launched a novel new Oracle delivering cost-efficient & verifiable data. <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
