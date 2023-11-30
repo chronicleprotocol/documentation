@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Upgrading a feed
+# Upgrading a Validator
 
-In order to upgrade a feed to the latest version, we will need to run a couple helm commands.
+In order to upgrade a validator to the latest version, we will need to run a couple helm commands.
 
 ## TL;DR
 

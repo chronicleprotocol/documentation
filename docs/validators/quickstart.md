@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Quickstart
 
-This installation will run a complete end-to-end installation required for Chronicle Feeds.
+This will run a complete end-to-end installation required for running a Chronicle Validator.
 
 It will attempt to install:
 

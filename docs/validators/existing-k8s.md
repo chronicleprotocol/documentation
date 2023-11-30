@@ -7,8 +7,8 @@ sidebar_position: 2
 
 * Kubernetes Cluster +v1.24
   * Validated on the following flavors:
-    * :white\_check\_mark:[k3s](https://docs.k3s.io/installation)
-    * :white\_check\_mark:[AWS EKS](https://aws.amazon.com/eks/)
+    * [k3s](https://docs.k3s.io/installation)
+    * [AWS EKS](https://aws.amazon.com/eks/)
     * Other stable versions of kubernetes should work
 * Whitelisted Feed address
 * [Helm v3](https://helm.sh/docs/intro/install/)
