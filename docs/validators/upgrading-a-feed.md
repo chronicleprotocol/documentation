@@ -32,9 +32,11 @@ Once you're on the host, make sure your you switch to the \`user\` that the feed
 
 Eg; assuming your user name is `feed-user` :
 
-<pre><code><strong>$ su - feed-user
-</strong>feed-user@my_feed_host:~$ 
-</code></pre>
+```
+$ su - feed-user
+feed-user@my_feed_host:~$ 
+```
+
 
 Verify that your user can view the k3s cluster resources (eg below assuming the feed is named is `my-feed`:
 
