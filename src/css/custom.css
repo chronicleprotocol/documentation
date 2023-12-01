@@ -25,12 +25,13 @@
   --ifm-background-color: #0d3718;
 }
 
-:root .navbar__items--right {
+.navbar__items--right {
   color: #FFF;
 }
-:root .navbar__item {
+.navbar__item {
   color: #FFF;
 }
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #2FD05B;
@@ -48,5 +49,8 @@
 
 /* Styling one class specially in dark mode */
 [data-theme='dark']:root .navbar {
+  background-color: #1F2937;
+}
+[data-theme='dark']:root .menu {
   background-color: #1F2937;
 }
