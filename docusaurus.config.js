@@ -1,12 +1,14 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Chronicle Protocol Docs',
+  title: 'Chronicle Docs',
   tagline: 'Cost-efficient. Verifiable Data.',
   favicon: 'img/favicon.ico',
 
@@ -19,14 +21,14 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'chronicleprotocol', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  projectName: 'documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -38,14 +40,23 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+          sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/chronicleprotocol/documentation/tree/main/',
         },
+        blog: false,
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/chronicleprotocol/documentation/tree/main/',
+        // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -63,12 +74,13 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'chronicleSidebar',
-            position: 'left',
-            label: 'Docs',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
+          //{to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/chronicleprotocol',
             label: 'GitHub',
@@ -79,15 +91,19 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Feeds',
-          //       to: '/docs/category/feeds',
-          //     },
-          //   ],
-          // },
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Validators',
+                to: '/category/validators',
+              },
+              {
+                label: 'Hackathons',
+                to: '/category/hackathons',
+              },
+            ],
+          },
           {
             title: 'Community',
             items: [
@@ -99,25 +115,37 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/ChronicleLabs',
               },
+              {
+                label: 'Reddit',
+                href: 'https://reddit.com/r/chronicleprotocol',
+              },
+              {
+                label: 'Farcaster',
+                href: 'https://warpcast.com/chroniclelabs',
+              },
             ],
           },
           {
             title: 'More',
             items: [
               {
+                label: 'Web',
+                href: 'https://chroniclelabs.org',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/chronicleprotocol/',
+                href: 'https://github.com/chronicleprotocol',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Chronicle Labs.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Chronicle Labs, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;
