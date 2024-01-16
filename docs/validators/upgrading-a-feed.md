@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
 ---
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.feed%5B0%5D.version&label=Latest%20Chart&color=green)
-
 
 # Upgrading a Validator
+
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.feed%5B0%5D.version&label=Latest%20Chart&color=green)
 
 In order to upgrade a validator to the latest version, we will need to run a couple helm commands.
 
@@ -74,7 +74,7 @@ using this version, we can upgrade our validator:
 
 :::danger
 
-Please ensure you ping the helm release to the lastest semver ChartVersion of the feed chart. eg `0.2.7`
+Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.2.7`
 The charts released are production ready, and tested thoroughly
 :::
 
