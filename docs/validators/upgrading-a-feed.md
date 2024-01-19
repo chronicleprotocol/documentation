@@ -74,12 +74,12 @@ using this version, we can upgrade our validator:
 
 :::danger
 
-Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.2.7`
+Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.2.8`
 The charts released are production ready, and tested thoroughly
 :::
 
 ```
-helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/feed --version 0.2.7
+helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/feed --version 0.2.8
 ```
 
 You should see output like this:
@@ -103,7 +103,7 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME 
 NAME     NAMESPACE    	REVISION	UPDATED                                	STATUS  	CHART     	APP VERSION
-my-feed	 my-feed	11      	2023-10-12 08:41:27.609764776 +0000 UTC	deployed	feed-0.2.7	2.0.0     
+my-feed	 my-feed	11      	2023-10-12 08:41:27.609764776 +0000 UTC	deployed	feed-0.2.8	2.0.0     
 ```
 
 #### Verify the new pods are running:
