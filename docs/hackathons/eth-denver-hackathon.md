@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# ETHDenver Guide
+# ETHDenver Hackathon Guide
 
 ## Chronicle Oracle Integration Bounties
 
