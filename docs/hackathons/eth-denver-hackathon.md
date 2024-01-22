@@ -3,8 +3,8 @@ sidebar_position: 2
 ---
 
 # ETHDenver Guide
-T
-## ETHDenver 24 Bounties
+
+## Chronicle Oracle Integration Bounties
 
 ### Most Innovative Chronicle Oracle Integration
 
