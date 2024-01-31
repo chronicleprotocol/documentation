@@ -131,7 +131,7 @@ You can view all the smart contract adresses below:👇
 
 | Contract Name | Contract Address on Sepolia network                                                                                                |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1 | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d) |
+| SelfKisser_1 | [TBC](https://sepolia.etherscan.io/address/TBC) |
 | Chronicle_AVAX_USD_3 | [0x7F56CdaAdB1c5230Fcab3E20D3A15BDE26cb6C2b](https://sepolia.etherscan.io/address/0x7F56CdaAdB1c5230Fcab3E20D3A15BDE26cb6C2b) |
 | Chronicle_USDC_USD_3 | [0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC](https://sepolia.etherscan.io/address/0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC) |
 | Chronicle_RETH_USD_3 | [0x6454753E0909E7F6476BfB78BD6BDC281197A5be](https://sepolia.etherscan.io/address/0x6454753E0909E7F6476BfB78BD6BDC281197A5be) |
@@ -175,7 +175,7 @@ You can view all the smart contract adresses below:👇
 
 | Contract Name | Contract Address on zkEVM Testnet                                                                                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1 | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://testnet-zkevm.polygonscan.com/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d) |
+| SelfKisser_1 | [TBC](https://testnet-zkevm.polygonscan.com/address/TBC) |
 | Chronicle_AVAX_USD_3 | [0xDcd4c95f9D1f660E31fD516B936388fc9D4117Ea](https://testnet-zkevm.polygonscan.com/address/0xDcd4c95f9D1f660E31fD516B936388fc9D4117Ea) |
 | Chronicle_USDC_USD_3 | [0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC](https://testnet-zkevm.polygonscan.com/address/0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC) |
 | Chronicle_RETH_USD_3 | [0x6454753E0909E7F6476BfB78BD6BDC281197A5be](https://testnet-zkevm.polygonscan.com/address/0x6454753E0909E7F6476BfB78BD6BDC281197A5be) |
@@ -212,7 +212,7 @@ You can view all the smart contract adresses below:👇
 
 | Contract Name | Contract Address on Gnosis Mainnet                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1 | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://gnosisscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d) |
+| SelfKisser_1 | [TBC](https://gnosisscan.io/address/TBC) |
 | Chronicle_WBTC_USD_2 | [0x39C899178F4310705b12888886884b361CeF26C7](https://gnosisscan.io/address/0x39C899178F4310705b12888886884b361CeF26C7) |
 | Chronicle_BTC_USD_2 | [0xdD5232e76798BEACB69eC310d9b0864b56dD08dD](https://gnosisscan.io/address/0xdD5232e76798BEACB69eC310d9b0864b56dD08dD) |
 | Chronicle_ETH_BTC_2 | [0x4E866Ac929374096Afc2715C4e9c40D581A4067e](https://gnosisscan.io/address/0x4E866Ac929374096Afc2715C4e9c40D581A4067e])|
@@ -251,6 +251,7 @@ You can view all the smart contract adresses below:👇
 
 | Contract Name | Contract Address on Mantle Mainnet                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1 | [TBC](https://explorer.testnet.mantle.xyz/address/TBC) |
 |Chronicle_AAVE_USD_1  | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://explorer.testnet.mantle.xyz/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717) |
 |Chronicle_WUSDM_USDM_1  | [0xF719E362724Dda4Ad3B8D92D49E0c44E48Df4e56](https://explorer.testnet.mantle.xyz/address/0xF719E362724Dda4Ad3B8D92D49E0c44E48Df4e56) |
 |Chronicle_SDAI_DAI_1  | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://explorer.testnet.mantle.xyz/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491) |
@@ -289,6 +290,7 @@ You can view all the smart contract adresses below:👇
 
 | Contract Name | Contract Address on SCR Sepolia Mainnet                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1 | [TBC](https://sepolia.scrollscan.com/address/TBC) |
 | Chronicle_AAVE_USD_1 | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://sepolia.scrollscan.com/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717) |
 | Chronicle_SDAI_DAI_1 | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://sepolia.scrollscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491) |
 | Chronicle_UNI_USD_1 | [0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5](https://sepolia.scrollscan.com/address/0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5) |
