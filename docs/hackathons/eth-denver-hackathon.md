@@ -29,7 +29,7 @@ Must utilize the Oracle smart contract on one of the supported blockchains
 
 ### Scribe
 
-Scribe is an efficient Schnorr multi-signature-based Oracle with enhanced gas efficiency. Providing nearly constant gas costs on Layer 2s and on Layer 1s, Scribe boasts of fixed gas costs, leading to substantial savings—over 60% relative to competing Oracles and an impressive 80% compared to Chainlink. This approach to gas management significantly boosts the scalability of the Oracle.
+Scribe is an extremely gas-efficient Oracle based on aggregated Schnorr signatures. Providing nearly constant gas costs on Layer 2s and on Layer 1s, Scribe boasts of fixed gas costs, leading to substantial savings—over 60% relative to competing Oracles and an impressive 80% compared to Chainlink. This approach to gas management significantly boosts the scalability of the Oracle.
 
 The Chronicle Scribe Oracle interface is plug-and-play with Chainlink and Maker Oracles, providing a smooth transition for developers used to these platforms.
 
@@ -39,7 +39,7 @@ Scribe Public Repo: [https://github.com/chronicleprotocol/scribe](https://github
 
 ### CAST
 
-Cast is a command-line interface (CLI) tool designed by the Foundry team to streamline your interaction with the Ethereum Virtual Machine (EVM). Whether you're making smart contract calls, sending transactions, or retrieving any chain data, cast can help with that. You can read more [here](https://book.getfoundry.sh/reference/cast/cast).
+Cast is a command-line interface (CLI) tool by the Foundry team to streamline your interaction with Ethereum and other EVM-based chains. Whether you're making smart contract calls, sending transactions, or retrieving any chain data, cast can help with that. You can read more [here](https://book.getfoundry.sh/reference/cast/cast).
 
 ### Self-Kisser: Permissionless Whitelisting
 
