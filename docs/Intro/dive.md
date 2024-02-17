@@ -1,10 +1,10 @@
-# Architecture
+ # Architecture
 
-The Chronicle's Oracle protocol comprises a distributed architecture spanning various on-chain and off-chain components. The diagram below highlights both types of components, with off-chain components depicted with a green background on the left-hand side, and on-chain components with a beige background on the right-hand side. Origins, such as primary data sources, can exist on both on-chain and off-chain layers.
+  The Chronicle's Oracle protocol comprises a distributed architecture spanning various on-chain and off-chain components. The diagram below highlights both types of components, with off-chain components depicted with a green background on the left-hand side, and on-chain components with a beige background on the right-hand side. Origins, such as primary data sources, can exist on both on-chain and off-chain layers.
 
-## On-Chain components
+ ## On-Chain components
 
-- **WatRegistry** is a Smart Contract designed to manage data models, particularly in the context of MultiSig (multi-signature) validation. Here's a breakdown of the information it stores for each data model:
+    - **WatRegistry** is a Smart Contract designed to manage data models, particularly in the context of MultiSig (multi-signature) validation. Here's a breakdown of the information it stores for each data model:
 
     - **List of Validators**: This refers to the entities or individuals who are authorized to participate in the MultiSig validation process for a particular data model. MultiSig validation typically requires multiple parties to sign off on a transaction or data update before it is considered valid. The list of validators outlines who these authorized parties are.
     - **Quorum**: This represents the minimum number of validations or "feeds" required for a MultiSig validation to be considered valid for a specific data model. For example, if the quorum for a particular data model is set to 11, it means that at least 11 out of the total number of validators listed must sign off on the transaction or data update for it to be accepted.
@@ -32,3 +32,5 @@ The Chronicle's Oracle protocol comprises a distributed architecture spanning va
     **Dashboard**:  The [**croniclelabs.org](http://croniclelabs.org) web site** queries the archiver to present the prices on its dashboard. You can find all of our current Oracles here https://chroniclelabs.org/dashboard/oracles
 
     You can find your token name by using the search box or by selecting your preferred blockchain from the filter located in the top-right corner (see Figure below).
+
+    (add img here)
