@@ -2,6 +2,8 @@
 
   The Chronicle's Oracle protocol comprises a distributed architecture spanning various on-chain and off-chain components. The diagram below highlights both types of components, with off-chain components depicted with a green background on the left-hand side, and on-chain components with a beige background on the right-hand side. Origins, such as primary data sources, can exist on both on-chain and off-chain layers.
 
+    ![Example banner](../../static/img/diagramv1.png)
+
  ## On-Chain components
 
     - **WatRegistry** is a Smart Contract designed to manage data models, particularly in the context of MultiSig (multi-signature) validation. Here's a breakdown of the information it stores for each data model:
@@ -9,7 +11,7 @@
     - **List of Validators**: This refers to the entities or individuals who are authorized to participate in the MultiSig validation process for a particular data model. MultiSig validation typically requires multiple parties to sign off on a transaction or data update before it is considered valid. The list of validators outlines who these authorized parties are.
     - **Quorum**: This represents the minimum number of validations or "feeds" required for a MultiSig validation to be considered valid for a specific data model. For example, if the quorum for a particular data model is set to 11, it means that at least 11 out of the total number of validators listed must sign off on the transaction or data update for it to be accepted.
     
-    By storing this information for each data model, **WatRegistry** ensures that the MultiSig validation process is conducted according to the specified requirements for each particular data model. Chronicle Protocol facilitates the dynamic updating of configurations for feeds using the Chronicles Go-based Oracle client. **ConfigRegistry** assigns a unique URL to each individual feed. This unique URL mechanism allows for the management of distinct configurations for every feed. In essence, the **ConfigRegistry** serves as a central repository where configuration information for each feed is stored and can be updated as needed. By maintaining this registry, Chronicle Protocol ensures that each feed can have its own specific configuration settings tailored to its requirements, enhancing flexibility and customization within the protocol
+     By storing this information for each data model, **WatRegistry** ensures that the MultiSig validation process is conducted according to the specified requirements for each particular data model. Chronicle Protocol facilitates the dynamic updating of configurations for feeds using the Chronicles Go-based Oracle client. **ConfigRegistry** assigns a unique URL to each individual feed. This unique URL mechanism allows for the management of distinct configurations for every feed. In essence, the **ConfigRegistry** serves as a central repository where configuration information for each feed is stored and can be updated as needed. By maintaining this registry, Chronicle Protocol ensures that each feed can have its own specific configuration settings tailored to its requirements, enhancing flexibility and customization within the protocol
 
     - **FeedRegistry** plays a crucial role within the **Chronicle Protocol** by maintaining a comprehensive list of all Feeds that are recognized as valid participants in the network/protocol. Feeds, in this context, are trusted entities within the network that collaborate through a *peer-to-peer* (p2p) network to supply new oracle data.
 
@@ -33,4 +35,4 @@
 
     You can find your token name by using the search box or by selecting your preferred blockchain from the filter located in the top-right corner (see Figure below).
 
-    (add img here)
+    ![Example banner](../../static/img/dashboard.png)
