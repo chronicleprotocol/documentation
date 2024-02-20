@@ -1,22 +1,5 @@
 # Terminology
 
-### schnorr 
-signature scheme, similar to ECDSA
-
-### Poke 
-
-Explain 
-
-
-### Kiss
-
-Explain 
-
-### Diss
-
-Explain
-
-
 ### opPoke
 
 Optimistic poke
