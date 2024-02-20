@@ -1,6 +1,6 @@
 # Connect with us
 
-Discord https://discord.gg/Gr98FcFJ 
+Discord https://discord.gg/EFxSaf9wqJ
 
 Telegram https://t.me/chronicleprotocol
 

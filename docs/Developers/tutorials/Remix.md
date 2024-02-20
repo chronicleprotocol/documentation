@@ -1,7 +1,4 @@
-# Tutorials
-
-
-## Intro to Chronicle
+# Remix
 
 ### Chronicle + Remix 
 
@@ -62,5 +59,5 @@ interface ISelfKisser {
     function selfKiss(address oracle) external;
 }
 ```
-![Example banner](../../static/img/remix_deploy.png)
-![Example banner](../../static/img/remix_result.png)
+![Example banner](../../../static/img/remix_deploy.png)
+![Example banner](../../../static/img/remix_result.png)

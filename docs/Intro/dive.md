@@ -2,7 +2,7 @@
 
   The Chronicle's Oracle protocol comprises a distributed architecture spanning various on-chain and off-chain components. The diagram below highlights both types of components, with off-chain components depicted with a green background on the left-hand side, and on-chain components with a beige background on the right-hand side. Origins, such as primary data sources, can exist on both on-chain and off-chain layers.
 
-    ![Example banner](../../static/img/diagramv1.png)
+    ![Example banner](../../static/img/diagram.png)
 
  ## On-Chain components
 
