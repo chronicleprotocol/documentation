@@ -1,8 +1,11 @@
 # Terminology
 
+
+Here is alist of some terminology you may find helpful as you explore our repositories. 
+
 ### opPoke
 
-Optimistic poke
+An opPoke reference refers to an Optimistic poke
 
 ### opChallenge
 
@@ -10,15 +13,18 @@ Function to challenge an optimistic poke. If challenge succeeds, we will pay an 
 
 
 ### wat 
-Oracle identifier; mostly asset pairs, eg ETH/USD, but can also be something else, eg DSR/RATE = makerdao's sdai interest rate
 
-### Challenge reward
-
-The ETH reward you get when you challenge an invalid poke. Used to incentivize (eg) mev searchers to monitor our oracles
+Oracle identifier; mostly asset pairs, eg ETH/USD, but can also be something else, an example could be DSR/RATE, which is MakerDAO's sDAI interest rate
 
 ### bar
 
 Quorum/threshold of validators for a new oracle price, eg bar many validator need to sign via schnorr together a new price for the oracle to accept it. Is always >50% of number of validators
+
+
+### Challenge reward
+
+The ETH reward you get when you challenge an invalid poke. Used to incentivize (an example) MEV searchers to monitor Chronicles oracles
+
 
 ### Validator (Feed)
 
