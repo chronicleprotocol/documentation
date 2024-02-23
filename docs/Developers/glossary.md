@@ -1,18 +1,19 @@
 # Terminology
 
 
-Here is alist of some terminology you may find helpful as you explore our repositories. 
+Here is a growing list of some terminology you may find helpful as you explore our repositories. 
 
 ### opPoke
 
-An opPoke reference refers to an Optimistic poke. [Deeper Dive](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe)
+An opPoke reference refers to an Optimistic poke [More info here](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe)
 
 ### opChallenge
 
-Function to challenge an optimistic poke. If challenge succeeds, we will pay an ETH reward
+Function to challenge an optimistic poke. A public callable opChallenge() function can be called at any time. The function verifies the current optimistically poked data and, if the Schnorr signature verification succeeds, finalizes the data. However, if the Schnorr signature verification fails, the feed bound to the data is automatically diss'ed, i.e. removed from the whitelist, and the data deleted. [More info here](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe)
 
 
 ### wat 
+
 Oracle identifier; mostly asset pairs, eg ETH/USD, but can also be something else, an example could be DSR/RATE, which is MakerDAO's sDAI interest rate
 
 ### bar

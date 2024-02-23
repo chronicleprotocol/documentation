@@ -2,6 +2,7 @@
 
 The following is an example of our IChronicle.sol contract, please see the comments under each function to better understand the utility each function provides. 
 
+
 ```bash
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
@@ -45,3 +46,5 @@ view
 returns (bool isValid, uint value, uint age);
 }
 ```
+
+
