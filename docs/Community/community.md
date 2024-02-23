@@ -8,4 +8,8 @@
 
 [Github](https://github.com/chronicleprotocol)
 
+[Warpcast](https://warpcast.com/chroniclelabs)
+
+[Reddit](https://www.reddit.com/r/chronicleprotocol/)
+
 <!-- Add a feedback form here:  -->
