@@ -2,7 +2,9 @@
 
 ### Chronicle + Remix 
 
-Below is contract example which you can easily deploy on REMIX, see instructions below.
+A contract example named OracleReader.sol which you can easily deploy on REMIX.
+
+See below for details.
 
 ```bash
 // SPDX-License-Identifier: MIT
@@ -59,5 +61,19 @@ interface ISelfKisser {
     function selfKiss(address oracle) external;
 }
 ```
+
+Ensure you're enviroment is set to Remix VM - Sepolia Fork (since this example has been hardcoded to Sepolia) 
+```
+@dev Addresses in this contract are hardcoded for the Sepolia testnet.
+ For other supported networks, see https://docs.chroniclelabs.org/.
+ 
+```
+
 ![Example banner](../../../static/img/remix_deploy.png)
+
+Deploy the OracleReader.sol contract and you should see you're successfully deployed contracts showing
+- chronicle 
+- read
+- selfKisser
+
 ![Example banner](../../../static/img/remix_result.png)

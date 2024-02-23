@@ -1,15 +1,18 @@
-# Boiler Plate
+# Boilerplate
 
-## Scaffold Eth 2 
+## Scaffold Eth 2 + Chronicle
 
 Please refer to the following github repo to take advantage of the boiler plate we have created in conjuction with scaffold eth 2. 
 link: https://github.com/chronicleprotocol/scaffold-oracle-reader
 
 The following repo has a cooked in OracleReader contract. 
 Follow the path to view the contract 
-packages => hardhat => contracts => OracleReader.sol
+- packages
+    - hardhat
+        - contracts
+            - OracleReader.sol
 
-below is an example of the contract cooked into the repo
+    Below is an example of the contract cooked into the repo
 
 ```
 // SPDX-License-Identifier: MIT
@@ -90,4 +93,8 @@ If you would run a sepolia fork and deploy the contract now via
 
 ```yarn deploy --tags OracleReader```
 
-(add network switching)
+:::tip
+Please note as the project currently stands, you must switch to the Sepolia network using hardhat.
+
+:::
+

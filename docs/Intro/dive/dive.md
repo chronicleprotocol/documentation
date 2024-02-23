@@ -1,10 +1,14 @@
  # Architecture
 
-  The Chronicle's Oracle protocol comprises a distributed architecture spanning various on-chain and off-chain components. The diagram below highlights both types of components, with off-chain components depicted with a green background on the left-hand side, and on-chain components with a beige background on the right-hand side. Origins, such as primary data sources, can exist on both on-chain and off-chain layers.
+  The Chronicle's Oracle protocol comprises a distributed architecture spanning both on-chain and off-chain components. The diagram below highlights both types of components, with off-chain components depicted with a green on the left-hand side, and on-chain components (purple) on the right-hand side. 
+  
+  Origins, such as primary data sources, can exist on both on-chain and off-chain layers.
 
-    ![Example banner](../../static/img/diagram.png)
+    ![Example banner](../../../static/img/diagram.png)
 
- ## On-Chain components
+    To read in further detail about our approach to on-chain and off-chain usage please view the sub menu options under Architecture.
+
+ <!-- ## On-Chain Components
 
     - **WatRegistry** is a Smart Contract designed to manage data models, particularly in the context of MultiSig (multi-signature) validation. Here's a breakdown of the information it stores for each data model:
 
@@ -35,4 +39,4 @@
 
     You can find your token name by using the search box or by selecting your preferred blockchain from the filter located in the top-right corner (see Figure below).
 
-    ![Example banner](../../static/img/dashboard.png)
+    ![Example banner](../../../static/img/dashboard.png) -->
