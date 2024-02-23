@@ -7,11 +7,12 @@ link: https://github.com/chronicleprotocol/scaffold-oracle-reader
 
 The following repo has a cooked in OracleReader contract. 
 Follow the path to view the contract 
+```
 - packages
     - hardhat
         - contracts
             - OracleReader.sol
-
+```
     Below is an example of the contract cooked into the repo
 
 ```
