@@ -69,11 +69,19 @@ Ensure you're enviroment is set to Remix VM - Sepolia Fork (since this example h
  
 ```
 
-![Example banner](../../../static/img/remix_deploy.png)
+import deploy from '../../../static/img/remix_deploy.png'
+import result from '../../../static/img/remix_result.png'
+
+<div class="text--center"> 
+<img src={deploy} alt="remix deploy image" style={{width: 300}} />
+</div>
+<!-- ![Example banner](../../../static/img/remix_deploy.png) -->
 
 Deploy the OracleReader.sol contract and you should see you're successfully deployed contracts showing
 - chronicle 
 - read
 - selfKisser
-
-![Example banner](../../../static/img/remix_result.png)
+<div class="text--center"> 
+<img src={result} alt="remix deploy image" style={{width: 300}} />
+</div>
+<!-- ![Example banner](../../../static/img/remix_result.png) -->
