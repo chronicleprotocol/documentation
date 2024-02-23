@@ -30,6 +30,14 @@ Scribe uses a novel application of Schnorr Signature cryptography, a signature, 
 
 The Chronicle Scribe Oracle interface is plug-and-play with Chainlink and Maker Oracles, providing a smooth transition for developers used to these platforms.
 
+## Why this matters
+
+The original ECDSA design created a tradeoff for Oracle designers. The more signers or validators that an Oracle protocol has, the more it would cost the Oracle builder/operator to update the latest reported data of the Oracle.
+
+This is because every signer or validator must individually sign ‘the message’ to attest to its integrity.
+
+This ultimately meant those looking to utilize oracles had to consider the pros and cons when it came to the importance of cost, speed, and decentralization. 
+
 ### Cheap-to-operate Oracle
 
 - <b>Pro:</b> A low cost to update the Oracle (and therefore a low operating cost for the Oracle provider). This is achieved by having less signers attesting to the data.
@@ -44,13 +52,22 @@ The Chronicle Scribe Oracle interface is plug-and-play with Chainlink and Maker 
 - <b>Con:</b> A high cost to update the Oracle
 
 
+### Enter Scribe
 
-All data delivered by a Chronicle Oracle on mainnet is verifiable via The Chronicle Dashboard.
-Scribe Public Repo: https://github.com/chronicleprotocol/scribe
+The goal with Scribe was to eliminate this tradeoff. Creating the first Oracle that could support a huge number of validators and post updated data on-chain at a low cost.
+
+The result is an Oracle that can have unlimited validators and costs 6x less to update than Chainlink, and 3.5x less than Pyth (on L1 & L2), making it the most secure, decentralized, and cost-efficient option available.
 
 
-![Example banner](./../../static/img/scribe.png)
+To read more on Scribe, please see the links below
+<!-- All data delivered by a Chronicle Oracle on mainnet is verifiable via The Chronicle Dashboard.
+Scribe Public Repo: https://github.com/chronicleprotocol/scribe -->
 
 
-### Blog post
-"What is Scribe? The novel Oracle by Chronicle" https://chroniclelabs.org/blog/what-is-scribe-the-novel-oracle-by-chronicle
+<!-- ![Example banner](./../../static/img/scribe.png) -->
+#### **More on Scribe**
+
+- [Eth Magician Post](https://ethereum-magicians.org/t/an-efficient-schnorr-multi-signature-implementation/15510)
+- [Twitter Thread](https://twitter.com/merkleplant_eth/status/1693652385980379593)
+- [Scribe's docs](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md)
+- [What is Scribe? The novel Oracle by Chronicle](https://chroniclelabs.org/blog/what-is-scribe-the-novel-oracle-by-chronicle)

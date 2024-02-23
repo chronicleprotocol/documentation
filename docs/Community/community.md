@@ -8,4 +8,4 @@ Twitter https://twitter.com/ChronicleLabs
 
 Github https://github.com/chronicleprotocol
 
-Add a feedback form here: 
+<!-- Add a feedback form here:  -->
