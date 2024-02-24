@@ -11,4 +11,4 @@ This documentation covers how to run a validator as part of the Chronicle Protoc
 
 Oracles are used to bring real-world data to smart contracts. By running a validator, you are helping to make smart contracts more powerful and versatile.
 
-//test
+<!-- test -->
