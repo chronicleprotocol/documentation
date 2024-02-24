@@ -95,13 +95,21 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Validators',
-                to: '/category/validators',
+                label: 'Overview',
+                to:'/category/overview',
+              },{
+                label: 'Developers',
+                to:'/category/developers',
               },
               {
                 label: 'Hackathons',
                 to: '/category/hackathons',
               },
+              {
+                label: 'Validators',
+                to: '/category/validators',
+              },
+             
             ],
           },
           {

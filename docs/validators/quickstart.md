@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Quickstart
 
+This documentation covers how to run a validator as part of the Chronicle Protocol oracle network. Running a validator is a great way to contribute to the network.
+
+Oracles are used to bring real-world data to smart contracts. By running a validator, you are helping to make smart contracts more powerful and versatile.
+
 This will run a complete end-to-end installation required for running a Chronicle Validator.
 
 It will attempt to install:
