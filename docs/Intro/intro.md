@@ -5,8 +5,6 @@ sidebar_position: 1
 
 # Understanding Chronicle
 
-### Ensure trust through verification.
-
 Cost efficient
 Verifiable 
 Agnostic 
