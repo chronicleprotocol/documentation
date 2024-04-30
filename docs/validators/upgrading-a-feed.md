@@ -4,11 +4,38 @@ sidebar_position: 3
 
 # Upgrading a Validator
 
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.feed%5B0%5D.version&label=Latest%20Chart&color=green)
+:::caution
+Please be aware that the latest helm chart has been renamed from `feed` to `validator`. Please use the `upgrade.sh` script to upgrade your validator to the latest version. This version embeds `musig` into the `ghost` pod. The upgrader script will clean up the generated `values.yaml` file and remove the unecessary musig values.
+:::
+
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Latest%20Chart&color=green)
 
 In order to upgrade a validator to the latest version, we will need to run a couple helm commands.
+## Upgrade Helper Script
 
-## TL;DR
+To simplify the upgrade process, we have created a helper script that will upgrade your validator to the latest version. 
+
+This script will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator` on your feed release, with any updated input variables.
+
+:::caution
+Please use the correct `FEED_NAME`, which should be the same as your helm release name, if deployed using the `install.sh` script previously
+:::
+
+```
+ssh <SERVER_IP>
+su - <FEED_USERNAME>
+export FEED_NAME=my-feed
+wget https://raw.githubusercontent.com/chronicleprotocol/scripts/main/feeds/k3s-install/upgrade.sh
+chmod a+x upgrade.sh
+./upgrade.sh
+```
+
+:::caution
+Please use the correct `FEED_USERNAME`, and `FEED_NAME` according to your installation
+:::
+
+
+## Manual process TL;DR
 
 ```
 ssh <SERVER_IP>
@@ -101,9 +128,9 @@ NOTES:
 Verify the chart version has changed and matches what the latest feed version:
 
 ```
-helm list -n $FEED_NAME 
-NAME     NAMESPACE    	REVISION	UPDATED                                	STATUS  	CHART     	APP VERSION
-my-feed	 my-feed	11      	2023-10-12 08:41:27.609764776 +0000 UTC	deployed	feed-0.2.8	2.0.0     
+helm list -n $FEED_NAME
+NAME     	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART          	APP VERSION
+validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.1	0.36.0   
 ```
 
 #### Verify the new pods are running:
@@ -118,9 +145,6 @@ kubectl get pods -n $FEED_NAME
 kubectl logs -n $FEED_NAME deployments/ghost
 ```
 
-```
-kubectl logs -n $FEED_NAME deployments/musig
-```
 ```
 kubectl logs -n $FEED_NAME deployments/tor-proxy
 ```
