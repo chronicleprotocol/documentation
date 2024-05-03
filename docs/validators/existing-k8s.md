@@ -2,6 +2,12 @@
 sidebar_position: 2
 ---
 # Existing K8s
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
+
+Helm Chart details:
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/validator/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/validator/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+
+<br/>
 
 ### Requirements
 
@@ -128,7 +134,6 @@ ghost:
 
   # ethereum RPC client (should always be ETH mainnet)
   ethRpcUrl: "https://my.eth.rpc"
-  ethChainId: 1
 
   env:
     normal:
@@ -137,23 +142,6 @@ ghost:
 
   # default RPC client (target chain, eth mainnet or sepolia eg)
   rpcUrl: "https://my.eth.rpc"
-  chainId: 1
-
-musig:
-  logLevel: info
-  ethConfig:
-    ethFrom:
-      existingSecret: 'somesecretname-eth-keys'
-      key: "ethFrom"
-    ethKeys:
-      existingSecret: 'somesecretname-eth-keys'
-      key: "ethKeyStore"
-    ethPass:
-      existingSecret: 'somesecretname-eth-keys'
-      key: "ethPass"
-  
-  ethRpcUrl: "https://my.eth.rpc"
-  ethChainId: 1
 
   env:
     normal:
@@ -172,7 +160,7 @@ Then install the helm release using this values file:
 
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/feed --namespace my-feed-namespace
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.3.1
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
@@ -204,30 +192,6 @@ time="2023-08-30T13:47:15Z" level=info msg=Bootstrap address=/dns/spire-bootstra
 time="2023-08-30T13:47:15Z" level=info msg="SOCKS5 proxy" address="tor-proxy:9050" tag=CONFIG_WEB_API
 time="2023-08-30T13:47:16Z" level=debug msg=Call duration=861.851113ms method=eth_call name="https://eth.public-rpc.com" tag=RPCSPLITTER
 time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-
-```
-
-
-```bash
-kubectl logs deployments/musig 
-time="2023-08-30T13:47:15Z" level=info msg="Ethereum Key" address=0x3fe0e49b5daa14f4ddc60e296270cedd702ce76c name=default tag=CONFIG_ETHEREUM
-time="2023-08-30T13:47:15Z" level=info msg="Ethereum Client" name=default tag=CONFIG_ETHEREUM url="https://eth.public-rpc.com"
-time="2023-08-30T13:47:15Z" level=info msg=Feed address=0x0....................................... tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg=Feed address=0x5....................................... tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg=Feed address=0x7....................................... tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg=Feed address=0xc....................................... tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg=Feed address=0x3....................................... tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg=Bootstrap address=/dns/spire-bootstrap1.domain.com/tcp/8000/p2p/12D111222333aaaaabbbbbccccdddddeee tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg="SOCKS5 proxy" address="tor-proxy:9050" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
 time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
 
 ```

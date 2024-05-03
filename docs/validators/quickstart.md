@@ -15,7 +15,7 @@ It will attempt to install:
 * [k3s](https://docs.k3s.io/installation)
 * [Helm v3](https://helm.sh/docs/intro/install/)
 * [chronicleprotocol/keeman](https://github.com/chronicleprotocol/keeman) - needed to generate your feeds `.onion` address and keys
-* Generate `generated-values.yaml` needed to install the [`chronicle/feed`](https://github.com/chronicleprotocol/charts/tree/main/charts/feed) helm chart
+* Generate `generated-values.yaml` needed to install the [`chronicle/validator`](https://github.com/chronicleprotocol/charts/tree/main/charts/validator) helm chart
 
 ## Requirements:
 
@@ -29,7 +29,6 @@ It will attempt to install:
 |----------|------|----------------|
 | TCP     | 6443  | K3s supervisor and Kubernetes API Server |
 | TCP     | 8000  | chronicle/ghost |
-| TCP     | 8001  | chronicle/musig |
 | UDP     | 8472  | Required for Flannel VXLAN |
 | TCP     | 10250 | Kubelet metrics |
 | SSH     | 22    | SSH access to the host |
@@ -81,7 +80,7 @@ You can provide these variables with `.env` as well Take a look at the `.env` se
 
 ```bash
 cd /tmp
-wget https://raw.githubusercontent.com/chronicleprotocol/scripts/main/feeds/k3s-install/install.sh 
+wget -N https://raw.githubusercontent.com/chronicleprotocol/scripts/main/feeds/k3s-install/install.sh 
 chmod a+x install.sh
 ```
 
@@ -183,7 +182,7 @@ myuniquetoronionaddress.onion
 [INFO]:..........generate helm values file..........
 You need to install the helm chart with the following command:
 -------------------------------------------------------------------------------------------------------------------------------
-|   helm install "demo" -f "/home/ubuntu/demo/generated-values.yaml"  chronicle/feed --namespace "demo"       |
+|   helm install "demo" -f "/home/ubuntu/demo/generated-values.yaml"  chronicle/validator --namespace "demo"       |
 -------------------------------------------------------------------------------------------------------------------------------
 [INFO]:..........create helm release..........
 "chronicle" has been added to your repositories
@@ -205,7 +204,7 @@ NOTES:
 The installation script will print out your feeds `.onion` address. Please provide this address to Chronicle so it can be whitelisted to receive WEB\_API traffic.
 
 :::tip
-The install script can be run multiple times with the same values. It will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/feed` on your feed release, with any updated input variables. **Note**: it will delete secrets in an existing namespace, and recreate them as, secrets are generally immutable
+The install script can be run multiple times with the same values. It will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator` on your feed release, with any updated input variables. **Note**: it will delete secrets in an existing namespace, and recreate them as, secrets are generally immutable
 :::
 
 ### Verify that the helm release has been successful:
@@ -215,7 +214,6 @@ The install script can be run multiple times with the same values. It will attem
 ```bash
 kubectl get pods -n demo
 NAME                         READY   STATUS    RESTARTS   AGE
-musig-77949f8d-lf6pr         1/1     Running   0          29s
 ghost-fd4689bf7-ffnk9        1/1     Running   0          29s
 tor-proxy-55864975f9-2tshw   1/1     Running   0          29s
 ```
@@ -224,7 +222,6 @@ tor-proxy-55864975f9-2tshw   1/1     Running   0          29s
 
 ```bash
 kubectl logs -n demo deployment/ghost
-kubectl logs -n demo deployment/musig
 kubectl logs -n demo deployment/tor-proxy
 ```
 
@@ -234,12 +231,11 @@ kubectl logs -n demo deployment/tor-proxy
 kubectl get svc -n demo
 NAME         TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                         AGE
 tor-proxy    ClusterIP      10.43.235.27   <none>          9050/TCP                        2m
-musig        LoadBalancer   10.43.201.18   64.46.13.31    8001:30317/TCP,8080:31473/TCP   2m
 ghost        LoadBalancer   10.43.115.5    64.46.13.31    8000:31745/TCP                  2m
 
 ```
 
-Make sure that the `EXTERNAL-IP` shown for the `musig` and `ghost` services, matches your server's IP address.
+Make sure that the `EXTERNAL-IP` shown for the `ghost` service, matches your server's IP address.
 
 #### You can view the eth secrets, and tor secrets for the newly installed feed as shown:
 
@@ -289,7 +285,7 @@ ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm upgrade <feed> -f /home/chronicle/<feed>/generated-values.yaml -n <feed> chronicle/feed
+helm upgrade <feed> -f /home/chronicle/<feed>/generated-values.yaml -n <feed> chronicle/validator
 ```
 
 Add the helm repo if needed:
@@ -318,42 +314,19 @@ ghost:
   env:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/64.46.13.31'
-
-  ethRpcUrl: "https://eth.llamarpc.com"
-  ethChainId: 1
-
-  rpcUrl: "https://eth.llamarpc.com"
-  chainId: 1
-
-musig:
-  logLevel: "debug"
-  ethConfig:
-    ethFrom:
-      existingSecret: 'demo-eth-keys'
-      key: "ethFrom"
-    ethKeys:
-      existingSecret: 'demo-eth-keys'
-      key: "ethKeyStore"
-    ethPass:
-      existingSecret: 'demo-eth-keys'
-      key: "ethPass"
-
-  env:
-    normal:
-      CFG_LIBP2P_EXTERNAL_ADDR: "/ip4/64.46.13.31"
       CFG_WEB_URL: "myuniquetoronionaddress.onion"
 
   ethRpcUrl: "https://eth.llamarpc.com"
-  ethChainId: 1
+  rpcUrl: "https://eth.llamarpc.com"
 
 tor-proxy:
   torConfig:
     existingSecret: 'demo-tor-keys'
 ```
 
-You can view all values available for the [feed chart](https://github.com/chronicleprotocol/charts/blob/main/charts/feed/README.md#values), however the values provided with the installer are enough to get you going.
+You can view all values available for the [validator chart](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/README.md#values), however the values provided with the installer are enough to get you going.
 
-A useful value to add is `.Values.{ghost,musig}.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
+A useful value to add is `.Values.ghost.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
 
 With a valid `values.yaml` file created, you should be able to install a feed:
 
@@ -362,7 +335,7 @@ helm install my-feed-name \
   --namespace my-feed-namespace \
   --create-namespace \
   -f path/to/values.yaml \
- chronicle/feed
+ chronicle/validator
 ```
 
 or to upgrade an existing helm release:
@@ -371,7 +344,7 @@ or to upgrade an existing helm release:
 helm upgrade my-feed-name \
   --namespace my-feed-namespace \
   -f path/to/values.yaml \
- chronicle/feed
+ chronicle/validator
 ```
 
 :::tip
@@ -413,13 +386,12 @@ Make sure that you set `FEED_NAME` to match your feed in question, and run these
 export FEED_NAME=<CHANGE_ME>
 cd /tmp
 kubectl logs deployment/ghost -n $FEED_NAME > ghost.log
-kubectl logs deployment/musig -n $FEED_NAME > musig.log
 kubectl logs deployment/tor-proxy -n $FEED_NAME > tor-proxy.log
 kubectl exec -ti deployments/tor-proxy -n $FEED_NAME -- cat /usr/local/etc/tor/torrc > torrc
 kubectl get svc -n --all-namespaces > services.log
 kubectl get pods --all-namespaces > all-pods.log
 helm list --all-namespaces > all-helm-releases.log
-tar czf feed-debug.tar.gz torrc ghost.log musig.log tor-proxy.log services.log all-helm-releases.log all-pods.log $HOME/$FEED_NAME/generated-values.yaml
+tar czf feed-debug.tar.gz torrc ghost.log tor-proxy.log services.log all-helm-releases.log all-pods.log $HOME/$FEED_NAME/generated-values.yaml
 ```
 
 The above commands will get logs for each of the pods running, the state of the services, as well as the generated-values.yaml for your feed, and bundle it into a tarball `feed-debug.tar.gz` (Please change the values / paths accordingly)
