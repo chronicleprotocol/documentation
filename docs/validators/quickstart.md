@@ -19,7 +19,7 @@ It will attempt to install:
 
 ## Requirements:
 
-* Ubuntu 22.04 / Ubuntu 23.04
+* Ubuntu 22.04 / Ubuntu 23.04 / Ubuntu 24.04
 * 2Gb RAM
 * 20Gb storage
 * Server needs to be deployed into a public subnet (ie have a public IP)
