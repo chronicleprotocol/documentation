@@ -1,20 +1,43 @@
 ---
 sidebar_position: 3
 ---
+Helm Chart details:
 
-# Upgrading a Validator
+![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
+
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+
+<br/>
+
+## Upgrading a Validator
+
+### TL;DR
+
+If you are upgrading from 0.3.x to 0.3.y, simply updating the chart version will suffice:
+
+```
+ssh <SERVER_IP>
+su - <FEED_USERNAME>
+export FEED_NAME=my-feed
+```
+```
+helm repo update
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.2
+```
+
+:::danger
+If upgrading from 0.2.x to 0.3.x, please read below!
+:::
+
+## Upgrading from 0.2.x to 0.3.x
 
 :::warning
 Please be aware that the latest helm chart has been renamed from `feed` to `validator`. Please use the `upgrade.sh` script to upgrade your validator to the latest version. This version embeds `musig` into the `ghost` pod. The upgrader script will clean up the generated `values.yaml` file and remove the unecessary musig values.
 :::
 
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
-
-<br/>
-
 In order to upgrade a validator to the latest version, we will need to run a couple helm commands.
 
-## Upgrade Helper Script
+### Upgrade Helper Script
 
 To simplify the upgrade process, we have created a helper script that will upgrade your validator to the latest version. 
 
@@ -39,7 +62,7 @@ chmod a+x upgrade.sh
 
 ---
 
-## Manual process TL;DR
+### Manual process TL;DR
 
 ```
 ssh <SERVER_IP>
@@ -123,7 +146,7 @@ tor-proxy:
 Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for secrets for `ethConfig` and `torConfig`, `ethRpcUrl` and `rpcUrl`.
 :::
 
-#### Notable changes include:
+### Notable changes include:
 
 - `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be remove from the values.yaml file
 - `ghost.env.normal.CFG_LIBP2P_EXTERNAL_ADDR` needs to be copied from `musig.env.normal.CFG_LIBP2P_EXTERNAL_ADDR`
@@ -142,18 +165,17 @@ helm repo update
 Now we can update to the latest version.
 
 The latest chart version is:
-
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Latest%20Chart&color=green)
 
 using this version, we can upgrade our validator:
 
 :::danger
-Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.3.1`
+Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.3.2`
 The charts released are production ready, and tested thoroughly
 :::
 
 ```
-helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.1
+helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.2
 ```
 
 You should see output like this:
@@ -177,7 +199,7 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME
 NAME     	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART          	APP VERSION
-validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.1	0.36.0   
+validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.2	0.37.1   
 ```
 
 #### Verify the new pods are running:
