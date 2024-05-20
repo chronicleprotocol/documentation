@@ -22,7 +22,7 @@ export FEED_NAME=my-feed
 ```
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.2
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.3
 ```
 
 :::danger
@@ -170,12 +170,12 @@ The latest chart version is:
 using this version, we can upgrade our validator:
 
 :::danger
-Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.3.2`
+Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.3.3`
 The charts released are production ready, and tested thoroughly
 :::
 
 ```
-helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.2
+helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.3
 ```
 
 You should see output like this:
@@ -199,7 +199,7 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME
 NAME     	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART          	APP VERSION
-validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.2	0.37.1   
+validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.3	0.37.2   
 ```
 
 #### Verify the new pods are running:
