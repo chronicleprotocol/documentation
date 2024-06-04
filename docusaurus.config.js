@@ -153,6 +153,13 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: '6L542OJ1F7',
+        apiKey: '8f49f144bcf82c3ee9473ccdf4b62abe',
+        indexName: 'chroniclelabs',
+        contextualSearch: false,
+      },
     }),
 };
 
