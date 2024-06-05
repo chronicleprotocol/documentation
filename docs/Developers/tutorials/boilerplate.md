@@ -2,8 +2,8 @@
 
 ## Scaffold Eth 2 + Chronicle
 
-Please refer to the following github repo to take advantage of the boiler plate we have created in conjuction with scaffold eth 2. 
-link: https://github.com/chronicleprotocol/scaffold-oracle-reader
+Please refer to the [following GitHub repo](https://github.com/chronicleprotocol/scaffold-oracle-reader) to take advantage of the boilerplate we have created in conjuction with Scaffold eth 2. 
+
 
 The following repo has a cooked in OracleReader contract. 
 Follow the path to view the contract 
@@ -15,7 +15,7 @@ Follow the path to view the contract
 ```
     Below is an example of the contract cooked into the repo
 
-```
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
 
@@ -67,22 +67,20 @@ interface ISelfKisser {
 
 The .env.example file also includes some boiler plate code to get you up and running sooner than later 
 
-```
-# Template for Hardhat environment variables.
+```js
+// Template for Hardhat environment variables.
 
-# To use this template, copy this file, rename it .env, and fill in the values.
+// To use this template, copy this file, rename it .env, and fill in the values.
 
-# If not set, we provide default values (check `hardhat.config.ts`) so developers can start prototyping out of the box,
-# but we recommend getting your own API Keys for Production Apps.
+// If not set, we provide default values (check `hardhat.config.ts`) so developers can start prototyping out of the box. However, we recommend getting your own API Keys for Production Apps.
 
-# The Chronicle ETH/USD oracle on Sepolia.
-
+// The Chronicle ETH/USD oracle on Sepolia.
 CHRONICLE_ORACLE=0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603
 
-# The Chronicle SelfKisser contract on Sepolia.
+// The Chronicle SelfKisser contract on Sepolia.
 SELF_KISSER=0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d
 
-# To access the values stored in this .env file you can use: process.env.VARIABLENAME
+// To access the values stored in this .env file you can use: process.env.VARIABLENAME
 ALCHEMY_API_KEY=
 DEPLOYER_PRIVATE_KEY=
 ETHERSCAN_API_KEY=
@@ -90,12 +88,12 @@ ETHERSCAN_API_KEY=
 
 The ETH/USD oracle and self-kisser addresses have been added to the .env.example file.
 
-If you would run a sepolia fork and deploy the contract now via 
+If you would run a Sepolia fork, you can deploy the contract now via: 
 
 ```yarn deploy --tags OracleReader```
 
 :::tip
-Please note as the project currently stands, you must switch to the Sepolia network using hardhat.
+Please note as the project currently stands, you must switch to the Sepolia network using Hardhat.
 
 :::
 
