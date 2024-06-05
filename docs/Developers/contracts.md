@@ -3,7 +3,7 @@
 
 The following is an example of our [IChronicle.sol](https://github.com/chronicleprotocol/chronicle-std/blob/ea9afe78a1d33245afcdbcc3f530ee9cbd7cde28/src/IChronicle.sol) contract, please see the comments under each function to better understand the utility each function provides. 
 
-```js
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.16;

@@ -6,7 +6,7 @@ A contract example named OracleReader.sol which you can easily deploy on REMIX.
 
 See below for details.
 
-```bash
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
 

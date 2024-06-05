@@ -15,7 +15,7 @@ Follow the path to view the contract
 ```
     Below is an example of the contract cooked into the repo
 
-```js
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
 
