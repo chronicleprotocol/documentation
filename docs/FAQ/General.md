@@ -23,7 +23,7 @@ The data originates from primary on-chain sources such as DEXes (e.g., Uniswap, 
 A push oracle proactively provides data to smart contracts without being explicitly requested, whenever a condition or event happens (sometimes referred to as a threshold or a heartbeat). On the other hand, PULL oracles require smart contracts to request data explicitly. The data is pulled from external sources in response to a query from the smart contract. 
 
 ## Does Chronicle use a PULL or a PUSH model for its Oracles?
-Chronicle currently operates using a PUSH model. We plan to implement a PULL model in the near future.
+Chronicle operates using a PUSH model. 
 
 ## Who are the validators for Chronicle?
 The validators of Chronicle are represented by a community of the leading blockchain protocols including:
@@ -32,4 +32,4 @@ This approach to validators is unique to Chronicle, and ensures that the Oracle 
 
 ## Does the Chronicle dashboard pull data from the Chronicle Archive?
 
-The Dashboard pulls from a combination of on-chain sources and off-chain network traffic that is the basis for the Oracle updates. Specifically, the feeds pass cryptographically (ECDSA)-signed price messages that are then computed into a median value for on-chain updates. Those messages are ephemeral, so our archiving system saves them in MongoDB for historical preservation.
+The Dashboard pulls from a combination of on-chain sources and off-chain network traffic that is the basis for the Oracle updates. Specifically, the feeds pass cryptographically (ECDSA)-signed price messages that are then computed into a median value for on-chain updates. Those messages are ephemeral, so our archiving system saves them in a database for historical preservation.
