@@ -181,5 +181,5 @@ time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:88
 ```
 
 :::warning
-If you encounter any issues please refer to the [Trouble Shooting](/troubleshooting.md) docs
+If you encounter any issues please refer to the [Trouble Shooting](troubleshooting) docs
 :::

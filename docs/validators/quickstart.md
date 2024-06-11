@@ -356,5 +356,5 @@ you can perform a `dry-run` by passing `--debug --dry-run` to the `helm install`
 :::
 
 :::warning
-If you encounter any issues please refer to the [Trouble Shooting](/troubleshooting.md) docs
+If you encounter any issues please refer to the [Trouble Shooting](troubleshooting) docs
 :::

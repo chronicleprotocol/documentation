@@ -234,5 +234,5 @@ kubectl logs -n demo deployment/ghost-tor-daemon
 and you're done!
 
 :::warning
-If you encounter any issues please refer to the [Trouble Shooting](/troubleshooting.md) docs
+If you encounter any issues please refer to the [Trouble Shooting](troubleshooting) docs
 :::
