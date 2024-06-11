@@ -22,7 +22,7 @@ export FEED_NAME=my-feed
 ```
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.3
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.4
 ```
 
 :::danger
@@ -137,13 +137,10 @@ ghost:
   ethRpcUrl: "https://MY_L1_RPC_URL"
   rpcUrl: "https://MY_L1_RPC_URL"
 
-tor-proxy:
-  torConfig:
-    existingSecret: 'demo-tor-keys'
 ```
 
 :::danger
-Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for secrets for `ethConfig` and `torConfig`, `ethRpcUrl` and `rpcUrl`.
+Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for secrets for `ethConfig`, `ethRpcUrl` and `rpcUrl`.
 :::
 
 ### Notable changes include:
@@ -170,12 +167,12 @@ The latest chart version is:
 using this version, we can upgrade our validator:
 
 :::danger
-Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.3.3`
+Please ensure you pin the helm release to the lastest semver ChartVersion of the feed chart. eg `0.3.4`
 The charts released are production ready, and tested thoroughly
 :::
 
 ```
-helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.3
+helm upgrade $FEED_NAME -n $FEED_NAME -f $FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.4
 ```
 
 You should see output like this:
@@ -199,26 +196,43 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME
 NAME     	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART          	APP VERSION
-validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.3	0.37.2   
+validator	validator	3       	2024-04-30 18:49:58.843309576 +0000 UTC	deployed	validator-0.3.4	0.37.2   
 ```
 
-#### Verify the new pods are running:
+#### View all resources created in the namespace
+```bash
+kubectl  get pods,deployment,service,secrets,onion -n demo
+NAME                                   READY   STATUS    RESTARTS   AGE
+pod/ghost-tor-daemon-b77466d7f-flnm7   1/1     Running   0          4m28s
+pod/ghost-77b46586d5-fdcgm             1/1     Running   0          4m29s
 
+NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost-tor-daemon   1/1     1            1           4m28s
+deployment.apps/ghost              1/1     1            1           4m30s
+
+NAME                            TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                        AGE
+service/ghost-tor-svc           ClusterIP      10.43.197.59   <none>           8888/TCP                                       4m28s
+service/ghost-tor-metrics-svc   ClusterIP      10.43.85.148   <none>           9035/TCP                                       4m28s
+service/ghost                   LoadBalancer   10.43.21.41    64.46.13.31      8000:31359/TCP,9100:32481/TCP,8080:30963/TCP   4m30s
+
+NAME                                TYPE                                           DATA   AGE
+secret/demo-eth-keys                Opaque                                         3      5m2s
+secret/ghost-tor-auth               tor.k8s.torproject.org/authorized-clients-v3   0      4m29s
+secret/ghost-tor-secret             tor.k8s.torproject.org/onion-v3                5      4m29s
+secret/sh.helm.release.v1.demo.v1   helm.sh/release.v1                             1      4m30s
+
+NAME                                        HOSTNAME                                                         AGE
+onionservice.tor.k8s.torproject.org/ghost   areallylongonaddressescreatedformebythetorcontrollercrd.onion    4m30s
 ```
-kubectl get pods -n $FEED_NAME
+#### View pod logs:
+
+```bash
+kubectl logs -n demo deployment/ghost
+kubectl logs -n demo deployment/ghost-tor-daemon
 ```
 
-#### Double check the pod logs:
-
-```
-kubectl logs -n $FEED_NAME deployments/ghost
-```
-
-```
-kubectl logs -n $FEED_NAME deployments/tor-proxy
-```
 and you're done!
 
 :::warning
-If you encounter any issues please refer to the [Trouble Shooting](https://docs.chroniclelabs.org/validators/quickstart#trouble-shooting) steps
+If you encounter any issues please refer to the [Trouble Shooting](/troubleshooting.md) docs
 :::
