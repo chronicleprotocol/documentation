@@ -1,7 +1,12 @@
 ---
 sidebar_position: 1
 ---
-Helm Chart details:
+
+# Quickstart
+
+A single script installation from baremetal to running validator, using k3s.
+
+### Helm Chart details:
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
 
@@ -9,7 +14,6 @@ Helm Chart details:
 
 <br/>
 
-# Quickstart
 
 This documentation covers how to run a validator as part of the Chronicle Protocol oracle network. Running a validator is a great way to contribute to the network.
 
@@ -21,8 +25,9 @@ It will attempt to install:
 
 * [k3s](https://docs.k3s.io/installation)
 * [Helm v3](https://helm.sh/docs/intro/install/)
-* [chronicleprotocol/keeman](https://github.com/chronicleprotocol/keeman) - needed to generate your feeds `.onion` address and keys
 * Generate `generated-values.yaml` needed to install the [`chronicle/validator`](https://github.com/chronicleprotocol/charts/tree/main/charts/validator) helm chart
+* A tor daemon will be deployed using a [tor-controller](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml), which install some custom resource definitions. This is a requirement for the `WEB_API` transport layer which sends validator messages over tor networks. 
+
 
 ## Requirements:
 
@@ -37,6 +42,11 @@ It will attempt to install:
 | TCP     | 6443  | K3s supervisor and Kubernetes API Server |
 | TCP     | 8000  | chronicle/ghost |
 | UDP     | 8472  | Required for Flannel VXLAN |
+
+* Optional ports that need to be open:
+
+| Protocol | Port | Description |
+|----------|------|----------------|
 | TCP     | 10250 | Kubelet metrics |
 | SSH     | 22    | SSH access to the host |
 
@@ -44,11 +54,9 @@ It will attempt to install:
 This installation process assumes you have a fresh bare-bones ubuntu instance/VPS. If you need simple VPS hosting, we suggest using a provider like [Digital Ocean](https://digitalocean.com/), and spinning up a droplet, or [AWS EC2](https://aws.amazon.com/pm/ec2/) instance provided its in a public subnet. [Linode](https://www.vultr.com/), [Vultr](https://www.vultr.com/), [OVH](https://www.ovhcloud.com/en/) etc are also great providers.
 :::
 
-```ssh user@<myhostip>```
-
 ***
 
-## Installing using `install.sh`
+## Deploy using `install.sh`
 
 The script is interactive and will prompt you for some required information
 
@@ -68,8 +76,10 @@ Managed RPC providers can become costly if they are heavily utilized. We recomme
 
 There are alternative RPC providers that you can use as well which aim to be as decentralized as possible:
 
-- [https://www.nodies.app](https://www.nodies.app/)
 - [https://drpc.org](https://drpc.org/)
+- [https://www.nodies.app](https://www.nodies.app)
+- [https://www.grove.city](https://www.grove.city)
+- [https://blastapi.io](https://blastapi.io)
 - [https://ankr.com](https://ankr.com)
 
 
@@ -84,6 +94,14 @@ There are alternative RPC providers that you can use as well which aim to be as 
 You can provide these variables with `.env` as well Take a look at the `.env` section. The installer will create kubernetes secrets that are used in the helm release and feed services.
 
 ### Retrieve the installation script and make it executable
+
+First, ssh to the server:
+
+```ssh 
+user@<myhostip>
+```
+
+Download the install bash script:
 
 ```bash
 cd /tmp
@@ -112,11 +130,11 @@ However, if you are already doing this and still facing the issue, it might be d
 ### Execute the script
 
 ```bash
+su - <username>
 ubuntu@local:/tmp$ ./install.sh
 ```
 
-Complete output from the installer should look something like below (some bloat has been omitted for brevity/legibility)\
-
+Complete output from the installer should look something like below (some bloat has been omitted for brevity/legibility):
 
 ```bash
 ubuntu@local:/tmp$ ./install.sh 
@@ -161,12 +179,8 @@ Downloading https://get.helm.sh/helm-v3.12.3-linux-amd64.tar.gz
 .
 [INFO]  systemd: Starting k3s
 [SUCCESS]: k3s is now installed !!!
-[INFO]:..........Installing keeman.........
---2023-09-27 12:07:22--  https://github.com/chronicleprotocol/keeman/releases/download/v0.4.1/keeman_0.4.1_linux_amd64.tar.gz
 .
 .
-.
-[SUCCESS]: keeman is now installed !!!
 [INFO]:..........gather input variables.........
 [INFO]:..........installing k8s chronicle stack..........
 [INFO]:..........create namespace demo..........
@@ -176,15 +190,6 @@ secret/demo-eth-keys created
 -----------------------------------------------------------------------------------------------------
 This is your Feed address:
 0x0000000111112222233333444444555556666677
------------------------------------------------------------------------------------------------------
-[INFO]:..........create secret with TOR keys..........
-2023/09/27 12:07:26 entropy bit size: 4 * 32 = 128
-**[REDACTED OUTPUT]**
-2023/09/27 12:07:26 m/44'/60'/0'/0/0
-secret/demo-tor-keys created
------------------------------------------------------------------------------------------------------
-This is your .onion address:
-myuniquetoronionaddress.onion
 -----------------------------------------------------------------------------------------------------
 [INFO]:..........generate helm values file..........
 You need to install the helm chart with the following command:
@@ -208,7 +213,14 @@ NOTES:
 [SUCCESS]: setup complete!
 ```
 
-The installation script will print out your feeds `.onion` address. Please provide this address to Chronicle so it can be whitelisted to receive WEB\_API traffic.
+Once the installation is completed, you can retreieve your tor onion address using this command:
+
+```bash
+kubect get onion -n $NAME_SPACE
+```
+where `$NAME_SPACE` is the namespace where you deployed your validator in.
+
+> Please provide the `ETH_FROM` and `TOR onion` address to the Chronicle team so it can be whitelisted to receive `WEB_API` traffic.
 
 :::tip
 The install script can be run multiple times with the same values. It will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator` on your feed release, with any updated input variables. **Note**: it will delete secrets in an existing namespace, and recreate them as, secrets are generally immutable
@@ -216,42 +228,40 @@ The install script can be run multiple times with the same values. It will attem
 
 ### Verify that the helm release has been successful:
 
-#### Verify pods are running:
-
+#### View all resources created in the namespace
 ```bash
-kubectl get pods -n demo
-NAME                         READY   STATUS    RESTARTS   AGE
-ghost-fd4689bf7-ffnk9        1/1     Running   0          29s
-tor-proxy-55864975f9-2tshw   1/1     Running   0          29s
+kubectl  get pods,deployment,service,secrets,onion -n demo
+NAME                                   READY   STATUS    RESTARTS   AGE
+pod/ghost-tor-daemon-b77466d7f-flnm7   1/1     Running   0          4m28s
+pod/ghost-77b46586d5-fdcgm             1/1     Running   0          4m29s
+
+NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost-tor-daemon   1/1     1            1           4m28s
+deployment.apps/ghost              1/1     1            1           4m30s
+
+NAME                            TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                        AGE
+service/ghost-tor-svc           ClusterIP      10.43.197.59   <none>           8888/TCP                                       4m28s
+service/ghost-tor-metrics-svc   ClusterIP      10.43.85.148   <none>           9035/TCP                                       4m28s
+service/ghost                   LoadBalancer   10.43.21.41    64.46.13.31      8000:31359/TCP,9100:32481/TCP,8080:30963/TCP   4m30s
+
+NAME                                TYPE                                           DATA   AGE
+secret/demo-eth-keys                Opaque                                         3      5m2s
+secret/ghost-tor-auth               tor.k8s.torproject.org/authorized-clients-v3   0      4m29s
+secret/ghost-tor-secret             tor.k8s.torproject.org/onion-v3                5      4m29s
+secret/sh.helm.release.v1.demo.v1   helm.sh/release.v1                             1      4m30s
+
+NAME                                        HOSTNAME                                                         AGE
+onionservice.tor.k8s.torproject.org/ghost   areallylongonaddressescreatedformebythetorcontrollercrd.onion    4m30s
 ```
 
 #### View pod logs:
 
 ```bash
 kubectl logs -n demo deployment/ghost
-kubectl logs -n demo deployment/tor-proxy
-```
-
-#### Verify that the services are created, and show the correct External IP
-
-```bash
-kubectl get svc -n demo
-NAME         TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                         AGE
-tor-proxy    ClusterIP      10.43.235.27   <none>          9050/TCP                        2m
-ghost        LoadBalancer   10.43.115.5    64.46.13.31    8000:31745/TCP                  2m
-
+kubectl logs -n demo deployment/ghost-tor-daemon
 ```
 
 Make sure that the `EXTERNAL-IP` shown for the `ghost` service, matches your server's IP address.
-
-#### You can view the eth secrets, and tor secrets for the newly installed feed as shown:
-
-```bash
-kubectl get secrets -n demo
-NAME                              TYPE                             DATA   AGE
-demo-eth-keys                  Opaque                           3      3m
-demo-tor-keys                  Opaque                           3      3m
-```
 
 ### Install with \`.env\`
 
@@ -288,11 +298,12 @@ If the script fails to find any of these values, it will prompt you for them whe
 Make sure the `chronicle` helm repository has been added:
 
 ```bash
+export $VALIDATOR_NAME
 ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm upgrade <feed> -f /home/chronicle/<feed>/generated-values.yaml -n <feed> chronicle/validator
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator
 ```
 
 Add the helm repo if needed:
@@ -302,7 +313,7 @@ helm repo add chronicle https://chronicleprotocol.github.io/charts/
 helm repo update
 ```
 
-the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/<feed>`directory. Or you can create your own values.yaml file populated with config as show below:
+the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own values.yaml file populated with config as show below:
 
 ```
 ghost:
@@ -321,14 +332,10 @@ ghost:
   env:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/64.46.13.31'
-      CFG_WEB_URL: "myuniquetoronionaddress.onion"
 
   ethRpcUrl: "https://eth.llamarpc.com"
   rpcUrl: "https://eth.llamarpc.com"
 
-tor-proxy:
-  torConfig:
-    existingSecret: 'demo-tor-keys'
 ```
 
 You can view all values available for the [validator chart](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/README.md#values), however the values provided with the installer are enough to get you going.
@@ -338,8 +345,8 @@ A useful value to add is `.Values.ghost.logLevel`as show above. setting `logLeve
 With a valid `values.yaml` file created, you should be able to install a feed:
 
 ```bash
-helm install my-feed-name \
-  --namespace my-feed-namespace \
+helm install $VALIDATOR_NAME \
+  --namespace $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator
@@ -348,8 +355,8 @@ helm install my-feed-name \
 or to upgrade an existing helm release:
 
 ```bash
-helm upgrade my-feed-name \
-  --namespace my-feed-namespace \
+helm upgrade $VALIDATOR_NAME \
+  --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator
 ```
@@ -358,47 +365,6 @@ helm upgrade my-feed-name \
 you can perform a `dry-run` by passing `--debug --dry-run` to the `helm install`` `` ``/ ``helm upgrade`command. This will show you all resources that will be created or modified, and can be useful for catching issues before deploying.
 :::
 
-## Trouble shooting
-
-### Kubectl / helm commands fail
-
-If you receive an error as show below when trying to invoke `kubectl` or `helm` commands, it is most likely caused by the `KUBECONFIG` variable not being set.
-
-```bash
-WARN[0000] Unable to read /etc/rancher/k3s/k3s.yaml, please start server with --write-kubeconfig-mode to modify kube config permissions
-error: error loading config file "/etc/rancher/k3s/k3s.yaml": open /etc/rancher/k3s/k3s.yaml: permission denied
-```
-
-The installation script attempts to create `$HOME/.kube/config`  and sets this in the `$HOME/.bashrc`
-
-You made need to log out and log back in, to create a new shell terminal session which will contain the correct KUBECONFIG variable, or run `source ~/.bashrc` to reload you shell config, or manually set it with `export KUBECONFIG=~/.kube/config`
-
-NOTE: It is **not** advisable to run kubectl and helm commands as root (or `sudo kubectl ...` or `sudo helm ...`.
-
-The user provided configs are sufficient enough, and interacting with the k3s cluster and its resources.
-
-Make sure that you `$KUBECONFIG` is set to a file that is accessible by your system user with the correct permissions.
-
-You can view the functions responsible for setting kubeconfig [here](https://github.com/chronicleprotocol/scripts/blob/main/feeds/k3s-install/install.sh#L144-L149)
-
-### Debug Bundle
-
-If you need further debugging, please retrieve the container logs, and some base info and provide it to the chronicle team for assistance:
-
-:::tip
-Make sure that you set `FEED_NAME` to match your feed in question, and run these commands from the correct user so that `$HOME/$FEED_NAME/generated-values.yaml` resolves to the correct file.
+:::warning
+If you encounter any issues please refer to the [Trouble Shooting](troubleshooting) docs
 :::
-
-```
-export FEED_NAME=<CHANGE_ME>
-cd /tmp
-kubectl logs deployment/ghost -n $FEED_NAME > ghost.log
-kubectl logs deployment/tor-proxy -n $FEED_NAME > tor-proxy.log
-kubectl exec -ti deployments/tor-proxy -n $FEED_NAME -- cat /usr/local/etc/tor/torrc > torrc
-kubectl get svc -n --all-namespaces > services.log
-kubectl get pods --all-namespaces > all-pods.log
-helm list --all-namespaces > all-helm-releases.log
-tar czf feed-debug.tar.gz torrc ghost.log tor-proxy.log services.log all-helm-releases.log all-pods.log $HOME/$FEED_NAME/generated-values.yaml
-```
-
-The above commands will get logs for each of the pods running, the state of the services, as well as the generated-values.yaml for your feed, and bundle it into a tarball `feed-debug.tar.gz` (Please change the values / paths accordingly)
