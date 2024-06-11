@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Trouble shooting
 
+General Trouble shooting guide
+
 ### Kubectl / helm commands fail
 
 If you receive an error as show below when trying to invoke `kubectl` or `helm` commands, it is most likely caused by the `KUBECONFIG` variable not being set.

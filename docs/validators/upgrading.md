@@ -1,9 +1,12 @@
 ---
 sidebar_position: 3
 ---
+
 # Upgrading a Validator
 
-Helm Chart details:
+How to perform an upgrade on a validator
+
+### Helm Chart details:
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
 
