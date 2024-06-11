@@ -27,11 +27,10 @@ If you are looking for an Oracle address to quickly test out, feel free to use: 
 
 You can then verify your whitelist status by running:
 ```bash
-$ cast call <oracle address> "tolled(address)" <your address> --rpc-url $rpc
+$ cast call <oracle address> "tolled(address)(bool)" <your address> --rpc-url $rpc
 ```
-`0x0000000000000000000000000000000000000000000000000000000000000001`
 
-A response of 1 (true) confirms your whitelisted status.
+A response of `true` confirms your whitelisted status.
 
 ### Reading from Smart Contracts using the CLI 
 Once you are whitelisted, interacting with the oracle is easy. The `read()` function returns a uint value representing the data you are trying to get:
