@@ -67,6 +67,14 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/chronicle-social-card.png',
+      announcementBar: {
+        id: 'discordLink',
+        content:
+          '<strong>🚀 Join the community on <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/CjgvJ9EspJ">Discord!</a><strong> 🚀',
+        backgroundColor: '#2FD05B',
+        textColor: '#1C1E21',
+        isCloseable: false,
+      },
       navbar: {
         title: 'Chronicle Docs',
         logo: {
@@ -92,24 +100,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Developers',
             items: [
               {
-                label: 'Overview',
-                to:'/category/overview',
+                label: 'GitHub',
+                href: 'https://github.com/chronicleprotocol',
+              },
+              {
+                label: 'Bug Bounty',
+                href:'https://cantina.xyz/bounties/5240b7c7-6fec-4902-bec0-8cad12f14ec4',
               },{
-                label: 'Developers',
-                to:'/category/developers',
+                label: 'Careers',
+                href:'https://chroniclelabs.org/careers#open_roles',
               },
-              {
-                label: 'Hackathons',
-                to: '/category/hackathons',
-              },
-              {
-                label: 'Validators',
-                to: '/category/validators',
-              },
-             
             ],
           },
           {
@@ -137,13 +140,11 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Web',
+                label: 'Website',
                 href: 'https://chroniclelabs.org',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/chronicleprotocol',
-              },
+              {label: 'YouTube', 
+              href: 'https://www.youtube.com/@ChronicleProtocol'},
             ],
           },
         ],
