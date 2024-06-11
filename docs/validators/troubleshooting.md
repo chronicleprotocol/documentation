@@ -2,13 +2,13 @@
 sidebar_position: 3
 ---
 
-# Trouble shooting
+# Troubleshooting
 
-General Trouble shooting guide
+General Troubleshooting guide
 
 ### Kubectl / helm commands fail
 
-If you receive an error as show below when trying to invoke `kubectl` or `helm` commands, it is most likely caused by the `KUBECONFIG` variable not being set.
+If you receive an error as shown below when trying to invoke `kubectl` or `helm` commands, it is most likely caused by the `KUBECONFIG` variable not being set.
 
 ```bash
 WARN[0000] Unable to read /etc/rancher/k3s/k3s.yaml, please start server with --write-kubeconfig-mode to modify kube config permissions
@@ -17,11 +17,11 @@ error: error loading config file "/etc/rancher/k3s/k3s.yaml": open /etc/rancher/
 
 The installation script attempts to create `$HOME/.kube/config`  and sets this in the `$HOME/.bashrc`
 
-You made need to log out and log back in, to create a new shell terminal session which will contain the correct KUBECONFIG variable, or run `source ~/.bashrc` to reload you shell config, or manually set it with `export KUBECONFIG=~/.kube/config`
+You may need to log out and log back in, to create a new shell terminal session which will contain the correct KUBECONFIG variable, or run `source ~/.bashrc` to reload you shell config, or manually set it with `export KUBECONFIG=~/.kube/config`
 
 NOTE: It is **not** advisable to run kubectl and helm commands as root (or `sudo kubectl ...` or `sudo helm ...`.
 
-The user provided configs are sufficient enough, and interacting with the k3s cluster and its resources.
+The user-provided configs are sufficient for interacting with the k3s cluster and its resources.
 
 Make sure that you `$KUBECONFIG` is set to a file that is accessible by your system user with the correct permissions.
 

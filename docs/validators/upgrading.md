@@ -6,7 +6,7 @@ sidebar_position: 3
 
 How to perform an upgrade on a validator
 
-### Helm Chart details:
+## Helm Chart details:
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
 
@@ -14,7 +14,7 @@ How to perform an upgrade on a validator
 
 <br/>
 
-### TL;DR
+## TL;DR
 
 If you are upgrading from 0.3.x to 0.3.y, simply updating the chart version will suffice:
 
@@ -40,7 +40,7 @@ Please be aware that the latest helm chart has been renamed from `feed` to `vali
 
 In order to upgrade a validator to the latest version, we will need to run a couple helm commands.
 
-### Upgrade Helper Script
+## Upgrade Helper Script
 
 To simplify the upgrade process, we have created a helper script that will upgrade your validator to the latest version. 
 
@@ -65,7 +65,7 @@ chmod a+x upgrade.sh
 
 ---
 
-### Manual process TL;DR
+## Manual process TL;DR
 
 ```
 ssh <SERVER_IP>
@@ -146,10 +146,11 @@ ghost:
 Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for secrets for `ethConfig`, `ethRpcUrl` and `rpcUrl`.
 :::
 
-### Notable changes include:
+## Notable changes include:
 
-- `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be remove from the values.yaml file
-- `ghost.env.normal.CFG_LIBP2P_EXTERNAL_ADDR` needs to be copied from `musig.env.normal.CFG_LIBP2P_EXTERNAL_ADDR`
+- `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
+- Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
+- Starting from Chart Version 0.3.4, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
 
 ### Update helm repo
