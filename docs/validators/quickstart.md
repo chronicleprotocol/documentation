@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+# Quickstart
 Helm Chart details:
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
@@ -9,7 +10,6 @@ Helm Chart details:
 
 <br/>
 
-# Quickstart
 
 This documentation covers how to run a validator as part of the Chronicle Protocol oracle network. Running a validator is a great way to contribute to the network.
 
@@ -38,6 +38,11 @@ It will attempt to install:
 | TCP     | 6443  | K3s supervisor and Kubernetes API Server |
 | TCP     | 8000  | chronicle/ghost |
 | UDP     | 8472  | Required for Flannel VXLAN |
+
+* Optional ports that need to be open:
+
+| Protocol | Port | Description |
+|----------|------|----------------|
 | TCP     | 10250 | Kubelet metrics |
 | SSH     | 22    | SSH access to the host |
 
@@ -47,7 +52,7 @@ This installation process assumes you have a fresh bare-bones ubuntu instance/VP
 
 ***
 
-## Installing using `install.sh`
+## Deploy using `install.sh`
 
 The script is interactive and will prompt you for some required information
 
@@ -121,6 +126,7 @@ However, if you are already doing this and still facing the issue, it might be d
 ### Execute the script
 
 ```bash
+su - <username>
 ubuntu@local:/tmp$ ./install.sh
 ```
 

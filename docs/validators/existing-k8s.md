@@ -23,6 +23,7 @@ Helm Chart details:
 * [chronicleprotocol/keeman](https://github.com/chronicleprotocol/keeman)
 
 ### Keeman
+Keeman is a tool we created, which is used to help create an ethereum keystore. Alternative tools can be used such as [`cast`](https://book.getfoundry.sh/)
 
 Obtain the keeman binary:
 
@@ -30,9 +31,7 @@ Obtain the keeman binary:
 wget https://github.com/chronicleprotocol/keeman/releases/download/v0.4.1/keeman_0.4.1_linux_amd64.tar.gz -O - | tar -xz
 ```
 
-
 Generate a seed with keeman, eg:
-
 
 ```bash
 SEED_PHRASE=$(./keeman generate -b 256 | tail)
@@ -40,12 +39,10 @@ SEED_PHRASE=$(./keeman generate -b 256 | tail)
 
 Derive ETH address and keystore with keeman, using your seed phrase (ignore this step if you are using an existing ETH keystore):
 
-
 ```bash
 echo $SEED_PHRASE | ./keeman derive -f eth > ethkeystore.json
 2023/08/30 14:28:07 m/44'/60'/0'/0/0
 2023/08/30 14:28:07 0x3FE0e49b5dAa14F4dDc60E296270cedD702cE76C
-
 ```
 
 Take note of the Eth address printed to stderr We will need that in a bit
@@ -59,15 +56,13 @@ export ETH_FROM_ADDRESS='0x3FE0e49b5dAa14F4dDc60E296270cedD702cE76C'
 
 We advise running a feed in its own dedicated namespace:
 
-
 ```bash
 kubectl create ns my-feed-namespace
 ```
 
 #### Prep Secrets
 
-We can create secrets that will be used by both pods in the feed as below:
-
+We can create secrets that will be used by the validator pod in the feed as below:
 
 ```bash
 kubectl create secret generic somesecretname-eth-keys \
@@ -88,13 +83,11 @@ helm repo add chronicle https://chronicleprotocol.github.io/charts/
 
 Update your helm repository:
 
-
 ```bash
 helm repo update chronicle
 ```
 
 Create a values.yaml file as shown below, with the reference to the secrets created in the previous steps:
-
 
 ```bash
 ghost:
@@ -119,18 +112,15 @@ ghost:
     normal:
       # please place your nodes actual public ip addresse here
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4'
-
 ```
 
 Then install the helm release using this values file:
-
 
 ```bash
 helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.3.3
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
-
 
 #### View all resources created in the namespace
 ```bash
@@ -160,7 +150,6 @@ onionservice.tor.k8s.torproject.org/ghost   areallylongonaddressescreatedformeby
 ```
 
 You can view the logs the pods to verify no errors:
-
 
 ```bash
 kubectl logs deployments/ghost          
