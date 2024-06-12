@@ -87,10 +87,10 @@ Add your environment variables in the `.env.example` file and rename it to `.env
 
 CHRONICLE_ORACLE=0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603
 
-# The Chronicle SelfKisser contract on Sepolia.
+// The Chronicle SelfKisser contract on Sepolia.
 SELF_KISSER=0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d
 
-# To access the values stored in this .env file you can use: process.env.VARIABLENAME
+// To access the values stored in this .env file you can use: process.env.VARIABLENAME
 ALCHEMY_API_KEY=
 DEPLOYER_PRIVATE_KEY=
 ETHERSCAN_API_KEY=
