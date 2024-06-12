@@ -2,33 +2,35 @@
 
 ## Scaffold Eth 2 + Chronicle
 
-Please refer to the following github repo to take advantage of the boiler plate we have created in conjuction with scaffold eth 2. 
-link: https://github.com/chronicleprotocol/scaffold-oracle-reader
+:::tip
+Please be aware that, as the project currently stands, you should use **Hardhat** in terms of programming environments, and deploy your contracts to the **Sepolia** network.
+:::
 
-The following repo has a cooked in OracleReader contract. 
-Follow the path to view the contract 
+Please refer to the following [GitHub repo](https://github.com/chronicleprotocol/scaffold-oracle-reader) to take advantage of the boilerplate we have created in conjuction with Scaffold-Eth 2. 
+
+
+To find our `OracleReader.sol` contract, follow the following path: 
+
 ```
 - packages
     - hardhat
         - contracts
             - OracleReader.sol
 ```
-    Below is an example of the contract cooked into the repo
+    Below is an example of the contract integrated into the repo:
 
-```
+```js
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.16;
 
 /**
  * @title OracleReader
- *
  * @notice A simple contract to read from Chronicle oracles
- *
  * @dev Addresses in this contract are hardcoded for the Sepolia testnet.
- *      For other supported networks, see https://docs.chroniclelabs.org/.
+ * For other supported networks, check https://chroniclelabs.org/dashboard/oracles.
  */
 contract OracleReader {
-    /// @notice The Chronicle ETH/USD oracle.
+    ///  @notice The Chronicle ETH/USD oracle.
     IChronicle public immutable chronicle;
 
     /// @notice The SelfKisser granting access to Chronicle oracles.
@@ -52,9 +54,11 @@ contract OracleReader {
 
 // Copied from [chronicle-std](https://github.com/chronicleprotocol/chronicle-std/blob/main/src/IChronicle.sol).
 interface IChronicle {
-    /// @notice Returns the oracle's current value.
-    /// @dev Reverts if no value set.
-    /// @return value The oracle's current value.
+    /**
+     * @notice Returns the oracle's current value.
+     * @dev Reverts if no value set.
+     * @return value The oracle's current value.
+     * /
     function read() external view returns (uint256 value);
 }
 
@@ -65,17 +69,21 @@ interface ISelfKisser {
 }
 ```
 
-The .env.example file also includes some boiler plate code to get you up and running sooner than later 
-
+Add your environment variables in the `.env.example` file and rename it to `.env`:
 ```
-# Template for Hardhat environment variables.
+- packages
+    - hardhat
+         - .env.example
+```
 
-# To use this template, copy this file, rename it .env, and fill in the values.
-
-# If not set, we provide default values (check `hardhat.config.ts`) so developers can start prototyping out of the box,
-# but we recommend getting your own API Keys for Production Apps.
-
-# The Chronicle ETH/USD oracle on Sepolia.
+```js
+/* 
+* Template for Hardhat environment variables.
+* To use this template, copy this file, rename it .env, and fill in the values.
+* If not set, we provide default values (check `hardhat.config.ts`) so developers can start prototyping out of the box,
+* but we recommend getting your own API Keys for Production Apps.
+* The Chronicle ETH/USD oracle on Sepolia.
+*/
 
 CHRONICLE_ORACLE=0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603
 
@@ -90,12 +98,11 @@ ETHERSCAN_API_KEY=
 
 The ETH/USD oracle and self-kisser addresses have been added to the .env.example file.
 
-If you would run a sepolia fork and deploy the contract now via 
+If you would run a Sepolia fork, you can deploy the contract using: 
 
-```yarn deploy --tags OracleReader```
+```bash
+yarn deploy --tags OracleReader
+```
 
-:::tip
-Please note as the project currently stands, you must switch to the Sepolia network using hardhat.
 
-:::
 
