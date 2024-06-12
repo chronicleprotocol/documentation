@@ -2,7 +2,7 @@
 
 ## Scaffold Eth 2 + Chronicle
 
-:::tip
+:::info
 Please be aware that, as the project currently stands, you should use **Hardhat** in terms of programming environments, and deploy your contracts to the **Sepolia** network.
 :::
 
