@@ -144,7 +144,12 @@ const config = {
                 href: 'https://chroniclelabs.org',
               },
               {label: 'YouTube', 
-              href: 'https://www.youtube.com/@ChronicleProtocol'},
+              href: 'https://www.youtube.com/@ChronicleProtocol'
+              },
+              {
+                label: 'Telegram',
+                href: 'https://t.me/chronicleprotocol',
+              },
             ],
           },
         ],
