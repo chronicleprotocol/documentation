@@ -14,4 +14,10 @@
 
     You can find your token name by using the search box or by selecting your preferred blockchain from the filter located in the top-right corner (see Figure below).
 
-    ![Example banner](../../../static/img/dashboard.png)
+
+    <div style={{textAlign: 'center'}}>
+<img
+    src="/../img/Overview/Architecture/dashboard.png"
+    alt="Dashboard" 
+/>
+</div>
