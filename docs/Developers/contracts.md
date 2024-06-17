@@ -1,4 +1,4 @@
-# IChronicle Contract Implementation Example
+# Contract Implementation Example of IChronicle
 
 :::info
 You can find an example of our IChronicle.sol interface [here](https://github.com/chronicleprotocol/chronicle-std/blob/ea9afe78a1d33245afcdbcc3f530ee9cbd7cde28/src/IChronicle.sol#L4) . Please see the comments corresponding to each function to better understand the utility it provides. 
