@@ -48,6 +48,15 @@ You can compete for both tracks, however you will get the bounty only for one of
 - Documentation - the better the documentation the higher the score.
 - Extensibility - how easy can a developer use this to build out their own idea?
 - DX - does the project provide a high quality developer experience?
+- UI/UX - Projects with an intuitive UI will score higher.
+
+### 🏁 Assets to submit:
+
+Make sure to include the following in your project submission:
+
+    1. A public demo URL to your deployed project that judges can test.
+    2. A short video that demonstrates your submission (approximately 3 minutes).
+    3. A public GitHub repository with the code.
 
 
 ## 🤝 Getting Help
@@ -55,17 +64,15 @@ If you have any questions and would like support with your project, please join 
 
 Say hi 👋 when you see them around and ask your questions directly to one of our team members who are on-site during the event:
 
-   - Alexander Vasylchenko, Product, @AlexanderVasyl
-   - Angus Tookey, Marketing, @AngusTookey
-   - Bianca Buzea, Developer Relations, @buzea200
-   - Jenn Senhaji, BD/Growth, @jensenhaji
-   - Niklas Kunkel, Founder, @nomos_paradox
-   - Pawel Zaremba, Engineering, @teghnet
+   - Alexander Vasylchenko, Product, [@AlexanderVasyl](https://x.com/AlexanderVasyl)
+   - Angus Tookey, Marketing, [@AngusTookey](https://x.com/AngusTookey)
+   - Bianca Buzea, Developer Relations, [@buzea200](https://x.com/buzea200)
+   - Jenn Senhaji, BD/Growth, [@jensenhaji](https://x.com/jensenhaji)
+   - Niklas Kunkel, Founder, [@nomos_paradox](https://x.com/nomos_paradox)
+   - Pawel Zaremba, Engineering, [@teghnet](https://x.com/teghnet)
 
 ## ✏️ Talks & Workshops
 More info will be released soon.
-  
-
 ## Chronicle Protocol Contracts
 
 ### Scribe
