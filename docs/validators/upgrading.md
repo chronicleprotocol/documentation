@@ -25,6 +25,7 @@ export FEED_NAME=my-feed
 ```
 ```
 helm repo update
+kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml
 helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.4
 ```
 
@@ -72,6 +73,8 @@ ssh <SERVER_IP>
 su - <FEED_USERNAME>
 export FEED_NAME=my-feed
 helm repo update
+kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml
+sleep 30
 helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator
 ```
 
@@ -150,7 +153,7 @@ Please ensure your values yaml file is updated to reflect the latest requirement
 
 - `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
 - Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
-- Starting from Chart Version 0.3.4, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+- Starting from Chart Version 0.3.4, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
 
 ### Update helm repo
@@ -159,6 +162,25 @@ We need to fetch the latest helm chart from the registry:
 
 ```
 helm repo update
+```
+### Install CRD's
+
+If you are running an upgrade from a prior release, chances are that Tor Custom Resource Definitions havent been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
+
+```
+kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml
+```
+
+It can take a few moments for the tor-controller to be in a ready state, but please make sure its running before ugprading your validator:
+
+```
+kubectl get pods -n tor-controller-system
+```
+
+You should see something like this:
+```
+NAME                                                 READY   STATUS    RESTARTS   AGE
+tor-controller-controller-manager-6648f44cc8-g6c68   2/2     Running   0          16m
 ```
 
 ### Run  helm upgrade

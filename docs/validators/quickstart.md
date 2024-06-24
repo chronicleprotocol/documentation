@@ -216,7 +216,7 @@ NOTES:
 Once the installation is completed, you can retreieve your tor onion address using this command:
 
 ```bash
-kubect get onion -n $NAME_SPACE
+kubectl get onion -n $NAME_SPACE
 ```
 where `$NAME_SPACE` is the namespace where you deployed your validator in.
 
