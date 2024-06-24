@@ -30,10 +30,10 @@ The prize will go to the top three teams with the most innovative integration of
 - Gnosis Chain Mainnet
 - Scroll Sepolia
 - zkSync Sepolia 
-- Polygon zkEVM Sepolia
+- Optimism Sepolia
 - Mantle Sepolia 
 
-Solutions must integrate the Chronicle Oracle smart contracts. The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
+Solutions must integrate the Chronicle Oracle smart contracts. The innovation should stem from the use case of the Oracle, i.e., the idea or utility of the project.
 
 You can compete for both tracks, however you will get the bounty only for one of them. 
 
