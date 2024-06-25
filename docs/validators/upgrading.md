@@ -149,7 +149,7 @@ If `kubectl/helm` commands fail, please ensure you have `$KUBECONFIG` set correc
 Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for `ethConfig`, `ethRpcUrl` and `rpcUrl`.
 :::
 
-## Notable changes include:
+#### Notable changes include:
 
 - `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
 - Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
