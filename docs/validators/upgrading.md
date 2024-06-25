@@ -6,7 +6,7 @@ sidebar_position: 3
 
 How to perform an upgrade on a validator
 
-### Helm Chart details:
+Helm Chart details:
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
 
@@ -16,7 +16,10 @@ How to perform an upgrade on a validator
 
 ### Install CRD's
 
+Starting from Chart Version 0.3.4, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+
 If you are running an upgrade from a prior release, chances are that Tor Custom Resource Definitions havent been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
+
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml
@@ -37,9 +40,9 @@ tor-controller-controller-manager-6648f44cc8-g6c68   2/2     Running   0        
 We now have the CRD's deployed (ie `kubectl get crds` will show the tor custom resource definitions), and our values.yaml updated, we can perform the upgrade:
 
 <details>
-<summary>Upgrading from `0.3.x` to `0.3.4`</summary>
+<summary>Upgrading manually (`helm upgrade`)</summary>
 
-## Upgrading from 0.3.x to 0.3.x
+## Upgrading manually (`helm upgrade`)
 If you are upgrading from 0.3.x to 0.3.y, simply updating the chart version will suffice:
 
 ```
@@ -53,7 +56,11 @@ The values.yaml file is used to configure the validator. The file is generated b
 
 With the latest version of the chart, there are a few changes that need to be made to the `values.yaml` / `generated-values.yaml` file:
 
-example values.yaml file:
+:::warning
+- `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
+- Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
+:::
+
 Please structure your helm values like this:
 
 ```yaml
@@ -92,19 +99,17 @@ helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml 
 </details>
 
 :::danger
-If upgrading from 0.2.x to 0.3.x, please read below!
+If upgrading from 0.2.x to 0.3.x, please use the helper script, or manually update your `generated-values.yaml` as per the steps above
 :::
 
 <details>
-<summary>Upgrading from `0.2.x` to `0.3.4` (`upgrade.sh`)</summary>
+<summary>Upgrading using the helper script (`upgrade.sh`)</summary>
 
-## Upgrading from 0.2.x to 0.3.x
+## Upgrading using `upgrade.sh`
 
 :::warning
 Please be aware that the latest helm chart has been renamed from `feed` to `validator`. Please use the `upgrade.sh` script to upgrade your validator to the latest version. This version embeds `musig` into the `ghost` pod. The upgrader script will clean up the generated `values.yaml` file and remove the unecessary musig values.
 :::
-
-In order to upgrade a validator to the latest version, we will need to run a couple helm commands.
 
 To simplify the upgrade process, we have created a helper script that will upgrade your validator to the latest version. 
 
@@ -125,7 +130,7 @@ export FEED_NAME=my-feed
 Make sure the [TOR crds](#install-crds) are installed.
 :::
 
-### Download the latest `upgrade.sh` script
+### Download the latest `upgrade.sh`
 
 Get the latest upgrade.sh script:
 ```
@@ -145,18 +150,7 @@ If `kubectl/helm` commands fail, please ensure you have `$KUBECONFIG` set correc
 :::
 
 
-:::danger
-Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for `ethConfig`, `ethRpcUrl` and `rpcUrl`.
-:::
-
-#### Notable changes include:
-
-- `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
-- Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
-- Starting from Chart Version 0.3.4, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.4/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
-
-
-### Verify the helm release and version
+## Verify the helm release and version
 
 Verify the chart version has changed and matches what the latest feed version:
 
