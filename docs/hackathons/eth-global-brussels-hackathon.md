@@ -8,39 +8,81 @@ sidebar_position: 1
 
  This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. 
 
-## 💰 Bounties: 10K split across two tracks
+:::note
+You can only compete for one track. For Tracks 1 (DeFi) and 2 (Innovation), if the judges determine that your project is a better fit for the other track, they will move it automatically. 
+You only need to submit your project once.
+:::
+
+## 💰 Bounties: 10K 
+
+<details>
+<summary>Track 1: DeFi Track (Integrate Chronicle Oracles into one of the following DeFi applications: Borrowing & Lending dApps, Decentralized Exchanges (DEX), Liquidity Mining, Prediction Markets, or Stablecoins)</summary>
+
 ### Track 1: DeFi Track (Integrate Chronicle Oracles into one of the following DeFi applications: Borrowing & Lending dApps, Decentralized Exchanges (DEX), Liquidity Mining, Prediction Markets, or Stablecoins)
 
-- 🥇 1st: $2650
+- 🥇 1st: $2500
 - 🥈 2nd: $1500
-- 🥉 3rd: $850
-
-### Track 2: Most Innovative Chronicle Oracle Integration
-
-- 🥇 1st: $2650
-- 🥈 2nd: $1500
-- 🥉 3rd: $850
-
-The prize will go to the top three teams with the most innovative integration of Scribe, Chronicle's new Schnorr Oracle. You can deploy your contracts on any of the following chains:
-
-- Ethereum Sepolia
-- Arbitrum Sepolia
-- Base Sepolia
-- Polygon zkEVM Sepolia
-- Gnosis Chain Mainnet
-- Scroll Sepolia
-- zkSync Sepolia 
-- Optimism Sepolia
-- Mantle Sepolia 
-
-Solutions must integrate the Chronicle Oracle smart contracts. The innovation should stem from the use case of the Oracle, i.e., the idea or utility of the project.
-
-You can compete for both tracks, however you will get the bounty only for one of them. 
+- 🥉 3rd: $700
 
 ### 📜 Qualification rules:
 
-- Must utilize the Oracle smart contract on one of the supported blockchains.
 - Each project must use Chronicle Oracles in some form to make a state change on a blockchain, otherwise it will not be eligible. This means that a front end simply reading from Chronicle Oracles doesn't count.
+- You can deploy your contracts on any of the following chains:
+
+  - Ethereum Sepolia
+  - Arbitrum Sepolia
+  - Base Sepolia
+  - Polygon zkEVM Sepolia
+  - Gnosis Chain Mainnet
+  - Scroll Sepolia
+  - zkSync Sepolia 
+  - Optimism Sepolia
+  - Mantle Sepolia 
+
+### 🎯 Judging Criteria
+- Code quality - well organized and readable code will score higher.
+- Documentation - the better the documentation the higher the score.
+- Extensibility - how easy can a developer use this to build out their own idea?
+- DX - does the project provide a high quality developer experience?
+-  UI/UX - Projects with an intuitive UI will score higher.
+
+### 🏁 Assets to submit:
+
+Make sure to include the following in your project submission:
+
+    1. A public demo URL to your deployed project that judges can test.
+    2. A short video that demonstrates your submission (approximately 2-3 minutes).
+    3. A public GitHub repository with the code. 
+    4. Complete the [Builder Feedback Form](https://forms.gle/SvcS5FsRDjDd5crA7).
+
+</details>
+
+<details>
+<summary>Track 2: Most Innovative Chronicle Oracle Integration</summary>
+
+### Track 2: Most Innovative Chronicle Oracle Integration
+
+- 🥇 1st: $2500
+- 🥈 2nd: $1500
+- 🥉 3rd: $700
+
+### 📜 Qualification rules:
+
+- Each project must use Chronicle Oracles in some form to make a state change on a blockchain, otherwise it will not be eligible. This means that a front end simply reading from Chronicle Oracles doesn't count.
+- The prize will go to the top three teams with the most innovative integration of Scribe, Chronicle's new Schnorr Oracle. You can deploy your contracts on any of the following chains:
+
+  - Ethereum Sepolia
+  - Arbitrum Sepolia
+  - Base Sepolia
+  - Polygon zkEVM Sepolia
+  - Gnosis Chain Mainnet
+  - Scroll Sepolia
+  - zkSync Sepolia 
+  - Optimism Sepolia
+  - Mantle Sepolia 
+
+Solutions must integrate the Chronicle Oracle smart contracts. The innovation should stem from the use case of the Oracle, i.e., the idea or utility of the project.
+
 
 ### 🎯 Judging Criteria
 
@@ -55,12 +97,46 @@ You can compete for both tracks, however you will get the bounty only for one of
 Make sure to include the following in your project submission:
 
     1. A public demo URL to your deployed project that judges can test.
-    2. A short video that demonstrates your submission (approximately 3 minutes).
+    2. A short video that demonstrates your submission (approximately 2-3 minutes).
     3. A public GitHub repository with the code.
+    4. Complete the [Builder Feedback Form](https://forms.gle/SvcS5FsRDjDd5crA7).
+
+</details>
+
+<details>
+<summary>Track 3: Best Educational Resource for Builders</summary>
+
+## Track 3: Best Educational Resource for Builders
+
+Create a tutorial for developers on integrating Chronicle Scribe Oracles.
+
+- 🥇 1st: $350
+- 🥈 2nd: $250
+
+### 📜 Qualification rules:
+- The submitted material should be your own. Material originating from other sources or generated with AI does not qualify.
+
+### 🎯 Judging Criteria
+
+- Accuracy: Information provided should be factually correct and well-researched.
+- Clarity: Concepts should be explained clearly and concisely, avoiding unnecessary jargon.
+- Extensibility - how easy can a developer use this material to build out their own idea?
+- Relevance: The content should be relevant to the target audience and meet their learning needs.
+- Practicality: The content should offer practical insights, tips, or steps that the audience can apply.
+
+### 🏁 Assets to submit:
+
+For this track you only need to submit a link to your content and to complete the [Builder Feedback Form](https://forms.gle/SvcS5FsRDjDd5crA7).
+
+
+</details>
 
 
 ## 🤝 Getting Help
-If you have any questions and would like support with your project, please join our [Discord](https://discord.com/invite/CjgvJ9EspJ) and drop your question in the hackathons channel.
+
+:::note
+If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/CjgvJ9EspJ)** and drop your question in the hackathons channel.
+:::
 
 Say hi 👋 when you see them around and ask your questions directly to one of our team members who are on-site during the event:
 
@@ -72,7 +148,8 @@ Say hi 👋 when you see them around and ask your questions directly to one of o
    - Pawel Zaremba, Engineering, [@teghnet](https://x.com/teghnet)
 
 ## ✏️ Talks & Workshops
-More info will be released soon.
+- Friday, 12th July, 04:30pm
+- Workshop Room 3
 ## Chronicle Protocol Contracts
 
 ### Scribe
@@ -110,12 +187,12 @@ To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[G
 - [Self-kisser Contract on Sepolia network](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)
 - [How To Use Read/Write Contract Features on Etherscan](https://info.etherscan.com/how-to-use-read-or-write-contract-features-on-etherscan/)
 
-:::info
-You can view all the smart contract adresses below:👇
+:::tip
+You can view all the smart contract adresses below organized by chains:👇
 :::
 
 <details>
-<summary>Smart Contract Addresses on Sepolia network</summary>
+<summary>Smart Contract Addresses on **Ethereum Sepolia**</summary>
 
 
 | Contract Name | Contract Address on Sepolia network                                                                                                |
@@ -159,9 +236,10 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary> Smart Contract Addresses on Base Sepolia </summary>
+<summary> Smart Contract Addresses on **Base Sepolia** </summary>
 | Contract Name | Contract Address on Base Sepolia                                                                                                 |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+SelfKisser_1 | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.basescan.org/address/0x70E58b7A1c884fFFE7dbce5249337603a28b8422#code) |
 | Chronicle_CBETH_USD_1 | [0x11E155b04f0498bc6B6EB0086A2148368F0b64F0](https://sepolia.basescan.org/address/0x11E155b04f0498bc6B6EB0086A2148368F0b64F0) |
 | Chronicle_CBETH_USDC_1 | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia.basescan.org/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
 | Chronicle_DAI_USD_1 | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://sepolia.basescan.org/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6) |
@@ -179,9 +257,10 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary> Smart Contract Addresses on Arbitrum Sepolia </summary>
+<summary> Smart Contract Addresses on **Arbitrum Sepolia** </summary>
 | Contract Name| Contract Address on Arbitrum Sepolia                                                                                                 |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbiscan.io/address/0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f#code) |
 | Chronicle_AAVE_USD_1 | [0xC7E4AA2860BEc0054A8A2D3bb1fc5359FEA13FdA](https://sepolia.arbiscan.io/address/0xC7E4AA2860BEc0054A8A2D3bb1fc5359FEA13FdA) |
 | Chronicle_ARB_USD_1 | [0xdD7c06561689c73f0A67F2179e273cCF45EFc964](https://sepolia.arbiscan.io/address/0xdD7c06561689c73f0A67F2179e273cCF45EFc964) |
 | Chronicle_AVAX_USD_1 | [0x15E9742b47Ae44308066F575E60F3c7231873f4A](https://sepolia.arbiscan.io/address/0x15E9742b47Ae44308066F575E60F3c7231873f4A) |
@@ -218,7 +297,7 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary>Smart Contract Addresses on Polygon zkEVM Testnet</summary>
+<summary>Smart Contract Addresses on **Polygon zkEVM Testnet**</summary>
 
 | Contract Name | Contract Address on zkEVM Testnet                                                                                                           |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -255,7 +334,7 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary>Smart Contract Addresses on Gnosis Mainnet</summary>
+<summary>Smart Contract Addresses on **Gnosis Mainnet**</summary>
 
 | Contract Name | Contract Address on Gnosis Mainnet                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -294,7 +373,7 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary>Smart Contract Addresses on Mantle Testnet</summary>
+<summary>Smart Contract Addresses on **Mantle Testnet**</summary>
 
 | Contract Name | Contract Address on Mantle Sepolia                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -334,7 +413,7 @@ You can view all the smart contract adresses below:👇
 
 
 <details>
-<summary>Smart Contract Addresses on Scroll Sepolia</summary>
+<summary>Smart Contract Addresses on **Scroll Sepolia**</summary>
 
 | Contract Name | Contract Address on Scroll Sepolia                                                                                          |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -369,7 +448,7 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary>Smart Contract Addresses on zkSync Sepolia</summary>
+<summary>Smart Contract Addresses on **zkSync Sepolia**</summary>
 
 | Contract Name | Contract Address on zkSync Sepolia                                                                                          |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -406,10 +485,11 @@ You can view all the smart contract adresses below:👇
 </details>
 
 <details>
-<summary> Smart Contract Addresses on Optimism Sepolia </summary>
+<summary> Smart Contract Addresses on **Optimism Sepolia** </summary>
 
 | Contract Name | Contract Address on Optimism Sepolia                                                                                          |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+SelfKisser_1 | [0xfF619a90cDa4020897808D74557ce3b648922C37](https://sepolia-optimism.etherscan.io/address/0xfF619a90cDa4020897808D74557ce3b648922C37) |
 | Chronicle_AAVE_USD_1| [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://sepolia-optimism.etherscan.io/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717)|
 | Chronicle_ARB_USD_1 | [0x579BfD0581beD0d18fBb0Ebab099328d451552DD](https://sepolia-optimism.etherscan.io/address/0x579BfD0581beD0d18fBb0Ebab099328d451552DD) |
 | Chronicle_AVAX_USD_1 | [0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688](https://sepolia-optimism.etherscan.io/address/0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688) |
