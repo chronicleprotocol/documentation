@@ -1,5 +1,5 @@
 ## Which chains is Chronicle integrated with?
-At the moment, Chronicle Protocol is integrated on seven blockchains: 
+At the moment, Chronicle Protocol is integrated on nine blockchains: 
 - Ethereum
 - Arbitrum
 - Mantle
@@ -7,8 +7,13 @@ At the moment, Chronicle Protocol is integrated on seven blockchains:
 - Gnosis Chain
 - zkSync
 - Base
+- Optimism
+- Scroll
 
 This is being updated all the time as new chains come online. Please check out the [dashboard](https://chroniclelabs.org/dashboard/oracles) for the most up-to-date overview of the blockchains we are currently integrated with. 
+
+## How many decimals do Chronicle Oracles use?
+All Chronicle Oracles use 18 decimals.
 
 ## Are price feeds chain-specific or chain agnostic?
 Chronicle provides price feeds, which can be implemented on any supported chain. These prices are based on global sources, the data is gathered directly from CEXs and DEXs and is not chain specific.
