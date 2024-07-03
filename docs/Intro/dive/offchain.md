@@ -1,6 +1,6 @@
 # Off-Chain Components 
 
-    - **Validator** (aka Feed) Creates usable information our of raw data that is read from various Origins. Validators query Origins no matter whether they are on-chain or off-chain for the price data. The Validator transform the original data into Chronicle data by using Data Models. After the Chronicle data is calculated it is signed and sent to the peer-to-peer network.
+    - **Validator** (aka Feed) Creates usable information out of raw data that is read from various Origins. Validators query Origins no matter whether they are on-chain or off-chain for the price data. The Validator transform the original data into Chronicle data by using Data Models. After the Chronicle data is calculated it is signed and sent to the peer-to-peer network.
 
     - **Challenger** is an off chain component that listens to Oracle’s updates and makes sure that no invalid optimistic update is made. Thus we can be sure that our Optimistic Oracles are functioning properly. Both challengers and relays are permissionless jobs with challengers even getting paid for their effort. Participation from the community is both encouraged and supported.
     
