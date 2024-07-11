@@ -131,25 +131,10 @@ For this track you only need to submit a link to your content and to complete th
 
 </details>
 
-
-## 🤝 Getting Help
-
-:::note
-If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/CjgvJ9EspJ)** and drop your question in the hackathons channel.
-:::
-
-Say hi 👋 when you see them around and ask your questions directly to one of our team members who are on-site during the event:
-
-   - Alexander Vasylchenko, Product, [@AlexanderVasyl](https://x.com/AlexanderVasyl)
-   - Angus Tookey, Marketing, [@AngusTookey](https://x.com/AngusTookey)
-   - Bianca Buzea, Developer Relations, [@buzea200](https://x.com/buzea200)
-   - Jenn Senhaji, BD/Growth, [@jensenhaji](https://x.com/jensenhaji)
-   - Niklas Kunkel, Founder, [@nomos_paradox](https://x.com/nomos_paradox)
-   - Pawel Zaremba, Engineering, [@teghnet](https://x.com/teghnet)
-
 ## ✏️ Talks & Workshops
-- Friday, 12th July, 04:30pm
-- Workshop Room 3
+- 🛠️ Chronicle Workshop: Scalable, Decentralized, Cost-Efficient Oracles
+- Friday, 12th July, 04:30pm, Room 3
+
 ## Chronicle Protocol Contracts
 
 ### Scribe
@@ -184,6 +169,8 @@ To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[G
 
 ### 📤 Resources
 
+
+- **[Scaffold-oracle-reader](https://github.com/chronicleprotocol/scaffold-oracle-reader) based on Scaffold-ETH2, to help you prototype easily and experiment with Solidity using a frontend that adapts to your smart contract**
 - [Self-kisser Contract on Sepolia network](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)
 - [How To Use Read/Write Contract Features on Etherscan](https://info.etherscan.com/how-to-use-read-or-write-contract-features-on-etherscan/)
 
@@ -528,6 +515,22 @@ SelfKisser_1 | [0xfF619a90cDa4020897808D74557ce3b648922C37](https://sepolia-opti
 | Chronicle_YFI_USD_1 | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://sepolia-optimism.etherscan.io/address/0x0893EcE705639112C1871DcE88D87D81540D0199) |
 
 </details>
+
+## 🤝 Getting Help
+
+:::note
+If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/CjgvJ9EspJ)** and drop your question in the hackathons channel.
+:::
+
+Say hi 👋 when you see them around and ask your questions directly to one of our team members who are on-site during the event:
+
+   - Alexander Vasylchenko, Product, [@AlexanderVasyl](https://x.com/AlexanderVasyl)
+   - Angus Tookey, Marketing, [@AngusTookey](https://x.com/AngusTookey)
+   - Bianca Buzea, Developer Relations, [@buzea200](https://x.com/buzea200)
+   - Jenn Senhaji, BD/Growth, [@jensenhaji](https://x.com/jensenhaji)
+   - Niklas Kunkel, Founder, [@nomos_paradox](https://x.com/nomos_paradox)
+   - Pawel Zaremba, Engineering, [@teghnet](https://x.com/teghnet)
+
 
 ## General Setup Useful Links
 
