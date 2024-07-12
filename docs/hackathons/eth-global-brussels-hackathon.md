@@ -150,6 +150,7 @@ Say hi 👋 when you see them around and ask your questions directly to one of o
 ## ✏️ Talks & Workshops
 - Friday, 12th July, 04:30pm
 - Workshop Room 3
+- **[GitHub Repository for the workshop](https://github.com/biancabuzea200/TokenVendor)**
 ## Chronicle Protocol Contracts
 
 ### Scribe
