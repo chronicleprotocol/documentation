@@ -286,40 +286,41 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 </details>
 
 <details>
-<summary>Smart Contract Addresses on **Polygon zkEVM Testnet**</summary>
+<summary>Smart Contract Addresses on **Polygon zkEVM Testnet Cardona**</summary>
 
-| Contract Name | Contract Address on zkEVM Testnet                                                                                                           |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1 | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://testnet-zkevm.polygonscan.com/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d) |
-| Chronicle_AAVE_USD_3 | [0x3F982a82B4B6bd09b1DAF832140F166b595FEF7F](https://testnet-zkevm.polygonscan.com/address/0x3F982a82B4B6bd09b1DAF832140F166b595FEF7F) |
-| Chronicle_ARB_USD_3 | [0x9Bf0C1ba75C9d7b6Bf051cc7f7dCC7bfE5274302](https://testnet-zkevm.polygonscan.com/address/0x9Bf0C1ba75C9d7b6Bf051cc7f7dCC7bfE5274302) |
-| Chronicle_AVAX_USD_3 | [0xDcd4c95f9D1f660E31fD516B936388fc9D4117Ea](https://testnet-zkevm.polygonscan.com/address/0xDcd4c95f9D1f660E31fD516B936388fc9D4117Ea) |
-| Chronicle_BNB_USD_3 | [0xE4A1EED38F972d05794C740Eae965A7Daa6Ab28c](https://testnet-zkevm.polygonscan.com/address/0xE4A1EED38F972d05794C740Eae965A7Daa6Ab28c) |
-| Chronicle_BTC_USD_3 | [0x6edF073c4Bd934d3916AA6dDAC4255ccB2b7c0f0](https://testnet-zkevm.polygonscan.com/address/0x6edF073c4Bd934d3916AA6dDAC4255ccB2b7c0f0) |
-| Chronicle_CRV_USD_3 | [0xDcda58cAAC639C20aed270859109f03E9832a13A](https://testnet-zkevm.polygonscan.com/address/0xDcda58cAAC639C20aed270859109f03E9832a13A) |
-| Chronicle_DAI_USD_3 | [0xaf900d10f197762794C41dac395C5b8112eD13E1](https://testnet-zkevm.polygonscan.com/address/0xaf900d10f197762794C41dac395C5b8112eD13E1) |
-| Chronicle_ETH_BTC_3 | [0xf95d3B8Ae567F4AA9BEC822931976c117cdf836a](https://testnet-zkevm.polygonscan.com/address/0xf95d3B8Ae567F4AA9BEC822931976c117cdf836a) |
-| Chronicle_ETH_USD_3 | [0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603](https://testnet-zkevm.polygonscan.com/address/0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603) |
-| Chronicle_GNO_USD_3 | [0x9C9e56AE479f82bcF229F2200420106C93C0A24e](https://testnet-zkevm.polygonscan.com/address/0x9C9e56AE479f82bcF229F2200420106C93C0A24e) |
-| Chronicle_IBTA_USD_3 | [0x92b7Ab73BA53Bc64b57194242e3a36A6F1209A70](https://testnet-zkevm.polygonscan.com/address/0x92b7Ab73BA53Bc64b57194242e3a36A6F1209A70) |
-| Chronicle_LDO_USD_3 | [0x4cD2a8c3Fd6329029461A95784051A553f31eb29](https://testnet-zkevm.polygonscan.com/address/0x4cD2a8c3Fd6329029461A95784051A553f31eb29) |
-| Chronicle_LINK_USD_3 | [0x260c182f0054BF244a8e38d7C475b6d9f67AeAc1](https://testnet-zkevm.polygonscan.com/address/0x260c182f0054BF244a8e38d7C475b6d9f67AeAc1) |
-| Chronicle_MATIC_USD_3 | [0xEa00861Dc00eBd246F6E51E52c28aBd9062bc09F](https://testnet-zkevm.polygonscan.com/address/0xEa00861Dc00eBd246F6E51E52c28aBd9062bc09F) |
-| Chronicle_MKR_USD_3 | [0xE55afC31AFA140597c581Bc32057BF393ba97c5A](https://testnet-zkevm.polygonscan.com/address/0xE55afC31AFA140597c581Bc32057BF393ba97c5A) |
-| Chronicle_OP_USD_3 | [0x1Be54a524226fc44565747FE221157f4cAE71B80](https://testnet-zkevm.polygonscan.com/address/0x1Be54a524226fc44565747FE221157f4cAE71B80) |
-| Chronicle_RETH_USD_3 | [0x6454753E0909E7F6476BfB78BD6BDC281197A5be](https://testnet-zkevm.polygonscan.com/address/0x6454753E0909E7F6476BfB78BD6BDC281197A5be) |
-| Chronicle_SDAI_DAI_3 | [0x0B20Fd1c09452FC3F214667073EA8975aB2c55EA](https://testnet-zkevm.polygonscan.com/address/0x0B20Fd1c09452FC3F214667073EA8975aB2c55EA) |
-| Chronicle_SNX_USD_3 | [0x1eFD788C634C59e2c7507b523B3eEfD6CaaE0c4f](https://testnet-zkevm.polygonscan.com/address/0x1eFD788C634C59e2c7507b523B3eEfD6CaaE0c4f) |
-| Chronicle_SOL_USD_3 | [0x39eC7D193D1Aa282b8ecCAC9B791b09c75D30491](https://testnet-zkevm.polygonscan.com/address/0x39eC7D193D1Aa282b8ecCAC9B791b09c75D30491) |
-| Chronicle_UNI_USD_3 | [0x0E9e54244F6585a71d0d1035E7625849B516C817](https://testnet-zkevm.polygonscan.com/address/0x0E9e54244F6585a71d0d1035E7625849B516C817) |
-| Chronicle_USDC_USD_3 | [0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC](https://testnet-zkevm.polygonscan.com/address/0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC) |
-| Chronicle_USDT_USD_3 | [0x8c852EEC6ae356FeDf5d7b824E254f7d94Ac6824](https://testnet-zkevm.polygonscan.com/address/0x8c852EEC6ae356FeDf5d7b824E254f7d94Ac6824) |
-| Chronicle_WBTC_USD_3 | [0xdc3ef3E31AdAe791d9D5054B575f7396851Fa432](https://testnet-zkevm.polygonscan.com/address/0xdc3ef3E31AdAe791d9D5054B575f7396851Fa432) |
-| Chronicle_WSTETH_ETH_3 | [0x2d95B1862279771fcE76823CD777384D8598fB48](https://testnet-zkevm.polygonscan.com/address/0x2d95B1862279771fcE76823CD777384D8598fB48) |
-| Chronicle_WSTETH_USD_3 | [0x89822dd9D74dF50BFba8764DC9bE25E9B8d554A1](https://testnet-zkevm.polygonscan.com/address/0x89822dd9D74dF50BFba8764DC9bE25E9B8d554A1) |
-| Chronicle_WUSDM_USDM_1 | [0xF719E362724Dda4Ad3B8D92D49E0c44E48Df4e56](https://testnet-zkevm.polygonscan.com/address/0xF719E362724Dda4Ad3B8D92D49E0c44E48Df4e56) |
-| Chronicle_WUSDM_USD_1 | [0x6d10de3640ab2F11B1102Ae72C06BB497E5E859b](https://testnet-zkevm.polygonscan.com/address/0x6d10de3640ab2F11B1102Ae72C06BB497E5E859b) |
-| Chronicle_YFI_USD_3 | [0xdF54aBf0eF88aB7fFf22e21eDD9AE1DA89A7DefC](https://testnet-zkevm.polygonscan.com/address/0xdF54aBf0eF88aB7fFf22e21eDD9AE1DA89A7DefC) |
+| Contract Name | Contract Address on zkEVM Testnet                                                                                                      |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1 | [0xCce64A8127c051E784ba7D84af86B2e6F53d1a09](https://cardona-zkevm.polygonscan.com/address/0xCce64A8127c051E784ba7D84af86B2e6F53d1a09) |
+| AAVE/USD | [0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F](https://cardona-zkevm.polygonscan.com/address/0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F) |
+| ARB/USD | [0x8E947Ea7D5881Cd600Ace95F1201825F8C708844](https://cardona-zkevm.polygonscan.com/address/0x8E947Ea7D5881Cd600Ace95F1201825F8C708844) |
+| AVAX/USD | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://cardona-zkevm.polygonscan.com/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6) |
+| BNB/USD | [0x829124df58D1b4853f8669C867d3991cA09265Aa](https://cardona-zkevm.polygonscan.com/address/0x829124df58D1b4853f8669C867d3991cA09265Aa) |
+| BTC/USD | [0x75bE335415765aF13dFd8c823E213bdD55D29ceb](https://cardona-zkevm.polygonscan.com/address/0x75bE335415765aF13dFd8c823E213bdD55D29ceb) |
+| CRV/USD | [0xA76F6f1883378E2641881233fD6Bd94C9dFc3308](https://cardona-zkevm.polygonscan.com/address/0xA76F6f1883378E2641881233fD6Bd94C9dFc3308) |
+| DAI/USD | [0x02a0eA9F5000472D764293bC77622be6C6Cbc2f0](https://cardona-zkevm.polygonscan.com/address/0x02a0eA9F5000472D764293bC77622be6C6Cbc2f0) |
+| ETH/BTC | [0xcB0ABe397952844C379A29343cDb17c914F33e40](https://cardona-zkevm.polygonscan.com/address/0xcB0ABe397952844C379A29343cDb17c914F33e40) |
+| ETH/USD | [0x5D0474aF2da14B1748730931Af44d9b91473681b](https://cardona-zkevm.polygonscan.com/address/0x5D0474aF2da14B1748730931Af44d9b91473681b) |
+| GNO/USD | [0x834c4f996B8a6411AEC0f8a0cF6fAfd4423dBEe2](https://cardona-zkevm.polygonscan.com/address/0x834c4f996B8a6411AEC0f8a0cF6fAfd4423dBEe2) |
+| IBTA/USD | [0x26a89540C28C2E9FbECDf354D5149a10521ceC9f](https://cardona-zkevm.polygonscan.com/address/0x26a89540C28C2E9FbECDf354D5149a10521ceC9f) |
+| LDO/USD | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://cardona-zkevm.polygonscan.com/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3) |
+| LIDO_LST/2DAYS | [0xDc98e03EBdDaf664623959170B9C24F50bB27914](https://cardona-zkevm.polygonscan.com/address/0xDc98e03EBdDaf664623959170B9C24F50bB27914) |
+| LINK/USD | [0xCa92f59FbE6B6512a1ee21a46ED009CeDb4Eb2fD](https://cardona-zkevm.polygonscan.com/address/0xCa92f59FbE6B6512a1ee21a46ED009CeDb4Eb2fD) |
+| MATIC/USD | [0x55a07a60cd9ed198B5Ba4360FF9800eBb6667388](https://cardona-zkevm.polygonscan.com/address/0x55a07a60cd9ed198B5Ba4360FF9800eBb6667388) |
+| MKR/USD | [0x5a3e38Df3d82bF6FefDA79d1027657ab81A85447](https://cardona-zkevm.polygonscan.com/address/0x5a3e38Df3d82bF6FefDA79d1027657ab81A85447) |
+| OP/USD | [0x104916d38828DA8B83a88A1775Aa058e1F0B1647](https://cardona-zkevm.polygonscan.com/address/0x104916d38828DA8B83a88A1775Aa058e1F0B1647) |
+| RETH/USD | [0x172d2A40F03167cf3535206220CEC912400A2594](https://cardona-zkevm.polygonscan.com/address/0x172d2A40F03167cf3535206220CEC912400A2594) |
+| SDAI/DAI | [0x8744f55149A9923a6eD525A9FEdC270FBC2E1e12](https://cardona-zkevm.polygonscan.com/address/0x8744f55149A9923a6eD525A9FEdC270FBC2E1e12) |
+| SNX/USD | [0x8d64F7320bFaa19e19E18824276AdbC4DC27Aeee](https://cardona-zkevm.polygonscan.com/address/0x8d64F7320bFaa19e19E18824276AdbC4DC27Aeee) |
+| SOL/USD | [0x829207C4546eDDc0c17a37fF54f205871410c199](https://cardona-zkevm.polygonscan.com/address/0x829207C4546eDDc0c17a37fF54f205871410c199) |
+| UNI/USD | [0xF46B02AF0b4Dc3fFd8B49a616fa399E77b58637F](https://cardona-zkevm.polygonscan.com/address/0xF46B02AF0b4Dc3fFd8B49a616fa399E77b58637F) |
+| USDC/USD | [0x8b9dbE7098ED98C886a5B34Ca691141d033e8314](https://cardona-zkevm.polygonscan.com/address/0x8b9dbE7098ED98C886a5B34Ca691141d033e8314) |
+| USDT/USD | [0x9234925842CD1c58b2fFc93E741097151417ABd1](https://cardona-zkevm.polygonscan.com/address/0x9234925842CD1c58b2fFc93E741097151417ABd1) |
+| WBTC/USD | [0x49BD898Ddd4cAea31eFbE89BD4F4FD681dB0a7Ce](https://cardona-zkevm.polygonscan.com/address/0x49BD898Ddd4cAea31eFbE89BD4F4FD681dB0a7Ce) |
+| WSTETH/ETH | [0x27E36b30c81b6D0f5916c01a9DEfbce48B14BaB0](https://cardona-zkevm.polygonscan.com/address/0x27E36b30c81b6D0f5916c01a9DEfbce48B14BaB0) |
+| WSTETH/USD | [0xbBdB2750F002E1174d49D99112dF24D5FC342c22](https://cardona-zkevm.polygonscan.com/address/0xbBdB2750F002E1174d49D99112dF24D5FC342c22) |
+| WUSDM/USD | [0xB295eeD91ab16e0fca7aEf6CdfE0989B43d7f9eC](https://cardona-zkevm.polygonscan.com/address/0xB295eeD91ab16e0fca7aEf6CdfE0989B43d7f9eC) |
+| WUSDM/USDM | [0x40CEDD05e945DAA7b9ad5bA7402B6c041ac4Fba8](https://cardona-zkevm.polygonscan.com/address/0x40CEDD05e945DAA7b9ad5bA7402B6c041ac4Fba8) |
+| YFI/USD | [0xaEDB40C1F3e1Bf5A0CB46E74e5444240307Da540](https://cardona-zkevm.polygonscan.com/address/0xaEDB40C1F3e1Bf5A0CB46E74e5444240307Da540) |
 </details>
 
 <details>
