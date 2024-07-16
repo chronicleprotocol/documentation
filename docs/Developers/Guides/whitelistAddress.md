@@ -21,8 +21,14 @@ On Mainnet, to get access to production  Oracles, please open a ticket on [Disco
 ```bash
 $ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address)()" <oracle address you want you use> --rpc-url $rpc
 ```
+This will whitelist the address that sends the request.
+Alternatively, when you want to whitelist a different address than the one sending the request, you can use: 
 
-Where `0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address.
+```bash
+$ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address, address)()" <oracle address you want you use> <contract address to be whitelisted> --rpc-url $rpc
+```
+
+`0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address.
 
 If you are looking for an Oracle address to quickly test out, feel free to use: Chronicle_ETH_USD_3	`0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603`.
 
@@ -64,6 +70,11 @@ If you do not want to use the CLI, you can whitelist yourself directly on Ethers
 </div>
 
 4. Scroll down to the `selfKiss()` function and enter the Oracle address you wish to interact with in the oracle (address) field. Then, click `Write`.
+You will see that there are two `selfKiss()` functions (overloads). One of them takes two parameters (oracle (address), who (address)), and the other only one parameter (oracle (address)).
+
+    - When you want to whitelist your own address (msg.sender), you can use `selfKiss(address oracle)`.
+   - In contrast, when you need to specify a different address to perform the whitelist on, you should use `selfKiss(address oracle, address who)`.
+
 
 :::tip
 
