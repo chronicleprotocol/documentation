@@ -1,19 +1,26 @@
 # Boilerplate
 
-## Scaffold Eth 2 + Chronicle
+## Scaffold-ETH2 + Chronicle
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/Developers/Boilerplate/OracleReader.png"
+    alt="Oracle Reader"
+/>
+</div>
 
 :::info
-Please be aware that, as the project currently stands, you should use **Hardhat** in terms of programming environments, and deploy your contracts to the **Sepolia** network.
+Please be aware that, as the project currently stands, you should use **Foundry** in terms of programming environments, and deploy your contracts to the **Sepolia** network.
 :::
 
-Please refer to the following [GitHub repo](https://github.com/chronicleprotocol/scaffold-oracle-reader) to take advantage of the boilerplate we have created in conjuction with Scaffold-Eth 2. 
+Please refer to the following [GitHub Repo](https://github.com/chronicleprotocol/scaffold-oracle-reader) to take advantage of the boilerplate we have created in conjunction with [Scaffold-ETH2](https://scaffoldeth.io/). 
 
 
 To find our `OracleReader.sol` contract, follow the following path: 
 
 ```
 - packages
-    - hardhat
+    - foundry
         - contracts
             - OracleReader.sol
 ```
@@ -72,37 +79,25 @@ interface ISelfKisser {
 Add your environment variables in the `.env.example` file and rename it to `.env`:
 ```
 - packages
-    - hardhat
+    - foundry
          - .env.example
 ```
 
 ```js
 /* 
-* Template for Hardhat environment variables.
+* Template for environment variables.
 * To use this template, copy this file, rename it .env, and fill in the values.
-* If not set, we provide default values (check `hardhat.config.ts`) so developers can start prototyping out of the box,
-* but we recommend getting your own API Keys for Production Apps.
-* The Chronicle ETH/USD oracle on Sepolia.
+* The Chronicle ETH/USD Oracle on Sepolia.
 */
 
-CHRONICLE_ORACLE=0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603
-
-// The Chronicle SelfKisser contract on Sepolia.
-SELF_KISSER=0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d
-
-// To access the values stored in this .env file you can use: process.env.VARIABLENAME
-ALCHEMY_API_KEY=
 DEPLOYER_PRIVATE_KEY=
 ETHERSCAN_API_KEY=
+ALCHEMY_API_KEY=
+
+# The Chronicle ETH/USD Oracle on Sepolia.
+CHRONICLE_ORACLE=0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603
+# The Chronicle SelfKisser contract on Sepolia.
+SELF_KISSER=0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d
 ```
-
-The ETH/USD oracle and self-kisser addresses have been added to the .env.example file.
-
-If you would run a Sepolia fork, you can deploy the contract using: 
-
-```bash
-yarn deploy --tags OracleReader
-```
-
 
 
