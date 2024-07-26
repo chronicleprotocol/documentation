@@ -109,7 +109,12 @@ const config = {
               {
                 label: 'Bug Bounty',
                 href:'https://cantina.xyz/bounties/5240b7c7-6fec-4902-bec0-8cad12f14ec4',
-              },{
+              },
+              {
+                label: 'Audits',
+                href:'https://github.com/chronicleprotocol/scribe/tree/main/audits',
+              },
+              {
                 label: 'Careers',
                 href:'https://chroniclelabs.org/careers#open_roles',
               },
