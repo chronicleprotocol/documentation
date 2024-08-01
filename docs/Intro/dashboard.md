@@ -27,7 +27,7 @@ Using the dashboard, users can select a time interval on the graph and, for each
 
 ## Verifiability on Every Level
 
-Users can cryptographically verify in the browser using the Dashboard any **Validator's Signature**, as well as the  the **Schnorr Signature** used for pushing data onchain for the corresponding Oracle.
+Users can cryptographically verify in the browser using the Dashboard any **Validator's Signature**, as well as the **Schnorr Signature** used to push the price onchain to the corresponding Oracle.
 
 ### The Validator Signature
 The validator's signature allows users to verify the behaviour of the validator. Users can check the message that has been signed by each validator to calculate the price for the Oracle.
