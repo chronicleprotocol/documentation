@@ -91,6 +91,23 @@ const config = {
           // },
           //{to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'doc',
+            docId: 'Developers/Guides/whitelistAddress',
+            position: 'left',
+            label: 'Developers',
+          },
+          {
+            type: 'doc',
+            docId: 'validators/quickstart',
+            position: 'left',
+            label: 'Validators',
+          },
+          {
+            href: 'https://chroniclelabs.org/dashboard',
+            label: 'Dashboard',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/chronicleprotocol',
             label: 'GitHub',
             position: 'right',
