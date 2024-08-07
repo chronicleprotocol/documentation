@@ -8,6 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: ['docusaurus-plugin-sass'],
   title: 'Chronicle Docs',
   tagline: 'Cost-efficient. Verifiable Data.',
   favicon: 'img/favicon.ico',
