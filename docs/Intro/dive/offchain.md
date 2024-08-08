@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Off-Chain Components 
 
     - **Validator** (aka Feed) Creates usable information out of raw data that is read from various Origins. Validators query Origins no matter whether they are on-chain or off-chain for the price data. The Validator transform the original data into Chronicle data by using Data Models. After the Chronicle data is calculated it is signed and sent to the peer-to-peer network.

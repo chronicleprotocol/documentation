@@ -62,6 +62,11 @@ const config = {
       }),
     ],
   ],
+  markdown: {
+    mermaid: true
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -75,6 +80,9 @@ const config = {
         backgroundColor: '#2FD05B',
         textColor: '#1C1E21',
         isCloseable: false,
+      },
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
       },
       navbar: {
         title: 'Chronicle Docs',
