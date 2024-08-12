@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+description: Onchain components of Chronicle Protocol Architecture.
+keywords: [data sources, offchain, Validators, Challenger]
 ---
 # Off-Chain Components 
 

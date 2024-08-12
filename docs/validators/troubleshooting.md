@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+description: General Troubleshooting guide for Chronicle validators.
+keywords: [kubectl, helm, Troubleshooting]
 ---
 
 # Troubleshooting

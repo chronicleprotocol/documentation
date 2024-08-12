@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+description: Scribe Optimistic - Scribe with additional optimistic poke functionality on Layer 1 blockchains
+keywords: [Scribe Optimistic, L1, optimistic poke]
 ---
 # ScribeOptimistic
 

@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+description: Scribe - an extremely gas-efficient Oracle based on aggregated Schnorr signatures
+keywords: [Schnorr signature, Scribe]
 ---
 
 # Scribe 

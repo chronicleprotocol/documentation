@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+description: How do PUSH Oracles Work?
+keywords: [PUSH Oracle, Data Source]
 ---
 
 # PUSH Oracles

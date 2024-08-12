@@ -1,5 +1,8 @@
 ---
 sidebar_position: 1
+description: Onchain components of Chronicle Protocol Architecture.
+keywords: [quorum, WatRegistry, ValidatorRegistry]
+
 ---
  # On-Chain Components
 

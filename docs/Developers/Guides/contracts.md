@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+description: Example implementation of IChronicle Interface.
+keywords: [IChronicle, interface]
+---
 # Contract Implementation Example of IChronicle
 
 :::info

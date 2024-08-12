@@ -1,5 +1,7 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
+description: Upgrading a Chronicle validator.
+keywords: [upgrade, validator]
 ---
 
 # Upgrading a Validator

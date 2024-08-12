@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+description: Chronicle Protocol's Mission and Value
+keywords: [verifiability, censorship-resistance, accessibility]
 ---
 
 # Our Mission
