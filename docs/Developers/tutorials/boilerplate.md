@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+description: Boilerplate using Scaffold-ETH2 for an Oracle Reader.
+keywords: [Scaffold-ETH2, boilerplate, Foundry]
+---
 # Boilerplate
 
 ## Scaffold-ETH2 + Chronicle

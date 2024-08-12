@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+description: The Chronicle Dashboard - full transparency over Oracle-reported data
+keywords: [Chronicle Dashboard, verifiability]
 ---
 
 # The Chronicle Dashboard

@@ -1,4 +1,8 @@
-
+---
+sidebar_position: 7
+description: Chronicle Protocol's - A Decentralized Oracle Network
+keywords: [Validators, deviation threshold, components]
+---
 # Decentralized Oracle Network
 You can think of Chronicle as a decentralized protocol managing a network of trusted participants (validators) that report pricing information from various sources (both on-chain and off-chain). One aspect that sets Chronicle apart from other Oracle providers is that the validators of Chronicle are represented by a community of the leading blockchain protocols including [MakerDAO](https://makerdao.com), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [dYdX](https://dydx.exchange/), [0x](https://0x.org/), [Etherscan](https://etherscan.io/), [Gnosis](https://www.gnosis.io/), [DeFi Saver](https://defisaver.com/), [My Crypto](https://mycrypto.com/). This approach is unique to Chronicle and ensures that the Oracle data is being signed by some of the most trusted and reputable projects in the blockchain space, further reinforcing trust in the protocol.
 

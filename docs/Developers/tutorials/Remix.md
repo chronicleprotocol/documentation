@@ -1,4 +1,9 @@
-# Remix
+---
+sidebar_position: 1
+description: Consuming Oracle Data using Remix IDE.
+keywords: [Remix, read access]
+---
+# Consuming Oracle Data (Remix)
 
 ### Consuming Oracle Data
 

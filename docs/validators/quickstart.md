@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+description: Running a Chronicle validator using k3s.
+keywords: [k3s, Chronicle validator]
 ---
 
 # Quickstart

@@ -1,3 +1,8 @@
+---
+sidebar_position: 3
+description: FAQ questions on Chronicle Oracles.
+keywords: [Oracles, FAQ]
+---
 ## I am currently using Chainlink. How difficult is it to change to Chronicle?
 If you are using Chainlink, you would only have to change the address of your oracle to the Chronicle equivalent. This is because Scribe is partially Chainlink compatible, implementing the most widely, and not deprecated, used functions of the `IChainlinkAggregatorV3` interface such as `latestRoundData()`, `decimals()`, and `latestAnswer()`. 
 

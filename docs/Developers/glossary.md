@@ -1,3 +1,8 @@
+---
+sidebar_position: 5
+description: Chronicle Terminology
+keywords: [glossary, terminology]
+---
 # Terminology
 
 

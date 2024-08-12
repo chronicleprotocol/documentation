@@ -1,3 +1,8 @@
+---
+sidebar_position: 6
+description: Chronicle Protocol additional resources. 
+keywords: [resources, GitHub repo]
+---
 # Additonal Resources
 
 ### Helpful GitHub Repositories: 

@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+description: Chronicle Protocol Background FAQ questions.
+keywords: [Background, FAQ]
+---
 ## Is Chronicle owned by/part of MakerDAO?
 Chronicle spun out off MakerDAO Oracle Core Unit in 2023 as a separate entity.
 
