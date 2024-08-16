@@ -65,6 +65,7 @@ Users can also verify the authenticity of the Schnorr signature of the Oracle. T
 <img
     src="/img/Intro/oracleVerification.png"
     alt="Check Sources"
+    width="300"
 />
 </div>
 
