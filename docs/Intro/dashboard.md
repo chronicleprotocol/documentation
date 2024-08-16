@@ -51,7 +51,7 @@ Modifying even one character of the signature will result in invalidating the si
 />
 </div>
 
-### The Schnorr Signature
+### The Schnorr Signature of the Oracle
 
 Users can also verify the authenticity of the Schnorr signature of the Oracle. This value is used to push data onchain. Unlike the validator's signature, the Schnorr signature allows to verify the Oracle instead of a single validator.
 <div style={{textAlign: 'center'}}>
