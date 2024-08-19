@@ -11,7 +11,7 @@ An example contract named `OracleReader.sol` allows you to consume Oracle data a
 
 :::info
 Addresses in this contract are hardcoded for the Sepolia testnet.
-For other supported networks, please check the [Dashboard](https://docs.chroniclelabs.org/).
+For other supported networks, please check the [Dashboard](https://chroniclelabs.org/dashboard). By toggling the `<dev mode>` option located in the top right corner, you can find the Oracles' addresses for different chains on Testnet.
 :::
 
 ```js

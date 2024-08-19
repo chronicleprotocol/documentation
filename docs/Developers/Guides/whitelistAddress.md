@@ -35,7 +35,7 @@ $ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address, addres
 
 `0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address.
 
-If you are looking for an Oracle address to quickly test out, feel free to use: Chronicle_ETH_USD_3	`0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603`.
+If you need an Oracle address for quick testing, you can use: `Chronicle_ETH_USD_3: 0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603`, or find a specific Oracle address using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard).
 
 You can then verify your whitelist status by running:
 ```bash
