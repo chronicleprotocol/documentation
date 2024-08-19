@@ -16,14 +16,14 @@ Using the dashboard, users can select a time interval on the graph and, for each
 <img
     src="/img/Intro/time.png"
     alt="Check Sources"
-    width="500"
+    width="600"
 />
 </div>
 <div style={{textAlign: 'center'}}>
 <img
     src="/img/Intro/sources.png"
     alt="Check Sources"
-    width="500"
+    width="600"
 />
 </div>
 
@@ -38,7 +38,7 @@ The validator's signature allows users to verify the behaviour of the validator.
 <img
     src="/img/Intro/non-manipulated.png"
     alt="Check Sources"
-    width="500"
+    width="600"
 />
 </div>
 
@@ -47,7 +47,7 @@ Modifying even one character of the signature will result in invalidating the si
 <img
     src="/img/Intro/manipulated.png"
     alt="Check Sources"
-    width="500"
+    width="600"
 />
 </div>
 
