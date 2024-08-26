@@ -12,7 +12,7 @@ In the context of blockchain, Real-World Assets (RWAs) refer to physical assets 
 
 <div style={{textAlign: 'center'}}>
 <img
-    src="/img/Intro/Dive/rwa.jpg"
+    src="/img/Intro/Dive/rwa.png"
     alt="Example of Connect to Web3 button"
  
 />
