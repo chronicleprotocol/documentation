@@ -18,7 +18,7 @@ Deploying the validator into an existing kubernetes cluster.
 
 - `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
 - Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
-- Starting from Chart Version 0.3.4, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+- Starting from Chart Version 0.3.5, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
 <br/>
 
@@ -129,7 +129,7 @@ ghost:
 Then install the helm release using this values file:
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.3.4
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.3.5
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
