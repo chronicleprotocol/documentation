@@ -9,7 +9,7 @@ keywords: [quorum, WatRegistry, ValidatorRegistry]
     - **List of Validators**: This refers to the entities or individuals who are authorized to participate in the MultiSig validation process for a particular data model. MultiSig validation typically requires multiple parties to sign off on a transaction or data update before it is considered valid. The list of validators outlines who these authorized parties are.
     - **Quorum**: This represents the minimum number of validations or "feeds" required for a MultiSig validation to be considered valid for a specific data model. For example, if the quorum for a particular data model is set to 11, it means that exactly 11 out of the total number of validators listed must sign off on the transaction or data update for it to be accepted.
 
-    - **ConfigRegistry**: This is a Go-based Oracle client that stores the configurations required for validators.
+    - **ConfigRegistry**: Is part of a Data Model Delivery System that allows Validators to quickly react to changing market conditions that affect the price calculations - e.g. liquidity shifts between origins.
 
 
     - **ValidatorRegistry** plays a crucial role within the **Chronicle Protocol** by maintaining a comprehensive list of all Validators that are recognized as valid participants in the network/protocol. Validators, in this context, are trusted entities within the network that collaborate through a *peer-to-peer* (p2p) network to supply new oracle data.
