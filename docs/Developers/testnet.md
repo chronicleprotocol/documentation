@@ -359,6 +359,7 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 
 | Contract Name              | Contract Address on Berachain Bartio                                                                                          |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1               | [0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd](https://bartio.beratrail.io//address/0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd) |
 | Chronicle_AAVE_USD_1       | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://bartio.beratrail.io//address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
 | Chronicle_ARB_USD_1        | [0x63a0a554c8b82281226B1F1559F5945CB66948ee](https://bartio.beratrail.io//address/0x63a0a554c8b82281226B1F1559F5945CB66948ee) |
 | Chronicle_AVAX_USD_1       | [0x6FAD9d56fdd801d1A95A612007579730014d6425](https://bartio.beratrail.io//address/0x6FAD9d56fdd801d1A95A612007579730014d6425) |
