@@ -59,20 +59,66 @@ Alternatively, you can also find here the addresses organized by chains:
 | Contract Name | Contract Address on Base Sepolia                                                                                                 |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 SelfKisser_1 | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.basescan.org/address/0x70E58b7A1c884fFFE7dbce5249337603a28b8422#code) |
-| Chronicle_CBETH_USD_1 | [0x11E155b04f0498bc6B6EB0086A2148368F0b64F0](https://sepolia.basescan.org/address/0x11E155b04f0498bc6B6EB0086A2148368F0b64F0) |
-| Chronicle_CBETH_USDC_1 | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia.basescan.org/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
-| Chronicle_DAI_USD_1 | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://sepolia.basescan.org/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6) |
-| Chronicle_ETH_USD_1 | [0xea347Db6ef446e03745c441c17018eF3d641Bc8f](https://sepolia.basescan.org/address/0xea347Db6ef446e03745c441c17018eF3d641Bc8f) |
-| Chronicle_HYUSD_USD_1 | [0x1C082338961068009d9F33ea48aa13623e63B18e](https://sepolia.basescan.org/address/0x1C082338961068009d9F33ea48aa13623e63B18e) |
-| Chronicle_RETH_USD_1 | [0x829124df58D1b4853f8669C867d3991cA09265Aa](https://sepolia.basescan.org/address/0x829124df58D1b4853f8669C867d3991cA09265Aa) |
-| Chronicle_USDC_USD_1 | [0x088BEA5f90C316e1c8b898C4A9AF27C2F2984cd7](https://sepolia.basescan.org/address/0x088BEA5f90C316e1c8b898C4A9AF27C2F2984cd7) |
-| Chronicle_USDT_USD_1 | [0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F](https://sepolia.basescan.org/address/0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F) |
-| Chronicle_WBTC_USD_1 | [0x8E947Ea7D5881Cd600Ace95F1201825F8C708844](https://sepolia.basescan.org/address/0x8E947Ea7D5881Cd600Ace95F1201825F8C708844) |
-| Chronicle_WSTETH_ETH_1 | [0x450F6F025aD017f345CD17407Ee22d90E5F87441](https://sepolia.basescan.org/address/0x450F6F025aD017f345CD17407Ee22d90E5F87441) |
-| Chronicle_WSTETH_USD_1 | [0x834c4f996B8a6411AEC0f8a0cF6fAfd4423dBEe2](https://sepolia.basescan.org/address/0x834c4f996B8a6411AEC0f8a0cF6fAfd4423dBEe2) |
-| Chronicle_WSTETH_USDC_1 | [0x262034B41F0C33b67e96b6495b7Bf650dC85acda](https://sepolia.basescan.org/address/0x262034B41F0C33b67e96b6495b7Bf650dC85acda) |
-| Chronicle_WUSDM_USD_1 | [0xe20165f58B507DF17187D6FCc12E741423075C5c](https://sepolia.basescan.org/address/0xe20165f58B507DF17187D6FCc12E741423075C5c) |
-| Chronicle_EURC_USD_1| [0x8df54258786d8d33d0141332B1bA29369B5cB535](https://sepolia.basescan.org/address/0x8df54258786d8d33d0141332B1bA29369B5cB535)
+| Chronicle_AAVE_USD_1 |[0x094962A33737c0ca3DA1395DA8F5914BF5A776B7](https://sepolia.basescan.org//address/0x094962A33737c0ca3DA1395DA8F5914BF5A776B7)
+| Chronicle_ARB_USD_1 |[0x87966246C322f2e6c3Db8CDBCDb7F22c60603D34](https://sepolia.basescan.org//address/0x87966246C322f2e6c3Db8CDBCDb7F22c60603D34)
+| Chronicle_AVAX_USD_1 |[0xAdd88B455B0a56773F589982dF4C5f4982B9995B](https://sepolia.basescan.org//address/0xAdd88B455B0a56773F589982dF4C5f4982B9995B)
+| Chronicle_BNB_USD_1 |[0xe53904452B1Fa21399B3aFcedacd7873793f0905](https://sepolia.basescan.org//address/0xe53904452B1Fa21399B3aFcedacd7873793f0905)
+|Chronicle_CBBTC_USDC_1 |[0x5a7965a30bef8CEc4678F71Bb84e11a5e52b72F6](https://sepolia.basescan.org//address/0x5a7965a30bef8CEc4678F71Bb84e11a5e52b72F6)
+|Chronicle_CBBTC_WBTC_1 |[0x187f8d5cd49e3c4c4C1B40A5a7E8C848b93E5006](https://sepolia.basescan.org//address/0x187f8d5cd49e3c4c4C1B40A5a7E8C848b93E5006)
+| Chronicle_CBBTC_WETH_1 |[0x935Bf0e5255576814F9284B93ed3252B088FD6C7](https://sepolia.basescan.org//address/0x935Bf0e5255576814F9284B93ed3252B088FD6C7)
+| Chronicle_CBETH_USD_1 |[0x11E155b04f0498bc6B6EB0086A2148368F0b64F0](https://sepolia.basescan.org//address/0x11E155b04f0498bc6B6EB0086A2148368F0b64F0)
+|Chronicle_CBETH_USDC_1 |[0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia.basescan.org//address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B)
+| Chronicle_CRV_USD_1 |[0x241D171f243e65170dDaad4C42EDeFe55a834E2D](https://sepolia.basescan.org//address/0x241D171f243e65170dDaad4C42EDeFe55a834E2D)
+|Chronicle_CRVUSD_USD_1 |[0x70d614A60E5c68f4Dd8075Cd80784b8839093e0D](https://sepolia.basescan.org//address/0x70d614A60E5c68f4Dd8075Cd80784b8839093e0D)
+|Chronicle_DAI_USD_1 |[0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://sepolia.basescan.org//address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6)
+| Chronicle_DSR_RATE_1 |[0x2658Edb19EbE16E368cf76745283fAd356d036Bc](https://sepolia.basescan.org//address/0x2658Edb19EbE16E368cf76745283fAd356d036Bc)
+| Chronicle_ETH_BTC_1 |[0xEB656424e16a8092592a74e6CD93cFd212204495](https://sepolia.basescan.org//address/0xEB656424e16a8092592a74e6CD93cFd212204495)
+|Chronicle_ETH_USD_1 |[0xea347Db6ef446e03745c441c17018eF3d641Bc8f](https://sepolia.basescan.org//address/0xea347Db6ef446e03745c441c17018eF3d641Bc8f)
+| Chronicle_ETHX_ETH_1 |[0xdf6b146c4C947179BA2315557b008A44f8329B8e](https://sepolia.basescan.org//address/0xdf6b146c4C947179BA2315557b008A44f8329B8e)
+| Chronicle_ETHX_USD_1 |[0xD8EB9eCd1a407b64CEa148eE53515e7f92229C8B](https://sepolia.basescan.org//address/0xD8EB9eCd1a407b64CEa148eE53515e7f92229C8B)
+| Chronicle_EURC_USD_1 |[0x8df54258786d8d33d0141332B1bA29369B5cB535](https://sepolia.basescan.org//address/0x8df54258786d8d33d0141332B1bA29369B5cB535)
+|Chronicle_FBTC_WBTC_1 |[0xa818aA2AbB60486Baea6545d280Bc6a018b21df2](https://sepolia.basescan.org//address/0xa818aA2AbB60486Baea6545d280Bc6a018b21df2)
+| Chronicle_GBP_USD_1 |[0x2faE10C3C193b20d9A68016A79A1Ec0B0AA19df1](https://sepolia.basescan.org//address/0x2faE10C3C193b20d9A68016A79A1Ec0B0AA19df1)
+|Chronicle_GNO_USD_1 |[0x3b929786bf900afe24f66d451eaBbf99dcf4fFaa](https://sepolia.basescan.org//address/0x3b929786bf900afe24f66d451eaBbf99dcf4fFaa)
+|Chronicle_HYUSD_USD_1 |[0x4C2E10DDCD60106FF3Ba8f35a16b9eDc67D3935a](https://sepolia.basescan.org//address/0x4C2E10DDCD60106FF3Ba8f35a16b9eDc67D3935a)
+|Chronicle_IBTA_USD_1 |[0xCd31FC7bdB5a172Cd26194f73255247985fb16dC](https://sepolia.basescan.org//address/0xCd31FC7bdB5a172Cd26194f73255247985fb16dC)
+| Chronicle_LDO_USD_1 |[0xc060f4d6D6dCcFefB19abcBdf7cDaBE8268dAF1e](https://sepolia.basescan.org//address/0xc060f4d6D6dCcFefB19abcBdf7cDaBE8268dAF1e)
+| Chronicle_LIDO_LST_2DAYS_1 |[0xCf2aF249b2d71B33339B9613E78f8D1B7F9eeE83](https://sepolia.basescan.org//address/0xCf2aF249b2d71B33339B9613E78f8D1B7F9eeE83)
+| Chronicle_LINK_USD_1 |[0x983Fd2121Dc136b5A05F69F298d40Eb52518D208](https://sepolia.basescan.org//address/0x983Fd2121Dc136b5A05F69F298d40Eb52518D208)
+|Chronicle_MATIC_USD_1 |[0x2aDC93F48Da9E3C06FC6A878b6459ada940c334d](https://sepolia.basescan.org//address/0x2aDC93F48Da9E3C06FC6A878b6459ada940c334d)
+| Chronicle_METH_ETH_1 |[0x092037328502c3633654d5fd07165c3bD1ad7bD9](https://sepolia.basescan.org//address/0x092037328502c3633654d5fd07165c3bD1ad7bD9)
+| Chronicle_METH_USD_1 |[0x9C8212601138ef0fA7eB602912b98ee08D0534e9](https://sepolia.basescan.org//address/0x9C8212601138ef0fA7eB602912b98ee08D0534e9)
+| Chronicle_MKR_USD_1 |[0xF3A5fE18CD97fd2d828bE105245fF3Fe24ADA93b](https://sepolia.basescan.org//address/0xF3A5fE18CD97fd2d828bE105245fF3Fe24ADA93b)
+| Chronicle_MNT_USD_1 |[0xc6aD96d747A29d85Cd15169D507490E1B3dd060C](https://sepolia.basescan.org//address/0xc6aD96d747A29d85Cd15169D507490E1B3dd060C)
+|Chronicle_MOG_USD_1 |[0x2FF17372FdB5F81a28226d8A0B721f4D7357B362](https://sepolia.basescan.org//address/0x2FF17372FdB5F81a28226d8A0B721f4D7357B362)
+|Chronicle_OP_USD_1 |[0x7aA90a4915421787273722900bee08B648e7c62e](https://sepolia.basescan.org//address/0x7aA90a4915421787273722900bee08B648e7c62e)
+| Chronicle_OSETH_ETH_1 |[0x06af1E8bb5864D287EC167d33790aA0bEA83b87e](https://sepolia.basescan.org//address/0x06af1E8bb5864D287EC167d33790aA0bEA83b87e)
+| Chronicle_PEPE_USD_1 |[0xaD731849570668C1A3ca2A3bb85d1D51aaD5178E](https://sepolia.basescan.org//address/0xaD731849570668C1A3ca2A3bb85d1D51aaD5178E)
+| Chronicle_RETH_ETH_1 |[0x3e56Fb669ae77A6877913068ABAa1316A162DFce](https://sepolia.basescan.org//address/0x3e56Fb669ae77A6877913068ABAa1316A162DFce)
+| Chronicle_RETH_USD_1 |[0x829124df58D1b4853f8669C867d3991cA09265Aa](https://sepolia.basescan.org//address/0x829124df58D1b4853f8669C867d3991cA09265Aa)
+| Chronicle_SDAI_DAI_1 |[0x78Ff387176F31b3C4eE44ffe4c4Ce2fd9BB44a79](https://sepolia.basescan.org//address/0x78Ff387176F31b3C4eE44ffe4c4Ce2fd9BB44a79)
+| Chronicle_SDAI_ETH_1 |[0xe4b86808238D5B5Ce4eFDCA38Ca9c6405D3652c7](https://sepolia.basescan.org//address/0xe4b86808238D5B5Ce4eFDCA38Ca9c6405D3652c7)
+| Chronicle_SDAI_MATIC_1 |[0x0467eA5339066797EbA0b19dF2c8f3B23BE31A7B](https://sepolia.basescan.org//address/0x0467eA5339066797EbA0b19dF2c8f3B23BE31A7B)
+| Chronicle_SDAI_USD_1 |[0xE14468639454d2307Ea9608A1651Ec872Ac88192](https://sepolia.basescan.org//address/0xE14468639454d2307Ea9608A1651Ec872Ac88192)
+|Chronicle_SNX_USD_1 |[0x277F78F39b9Dc73dF3723BAcD40f8658f8a1A633](https://sepolia.basescan.org//address/0x277F78F39b9Dc73dF3723BAcD40f8658f8a1A633)
+| Chronicle_SOL_USD_1 |[0x2F8C90726Bc6bEc5D01313476F2e211a366A921a](https://sepolia.basescan.org//address/0x2F8C90726Bc6bEc5D01313476F2e211a366A921a)
+| Chronicle_STETH_BTC_1 |[0x36d28Fb92EB8cd7eb31306b4d40ea534CE8E0E96](https://sepolia.basescan.org//address/0x36d28Fb92EB8cd7eb31306b4d40ea534CE8E0E96)
+| Chronicle_STONE_ETH_1 |[0x37C4141Bce04a7DF0E4A2C9248AD28Da9DFC809f](https://sepolia.basescan.org//address/0x37C4141Bce04a7DF0E4A2C9248AD28Da9DFC809f)
+| Chronicle_STONE_USD_1 |[0x721b0D38bCC7B7A9666DA0f5D8CB5A581d067537](https://sepolia.basescan.org//address/0x721b0D38bCC7B7A9666DA0f5D8CB5A581d067537)
+|Chronicle_SUSDE_USD_1 |[0x7F171a490121515690479990e7262e67c9055B39](https://sepolia.basescan.org//address/0x7F171a490121515690479990e7262e67c9055B39)
+| Chronicle_UNI_USD_1 |[0xe78154D755110662E540F524ef04BF774f21C8Ba](https://sepolia.basescan.org//address/0xe78154D755110662E540F524ef04BF774f21C8Ba)
+| Chronicle_USDC_USD_1 |[0x088BEA5f90C316e1c8b898C4A9AF27C2F2984cd7](https://sepolia.basescan.org//address/0x088BEA5f90C316e1c8b898C4A9AF27C2F2984cd7)
+| Chronicle_USDE_USD_1 |[0xd9c2fC66C39e4ac6F9c93092E0A8e8522eaB0456](https://sepolia.basescan.org//address/0xd9c2fC66C39e4ac6F9c93092E0A8e8522eaB0456)
+|Chronicle_USDT_USD_1 |[0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F](https://sepolia.basescan.org//address/0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F)
+| Chronicle_USDY_USD_1 |[0x149a3837f193e65448021dA23B756D59d1a69d32](https://sepolia.basescan.org//address/0x149a3837f193e65448021dA23B756D59d1a69d32)
+| Chronicle_WBTC_USD_1 |[0x8E947Ea7D5881Cd600Ace95F1201825F8C708844](https://sepolia.basescan.org//address/0x8E947Ea7D5881Cd600Ace95F1201825F8C708844)
+| Chronicle_WSTETH_ETH_1 |[0x450F6F025aD017f345CD17407Ee22d90E5F87441](https://sepolia.basescan.org//address/0x450F6F025aD017f345CD17407Ee22d90E5F87441)
+| Chronicle_WSTETH_USD_1 |[0x834c4f996B8a6411AEC0f8a0cF6fAfd4423dBEe2](https://sepolia.basescan.org//address/0x834c4f996B8a6411AEC0f8a0cF6fAfd4423dBEe2)
+|Chronicle_WSTETH_USDC_1 |[0x262034B41F0C33b67e96b6495b7Bf650dC85acda](https://sepolia.basescan.org//address/0x262034B41F0C33b67e96b6495b7Bf650dC85acda)
+|Chronicle_WUSDM_USD_1 |[0xe20165f58B507DF17187D6FCc12E741423075C5c](https://sepolia.basescan.org//address/0xe20165f58B507DF17187D6FCc12E741423075C5c)
+| Chronicle_WUSDM_USDM_1 |[0x6e667e5935f86C7414809711830b54166b24c93C](https://sepolia.basescan.org//address/0x6e667e5935f86C7414809711830b54166b24c93C)
+|Chronicle_YFI_USD_1 |[0x475478AB0Db3A1166E82E95E91530eFAa1273668](https://sepolia.basescan.org//address/0x475478AB0Db3A1166E82E95E91530eFAa1273668)
+|Chronicle_ZK_USDT_1 |[0x1C55836C57Cc80BC6A4D9dB63a1beb8f9aD86C7c](https://sepolia.basescan.org//address/0x1C55836C57Cc80BC6A4D9dB63a1beb8f9aD86C7c)
 
 </details>
 
@@ -198,40 +244,32 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 <details>
 <summary>Smart Contract Addresses on **Mantle Testnet**</summary>
 
-| Contract Name          | Contract Address on Mantle Sepolia                                                                                                   |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| SelfKisser_1           | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://explorer.testnet.mantle.xyz/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d) |
-| Chronicle_AAVE_USD_1   | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://explorer.testnet.mantle.xyz/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717) |
-| Chronicle_ARB_USD_1    | [0x579BfD0581beD0d18fBb0Ebab099328d451552DD](https://explorer.testnet.mantle.xyz/address/0x579BfD0581beD0d18fBb0Ebab099328d451552DD) |
-| Chronicle_AVAX_USD_1   | [0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688](https://explorer.testnet.mantle.xyz/address/0x78C8260AF7C8D0d17Cf3BA91F251E9375A389688) |
-| Chronicle_BNB_USD_1    | [0x26EE3E8b618227C1B735D8D884d52A852410019f](https://explorer.testnet.mantle.xyz/address/0x26EE3E8b618227C1B735D8D884d52A852410019f) |
-| Chronicle_BTC_USD_1    | [0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c](https://explorer.testnet.mantle.xyz/address/0x4B5aBFC0Fe78233b97C80b8410681765ED9fC29c) |
-| Chronicle_CRV_USD_1    | [0xf29a932ae56bB96CcACF8d1f2Da9028B01c8F030](https://explorer.testnet.mantle.xyz/address/0xf29a932ae56bB96CcACF8d1f2Da9028B01c8F030) |
-| Chronicle_DAI_USD_1    | [0xa7aA6a860D17A89810dE6e6278c58EB21Fa00fc4](https://explorer.testnet.mantle.xyz/address/0xa7aA6a860D17A89810dE6e6278c58EB21Fa00fc4) |
-| Chronicle_DSR_RATE_1   | [0x729af3A41AE9E707e7AE421569C4b9c632B66a0c](https://explorer.testnet.mantle.xyz/address/0x729af3A41AE9E707e7AE421569C4b9c632B66a0c) |
-| Chronicle_ETH_BTC_1    | [0x1804969b296E89C1ddB1712fA99816446956637e](https://explorer.testnet.mantle.xyz/address/0x1804969b296E89C1ddB1712fA99816446956637e) |
-| Chronicle_ETH_USD_1    | [0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660](https://explorer.testnet.mantle.xyz/address/0xc8A1F9461115EF3C1E84Da6515A88Ea49CA97660) |
-| Chronicle_GNO_USD_1    | [0xA28dCaB66FD25c668aCC7f232aa71DA1943E04b8](https://explorer.testnet.mantle.xyz/address/0xA28dCaB66FD25c668aCC7f232aa71DA1943E04b8) |
-| Chronicle_IBTA_USD_1   | [0x07487b0Bf28801ECD15BF09C13e32FBc87572e81](https://explorer.testnet.mantle.xyz/address/0x07487b0Bf28801ECD15BF09C13e32FBc87572e81) |
-| Chronicle_LDO_USD_1    | [0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E](https://explorer.testnet.mantle.xyz/address/0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E) |
-| Chronicle_LINK_USD_1   | [0xecB89B57A60ac44E06ab1B767947c19b236760c3](https://explorer.testnet.mantle.xyz/address/0xecB89B57A60ac44E06ab1B767947c19b236760c3) |
-| Chronicle_MATIC_USD_1  | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://explorer.testnet.mantle.xyz/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18) |
-| Chronicle_MKR_USD_1    | [0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d](https://explorer.testnet.mantle.xyz/address/0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d) |
-| Chronicle_OP_USD_1     | [0xfadF055f6333a4ab435D2D248aEe6617345A4782](https://explorer.testnet.mantle.xyz/address/0xfadF055f6333a4ab435D2D248aEe6617345A4782) |
-| Chronicle_RETH_USD_1   | [0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263](https://explorer.testnet.mantle.xyz/address/0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263) |
-| Chronicle_SDAI_DAI_1   | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://explorer.testnet.mantle.xyz/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491) |
-| Chronicle_SDAI_ETH_1   | [0x05aB94eD168b5d18B667cFcbbA795789C750D893](https://explorer.testnet.mantle.xyz/address/0x05aB94eD168b5d18B667cFcbbA795789C750D893) |
-| Chronicle_SDAI_MATIC_1 | [0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA](https://explorer.testnet.mantle.xyz/address/0x2f0e0dE1F8c11d2380dE093ED15cA6cE07653cbA) |
-| Chronicle_SNX_USD_1    | [0xD20f1eC72bA46b6126F96c5a91b6D3372242cE98](https://explorer.testnet.mantle.xyz/address/0xD20f1eC72bA46b6126F96c5a91b6D3372242cE98) |
-| Chronicle_SOL_USD_1    | [0x4D1e6f39bbfcce8b471171b8431609b83f3a096D](https://explorer.testnet.mantle.xyz/address/0x4D1e6f39bbfcce8b471171b8431609b83f3a096D) |
-| Chronicle_UNI_USD_1    | [0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5](https://explorer.testnet.mantle.xyz/address/0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5) |
-| Chronicle_USDC_USD_1   | [0x1173da1811a311234e7Ab0A33B4B7B646Ff42aEC](https://explorer.testnet.mantle.xyz/address/0x1173da1811a311234e7Ab0A33B4B7B646Ff42aEC) |
-| Chronicle_USDT_USD_1   | [0x0bd446021Ab95a2ABd638813f9bDE4fED3a5779a](https://explorer.testnet.mantle.xyz/address/0x0bd446021Ab95a2ABd638813f9bDE4fED3a5779a) |
-| Chronicle_WBTC_USD_1   | [0xA7226d85CE5F0DE97DCcBDBfD38634D6391d0584](https://explorer.testnet.mantle.xyz/address/0xA7226d85CE5F0DE97DCcBDBfD38634D6391d0584) |
-| Chronicle_WSTETH_USD_1 | [0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab](https://explorer.testnet.mantle.xyz/address/0xc9Bb81d3668f03ec9109bBca77d32423DeccF9Ab) |
-| Chronicle_WUSDM_USDM_1 | [0xF719E362724Dda4Ad3B8D92D49E0c44E48Df4e56](https://explorer.testnet.mantle.xyz/address/0xF719E362724Dda4Ad3B8D92D49E0c44E48Df4e56) |
-| Chronicle_WUSDM_USD_1  | [0x6d10de3640ab2F11B1102Ae72C06BB497E5E859b](https://explorer.testnet.mantle.xyz/address/0x6d10de3640ab2F11B1102Ae72C06BB497E5E859b) |
-| Chronicle_YFI_USD_1    | [0x0893EcE705639112C1871DcE88D87D81540D0199](https://explorer.testnet.mantle.xyz/address/0x0893EcE705639112C1871DcE88D87D81540D0199) |
+| Contract Name         | Contract Address on Mantle Sepolia                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| SelfKisser_1          | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://explorer.testnet.mantle.xyz/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578) |
+| Chronicle_AAVE_USD_1  | [0xdcb8a2D1182B41bdD3536a1327416269A22194B0](https://sepolia.mantlescan.xyz//address/0xdcb8a2D1182B41bdD3536a1327416269A22194B0)     |
+| Chronicle_ARB_USD_1   | [0x89E5D866b72fbDedA2b604d76844164D767A1431](https://sepolia.mantlescan.xyz//address/0x89E5D866b72fbDedA2b604d76844164D767A1431)     |
+| Chronicle_AVAX_USD_2  | [0xC262df38B468E4c13d76759d20909Aa92883755D](https://sepolia.mantlescan.xyz//address/0xC262df38B468E4c13d76759d20909Aa92883755D)     |
+| Chronicle_BNB_USD_1   | [0x53C3b4Af4FD373123a18694ea1554789A180ed15](https://sepolia.mantlescan.xyz//address/0x53C3b4Af4FD373123a18694ea1554789A180ed15)     |
+| Chronicle_BTC_USD_1   | [0x89B87078baa4c7F2EB1b5fBf56a6020D65aD968a](https://sepolia.mantlescan.xyz//address/0x89B87078baa4c7F2EB1b5fBf56a6020D65aD968a)     |
+| Chronicle_CRV_USD_1   | [0x376B34E9C3e759abd4F0F82484a4274D1d336aa5](https://sepolia.mantlescan.xyz//address/0x376B34E9C3e759abd4F0F82484a4274D1d336aa5)     |
+| Chronicle_DAI_USD_1   | [0x76CA0b47308D7498C7da72Cf02ea30C3BB7ecd83](https://sepolia.mantlescan.xyz//address/0x76CA0b47308D7498C7da72Cf02ea30C3BB7ecd83)     |
+| Chronicle_ETH_BTC_1   | [0x175C045e8E2C0065dDe783ddFFFDE2A37a250E58](https://sepolia.mantlescan.xyz//address/0x175C045e8E2C0065dDe783ddFFFDE2A37a250E58)     |
+| Chronicle_ETH_USD_1   | [0xa6896dCf3f5Dc3c29A5bD3a788D6b7e901e487D8](https://sepolia.mantlescan.xyz//address/0xa6896dCf3f5Dc3c29A5bD3a788D6b7e901e487D8)     |
+| Chronicle_FBTC_WBTC_1 | [0x7Fc865eCd3a69e5dcBa196DaAf67bFeFaA3E9230](https://sepolia.mantlescan.xyz//address/0x7Fc865eCd3a69e5dcBa196DaAf67bFeFaA3E9230)     |
+| Chronicle_GNO_USD_1   | [0x94E17970760B6f13082875fbE73A8B60c9cAbD78](https://sepolia.mantlescan.xyz//address/0x94E17970760B6f13082875fbE73A8B60c9cAbD78)     |
+| Chronicle_LDO_USD_1   | [0x368c9305ea4F7ee94999ae948DDd036718FBD133](https://sepolia.mantlescan.xyz//address/0x368c9305ea4F7ee94999ae948DDd036718FBD133)     |
+| Chronicle_LINK_USD_1  | [0x909efe5382Cd18cB847242FEa3aBfe56f909Dde9](https://sepolia.mantlescan.xyz//address/0x909efe5382Cd18cB847242FEa3aBfe56f909Dde9)     |
+| Chronicle_MATIC_USD_1 | [0x4c75685dF5a2169A4a0A80e83714dA14544416E4](https://sepolia.mantlescan.xyz//address/0x4c75685dF5a2169A4a0A80e83714dA14544416E4)     |
+| Chronicle_METH_ETH_1  | [0x753fEd211acF7106DFe36dF6B19e84618F50047f](https://sepolia.mantlescan.xyz//address/0x753fEd211acF7106DFe36dF6B19e84618F50047f)     |
+| Chronicle_METH_USD_1  | [0x9245671d74645363c95a9E82D201Ef636E23EE6e](https://sepolia.mantlescan.xyz//address/0x9245671d74645363c95a9E82D201Ef636E23EE6e)     |
+| Chronicle_MKR_USD_1   | [0x31E7FadCC6092b85e0De6fF3295cfAC851b64744](https://sepolia.mantlescan.xyz//address/0x31E7FadCC6092b85e0De6fF3295cfAC851b64744)     |
+| Chronicle_MNT_USD_1   | [0xCE0F753FDEEE2D0EC5F1ba086bD7d5087C20c307](https://sepolia.mantlescan.xyz//address/0xCE0F753FDEEE2D0EC5F1ba086bD7d5087C20c307)     |
+| Chronicle_SUSDE_USD_1 | [0x3f6B3a60a6C6D30008e4B9204eCFA7B5c5650b3a](https://sepolia.mantlescan.xyz//address/0x3f6B3a60a6C6D30008e4B9204eCFA7B5c5650b3a)     |
+| Chronicle_USDC_USD_1  | [0x9Dd500569A6e77ECdDE7694CDc2E58ac587768D0](https://sepolia.mantlescan.xyz//address/0x9Dd500569A6e77ECdDE7694CDc2E58ac587768D0)     |
+| Chronicle_USDE_USD_1  | [0x39dBd4B7D2A303914780e47554e782013Ab5352E](https://sepolia.mantlescan.xyz//address/0x39dBd4B7D2A303914780e47554e782013Ab5352E)     |
+| Chronicle_USDT_USD_1  | [0xD671F5F7c2fb6f75439641C36a578842f5b376A9](https://sepolia.mantlescan.xyz//address/0xD671F5F7c2fb6f75439641C36a578842f5b376A9)     |
+| Chronicle_USDY_USD_1  | [0x9daBB39Da8041E06696EF8938908D158a88d08bE](https://sepolia.mantlescan.xyz//address/0x9daBB39Da8041E06696EF8938908D158a88d08bE)     |
 
 </details>
 
