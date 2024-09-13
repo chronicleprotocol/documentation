@@ -16,7 +16,7 @@ The Yield Rate Oracle is a Schnorr based Oracle with an additional functionality
 
 This Oracle provides lending protocols such as [Spark](https://spark.fi/) with a safe and automated way to customize the interest rate of ETH and ETH-backed derivatives. It eliminates the need for manual rate setting and updates, which are common in many decentralized lending protocols.
 
-The interest rate of the liquid staking token derives from the [Ethereum Staking Reward Rate](https://beaconcha.in/ethstore), which fluctuates based on factors such as **block space demand**, the **amount of ETH staked at any time**, and the **total number of validators on the network**.
+The liquid staking token interest rate derives from Lido's [stETH](https://etherscan.io/address/0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84) contract.
 
 ### Automated Interest Rate Customization
 
