@@ -141,4 +141,4 @@ Hit `Query`. The data returned should look like this:
     alt="Tolled" 
 />
 </div>
-Once you verify that you are whitelisted, you are ready to read from smart contracts.
+Once you verify that you are whitelisted, you are ready to read from the Oracle's smart contract.
