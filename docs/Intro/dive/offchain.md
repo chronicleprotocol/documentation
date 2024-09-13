@@ -6,7 +6,8 @@ keywords: [data sources, offchain, Validators, Challenger]
 
 # Offchain Components
 
-     - **Validators** (aka Feeds) interact with the peer-to-peer Validator network to read and write messages, and they also read data from relays. Validators process this raw data into usable information using different Data Models, transforming it into Chronicle data (prices for different asset pairs). Once calculated, this data is signed and sent to the peer-to-peer network.
+     - **Validators** read data from different sources, also known as origins - i.e. where the data originates from. Those sources can be both onchain and offchain. Validators then apply a data model to the raw data to calculate a final price that is resistant to market manipulation.
+     The validators interact with each other during the Schnorr signing session.
 
 
     - **Challenger** is an offchain component that listens to Oracle’s updates and makes sure that no invalid optimistic update is made. Thus we can be sure that our Optimistic Oracles are functioning properly. Both challengers and relays are permissionless jobs with challengers even getting paid for their effort. Participation from the community is both encouraged and supported.
