@@ -9,7 +9,7 @@ keywords: [onchain, offchain]
   
   Origins, such as primary data sources, can exist on both onchain and offchain layers.
 
-    ![Diagram Image](../../../static/img/Intro/diagram.png)
+    ![Diagram Image](../../../static/img/Intro/architecture.png)
   
 
 
