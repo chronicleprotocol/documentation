@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# ETH Denver Hackathon Guide
+# 🇺🇸 ETH Denver Hackathon Guide
 
 Welcome to the ETH Denver Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
 

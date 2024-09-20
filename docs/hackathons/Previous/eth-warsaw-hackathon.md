@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# ETH Warsaw Hackathon
+# 🇵🇱 ETH Warsaw Hackathon
 
 This document provides documentation for integrating Chronicle Oracles into their ETH Warsaw Hackathon projects.
 

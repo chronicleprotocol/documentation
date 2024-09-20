@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# ETH Lisbon Hackathon Guide
+# 🇵🇹 ETH Lisbon Hackathon Guide
 
 ![ETH Lisbon Hackathon](https://pbs.twimg.com/media/F43NCzgWMAAiQNi?format=png&name=large)
 

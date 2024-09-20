@@ -158,7 +158,7 @@ Cast is a command-line interface (CLI) tool by the Foundry team to streamline yo
 
 Chronicle safeguards Oracle read functions with a whitelist, ensuring controlled access to critical data. However, the SelfKisser contract unfolds a possibility where you can whitelist yourself (or, as whimsically termed, "kiss") yourself.
 
-To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../Developers/Guides/whitelistAddress.md)**.
+To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../../Developers/Guides/whitelistAddress.md)**.
 
 **Please note that this is a mandatory step in ordr to be able to read from Chronicle Oracles.**
 :::
