@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2.5
+sidebar_position: 3
 ---
 
-# ETH Global Istanbul Guide
+# 🇹🇷 ETH Global Istanbul Guide
 
 Welcome to the ETHGlobal Istanbul Hackathon! This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. Our team is here to assist you.
 
