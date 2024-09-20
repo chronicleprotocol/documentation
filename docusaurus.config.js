@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -63,7 +63,7 @@ const config = {
     ],
   ],
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
 
   themes: ['@docusaurus/theme-mermaid'],
@@ -82,7 +82,7 @@ const config = {
         isCloseable: false,
       },
       mermaid: {
-        theme: {light: 'neutral', dark: 'forest'},
+        theme: { light: 'neutral', dark: 'forest' },
       },
       navbar: {
         title: 'Chronicle Docs',
@@ -134,15 +134,15 @@ const config = {
               },
               {
                 label: 'Bug Bounty',
-                href:'https://cantina.xyz/bounties/5240b7c7-6fec-4902-bec0-8cad12f14ec4',
+                href: 'https://cantina.xyz/bounties/5240b7c7-6fec-4902-bec0-8cad12f14ec4',
               },
               {
                 label: 'Audits',
-                href:'https://github.com/chronicleprotocol/scribe/tree/main/audits',
+                href: 'https://github.com/chronicleprotocol/scribe/tree/main/audits',
               },
               {
                 label: 'Careers',
-                href:'https://chroniclelabs.org/careers#open_roles',
+                href: 'https://chroniclelabs.org/careers#open_roles',
               },
             ],
           },
@@ -158,12 +158,12 @@ const config = {
                 href: 'https://twitter.com/ChronicleLabs',
               },
               {
-                label: 'Reddit',
-                href: 'https://reddit.com/r/chronicleprotocol',
-              },
-              {
                 label: 'Farcaster',
                 href: 'https://warpcast.com/chroniclelabs',
+              },
+              {
+                label: 'Chronicle Points',
+                href: 'https://chroniclelabs.org/blog/chronicle-points-have-arrived',
               },
             ],
           },
@@ -174,12 +174,17 @@ const config = {
                 label: 'Website',
                 href: 'https://chroniclelabs.org',
               },
-              {label: 'YouTube', 
-              href: 'https://www.youtube.com/@ChronicleProtocol'
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@ChronicleProtocol',
               },
               {
                 label: 'Telegram',
                 href: 'https://t.me/chronicleprotocol',
+              },
+              {
+                label: 'Reddit',
+                href: 'https://reddit.com/r/chronicleprotocol',
               },
             ],
           },
