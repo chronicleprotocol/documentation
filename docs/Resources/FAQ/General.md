@@ -35,6 +35,9 @@ GNO on Gnosis: [https://gnosisscan.io/address/0xA28dCaB66FD25c668aCC7f232aa71DA1
 
 The data originates from primary on-chain sources such as DEXes (e.g., Uniswap, dYdX, Balancer) and off-chain CEXes (e.g., Kraken, Binance, Coinbase). Only high-quality sources are used in Chronicle’s data models.
 
+## What types of Oracles does Chronicle Protocol enable?
+In addition to the core price feed Oracles, two new products have been introduced: the [Yield Rate Oracle](https://chroniclelabs.org/blog/the-yield-rate-oracle) and the [Real World Asset (RWA) Oracle](https://chroniclelabs.org/blog/m-0-and-chronicle-raising-the-standard-in-collateral-verification-with-the-rwa-oracle).
+
 ## What is the difference between PUSH and PULL oracles?
 
 A push oracle proactively provides data to smart contracts without being explicitly requested, whenever a condition or event happens (sometimes referred to as a threshold or a heartbeat). On the other hand, PULL oracles require smart contracts to request data explicitly. The data is pulled from external sources in response to a query from the smart contract.
@@ -53,3 +56,12 @@ This approach to validators is unique to Chronicle, and ensures that the Oracle 
 ## Does the Chronicle dashboard pull data from the Chronicle Archive?
 
 The Dashboard pulls from a combination of on-chain sources and off-chain network traffic that is the basis for the Oracle updates. Specifically, the feeds pass cryptographically (ECDSA)-signed price messages that are then computed into a median value for on-chain updates. Those messages are ephemeral, so our archiving system saves them in a database for historical preservation.
+
+## Can you provide a comparison of gas usage for a Chronicle Oracle update versus competitors that use a PUSH-based model?
+
+| Oracle Network | Chain | Pair | Gas | No. validators | Etherscan link |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Chronicle |ETH Mainnet | ETH/USD| 54,620 | 13 | https://etherscan.io/tx/0xf365e0c8def94e3aa666dd443ad10c7b86d9bf55b74878e42cf42e9f5b56fdf3 |
+| Chainlink |ETH Mainnet | ETH/USD| 333,602 | 11 | https://etherscan.io/tx/0xe236f406773bd2049549131646cda58497a1a9cb9c03fd624a5552fdd1503bd3 |
+| Chronicle | Arbitrum | ETH/USD| 143,266 | 13 | https://arbiscan.io/tx/0xf9e83b4515303b22bbae8274f5b4e3c7b64c988c3b026d40b0984075913609d9 |
+| Chainlink | Arbitrum | ETH/USD| 185,113 | 4 | https://arbiscan.io/tx/0xfd7a955985634bba3e26a5820aa277479be096b0695872eee0ccf1b7728b3774 |
