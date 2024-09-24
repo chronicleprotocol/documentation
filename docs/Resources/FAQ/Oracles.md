@@ -36,6 +36,6 @@ On Etherscan, navigate to the `Read Contract` section of the Oracle you want to 
 
 A new aggregation round is triggered after a specified amount of time since the latest update, or if the new offchain value deviates more than a pre-defined threshold for the onchain value, whichever of these conditions occurs first. If the data values stay within the Deviation Threshold, an update will only be triggered every X minutes / hours.
 
-## Can the update threshold parameters be customized?
+## Can the update threshold parameters be modified?
 
-Yes, the update parameters, including the update and deviation thresholds, can be customized. For the most up-to-date parameters, please check the specific Oracle on the [Dashboard](https://chroniclelabs.org/dashboard/oracles). If you'd like to request different parameters, please get in touch.
+Yes, the update parameters, including the update and deviation thresholds, can be modified. For the most up-to-date parameters, please check the specific Oracle on the [Dashboard](https://chroniclelabs.org/dashboard/oracles). If you'd like to request different parameters, please get in touch.
