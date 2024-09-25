@@ -7,10 +7,8 @@ keywords: [Chronicle Points]
 # Chronicle Points
 
 ## What are Chronicle Points and how do they work?
-The exclusive launch of Chronicle Points with SKY, enables eligible participants the opportunity via the [Sky.Money](https://sky.money/) dapp to supply USDS to accrue Chronicle Points. Chronicle Points will later be claimable for Chronicle tokens at a rate of 10 points = 1 CLE token.
+The exclusive launch of Chronicle Points with SKY, enables eligible participants the opportunity to supply USDS via [Sky.Money](https://sky.money/) to accrue Chronicle Points. Chronicle Points will later be claimable for Chronicle tokens at a rate of 10 points = 1 CLE token, where the total supply of CLE tokens will be 10 billion. Chronicle points are being emitted at a rate of 3.75 billion per year. 
 
-## Where can I find the tokenomics of CLE?
-The tokenomics of CLE will be revealed at a later time, once the claim process of CLE begins.
 
 ## How can I collect Chronicle Points?
 Eligible users must supply USDS to begin accruing Chronicle Points.
