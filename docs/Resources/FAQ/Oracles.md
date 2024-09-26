@@ -32,11 +32,10 @@ Returns either `true` or `false`.
 
 On Etherscan, navigate to the `Read Contract` section of the Oracle you want to check, and run the `bar()` function. This returns the number of signatures required for an Oracle update. 
 
-## Can you provide a comparison of gas usage for a Chronicle Oracle update versus competitors that use a PUSH-based model?
+## What is the update threshold for the Oracles?
 
-| Oracle Network | Chain | Pair | Gas | No. validators | Etherscan link |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Chronicle |ETH Mainnet | ETH/USD| 54,620 | 13 | https://etherscan.io/tx/0xf365e0c8def94e3aa666dd443ad10c7b86d9bf55b74878e42cf42e9f5b56fdf3 |
-| Chainlink |ETH Mainnet | ETH/USD| 333,602 | 11 | https://etherscan.io/tx/0xe236f406773bd2049549131646cda58497a1a9cb9c03fd624a5552fdd1503bd3 |
-| Chronicle | Arbitrum | ETH/USD| 143,266 | 13 | https://arbiscan.io/tx/0xf9e83b4515303b22bbae8274f5b4e3c7b64c988c3b026d40b0984075913609d9 |
-| Chainlink | Arbitrum | ETH/USD| 185,113 | 4 | https://arbiscan.io/tx/0xfd7a955985634bba3e26a5820aa277479be096b0695872eee0ccf1b7728b3774 |
+A new aggregation round is triggered after a specified amount of time since the latest update, or if the new offchain value deviates more than a pre-defined threshold for the onchain value, whichever of these conditions occurs first. If the data values stay within the Deviation Threshold, an update will only be triggered every X minutes / hours.
+
+## Can the update threshold parameters be modified?
+
+Yes, the update parameters, including the update and deviation thresholds, can be modified. For the most up-to-date parameters, please check the specific Oracle on the [Dashboard](https://chroniclelabs.org/dashboard/oracles). If you'd like to request different parameters, please get in touch.
