@@ -29,6 +29,33 @@ Make sure that you `$KUBECONFIG` is set to a file that is accessible by your sys
 
 You can view the functions responsible for setting kubeconfig [here](https://github.com/chronicleprotocol/scripts/blob/main/feeds/k3s-install/install.sh#L144-L149)
 
+### $KUBECONFIG file has expired
+
+With the K3s installation, the `kubeconfig` can "expire" causing issues authenticating with the kubeapi.
+
+eg response would be like this:
+```
+kubectl get secret chronicle-feed-eth-keys -n chronicle-feed -o jsonpath="{.data.ethFrom}" | base64 --decode
+E1002 15:13:49.343237 2375376 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials
+E1002 15:13:49.345241 2375376 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials
+E1002 15:13:49.349349 2375376 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials
+E1002 15:13:49.351739 2375376 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials
+E1002 15:13:49.353627 2375376 memcache.go:265] couldn't get current server API group list: the server has asked for the client to provide credentials
+error: You must be logged in to the server (the server has asked for the client to provide credentials)
+```
+> This happens because we are interacting with the k3s cluster as a non-root user (best practice), and we are getting our `kubeconfig` file rancher at `/etc/rancher/k3s/k3s.yaml`. The `client-certificate-data` gets refreshed from time to time, in which case you will need to create a new kubeconfig file (normally once a year).
+
+To fix this, run the following commands:
+
+```
+# as your validator user (eg demo-user)
+
+rm $KUBECONFIG
+sudo cp /etc/rancher/k3s/k3s.yaml $KUBECONFIG
+sudo chown $USER $KUBECONFIG
+```
+You should be able to authenticate with the cluster and proceed with `kubectl` and `helm` commands.
+
 ### Debug Bundle
 
 If you need further debugging, please retrieve the container logs, and some base info and provide it to the chronicle team for assistance:
