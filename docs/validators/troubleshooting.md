@@ -29,7 +29,7 @@ Make sure that you `$KUBECONFIG` is set to a file that is accessible by your sys
 
 You can view the functions responsible for setting kubeconfig [here](https://github.com/chronicleprotocol/scripts/blob/main/feeds/k3s-install/install.sh#L144-L149)
 
-#### $KUBECONFIG file has expired
+### $KUBECONFIG file has expired
 
 With the K3s installation, the `kubeconfig` can "expire" causing issues authenticating with the kubeapi.
 
