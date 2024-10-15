@@ -31,10 +31,10 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_IBTA_USD_3   | [0x92b7Ab73BA53Bc64b57194242e3a36A6F1209A70](https://sepolia.etherscan.io/address/0x92b7Ab73BA53Bc64b57194242e3a36A6F1209A70) |
 | Chronicle_LDO_USD_3    | [0x4cD2a8c3Fd6329029461A95784051A553f31eb29](https://sepolia.etherscan.io/address/0x4cD2a8c3Fd6329029461A95784051A553f31eb29) |
 | Chronicle_LINK_USD_3   | [0x260c182f0054BF244a8e38d7C475b6d9f67AeAc1](https://sepolia.etherscan.io/address/0x260c182f0054BF244a8e38d7C475b6d9f67AeAc1) |
-| Chronicle_MATIC_USD_3  | [0xEa00861Dc00eBd246F6E51E52c28aBd9062bc09F](https://sepolia.etherscan.io/address/0xEa00861Dc00eBd246F6E51E52c28aBd9062bc09F) |
 | Chronicle_MKR_USD_3    | [0xE55afC31AFA140597c581Bc32057BF393ba97c5A](https://sepolia.etherscan.io/address/0xE55afC31AFA140597c581Bc32057BF393ba97c5A) |
 | Chronicle_MNT_USD_1    | [0x90f13128715157f6f2708b3e379a345a330C598c](https://sepolia.etherscan.io/address/0x90f13128715157f6f2708b3e379a345a330C598c) |
 | Chronicle_OP_USD_3     | [0x1Be54a524226fc44565747FE221157f4cAE71B80](https://sepolia.etherscan.io/address/0x1Be54a524226fc44565747FE221157f4cAE71B80) |
+| Chronicle_POL_USD_1     | [0x98AF7A50F7478eac901B7d00d0C28Ec2C9cc65b9](https://sepolia.etherscan.io/address/0x98AF7A50F7478eac901B7d00d0C28Ec2C9cc65b9) |
 | Chronicle_RETH_ETH_1   | [0xAE888F70d319d9ab9318B2326AEf97Bde2c1F96f](https://sepolia.etherscan.io/address/0xAE888F70d319d9ab9318B2326AEf97Bde2c1F96f) |
 | Chronicle_RETH_USD_3   | [0x6454753E0909E7F6476BfB78BD6BDC281197A5be](https://sepolia.etherscan.io/address/0x6454753E0909E7F6476BfB78BD6BDC281197A5be) |
 | Chronicle_SDAI_DAI_3   | [0x0B20Fd1c09452FC3F214667073EA8975aB2c55EA](https://sepolia.etherscan.io/address/0x0B20Fd1c09452FC3F214667073EA8975aB2c55EA) |
@@ -85,7 +85,6 @@ SelfKisser_1 | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.base
 | Chronicle_LDO_USD_1 |[0xc060f4d6D6dCcFefB19abcBdf7cDaBE8268dAF1e](https://sepolia.basescan.org//address/0xc060f4d6D6dCcFefB19abcBdf7cDaBE8268dAF1e)
 | Chronicle_LIDO_LST_2DAYS_1 |[0xCf2aF249b2d71B33339B9613E78f8D1B7F9eeE83](https://sepolia.basescan.org//address/0xCf2aF249b2d71B33339B9613E78f8D1B7F9eeE83)
 | Chronicle_LINK_USD_1 |[0x983Fd2121Dc136b5A05F69F298d40Eb52518D208](https://sepolia.basescan.org//address/0x983Fd2121Dc136b5A05F69F298d40Eb52518D208)
-|Chronicle_MATIC_USD_1 |[0x2aDC93F48Da9E3C06FC6A878b6459ada940c334d](https://sepolia.basescan.org//address/0x2aDC93F48Da9E3C06FC6A878b6459ada940c334d)
 | Chronicle_METH_ETH_1 |[0x092037328502c3633654d5fd07165c3bD1ad7bD9](https://sepolia.basescan.org//address/0x092037328502c3633654d5fd07165c3bD1ad7bD9)
 | Chronicle_METH_USD_1 |[0x9C8212601138ef0fA7eB602912b98ee08D0534e9](https://sepolia.basescan.org//address/0x9C8212601138ef0fA7eB602912b98ee08D0534e9)
 | Chronicle_MKR_USD_1 |[0xF3A5fE18CD97fd2d828bE105245fF3Fe24ADA93b](https://sepolia.basescan.org//address/0xF3A5fE18CD97fd2d828bE105245fF3Fe24ADA93b)
@@ -93,12 +92,12 @@ SelfKisser_1 | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.base
 |Chronicle_MOG_USD_1 |[0x2FF17372FdB5F81a28226d8A0B721f4D7357B362](https://sepolia.basescan.org//address/0x2FF17372FdB5F81a28226d8A0B721f4D7357B362)
 |Chronicle_OP_USD_1 |[0x7aA90a4915421787273722900bee08B648e7c62e](https://sepolia.basescan.org//address/0x7aA90a4915421787273722900bee08B648e7c62e)
 | Chronicle_OSETH_ETH_1 |[0x06af1E8bb5864D287EC167d33790aA0bEA83b87e](https://sepolia.basescan.org//address/0x06af1E8bb5864D287EC167d33790aA0bEA83b87e)
+| Chronicle_POL_USD_1 |[0xdF7E98b55801b4639C338F16b70CE502502DAb4a](https://sepolia.basescan.org//address/0xdF7E98b55801b4639C338F16b70CE502502DAb4a)
 | Chronicle_PEPE_USD_1 |[0xaD731849570668C1A3ca2A3bb85d1D51aaD5178E](https://sepolia.basescan.org//address/0xaD731849570668C1A3ca2A3bb85d1D51aaD5178E)
 | Chronicle_RETH_ETH_1 |[0x3e56Fb669ae77A6877913068ABAa1316A162DFce](https://sepolia.basescan.org//address/0x3e56Fb669ae77A6877913068ABAa1316A162DFce)
 | Chronicle_RETH_USD_1 |[0x829124df58D1b4853f8669C867d3991cA09265Aa](https://sepolia.basescan.org//address/0x829124df58D1b4853f8669C867d3991cA09265Aa)
 | Chronicle_SDAI_DAI_1 |[0x78Ff387176F31b3C4eE44ffe4c4Ce2fd9BB44a79](https://sepolia.basescan.org//address/0x78Ff387176F31b3C4eE44ffe4c4Ce2fd9BB44a79)
 | Chronicle_SDAI_ETH_1 |[0xe4b86808238D5B5Ce4eFDCA38Ca9c6405D3652c7](https://sepolia.basescan.org//address/0xe4b86808238D5B5Ce4eFDCA38Ca9c6405D3652c7)
-| Chronicle_SDAI_MATIC_1 |[0x0467eA5339066797EbA0b19dF2c8f3B23BE31A7B](https://sepolia.basescan.org//address/0x0467eA5339066797EbA0b19dF2c8f3B23BE31A7B)
 | Chronicle_SDAI_USD_1 |[0xE14468639454d2307Ea9608A1651Ec872Ac88192](https://sepolia.basescan.org//address/0xE14468639454d2307Ea9608A1651Ec872Ac88192)
 |Chronicle_SNX_USD_1 |[0x277F78F39b9Dc73dF3723BAcD40f8658f8a1A633](https://sepolia.basescan.org//address/0x277F78F39b9Dc73dF3723BAcD40f8658f8a1A633)
 | Chronicle_SOL_USD_1 |[0x2F8C90726Bc6bEc5D01313476F2e211a366A921a](https://sepolia.basescan.org//address/0x2F8C90726Bc6bEc5D01313476F2e211a366A921a)
@@ -142,13 +141,12 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_LDO_USD_1 | [0xb43862e703a1a36f4A6a5196684C3a73210956Ef](https://sepolia.arbiscan.io/address/0xb43862e703a1a36f4A6a5196684C3a73210956Ef) |
 | Chronicle_LIDO_LST_2DAYS_1 | [0xE92AaCfb6b7Ce342909ff2ee136f7A33AAbcb379](https://sepolia.arbiscan.io/address/0xE92AaCfb6b7Ce342909ff2ee136f7A33AAbcb379) |
 | Chronicle_LINK_USD_1 | [0xF7e8af6BF4D0Fb399DC087778b7912f30aa08Ca5](https://sepolia.arbiscan.io/address/0xF7e8af6BF4D0Fb399DC087778b7912f30aa08Ca5) |
-| Chronicle_MATIC_USD_1 | [0xBeF861cc071CA7A1680268a2a34dC28931BE1eDc](https://sepolia.arbiscan.io/address/0xBeF861cc071CA7A1680268a2a34dC28931BE1eDc) |
 | Chronicle_MKR_USD_1 | [0x4217043B0C8a7A7BCf04A4c1d4Ef6708D2E9ac24](https://sepolia.arbiscan.io/address/0x4217043B0C8a7A7BCf04A4c1d4Ef6708D2E9ac24) |
 | Chronicle_OP_USD_1 | [0xCAc87840eDA81Fcdee1FBDC4291c1fF0de7D45Eb](https://sepolia.arbiscan.io/address/0xCAc87840eDA81Fcdee1FBDC4291c1fF0de7D45Eb) |
+| Chronicle_POL_USD_1 | [0x5F4966fE57557e6bFbc53945Af004f81Ba054FB0](https://sepolia.arbiscan.io/address/0x5F4966fE57557e6bFbc53945Af004f81Ba054FB0) |
 | Chronicle_RETH_USD_1 | [0x4c3A6F4e991261B65D59f15B8365a9Fa2A8803a6](https://sepolia.arbiscan.io/address/0x4c3A6F4e991261B65D59f15B8365a9Fa2A8803a6) |
 | Chronicle_SDAI_DAI_1 | [0x4f1C907d2f506f007F61eba89640C8069c6b39dB](https://sepolia.arbiscan.io/address/0x4f1C907d2f506f007F61eba89640C8069c6b39dB) |
 | Chronicle_SDAI_ETH_1 | [0x39028693954470965E881f8477532455D1cE5F67](https://sepolia.arbiscan.io/address/0x39028693954470965E881f8477532455D1cE5F67) |
-| Chronicle_SDAI_MATIC_1 | [0x75E5545dE5594DaE82Ce90cC0CeDbfE2d061a876](https://sepolia.arbiscan.io/address/0x75E5545dE5594DaE82Ce90cC0CeDbfE2d061a876) |
 | Chronicle_SNX_USD_1 | [0xB6aA4b36c79805CA0db5C9736c12eAb23ac54770](https://sepolia.arbiscan.io/address/0xB6aA4b36c79805CA0db5C9736c12eAb23ac54770) |
 | Chronicle_SOL_USD_1 | [0xB73376612dec25deF13ECBfcf94615edB9A7306D](https://sepolia.arbiscan.io/address/0xB73376612dec25deF13ECBfcf94615edB9A7306D) |
 | Chronicle_UNI_USD_1 | [0x7Cb721f729563016F3384714221C982f75143EA2](https://sepolia.arbiscan.io/address/0x7Cb721f729563016F3384714221C982f75143EA2) |
@@ -165,7 +163,7 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 <details>
 <summary>Smart Contract Addresses on **Polygon zkEVM Testnet Cardona**</summary>
 
-| Contract Name  | Contract Address on zkEVM Testnet                                                                                                      |
+| Contract Name  | Contract Address on zkEVM Cardona Testnet                                                                                                      |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | SelfKisser_1   | [0xCce64A8127c051E784ba7D84af86B2e6F53d1a09](https://cardona-zkevm.polygonscan.com/address/0xCce64A8127c051E784ba7D84af86B2e6F53d1a09) |
 | AAVE/USD       | [0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F](https://cardona-zkevm.polygonscan.com/address/0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F) |
@@ -182,9 +180,9 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | LDO/USD        | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://cardona-zkevm.polygonscan.com/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3) |
 | LIDO_LST/2DAYS | [0xDc98e03EBdDaf664623959170B9C24F50bB27914](https://cardona-zkevm.polygonscan.com/address/0xDc98e03EBdDaf664623959170B9C24F50bB27914) |
 | LINK/USD       | [0xCa92f59FbE6B6512a1ee21a46ED009CeDb4Eb2fD](https://cardona-zkevm.polygonscan.com/address/0xCa92f59FbE6B6512a1ee21a46ED009CeDb4Eb2fD) |
-| MATIC/USD      | [0x55a07a60cd9ed198B5Ba4360FF9800eBb6667388](https://cardona-zkevm.polygonscan.com/address/0x55a07a60cd9ed198B5Ba4360FF9800eBb6667388) |
 | MKR/USD        | [0x5a3e38Df3d82bF6FefDA79d1027657ab81A85447](https://cardona-zkevm.polygonscan.com/address/0x5a3e38Df3d82bF6FefDA79d1027657ab81A85447) |
 | OP/USD         | [0x104916d38828DA8B83a88A1775Aa058e1F0B1647](https://cardona-zkevm.polygonscan.com/address/0x104916d38828DA8B83a88A1775Aa058e1F0B1647) |
+| POL/USD         | [0xE87FAAC65b56fBbA50f5C69Cea4D1E7F5DD47301](https://cardona-zkevm.polygonscan.com/address/0xE87FAAC65b56fBbA50f5C69Cea4D1E7F5DD47301) |
 | RETH/USD       | [0x172d2A40F03167cf3535206220CEC912400A2594](https://cardona-zkevm.polygonscan.com/address/0x172d2A40F03167cf3535206220CEC912400A2594) |
 | SDAI/DAI       | [0x8744f55149A9923a6eD525A9FEdC270FBC2E1e12](https://cardona-zkevm.polygonscan.com/address/0x8744f55149A9923a6eD525A9FEdC270FBC2E1e12) |
 | SNX/USD        | [0x8d64F7320bFaa19e19E18824276AdbC4DC27Aeee](https://cardona-zkevm.polygonscan.com/address/0x8d64F7320bFaa19e19E18824276AdbC4DC27Aeee) |
@@ -221,13 +219,12 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_IBTA_USD_2   | [0xc52539EfbA58a521d69494D86fc47b9E71D32997](https://gnosisscan.io/address/0xc52539EfbA58a521d69494D86fc47b9E71D32997) |
 | Chronicle_LDO_USD_2    | [0x3aeF92049C9401094A9f75259430F4771143F0C3](https://gnosisscan.io/address/0x3aeF92049C9401094A9f75259430F4771143F0C3) |
 | Chronicle_LINK_USD_2   | [0x4EDdF05CfAd20f1E39ed4CB067bdfa831dAeA9fE](https://gnosisscan.io/address/0x4EDdF05CfAd20f1E39ed4CB067bdfa831dAeA9fE) |
-| Chronicle_MATIC_USD_2  | [0x06997AadB30d51eAdBAA7836f7a0F177474fc235](https://gnosisscan.io/address/0x06997AadB30d51eAdBAA7836f7a0F177474fc235) |
 | Chronicle_MKR_USD_2    | [0xE61A66f737c32d5Ac8cDea6982635B80447e9404](https://gnosisscan.io/address/0xE61A66f737c32d5Ac8cDea6982635B80447e9404) |
 | Chronicle_OP_USD_2     | [0x1Ae491D618A667a44D48E0b0BE2Cc0cDBF269BC5](https://gnosisscan.io/address/0x1Ae491D618A667a44D48E0b0BE2Cc0cDBF269BC5) |
+| Chronicle_POL_USD_1   | [0x6317BD4DB22592A825958547441d50AE275F46b9](https://gnosisscan.io/address/0x6317BD4DB22592A825958547441d50AE275F46b9) |
 | Chronicle_RETH_USD_2   | [0xEff79d34f24Bb36eD8FB6c4CbaD5De293fdCf66F](https://gnosisscan.io/address/0xEff79d34f24Bb36eD8FB6c4CbaD5De293fdCf66F) |
 | Chronicle_SDAI_DAI_2   | [0xB6EE756124e88e12585981DdDa9E6E3bf3C4487D](https://gnosisscan.io/address/0xB6EE756124e88e12585981DdDa9E6E3bf3C4487D) |
 | Chronicle_SDAI_ETH_2   | [0x20A32F633c1D26fC42A15dc7e6bd12Bf0468cAb1](https://gnosisscan.io/address/0x20A32F633c1D26fC42A15dc7e6bd12Bf0468cAb1) |
-| Chronicle_SDAI_MATIC_2 | [0x0A154ec276972dBFEA01b13711408Ea6e72Ac36B](https://gnosisscan.io/address/0x0A154ec276972dBFEA01b13711408Ea6e72Ac36B) |
 | Chronicle_SNX_USD_2    | [0x6Ab51f7E684923CE051e784D382A470b0fa834Be](https://gnosisscan.io/address/0x6Ab51f7E684923CE051e784D382A470b0fa834Be) |
 | Chronicle_SOL_USD_2    | [0x11ceEcca4d49f596E0Df781Af237CDE741ad2106](https://gnosisscan.io/address/0x11ceEcca4d49f596E0Df781Af237CDE741ad2106) |
 | Chronicle_UNI_USD_2    | [0xfE051Bc90D3a2a825fA5172181f9124f8541838c](https://gnosisscan.io/address/0xfE051Bc90D3a2a825fA5172181f9124f8541838c) |
@@ -260,11 +257,11 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_GNO_USD_1   | [0x94E17970760B6f13082875fbE73A8B60c9cAbD78](https://sepolia.mantlescan.xyz//address/0x94E17970760B6f13082875fbE73A8B60c9cAbD78)     |
 | Chronicle_LDO_USD_1   | [0x368c9305ea4F7ee94999ae948DDd036718FBD133](https://sepolia.mantlescan.xyz//address/0x368c9305ea4F7ee94999ae948DDd036718FBD133)     |
 | Chronicle_LINK_USD_1  | [0x909efe5382Cd18cB847242FEa3aBfe56f909Dde9](https://sepolia.mantlescan.xyz//address/0x909efe5382Cd18cB847242FEa3aBfe56f909Dde9)     |
-| Chronicle_MATIC_USD_1 | [0x4c75685dF5a2169A4a0A80e83714dA14544416E4](https://sepolia.mantlescan.xyz//address/0x4c75685dF5a2169A4a0A80e83714dA14544416E4)     |
 | Chronicle_METH_ETH_1  | [0x753fEd211acF7106DFe36dF6B19e84618F50047f](https://sepolia.mantlescan.xyz//address/0x753fEd211acF7106DFe36dF6B19e84618F50047f)     |
 | Chronicle_METH_USD_1  | [0x9245671d74645363c95a9E82D201Ef636E23EE6e](https://sepolia.mantlescan.xyz//address/0x9245671d74645363c95a9E82D201Ef636E23EE6e)     |
 | Chronicle_MKR_USD_1   | [0x31E7FadCC6092b85e0De6fF3295cfAC851b64744](https://sepolia.mantlescan.xyz//address/0x31E7FadCC6092b85e0De6fF3295cfAC851b64744)     |
 | Chronicle_MNT_USD_1   | [0xCE0F753FDEEE2D0EC5F1ba086bD7d5087C20c307](https://sepolia.mantlescan.xyz//address/0xCE0F753FDEEE2D0EC5F1ba086bD7d5087C20c307)     |
+| Chronicle_POL_USD_1  | [0xB6fDDe54CfBd85B0DFF1a0A81ccbd2eD47380De0](https://sepolia.mantlescan.xyz//address/0xB6fDDe54CfBd85B0DFF1a0A81ccbd2eD47380De0)     |
 | Chronicle_SUSDE_USD_1 | [0x3f6B3a60a6C6D30008e4B9204eCFA7B5c5650b3a](https://sepolia.mantlescan.xyz//address/0x3f6B3a60a6C6D30008e4B9204eCFA7B5c5650b3a)     |
 | Chronicle_USDC_USD_1  | [0x9Dd500569A6e77ECdDE7694CDc2E58ac587768D0](https://sepolia.mantlescan.xyz//address/0x9Dd500569A6e77ECdDE7694CDc2E58ac587768D0)     |
 | Chronicle_USDE_USD_1  | [0x39dBd4B7D2A303914780e47554e782013Ab5352E](https://sepolia.mantlescan.xyz//address/0x39dBd4B7D2A303914780e47554e782013Ab5352E)     |
@@ -292,9 +289,9 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_IBTA_USD_1   | [0x07487b0Bf28801ECD15BF09C13e32FBc87572e81](https://sepolia.scrollscan.com/address/0x07487b0Bf28801ECD15BF09C13e32FBc87572e81) |
 | Chronicle_LDO_USD_1    | [0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E](https://sepolia.scrollscan.com/address/0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E) |
 | Chronicle_LINK_USD_1   | [0xecB89B57A60ac44E06ab1B767947c19b236760c3](https://sepolia.scrollscan.com/address/0xecB89B57A60ac44E06ab1B767947c19b236760c3) |
-| Chronicle_MATIC_USD_1  | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://sepolia.scrollscan.com/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18) |
 | Chronicle_MKR_USD_1    | [0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d](https://sepolia.scrollscan.com/address/0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d) |
 | Chronicle_OP_USD_1     | [0xfadF055f6333a4ab435D2D248aEe6617345A4782](https://sepolia.scrollscan.com/address/0xfadF055f6333a4ab435D2D248aEe6617345A4782) |
+| Chronicle_POL_USD_1    | [0x55f54182C8187D12e352bF90ed9B5445F03e3E92](https://sepolia.scrollscan.com/address/0x55f54182C8187D12e352bF90ed9B5445F03e3E92) |
 | Chronicle_RETH_USD_1   | [0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263](https://sepolia.scrollscan.com/address/0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263) |
 | Chronicle_SDAI_DAI_1   | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://sepolia.scrollscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491) |
 | Chronicle_SNX_USD_1    | [0xD20f1eC72bA46b6126F96c5a91b6D3372242cE98](https://sepolia.scrollscan.com/address/0xD20f1eC72bA46b6126F96c5a91b6D3372242cE98) |
@@ -329,13 +326,11 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_IBTA_USD_1   | [0x8120d0A79871eB4966fe5D7dF1608FF58229F6F3](https://sepolia.explorer.zksync.io/address/0x8120d0A79871eB4966fe5D7dF1608FF58229F6F3) |
 | Chronicle_LDO_USD_1    | [0x3B05D11dEd3a3E585E1AA6d1ed87A0177D18894B](https://sepolia.explorer.zksync.io/address/0x3B05D11dEd3a3E585E1AA6d1ed87A0177D18894B) |
 | Chronicle_LINK_USD_1   | [0x566c45c6f10D207Cc2F083a33D56B4ccDF23B7bc](https://sepolia.explorer.zksync.io/address/0x566c45c6f10D207Cc2F083a33D56B4ccDF23B7bc) |
-| Chronicle_MATIC_USD_1  | [0xB146e962BDe5185c45ea6e320b14d67F3DFD2173](https://sepolia.explorer.zksync.io/address/0xB146e962BDe5185c45ea6e320b14d67F3DFD2173) |
 | Chronicle_MKR_USD_1    | [0x68e4aC3eCDaa1a6072c7A5f38f2CCF8c6E0Cccb2](https://sepolia.explorer.zksync.io/address/0x68e4aC3eCDaa1a6072c7A5f38f2CCF8c6E0Cccb2) |
 | Chronicle_OP_USD_1     | [0x47bAD642f631eB94894A58Af6bC7D4c9DbB6485c](https://sepolia.explorer.zksync.io/address/0x47bAD642f631eB94894A58Af6bC7D4c9DbB6485c) |
 | Chronicle_RETH_USD_1   | [0x20374ea0Fb22A2CE2f84B4A628e4eEF01793cF6A](https://sepolia.explorer.zksync.io/address/0x20374ea0Fb22A2CE2f84B4A628e4eEF01793cF6A) |
 | Chronicle_SDAI_DAI_1   | [0x7e7Df5117f5A6E8Cf82a0F80F06fE1119FC9b741](https://sepolia.explorer.zksync.io/address/0x7e7Df5117f5A6E8Cf82a0F80F06fE1119FC9b741) |
 | Chronicle_SDAI_ETH_1   | [0x71a16AeAA5650e519b2a606BCB496cf1CAd75b94](https://sepolia.explorer.zksync.io/address/0x71a16AeAA5650e519b2a606BCB496cf1CAd75b94) |
-| Chronicle_SDAI_MATIC_1 | [0x32952b3Ff76C658826e906C441B98C3609BD7981](https://sepolia.explorer.zksync.io/address/0x32952b3Ff76C658826e906C441B98C3609BD7981) |
 | Chronicle_SNX_USD_1    | [0x5912D288bDB918f931516041Ecd8a72fD1563A39](https://sepolia.explorer.zksync.io/address/0x5912D288bDB918f931516041Ecd8a72fD1563A39) |
 | Chronicle_SOL_USD_1    | [0x79a6Cb3D5cf55a5Ddc91d041B5F3D192AA1799F5](https://sepolia.explorer.zksync.io/address/0x79a6Cb3D5cf55a5Ddc91d041B5F3D192AA1799F5) |
 | Chronicle_UNI_USD_1    | [0x52485646EF15dB99504965de37494440Be862685](https://sepolia.explorer.zksync.io/address/0x52485646EF15dB99504965de37494440Be862685) |
@@ -369,10 +364,10 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_LDO_USD_1        | [0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E](https://sepolia-optimism.etherscan.io/address/0xa53dc5B100f0e4aB593f2D8EcD3c5932EE38215E) |
 | Chronicle_LIDO_LST_2DAYS_1 | [0xe8d114cF81F345d934Bb1c64Fb1917A6511c04B5](https://sepolia-optimism.etherscan.io/address/0xe8d114cF81F345d934Bb1c64Fb1917A6511c04B5) |
 | Chronicle_LINK_USD_1       | [0xecB89B57A60ac44E06ab1B767947c19b236760c3](https://sepolia-optimism.etherscan.io/address/0xecB89B57A60ac44E06ab1B767947c19b236760c3) |
-| Chronicle_MATIC_USD_1      | [0xa48c56e48A71966676d0D113EAEbe6BE61661F18](https://sepolia-optimism.etherscan.io/address/0xa48c56e48A71966676d0D113EAEbe6BE61661F18) |
 | Chronicle_MKR_USD_1        | [0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d](https://sepolia-optimism.etherscan.io/address/0x67ffF0C6abD2a36272870B1E8FE42CC8E8D5ec4d) |
 | Chronicle_MNT_USD_1        | [0x90f13128715157f6f2708b3e379a345a330C598c](https://sepolia-optimism.etherscan.io/address/0x90f13128715157f6f2708b3e379a345a330C598c) |
 | Chronicle_OP_USD_1         | [0xfadF055f6333a4ab435D2D248aEe6617345A4782](https://sepolia-optimism.etherscan.io/address/0xfadF055f6333a4ab435D2D248aEe6617345A4782) |
+| Chronicle_POL_USD_1        | [0x5c713840cf95f3055F657fC89fBd690CB14B344a](https://sepolia-optimism.etherscan.io/address/0x5c713840cf95f3055F657fC89fBd690CB14B344a) |
 | Chronicle_RETH_ETH_1       | [0xAE888F70d319d9ab9318B2326AEf97Bde2c1F96f](https://sepolia-optimism.etherscan.io/address/0xAE888F70d319d9ab9318B2326AEf97Bde2c1F96f) |
 | Chronicle_RETH_USD_1       | [0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263](https://sepolia-optimism.etherscan.io/address/0xEE02370baC10b3AC3f2e9eebBf8f3feA1228D263) |
 | Chronicle_SD_USD_1         | [0x0939F04AbA985E3861C4D7AD9fbD66b976Dd47a8](https://sepolia-optimism.etherscan.io/address/0x0939F04AbA985E3861C4D7AD9fbD66b976Dd47a8) |
@@ -422,7 +417,6 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_LDO_USD_1        | [0xfc5F6A9fbC769C4d22A0ad8936Ca8451a8E55D86](https://bartio.beratrail.io//address/0xfc5F6A9fbC769C4d22A0ad8936Ca8451a8E55D86) |
 | Chronicle_LIDO_LST_2DAYS_1 | [0xcDf3e0873f297beEe2F0CA920Df893763bAf10cC](https://bartio.beratrail.io//address/0xcDf3e0873f297beEe2F0CA920Df893763bAf10cC) |
 | Chronicle_LINK_USD_1       | [0x8642416c5Cb47D9f148669c7978ace52719Ffb48](https://bartio.beratrail.io//address/0x8642416c5Cb47D9f148669c7978ace52719Ffb48) |
-| Chronicle_MATIC_USD_1      | [0x713c5521C972e59d628EeeC1B61D2bF595930e01](https://bartio.beratrail.io//address/0x713c5521C972e59d628EeeC1B61D2bF595930e01) |
 | Chronicle_METH_ETH_1       | [0x88a42c95115F21deAdfD9e983FA28BEE95A431b2](https://bartio.beratrail.io//address/0x88a42c95115F21deAdfD9e983FA28BEE95A431b2) |
 | Chronicle_METH_USD_1       | [0x3C2d199642aDa13794F2304ecc7A83A1aEdc3462](https://bartio.beratrail.io//address/0x3C2d199642aDa13794F2304ecc7A83A1aEdc3462) |
 | Chronicle_MKR_USD_1        | [0x2905c24f41Df10FC5E38EaA865A7C38884e69694](https://bartio.beratrail.io//address/0x2905c24f41Df10FC5E38EaA865A7C38884e69694) |
@@ -431,12 +425,12 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_OP_USD_1         | [0x75b239A75B1D099A1f20Fa2A64D5481a319faCb7](https://bartio.beratrail.io//address/0x75b239A75B1D099A1f20Fa2A64D5481a319faCb7) |
 | Chronicle_OSETH_ETH_1      | [0xd789C2Fd3B617b236669f2B63054e8CA0332fe97](https://bartio.beratrail.io//address/0xd789C2Fd3B617b236669f2B63054e8CA0332fe97) |
 | Chronicle_PEPE_USD_1       | [0x93AccFf0590797f2c67eDcbaDFb2c98920bd0704](https://bartio.beratrail.io//address/0x93AccFf0590797f2c67eDcbaDFb2c98920bd0704) |
+| Chronicle_POL_USD_1      | [0x227Bd05BbcE62a67529fE69e4340884D34e2CE62](https://bartio.beratrail.io//address/0x227Bd05BbcE62a67529fE69e4340884D34e2CE62) |
 | Chronicle_RETH_ETH_1       | [0x06C29Ef142345fF78A02658173EB4424d937a4F4](https://bartio.beratrail.io//address/0x06C29Ef142345fF78A02658173EB4424d937a4F4) |
 | Chronicle_RETH_USD_1       | [0x3e176Ea9da21A324E32514E0f8937425af67eFC6](https://bartio.beratrail.io//address/0x3e176Ea9da21A324E32514E0f8937425af67eFC6) |
 | Chronicle_SD_USD_1         | [0x45A340884e87270838dd8E276210e4826e4252cc](https://bartio.beratrail.io//address/0x45A340884e87270838dd8E276210e4826e4252cc) |
 | Chronicle_SDAI_DAI_1       | [0xF86bcf72D0D03650D9ad909aDA80bfA7fD744cd1](https://bartio.beratrail.io//address/0xF86bcf72D0D03650D9ad909aDA80bfA7fD744cd1) |
 | Chronicle_SDAI_ETH_1       | [0x0e339CB06a14CC78366569185C86F6378c7Cd37E](https://bartio.beratrail.io//address/0x0e339CB06a14CC78366569185C86F6378c7Cd37E) |
-| Chronicle_SDAI_MATIC_1     | [0x63E8052d7A4e212a8eb1A04489310D4a2bA1b3Cd](https://bartio.beratrail.io//address/0x63E8052d7A4e212a8eb1A04489310D4a2bA1b3Cd) |
 | Chronicle_SDAI_USD_1       | [0x6d69A4D99040F79262B93A470e0805c7402A571C](https://bartio.beratrail.io//address/0x6d69A4D99040F79262B93A470e0805c7402A571C) |
 | Chronicle_SNX_USD_1        | [0x757D766272A5b66EB9312f34E41AfEc3E77942bB](https://bartio.beratrail.io//address/0x757D766272A5b66EB9312f34E41AfEc3E77942bB) |
 | Chronicle_SOL_USD_1        | [0xd1C9e6342e981E5dAef8F8fF34ec89717D1C92a0](https://bartio.beratrail.io//address/0xd1C9e6342e981E5dAef8F8fF34ec89717D1C92a0) |
