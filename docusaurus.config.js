@@ -76,7 +76,7 @@ const config = {
       announcementBar: {
         id: 'discordLink',
         content:
-          '<strong>🚀 Build with us at <a target="_blank" rel="noopener noreferrer" href="https://docs.chroniclelabs.org/hackathons/eth-global-sf-hackathon">ETHGlobal San Francisco!</a><strong> 🚀',
+          '<strong>🚀 Join the community on <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/CjgvJ9EspJ">Discord!</a><strong> 🚀',
         backgroundColor: '#2FD05B',
         textColor: '#1C1E21',
         isCloseable: false,
