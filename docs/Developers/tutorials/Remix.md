@@ -30,7 +30,7 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 | Berachain Bartio              | [0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd](https://bartio.beratrail.io/address/0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd)                 |
 
 
-### Consuming Oracle Data
+### Consuming Oracle Data (Remix)
 
 An example contract named `OracleReader.sol` allows you to consume Oracle data and can be quickly deployed on [Remix](https://remix.ethereum.org/). Remix is a web-based integrated development environment (IDE) for creating, running, and debugging smart contracts directly in your browser. 
 
