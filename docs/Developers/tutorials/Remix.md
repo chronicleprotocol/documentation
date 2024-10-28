@@ -3,7 +3,7 @@ sidebar_position: 1
 description: Consuming Oracle Data using Remix IDE.
 keywords: [Remix, read access]
 ---
-# Consuming Oracle Data (Remix)
+# Consuming Oracle Data
 
 
 Chronicle oracles are read-protected by a whitelist, meaning you won't be able to read them on-chain without your address being added to the whitelist.
