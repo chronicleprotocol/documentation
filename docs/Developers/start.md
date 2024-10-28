@@ -6,7 +6,7 @@ keywords: [getting started, Chronicle]
 import CallToActionButton from '@site/src/components/CallToActionButton';
 
 # Getting Started
-## How do I start?
+## How Do I start?
 
 <div>
   <CallToActionButton
@@ -60,10 +60,19 @@ import CallToActionButton from '@site/src/components/CallToActionButton';
   link="https://forms.gle/EANjn7THKKieSYaF7"
   text="Request a New Oracle/Chain"
 />
-Currently, Chronicle Oracles provide real-time data to smart contract applications on nine chains. More ecosystems are coming soon!
+Currently, Chronicle Oracles provide real-time data to smart contract applications on ten chains. More ecosystems are coming soon!
 
-To get started, check out the [Getting Read Access to Contracts](docs/Developers/Guides/whitelistAddress.md) guide to learn how to integrate Chronicle Oracles into your dApp.
 
-Once you become familiar with the Testnet, get in touch to request access to the Chronicle Oracles on Mainnet. Chronicle contracts use a whitelist for read protection, so the addresses used for consuming the Oracle data must be whitelisted first. On the Testnet, you can whitelist yourself.
+To get started, begin testing on the Testnet and, once you're familiar, request access to Chronicle Oracles on Mainnet. **Chronicle contracts use a whitelist for read protection, so any address accessing Oracle data must first be whitelisted. On Testnet, you can self-whitelist using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser) contract.**
 
-If you want to request an Oracle that is not yet integrated, you could do so using [this form](https://forms.gle/EANjn7THKKieSYaF7) or by writing us a message on [Discord](https://discord.com/invite/CjgvJ9EspJ) via the 🆘｜support channel. 
+If you need an Oracle not yet integrated, feel free to submit a request via [this form](https://forms.gle/EANjn7THKKieSYaF7) or to reach out on [Discord](https://discord.com/invite/CjgvJ9EspJ) through the 🆘｜support channel. 
+
+**Note: Mainnet whitelisting is permissioned, so please contact us to proceed.**
+
+# Developer Resources
+To integrate Chronicle Oracles, here are some helpful resources:
+
+- [Chronicle Testnet Addresses](../Developers/testnet.md)
+- [Getting Read Access to Contracts](docs/Developers/Guides/whitelistAddress.md): Guide to whitelisting addresses via CAST (Foundry CLI) or Etherscan
+- [Consuming Oracle Data](../Developers/tutorials/Remix.md): Tutorial on whitelisting addresses to access Chronicle Oracle data
+- [Scaffold-Oracle-Reader](../Developers/tutorials/boilerplate.md): Boilerplate code using Scaffold-ETH2
