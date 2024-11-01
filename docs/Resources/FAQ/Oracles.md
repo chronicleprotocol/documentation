@@ -12,6 +12,18 @@ One thing to keep an eye on is the number of decimals. Chronicle always uses 18 
 In the event that an Oracle gets deprecated, we will notify all whitelisted customers before offboarding it.
 From a technical point of view, if an oracle becomes inactive, the price is set to `0`, and the validators (also known as feeds), are removed from the contract. Therefore, the `read()` function will revert with `0`, the `tryRead()` function will return `(false, 0)`, and the `latestRoundData()` will return `0` as well. 
 
+## What do I need to do to read from a Chronicle Oracle?
+
+Chronicle Oracles are read-protected by a whitelist. To read from an Oracle, the calling address must be tolled (whitelisted).
+
+On testnet networks, the whitelisting mechanism is permissionless, anyone can whitelist an address using the [SelfKisser](/Developers/Guides/whitelistAddress.md).
+
+On mainnet, the whitelisting mechanism is permissioned. To request access, open a ticket on [Discord](https://discord.com/invite/CjgvJ9EspJ) in the 🆘｜support channel.
+
+## What happens if I try to read from an address that is not whitelisted?
+
+If you try to read from and address that is not tolled (whitelisted), the transaction reverts.
+
 
 ## How can I check the validators of an Oracle? 
 You can use [cast](https://book.getfoundry.sh/reference/cast/cast), a CLI tool designed by the Foundry team to streamline the interaction with the EVM.
