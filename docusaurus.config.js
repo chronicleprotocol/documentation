@@ -82,7 +82,7 @@ const config = {
         isCloseable: false,
       },
       mermaid: {
-        theme: { light: 'neutral', dark: 'forest' },
+        theme: { light: 'neutral' },
       },
       navbar: {
         title: 'Chronicle Docs',

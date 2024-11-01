@@ -4,13 +4,17 @@ description: How do PUSH Oracles Work?
 keywords: [PUSH Oracle, Data Source]
 ---
 
-# PUSH Oracles
+# PUSH Oracle
 
-**Chronicle uses a PUSH model for its Oracles.**
+## How Does a  PUSH Oracle Work?
 
-## How do PUSH Oracles Work?
-PUSH oracles actively deliver data to smart contracts without needing an explicit request. Upon the occurrence of a specific event or condition, the PUSH oracle automatically triggers the smart contract with the relevant data. For example, a PUSH Oracle might send price data to a smart contract every X minutes/hours, or whenever the price deviates by a certain percentage from its previous value.
+Protocol validators fetch data from different sources. The data used is verifiable and identifiable to the its underlying source. This functionality is available to both decentralized sources (like DEXes) and centralized sources (like CEXes). Validators sign and publish this data on an offchain peer-to-peer network. After publication, the data is aggregated through an aggregation mechanism (e.g. the median of medians), to eliminate outliers and determine the final value to be published onchain. Data is then published onchain based on a [predefined threshold](#oracle-updates). Once onchain, this data can be consumed by any dApps that read from the oracle smart contract.
 
+    ![Example banner](../../../static/img/Intro/Dive/push.png)
+
+### When Does an Oracle Update? {#oracle-updates}
+
+PUSH oracles actively deliver data to smart contracts without requiring an explicit request. Upon the occurrence of a specific event or condition, the PUSH oracle automatically updates the oracle smart contract with the new data. For example, a PUSH Oracle might update price data every X minutes/hours, or whenever the underlying price deviates beyond a specified threshold.
 
 ```mermaid
 sequenceDiagram
@@ -27,3 +31,4 @@ sequenceDiagram
     OC->>SC: Deliver data to Smart Contract
     SC->>SC: Process and use data
 ```
+
