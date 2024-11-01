@@ -10,7 +10,7 @@ sidebar_position: 1
 
 :::tip
 ### Chronicle Protocol Contracts
-You can view all the smart contract addresses [here](../../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
+You can view all the smart contract addresses [here](../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
 :::
 :::important
 ### Self-Kisser: Permissionless Whitelisting
