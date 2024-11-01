@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 description: Whitelisting yourself on Testnet and getting read access to contracts.
 keywords: [whitelist, testnet, read access]
 ---
 
-# Getting Read Access to Contracts
+# Getting Read Access to Chronicle Oracles
 
 Our contracts are read-protected by a whitelist, meaning you won't be able to read them on-chain without your address being added to the whitelist.
 
