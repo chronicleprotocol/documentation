@@ -10,7 +10,13 @@ keywords: [PUSH Oracle, Data Source]
 
 Protocol validators fetch data from different sources. The data used is verifiable and identifiable to the its underlying source. This functionality is available to both decentralized sources (like DEXes) and centralized sources (like CEXes). Validators sign and publish this data on an offchain peer-to-peer network. After publication, the data is aggregated through an aggregation mechanism (e.g. the median of medians), to eliminate outliers and determine the final value to be published onchain. Data is then published onchain based on a [predefined threshold](#oracle-updates). Once onchain, this data can be consumed by any dApps that read from the oracle smart contract.
 
-    ![Example banner](../../../static/img/Intro/Dive/push.png)
+<div style={{textAlign: 'center'}}>
+    <img
+    src="  ../img/Products/push.png"
+    alt="PUSH Oracle Illustration"
+    />
+</div>
+    
 
 ### When Does an Oracle Update? {#oracle-updates}
 
