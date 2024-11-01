@@ -158,8 +158,8 @@ const config = {
                 href: 'https://twitter.com/ChronicleLabs',
               },
               {
-                label: 'Farcaster',
-                href: 'https://warpcast.com/chroniclelabs',
+                label: 'Newsletter',
+                href: 'https://chroniclebuilders.substack.com/embed',
               },
               {
                 label: 'Chronicle Points',
@@ -185,6 +185,10 @@ const config = {
               {
                 label: 'Reddit',
                 href: 'https://reddit.com/r/chronicleprotocol',
+              },
+              {
+                label: 'Farcaster',
+                href: 'https://warpcast.com/chroniclelabs',
               },
             ],
           },
