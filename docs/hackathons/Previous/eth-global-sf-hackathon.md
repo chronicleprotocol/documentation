@@ -10,14 +10,14 @@ sidebar_position: 1
 
 :::tip
 ### Chronicle Protocol Contracts
-You can view all the smart contract addresses [here](#Testnet-addresses), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
+You can view all the smart contract addresses [here](../../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
 :::
 :::important
 ### Self-Kisser: Permissionless Whitelisting
 
 Chronicle safeguards Oracle read functions with a whitelist, ensuring controlled access to critical data. However, the SelfKisser contract unfolds a possibility where you can whitelist yourself (or, as whimsically termed, "kiss") yourself on **Testnet chains**.
 
-To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../Developers/Guides/whitelistAddress.md)**. On the same page, you will find a table with the SelfKisser addresses for different Testnet chains.
+To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../../Developers/Guides/whitelistAddress.md)**. On the same page, you will find a table with the SelfKisser addresses for different Testnet chains.
 
 
 **Please note that this is a mandatory step to be able to read from Chronicle Oracles!**
