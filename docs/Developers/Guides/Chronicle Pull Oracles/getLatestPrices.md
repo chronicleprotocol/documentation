@@ -7,12 +7,6 @@ keywords: [pull oracle]
 
 Fetches the latest price messages for one or more pairs.
 
-# Import
-
-```js
-import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
-```
-
 # Usage
 
 :::info
@@ -20,6 +14,8 @@ import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
 :::
 
 ```js
+import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
+
 const prices = await getLatestPrices([
   { wat: "MKR/USD" },
   { wat: "ETH/USD" }
@@ -56,7 +52,7 @@ Returns a Promise that provides an array of objects
 
 # Errors
 
-In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode)
+In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode).
 
 ```js
 {
@@ -78,23 +74,19 @@ In the event of an error, the return object will be provided with `error: true` 
 
 - Type: `array`
 
-List of pairs to fetch
+The list of pairs to fetch.
 
 ```js
-[
-  {
-    wat: "ETH/USD"
-  }
-]
+[{ wat: "ETH/USD" }, ...]
 ```
 
 ### wat
-- Type `string`
+- Type: `string`
 
-A valid [pair](./getPairs)
+A valid [pair](./getPairs).
 
 ### scheme
 
 - _Optional_
-- Default: ECDSA
+- Default: `ECDSA`
 - Type: [`Scheme`](./Types.md#scheme)
