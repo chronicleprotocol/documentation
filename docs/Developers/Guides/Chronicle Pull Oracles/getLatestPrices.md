@@ -10,7 +10,7 @@ Fetches the latest price messages for one or more pairs.
 # Usage
 
 :::info
-`getLatestPrices` requires that you [`authenticate`](./authenticate.md) with a valid auth token first
+`getLatestPrices` requires that you [authenticate](./authenticate.md) with a valid auth token first
 :::
 
 ```js
@@ -26,7 +26,7 @@ const prices = await getLatestPrices([
 
 # Returns
 
-Returns a Promise that provides an array of objects
+Returns a promise that provides an array of objects.
 
 ```js
 [

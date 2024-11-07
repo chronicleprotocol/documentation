@@ -1,6 +1,6 @@
 # `authenticate`
 
-Validates and caches the auth token for future use with [`getLatestPrices`](./getLatestPrices.md).
+Validates and caches the auth token for future use with [getLatestPrices](./getLatestPrices.md).
 
 # Usage
 
