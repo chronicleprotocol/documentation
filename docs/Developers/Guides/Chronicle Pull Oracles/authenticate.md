@@ -1,3 +1,9 @@
+---
+sidebar_position: 2
+description: Pull Oracle - authenticate
+keywords: [pull oracle]
+---
+
 # `authenticate`
 
 Validates and caches the auth token for future use with [getLatestPrices](./getLatestPrices.md).

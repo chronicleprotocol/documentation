@@ -1,3 +1,9 @@
+---
+sidebar_position: 5
+description: Pull Oracle - Types
+keywords: [pull oracle]
+---
+
 # Types
 
 ## Constants
@@ -12,7 +18,7 @@ enum Scheme {
 }
 ```
 
-- `ECDSA`: Price messages are signed with [Elliptic Curve Digital Signature Algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) encryption
+- `ECDSA`: Price messages are signed with [Elliptic Curve Digital Signature Algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) encryption.
 
 ---
 

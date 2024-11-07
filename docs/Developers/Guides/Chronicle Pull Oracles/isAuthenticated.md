@@ -1,3 +1,9 @@
+---
+sidebar_position: 4
+description: Pull Oracle - isAuthenticated
+keywords: [pull oracle]
+---
+
 # `isAuthenticated`
 
 Indicates whether the library has a currently valid auth token previously cached by the [authenticate](./authenticate.md) function.

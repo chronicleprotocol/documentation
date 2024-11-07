@@ -1,8 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: Pull Oracle - getLatestPrices
 keywords: [pull oracle]
 ---
+
 # `getLatestPrices`
 
 Fetches the latest price messages for one or more pairs.
