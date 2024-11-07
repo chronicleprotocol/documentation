@@ -1,0 +1,100 @@
+---
+sidebar_position: 2
+description: Pull Oracle - getLatestPrices
+keywords: [pull oracle]
+---
+# `getLatestPrices`
+
+Fetches the latest price messages for one or more pairs.
+
+# Import
+
+```js
+import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
+```
+
+# Usage
+
+:::info
+`getLatestPrices` requires that you [`authenticate`](./authenticate.md) with a valid auth token first
+:::
+
+```js
+const prices = await getLatestPrices([
+  { wat: "MKR/USD" },
+  { wat: "ETH/USD" }
+]);
+```
+
+---
+
+# Returns
+
+Returns a Promise that provides an array of objects
+
+```js
+[
+  {
+    wat: string,
+    scheme: string,
+    bar: number,
+    messages: [
+      {
+        wat: string,
+        val: string,
+        age: number,
+        r: string,
+        s: string,
+        v: string,
+        validator: Address
+      }
+    ],
+    callData: Hex
+  }
+]
+```
+
+# Errors
+
+In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode)
+
+```js
+{
+  "error": true,
+  "message": "Invalid authorization token: EXPIRED",
+  "data": {
+    "wat": "ETH/USD",
+    "scheme": "ECDSA"
+  },
+  "code": "EXPIRED"
+}
+```
+
+---
+
+# Parameters
+
+## wats
+
+- Type: `array`
+
+List of pairs to fetch
+
+```js
+[
+  {
+    wat: "ETH/USD"
+  }
+]
+```
+
+### wat
+- Type `string`
+
+A valid [pair](./getPairs)
+
+### scheme
+
+- _Optional_
+- Default: ECDSA
+- Type: [`Scheme`](./Types.md#scheme)
