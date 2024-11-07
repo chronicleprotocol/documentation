@@ -10,14 +10,14 @@ sidebar_position: 1
 
 :::tip
 ### Chronicle Protocol Contracts
-You can view all the smart contract addresses [here](../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
+You can view all the smart contract addresses [here](../../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
 :::
 :::important
 ### Self-Kisser: Permissionless Whitelisting
 
 Chronicle safeguards Oracle read functions with a whitelist, ensuring controlled access to critical data. However, the SelfKisser contract unfolds a possibility where you can whitelist yourself (or, as whimsically termed, "kiss") yourself on **Testnet chains**.
 
-To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../Developers/Guides/whitelistAddress.md)**. On the same page, you will find a table with the SelfKisser addresses for different Testnet chains.
+To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../../Developers/Guides/whitelistAddress.md)**. On the same page, you will find a table with the SelfKisser addresses for different Testnet chains.
 
 
 **Please note that this is a mandatory step to be able to read from Chronicle Oracles!**
@@ -212,7 +212,7 @@ Say hi 👋 when you spot the team in their Chronicle t-shirts and feel free to 
 - ⛽️ Ensure you have a sufficient amount of tokens in your wallet to cover gas fees for transactions.
 - ⛓️ Ensure your wallet is connected to the correct network corresponding to the contract you are interacting with.
 - ⚪️ Make sure to whitelist the address that reads from each Oracle you use. For example, if you're using ETH/USD and ETH/BTC, you'll need to whitelist your address for both Oracles.
-- ✅ Ensure you are using the correct SelfKisser address for the chain you are working with, as the SelfKisser may have different addresses across chains. You can find the corresponding SelfKisser addresses for each chain on this [page](../Developers/Guides/whitelistAddress.md). 
+- ✅ Ensure you are using the correct SelfKisser address for the chain you are working with, as the SelfKisser may have different addresses across chains. You can find the corresponding SelfKisser addresses for each chain on this [page](../../Developers/Guides/whitelistAddress.md). 
 
 
 ## Good luck and happy hacking! 🧙
