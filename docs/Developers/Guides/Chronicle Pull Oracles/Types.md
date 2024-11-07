@@ -1,12 +1,8 @@
 # Types
 
+## Constants
 
-
----
-
-# Constants
-
-## `Scheme`
+### `Scheme`
 
 Encryption scheme for price messages. Currently there is only one option, however more options may be offered in the future.
 
@@ -20,9 +16,9 @@ enum Scheme {
 
 ---
 
-## `AuthTokenCodes`
+### `AuthTokenCodes`
 
-Reponse code for auth token verification.
+Response codes for auth token verification.
 
 ```js
 enum AuthTokenCode {
