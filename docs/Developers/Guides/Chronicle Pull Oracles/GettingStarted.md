@@ -29,7 +29,7 @@ Once the auth token is generated on the server, pass it to the client and regist
 
 Authenticating a user session on the client and fetching prices:
 ```js
-import { authenticate } from '@chronicleprotocol/pull-oracle';
+import { authenticate, getLatestPrices } from '@chronicleprotocol/pull-oracle';
 
 // token is received from the server
 // `authenticate` caches the token in memory so it only needs to be called once per session

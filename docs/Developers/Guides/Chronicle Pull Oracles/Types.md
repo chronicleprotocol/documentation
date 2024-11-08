@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 description: Pull Oracle - Types
 keywords: [pull oracle]
 ---

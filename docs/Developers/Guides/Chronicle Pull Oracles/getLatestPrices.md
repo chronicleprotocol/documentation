@@ -4,14 +4,16 @@ description: Pull Oracle - getLatestPrices
 keywords: [pull oracle]
 ---
 
-# `getLatestPrices`
+# Getting Prices
 
-Fetches the latest price messages for one or more pairs.
+## `getLatestPrices`
 
-# Usage
+A function to fetch the latest price messages for one or more pairs.
+
+### Usage
 
 :::info
-`getLatestPrices` requires that you [authenticate](./authenticate.md) with a valid auth token first
+`getLatestPrices` requires that you [authenticate](./authenticate.md#authenticate) with a valid auth token first
 :::
 
 ```js
@@ -25,7 +27,7 @@ const prices = await getLatestPrices([
 
 ---
 
-# Returns
+### Returns
 
 Returns a promise that provides an array of objects.
 
@@ -51,7 +53,7 @@ Returns a promise that provides an array of objects.
 ]
 ```
 
-# Errors
+### Errors
 
 In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode).
 
@@ -69,9 +71,9 @@ In the event of an error, the return object will be provided with `error: true` 
 
 ---
 
-# Parameters
+### Parameters
 
-## wats
+#### `wats`
 
 - Type: `array`
 
@@ -81,12 +83,12 @@ The list of pairs to fetch.
 [{ wat: "ETH/USD" }, ...]
 ```
 
-### wat
+#### `wat`
 - Type: `string`
 
 A valid [pair](./getPairs).
 
-### scheme
+#### `scheme`
 
 - _Optional_
 - Default: `ECDSA`
