@@ -1,25 +1,24 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: Pull Oracle - getLatestPrices
 keywords: [pull oracle]
 ---
-# `getLatestPrices`
 
-Fetches the latest price messages for one or more pairs.
+# Getting Prices
 
-# Import
+## `getLatestPrices`
 
-```js
-import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
-```
+A function to fetch the latest price messages for one or more pairs.
 
-# Usage
+### Usage
 
 :::info
-`getLatestPrices` requires that you [`authenticate`](./authenticate.md) with a valid auth token first
+`getLatestPrices` requires that you [authenticate](./authenticate.md#authenticate) with a valid auth token first
 :::
 
 ```js
+import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
+
 const prices = await getLatestPrices([
   { wat: "MKR/USD" },
   { wat: "ETH/USD" }
@@ -28,9 +27,9 @@ const prices = await getLatestPrices([
 
 ---
 
-# Returns
+### Returns
 
-Returns a Promise that provides an array of objects
+Returns a promise that provides an array of objects.
 
 ```js
 [
@@ -54,9 +53,9 @@ Returns a Promise that provides an array of objects
 ]
 ```
 
-# Errors
+### Errors
 
-In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode)
+In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode).
 
 ```js
 {
@@ -72,29 +71,76 @@ In the event of an error, the return object will be provided with `error: true` 
 
 ---
 
-# Parameters
+### Parameters
 
-## wats
-
+#### `wats`
 - Type: `array`
 
-List of pairs to fetch
+The list of pairs to fetch.
 
 ```js
-[
-  {
-    wat: "ETH/USD"
-  }
-]
+[{ wat: "ETH/USD" }, ...]
 ```
 
-### wat
-- Type `string`
+#### `wat`
+- Type: `string`
 
-A valid [pair](./getPairs)
+A valid [pair](#getpairs).
 
-### scheme
+#### `scheme`
 
 - _Optional_
-- Default: ECDSA
+- Default: `ECDSA`
 - Type: [`Scheme`](./Types.md#scheme)
+
+---
+
+## `getPairs`
+
+Provides a list of valid pairs that prices are available for.
+
+```js
+import { getPairs } from '@chronicleprotocol/pull-oracle';
+
+const pairs = await getPairs({ scheme: 'ECDSA' });
+```
+
+### Parameters
+
+#### `options`
+
+- Type: `object`
+
+The object of options to fetch pairs.
+
+```js
+{ scheme: "ECDSA" }
+```
+
+#### `scheme`
+- Type: [`Scheme`](./Types.md#scheme)
+
+---
+
+### Returns
+
+The keys of the `pairs` field are valid [`wat`](#wat) values.
+
+```js
+{
+  "data": {
+    "scheme": "ECDSA",
+    "pairs": {
+      "ETHX/ETH": {
+        "bar": 13,
+        "validators": [
+          "0x130431b4560Cd1d74A990AE86C337a33171FF3c6",
+          "0x15e6e59F95000e5039CBFF5f23FDa9c03d971F66",
+          ...
+        ]
+      },
+      ...
+    }
+  }
+}
+```
