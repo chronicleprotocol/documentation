@@ -29,13 +29,13 @@ Once the auth token is generated on the server, pass it to the client and regist
 
 Authenticating a user session on the client and fetching prices:
 ```js
-import { authenticate, getLatestPrices } from '@chronicleprotocol/pull-oracle';
+import { authenticate, getPrices } from '@chronicleprotocol/pull-oracle';
 
 // token is received from the server
 // `authenticate` caches the token in memory so it only needs to be called once per session
 authenticate(token);
 
-const prices = await getLatestPrices([
+const prices = await getPrices([
   { wat: "MKR/USD" },
   { wat: "ETH/USD" }
 ]);
