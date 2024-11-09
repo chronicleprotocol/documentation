@@ -8,7 +8,7 @@ keywords: [pull oracle]
 
 ## `signAuthToken`
 
-A server-side function which creates an auth token to be used to [authenticate](#authenticate) [getLatestPrices](./getLatestPrices.md) requests.
+A server-side function which creates an auth token to be used to [authenticate](#authenticate) [getPrices](./getPrices.md) requests.
 
 ### Usage
 
@@ -51,7 +51,7 @@ const { token, message } = signAuthToken({
 
 ## `authenticate`
 
-A client-side function which validates and caches the auth token which was received from the server for future use with [getLatestPrices](./getLatestPrices.md).
+A client-side function which validates and caches the auth token which was received from the server for future use with [getPrices](./getPrices.md).
 
 ### Usage
 

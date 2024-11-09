@@ -1,25 +1,25 @@
 ---
 sidebar_position: 3
-description: Pull Oracle - getLatestPrices
+description: Pull Oracle - getPrices
 keywords: [pull oracle]
 ---
 
 # Getting Prices
 
-## `getLatestPrices`
+## `getPrices`
 
 A function to fetch the latest price messages for one or more pairs.
 
 ### Usage
 
 :::info
-`getLatestPrices` requires that you [authenticate](./authenticate.md#authenticate) with a valid auth token first
+`getPrices` requires that you [authenticate](./authenticate.md#authenticate) with a valid auth token first
 :::
 
 ```js
-import { getLatestPrices } from '@chronicleprotocol/pull-oracle';
+import { getPrices } from '@chronicleprotocol/pull-oracle';
 
-const prices = await getLatestPrices([
+const prices = await getPrices([
   { wat: "MKR/USD" },
   { wat: "ETH/USD" }
 ]);
