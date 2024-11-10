@@ -59,13 +59,13 @@ In the event of an error, the return object will be provided with `error: true` 
 
 ```js
 {
-  "error": true,
-  "message": "Invalid authorization token: EXPIRED",
-  "data": {
-    "wat": "ETH/USD",
-    "scheme": "ECDSA"
+  error: true,
+  message: "Invalid authorization token: EXPIRED",
+  data: {
+    wat: "ETH/USD",
+    scheme: "ECDSA"
   },
-  "code": "EXPIRED"
+  code: "EXPIRED"
 }
 ```
 

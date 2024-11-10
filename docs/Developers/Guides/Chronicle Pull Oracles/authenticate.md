@@ -26,15 +26,15 @@ const { token, message } = signAuthToken({
 
 ```js
 { 
-    token: "...", 
-    message: {
-        description: "Chronicle API token",
-        version: 1,
-        validFrom: 1730992419,
-        validTo: 1730994251,
-        signer: "0x...",
-        nonce: 1077701,
-    } 
+  token: "...", 
+  message: {
+    description: "Chronicle API token",
+    version: 1,
+    validFrom: 1730992419,
+    validTo: 1730994251,
+    signer: "0x...",
+    nonce: 1077701,
+  } 
 }
 ```
 
