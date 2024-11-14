@@ -23,6 +23,13 @@ To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[G
 **Please note that this is a mandatory step to be able to read from Chronicle Oracles!**
 :::
 
+You can find a step by step process for whitelisting an address to read from Chronicle Oracles on Testnet on [this page](../Developers/Guides/readingFromOracles.md).
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/guides/whitelistingProcess.png"
+/>
+</div>
+
 
 ## 💰 Bounties: 10K 
 
@@ -99,6 +106,7 @@ Projects must demonstrate a good-faith effort to integrate Chronicle Oracles to 
 - **[Scaffold-oracle-reader](https://github.com/chronicleprotocol/scaffold-oracle-reader) based on Scaffold-ETH2, to help you prototype easily and experiment with Solidity using a frontend that adapts to your smart contract**
 - [How To Use Read/Write Contract Features on Etherscan](https://info.etherscan.com/how-to-use-read-or-write-contract-features-on-etherscan/)
 - [Creating a TokenVendor](https://github.com/biancabuzea200/TokenVendor) using the ETH/USD price feed
+- [Integrating Cartesi Rollups with Chronicle Oracles](https://medium.com/@souza.mvsl/integrating-cartesi-rollups-with-chronicle-oracles-67b671613edc)
 
 
 ### Scribe
