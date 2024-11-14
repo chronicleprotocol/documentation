@@ -46,4 +46,6 @@ The [ISelfKisser](https://github.com/chronicleprotocol/self-kisser/blob/main/src
 
 In most cases, you'll use the second option to whitelist another address.
 
+Ensure you have sufficient funds for the whitelisting process, as it’s a write operation requiring gas to complete.
+
 On Mainnet, the process is similar, but the whitelisting is permissioned. To get whitelisted, please open a ticket on [Discord](https://discord.com/invite/CjgvJ9EspJ) via the 🆘 ｜ support channel to reach out to the team.
