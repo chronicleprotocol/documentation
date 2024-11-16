@@ -66,7 +66,7 @@ Use Chronicle Oracles to power up your DApp! You can utilize any of the oracles 
 Make sure to include the following in your project submission:
 
     1. A public demo URL to your deployed project that judges can test.
-    2. A short video that demonstrates your submission (approximately 2-3 minutes).
+    2. A short video that demonstrates your submission (approximately 2-3 minutes) 
     3. A public GitHub repository with the code. 
     4. Complete the [Builder Feedback Form](https://forms.gle/SvcS5FsRDjDd5crA7).
 
@@ -88,8 +88,6 @@ Projects must demonstrate a good-faith effort to integrate Chronicle Oracles to 
 
 ### 🏁 Assets to submit:
 
- -  A public demo URL to your deployed project that judges can test.
- - A short video that demonstrates your submission (approximately 2-3 minutes).
  - A public GitHub repository with the code.
  - Complete the 2-min Builder Feedback Form: https://forms.gle/EZiu96gfhBBnwuAQ8
 
