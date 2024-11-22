@@ -28,6 +28,7 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 | zkSync Sepolia                | [0x25f594edde4f58A14970b2ef6616badBa4B1CdDD](https://sepolia.explorer.zksync.io/address/0x25f594edde4f58A14970b2ef6616badBa4B1CdDD#contract) |
 | Optimism Sepolia              | [0xfF619a90cDa4020897808D74557ce3b648922C37](https://sepolia-optimism.etherscan.io/address/0xfF619a90cDa4020897808D74557ce3b648922C37#code)  |
 | Berachain Bartio              | [0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd](https://bartio.beratrail.io/address/0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd)                 |
+| Superseed Sepolia            | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia-explorer.superseed.xyz/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B#code) 
 
 # Whitelisting Yourself on Testnet and Reading from Smart Contracts
 
