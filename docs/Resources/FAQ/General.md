@@ -6,7 +6,7 @@ keywords: [General, FAQ]
 
 ## Which chains is Chronicle integrated with?
 
-At the moment, Chronicle Protocol is integrated on ten blockchains:
+At the moment, Chronicle Protocol is integrated on eleven blockchains:
 
 - Ethereum
 - Arbitrum
