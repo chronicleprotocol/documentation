@@ -3,7 +3,7 @@ sidebar_position: 1
 description: Developer documentation for Chronicle's Pull Oracle
 keywords: [pull oracle]
 ---
-# Getting started
+# Getting Started
 
 Chronicle's pull oracles offer the absolute freshest pricing information on-demand. We provide an [SDK](https://npmjs.com/) for simple integrations. Authentication is handled via tokens based on the [Ethereum Signed Messages](https://eips.ethereum.org/EIPS/eip-191) protocol.
 

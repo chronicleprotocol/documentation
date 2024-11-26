@@ -27,25 +27,9 @@ const { token, message } = signAuthToken({
 ```js
 { 
   token: "...", 
-  message: {
-    description: "Chronicle API token",
-    version: 1,
-    validFrom: 1730992419,
-    validTo: 1730994251,
-    signer: "0x...",
-    nonce: 1077701,
-  } 
+  message: AuthTokenMessage 
 }
 ```
-
-- `token`: the authentication token
-- `message`: the authentication token details
-    - `description`: the description of the token
-    - `version`: the authentication API version number
-    - `validFrom`: unix timestamp starting from then the token is valid
-    - `validTo`: unix timestamp until when the auth token is valid
-    - `signer`: the address of the signer
-    - `nonce`: unique number
 
 ---
 
