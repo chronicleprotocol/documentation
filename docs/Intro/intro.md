@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: /understandingChronicle
 sidebar_position: 1
 description: Why Chronicle Protocol?
 keywords: [Chronicle, scalable Oracle, decentralized Oracle]
