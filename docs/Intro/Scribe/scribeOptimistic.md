@@ -11,11 +11,11 @@ keywords: [Scribe Optimistic, L1, optimistic poke]
 
 ### Problem Statement
 
-On Layer 1 blockchains, computation is expensive, and signature aggregation is a gas-intensive process. This makes onchain verification of Schnorr signatures costly, as it requires a significant amount of gas.
+On Layer 1 blockchains, computation is expensive, and signature aggregation is a gas-intensive process. This makes the onchain verification of the Schnorr aggregated signature costly, as it requires a significant amount of gas.
 
 ### Solution
 
-ScribeOptimistic addresses this issue by introducing the `opPoke()` function, which enables offchain verification of Schnorr signatures. This allows for a more efficient and cost-effective way to verify signatures on Layer 1 blockchains.
+ScribeOptimistic addresses this issue by introducing the `opPoke()` function, which enables offchain verification of the Schnorr aggregated signature. This allows for a more efficient and cost-effective way to verify signatures on Layer 1 blockchains.
 
 ## How Does it Work?
 With  ScribeOptimistic all values optimistically proposed by validators are put into a public “buffer” and get automatically accepted after the challenge period.
@@ -26,7 +26,7 @@ Upon a successful challenge, the challenger will receive a reward in ETH, the op
 
 <div style={{textAlign: 'center'}}>
 <img
-    src="/img/Intro/Scribe/scribeOp.jpg"
+    src="/img/Intro/Scribe/scribeOp.png"
     alt="Scribe Optimistic"
 />
 </div>
@@ -37,14 +37,14 @@ To check the current challenge period, you can check the `opChallengePeriod`’s
 
 ## `OpPoke()`
 
-The `opPoke()`allows a validator to sign a (value, age) tuple and a corresponding Schnorr signature offchain, using ECDSA. Here, the value represents the data that the validators reached consensus on as the next data for the Oracle to deliver, and the age is the timestamp of this value.
+The `opPoke()`allows a validator to sign a (value, age) tuple and a corresponding Schnorr signature, using ECDSA. Here, the value represents the data that the validators reached consensus on as the next data for the Oracle to deliver, and the age is the timestamp of this value.
 
 ### Steps:
 
-- A validator signs a (value, age) tuple and a corresponding Schnorr signature offchain, using ECDSA.
-- The signed data is then sent to the `opPoke()`.
+- Each validator collects a set of data from multiple trusted data sources and signs an aggregated value (median). All of these values and signatures are aggregated into a single Schnorr signature  aggregated again into a final proposed value (median).
+- The signed data (median of medians) is then sent by a validator to the `opPoke()`.
 - `OpPoke()` binds the validator to the signed data. A public callable `opChallenge()` can be called to challenge the data.
-- The validator is now associated with the signed data, and the data is considered "poked" after the challenge period ends.
+- The validator is now associated with the signed data, and the data is considered "poked" after the challenge period ends without a successful challenge.
 
 ## `OpChallenge()`
 
@@ -56,3 +56,10 @@ The `opChallenge()` function is a public callable function that can be called at
 - The function performs the Schnorr signature verification of the currently opPoked data.
 - If the verification succeeds, the data is finalized.
 - If the verification fails, the validator bound to the data is removed, the data is deleted, and the challenger gets an ETH reward.
+
+## How does ScribeOptmistic differ from Scribe?
+Scribe Oracles provide instant updates and are optimized for Layer 2 (L2) networks that prioritize speed, where gas costs are low. This means that as soon as a new price is published, it becomes available.
+
+ScribeOptimistic Oracles are tailored for Layer 1 (L1) networks, where computation costs are significantly higher. With ScribeOptimistic, an incoming price is not finalized until the challenge period has concluded.  You can think of it as a delayed oracle. The shorter the challenge period, the less phase-shifted the oracle becomes.
+
+Currently, Chronicle's challenge period is set to 20 minutes, though this value is customizable. Once the challenge period ends, the optimistic price is finalized and published on the oracle, even if the market price has shifted in the meantime.
