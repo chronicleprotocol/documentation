@@ -44,6 +44,18 @@ Returns either `true` or `false`.
 
 On Etherscan, navigate to the `Read Contract` section of the Oracle you want to check, and run the `bar()` function. This returns the number of signatures required for an Oracle update. 
 
+## What types of Oracles does Chronicle use for asset prices?
+
+On Ethereum Mainnet (L1), where computation is expensive, Chronicle uses its [ScribeOptimistic](https://github.com/chronicleprotocol/scribe/blob/main/src/ScribeOptimistic.sol) Oracles, enabling additional gas saving. On L2 chains, Chronicle uses [Scribe Oracles](https://github.com/chronicleprotocol/scribe/blob/main/src/Scribe.sol). 
+
+## What are the main operational differences between ScribeOptimistic and Scribe Oracles?
+Scribe Oracle have instant updates. This means that as soon as a new price is published, it becomes available.
+**ScribeOptimistic Oracles have a buffer. An incoming price is not finalized until the  challenge period has concluded.** You can think of it as a delayed oracle. The lower the challenge period is, the less phase shifted the oracle is. At the moment, the challenge period is set to 20 mins for Chronicle Oracles, but this value is customizable. **At the end of the challenge period, the price will be the optimistic price, even if the market price has changed.** 
+
+## How can I check the challenge period for a ScribeOptimistic oracle?
+To check the current challenge period, you can check the `opChallengePeriod`’s value using `opChallengePeriod()` which returns a value in seconds.
+
+
 ## What is the update threshold for the Oracles?
 
 A new aggregation round is triggered after a specified amount of time since the latest update, or if the new offchain value deviates more than a pre-defined threshold for the onchain value, whichever of these conditions occurs first. If the data values stay within the Deviation Threshold, an update will only be triggered every X minutes / hours.
