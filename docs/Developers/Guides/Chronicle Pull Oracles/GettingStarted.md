@@ -5,13 +5,13 @@ keywords: [pull oracle]
 ---
 # Getting Started
 
-Chronicle's pull oracles offer the absolute freshest pricing information on-demand. We provide an [SDK](https://npmjs.com/) for simple integrations. Authentication is handled via tokens based on the [Ethereum Signed Messages](https://eips.ethereum.org/EIPS/eip-191) protocol.
+Chronicle's pull oracles offer the absolute freshest pricing information on-demand. We provide an [NPM package](https://www.npmjs.com/package/@chronicleprotocol/pull-oracle) for simple integrations. Authentication is handled via tokens based on the [Ethereum Signed Messages](https://eips.ethereum.org/EIPS/eip-191) protocol.
 
 :::info
-Your public signing key must be allow-listed on our servers before you can generate tokens.
+Your public signing key must be allow-listed on our servers before your tokens will be accepted as valid.
 :::
 
-Generating authentication tokens on the server:
+### Generating authentication tokens on the server:
 ```js
 import { signAuthToken } from '@chronicleprotocol/pull-oracle';
 
@@ -27,7 +27,7 @@ We highly recommend following best practices for private key generation and stor
 
 Once the auth token is generated on the server, pass it to the client and register it with the `authenticate` method of the `pull-oracle` module for automatic inclusion in future requests.
 
-Authenticating a user session on the client and fetching prices:
+### Authenticating a user session on the client and fetching prices:
 ```js
 import { authenticate, getPrices } from '@chronicleprotocol/pull-oracle';
 
@@ -36,7 +36,7 @@ import { authenticate, getPrices } from '@chronicleprotocol/pull-oracle';
 authenticate(token);
 
 const prices = await getPrices([
-  { wat: "MKR/USD" },
-  { wat: "ETH/USD" }
+  { wat: "MKR/USD", blockchain: "ETH" },
+  { wat: "ETH/USD", blockchain: "ETH" }
 ]);
 ```

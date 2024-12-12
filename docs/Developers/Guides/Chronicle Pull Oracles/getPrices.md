@@ -8,7 +8,7 @@ keywords: [pull oracle]
 
 ## `getPrices`
 
-A function to fetch the latest price messages for one or more pairs.
+Fetches the latest price messages for one or more pairs on a given blockchain.
 
 ### Usage
 
@@ -16,26 +16,25 @@ A function to fetch the latest price messages for one or more pairs.
 `getPrices` requires that you [authenticate](./authenticate.md#authenticate) with a valid auth token first
 :::
 
-```js
+```ts
 import { getPrices } from '@chronicleprotocol/pull-oracle';
 
 const prices = await getPrices([
-  { wat: "MKR/USD" },
-  { wat: "ETH/USD" }
+  { wat: "MKR/USD", blockchain: "ETH" },
+  { wat: "ETH/USD", blockchain: "ETH" }
 ]);
 ```
 
----
-
 ### Returns
 
-Returns a promise that provides an array of objects.
+Returns a promise that provides an array of objects corresponding to the input array of [`wats`](#wats).
 
-```js
+```ts
 [
   {
     wat: string,
-    scheme: string,
+    scheme: Scheme,
+    blockchain: Blockchain,
     bar: number,
     messages: [
       {
@@ -53,24 +52,6 @@ Returns a promise that provides an array of objects.
 ]
 ```
 
-### Errors
-
-In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode).
-
-```js
-{
-  error: true,
-  message: "Invalid authorization token: EXPIRED",
-  data: {
-    wat: "ETH/USD",
-    scheme: "ECDSA"
-  },
-  code: "EXPIRED"
-}
-```
-
----
-
 ### Parameters
 
 #### `wats`
@@ -78,69 +59,40 @@ In the event of an error, the return object will be provided with `error: true` 
 
 The list of pairs to fetch.
 
-```js
-[{ wat: "ETH/USD" }, ...]
+```ts
+[{ wat: "ETH/USD", blockchain: "ETH" }, ...]
 ```
 
 #### `wat`
 - Type: `string`
 
-A valid [pair](#getpairs).
+A valid [pair](./getPairs.md).
+
+#### `blockchain`
+- Type: [`Blockchain`](./Types.md#blockchain)
+
+A blockhain identifier indicating on which chain the messages are going to be verified.
 
 #### `scheme`
-
 - _Optional_
 - Default: `ECDSA`
 - Type: [`Scheme`](./Types.md#scheme)
 
----
+The encryption scheme used for price messages
 
-## `getPairs`
+### Errors
 
-Provides a list of valid pairs that prices are available for.
+In the event of an error, the return object will be provided with `error: true` and an [error code](./Types.md#authtokencode).
 
-```js
-import { getPairs } from '@chronicleprotocol/pull-oracle';
-
-const pairs = await getPairs({ scheme: 'ECDSA' });
-```
-
-### Parameters
-
-#### `options`
-
-- Type: `object`
-
-The object of options to fetch pairs.
-
-```js
-{ scheme: "ECDSA" }
-```
-
-#### `scheme`
-- Type: [`Scheme`](./Types.md#scheme)
-
----
-
-### Returns
-
-The keys of the `pairs` field are valid [`wat`](#wat) values.
-
-```js
+```ts
 {
-  "data": {
-    "scheme": "ECDSA",
-    "pairs": {
-      "ETHX/ETH": {
-        "bar": 13,
-        "validators": [
-          "0x130431b4560Cd1d74A990AE86C337a33171FF3c6",
-          "0x15e6e59F95000e5039CBFF5f23FDa9c03d971F66",
-          ...
-        ]
-      },
-      ...
-    }
-  }
+  error: true,
+  message: "Invalid authorization token: EXPIRED",
+  data: {
+    wat: "ETH/USD",
+    scheme: "ECDSA",
+    blockchain: "ETH"
+  },
+  code: "EXPIRED"
 }
 ```
