@@ -19,6 +19,7 @@ At the moment, Chronicle Protocol is integrated on eleven blockchains:
 - Scroll
 - Berachain
 - Superseed
+- Corn
 
 This is being updated all the time as new chains come online. Please check out the [dashboard](https://chroniclelabs.org/dashboard/oracles) for the most up-to-date overview of the blockchains we are currently integrated with.
 

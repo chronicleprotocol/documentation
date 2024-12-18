@@ -9,7 +9,7 @@ keywords: [Chronicle, scalable Oracle, decentralized Oracle]
 
 ## **Welcome to Chronicle Protocol**
 
-Chronicle Protocol is a novel Oracle solution that has exclusively secured over $10B in assets for MakerDAO and its ecosystem since 2017. With a history of innovation, including the invention of the first Oracle on Ethereum, Chronicle Protocol continues to redefine Oracle networks. A blockchain-agnostic protocol, Chronicle overcomes the current limitations of transferring data on-chain by developing the first truly scalable, cost-efficient, decentralized, and verifiable Oracles, rewriting the rulebook on data transparency and accessibility.
+Chronicle Protocol is a novel Oracle solution that has exclusively secured at times over $20B in assets for MakerDAO and its ecosystem since 2017. With a history of innovation, including the invention of the first Oracle on Ethereum, Chronicle Protocol continues to redefine Oracle networks. A blockchain-agnostic protocol, Chronicle overcomes the current limitations of transferring data on-chain by developing the first truly scalable, cost-efficient, decentralized, and verifiable Oracles, rewriting the rulebook on data transparency and accessibility.
 
 ### **Why Chronicle**
 <details>
@@ -42,7 +42,7 @@ Chronicle’s validators are run by the community. Given the decoupling of the n
 
 Chronicle’s **validators are represented by a community of leading blockchain protocols** including [MakerDAO](https://makerdao.com/), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [Gnosis](https://www.gnosis.io/), [DeFi Saver](https://defisaver.com/), and more. This approach is unique to Chronicle and ensures that the Oracle data is being signed by some of the most trusted and reputable projects in the blockchain space, further reinforcing trust in the protocol.
 
-Chronicle is the second largest Oracle provider by Total Value Secured (TVS) and currently secures around **$6B** for reputable protocols such as MakerDAO. 
+Chronicle is the [second largest Oracle provider by Total Value Secured (TVS)](https://defillama.com/oracles) and currently secures over **$10B** in assets for reputable protocols such as MakerDAO, Spark, Morpho, and more.
 
 </details>
 

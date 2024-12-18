@@ -55,6 +55,12 @@ Scribe Oracle have instant updates. This means that as soon as a new price is pu
 ## How can I check the challenge period for a ScribeOptimistic oracle?
 To check the current challenge period, you can check the `opChallengePeriod`’s value using `opChallengePeriod()` which returns a value in seconds.
 
+## How can I cross-check the asset pair corresponding to a given Chronicle address on a block explorer like Etherscan?
+To cross-check the asset pair associated with a Chronicle Oracle address on a block explorer, follow these steps:
+   1. Navigate to the `Read Contract` section under `Contract` on Etherscan.
+   2. Locate the `wat` function at the bottom of the list.
+   3. Query the `wat` function to retrieve a bytes32 value.
+   4. Use a bytes32 to string converter, such as [this tool](https://web3-type-converter.onbrn.com/), to decode the bytes32 value and get the name of the asset pair.
 
 ## What is the update threshold for the Oracles?
 
