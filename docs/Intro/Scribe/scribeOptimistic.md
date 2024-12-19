@@ -62,4 +62,12 @@ Scribe Oracles provide instant updates and are optimized for Layer 2 (L2) networ
 
 ScribeOptimistic Oracles are tailored for Layer 1 (L1) networks, where computation costs are significantly higher. With ScribeOptimistic, an incoming price is not finalized until the challenge period has concluded.  You can think of it as a delayed oracle. The shorter the challenge period, the less phase-shifted the oracle becomes.
 
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/Intro/Scribe/buffer.png"
+    alt="Scribe Optimistic"
+  
+/>
+</div>
+
 Currently, Chronicle's challenge period is set to 20 minutes, though this value is customizable. Once the challenge period ends, the optimistic price is finalized and published on the oracle, even if the market price has shifted in the meantime.
