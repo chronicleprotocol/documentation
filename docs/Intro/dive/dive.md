@@ -42,7 +42,7 @@ keywords: [onchain, offchain]
 
     **Archiver** aggregates the messages created by Validators and stores it in a database. It collect all signed messages, not the intermediate messages like used for MuSig creating.
 
-    **Dashboard**:  The [**croniclelabs.org](http://croniclelabs.org) web site** queries the archiver to present the prices on its dashboard. You can find all of our current Oracles here https://chroniclelabs.org/dashboard/oracles
+    **Dashboard**:  The [**chroniclelabs.org](http://chroniclelabs.org) web site** queries the archiver to present the prices on its dashboard. You can find all of our current Oracles here https://chroniclelabs.org/dashboard/oracles
 
     You can find your token name by using the search box or by selecting your preferred blockchain from the filter located in the top-right corner (see Figure below).
 

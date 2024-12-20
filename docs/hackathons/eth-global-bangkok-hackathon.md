@@ -34,7 +34,7 @@ You can find a step by step process for whitelisting an address to read from Chr
 ## 💰 Bounties: 10K 
 
 <details>
-<summary> 🧩 Best Integartion of Chronicle Oracles </summary>
+<summary> 🧩 Best Integration of Chronicle Oracles </summary>
 
 ### 🧩 Best Integration of Chronicle Protocol ⸺ $6,500
 

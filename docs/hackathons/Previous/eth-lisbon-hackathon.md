@@ -18,7 +18,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Objective:** Rewarding the most creative integration of a Chronicle Oracle.
 
-**Description:** The prize will go to the team with the most innovative integration of a Chronicle Oracle on one of the supported chains (Sepoila (Ethereum), Polygon zkEVM (testnet), Gnosis Chain (mainnet)). The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
+**Description:** The prize will go to the team with the most innovative integration of a Chronicle Oracle on one of the supported chains (Sepolia (Ethereum), Polygon zkEVM (testnet), Gnosis Chain (mainnet)). The innovation should stem from the use case of the Oracle, i.e., The idea or utility of the project.
 
 **Reward:** $2000 DAI <br/>
 **Type:** Winner takes all
@@ -27,14 +27,14 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Objective:** Rewarding successful integrations of a Chronicle Oracle.
 
-**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepoila (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $2500 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
+**Description:** Each team that manages to successfully integrate a Chronicle Oracle on one of the supported chains, Sepolia (Ethereum), Polygon zkEVM (testnet), or Gnosis Chain (mainnet), will receive an equal share from the $2500 DAI reward pool. The integration should be crucial to the product or project's operation, serving a legitimate purpose.
 
 **Reward:** $2500 DAI <br/>
 **Type:** Pooled prize
 
-### Bounty 3: Build with a Chronicle Oracle on The Polyogon zkEVM
+### Bounty 3: Build with a Chronicle Oracle on The Polygon zkEVM
 
-**Objective:** Rewarding the most innovative Integration of a Chronicle Oracle on The Polyogon zkEVM.
+**Objective:** Rewarding the most innovative Integration of a Chronicle Oracle on The Polygon zkEVM.
 
 **Description:** Two teams will be awarded for integrating one or more Chronicle Oracles in a project built on Polygon zkEVM testnet. 'DeFi' and 'Public Good' projects are preferred. The Oracle integration must be integral to the operation of the build to be considered. Please see the Chronicle ETH Lisbon Hackathon Docs for a complete list of available Oracles.
 

@@ -122,7 +122,7 @@ ghost:
 
   env:
     normal:
-      # please place your nodes actual public ip addresse here
+      # please place your nodes actual public ip address here
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4'
 ```
 

@@ -123,7 +123,7 @@ That should send you a popup message on your wallet to sign. Once signed, it sho
 - [How To Use Read/Write Contract Features on Etherscan](https://info.etherscan.com/how-to-use-read-or-write-contract-features-on-etherscan/)
 
 :::info
-You can view all the smart contract adresses below:👇
+You can view all the smart contract addresses below:👇
 :::
 
 <details>
@@ -386,5 +386,3 @@ You can view all the smart contract adresses below:👇
 - [Eth Magician Post](https://ethereum-magicians.org/t/an-efficient-schnorr-multi-signature-implementation/15510)
 - [Twitter Thread](https://twitter.com/merkleplant_eth/status/1693652385980379593)
 - [Scribe's docs](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md)
-
-
