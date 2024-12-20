@@ -15,7 +15,7 @@ Your public signing key must be allow-listed on our servers before your tokens w
 ```js
 import { signAuthToken } from '@chronicleprotocol/pull-oracle';
 
-const { token, message } = signAuthToken({
+const { token, message } = await signAuthToken({
   // private key is 0x prefixed 32 byte hex string
   privateKey: "0xabc..."
 })
