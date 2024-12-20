@@ -16,7 +16,7 @@ Generating authentication tokens on the server:
 ```js
 import { signAuthToken } from '@chronicleprotocol/pull-oracle';
 
-const { token, message } = signAuthToken({
+const { token, message } = await signAuthToken({
   // private key is 0x prefixed 32 byte hex string
   privateKey: "0xabc..."
 })
@@ -30,6 +30,26 @@ const { token, message } = signAuthToken({
   message: AuthTokenMessage 
 }
 ```
+
+### Parameters
+
+```ts
+{ privateKey: "0xabc...", duration: 1800 }
+```
+
+#### `privateKey`
+
+- Type: `string`
+
+The `privateKey` for the account signing the auth token.
+
+#### `duration`
+
+- _Optional_
+- Default: 1800
+- Type: `number`
+
+The duration of validity for the auth token in seconds.
 
 ---
 
