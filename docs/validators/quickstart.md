@@ -215,7 +215,7 @@ NOTES:
 [SUCCESS]: setup complete!
 ```
 
-Once the installation is completed, you can retreieve your tor onion address using this command:
+Once the installation is completed, you can retrieve your tor onion address using this command:
 
 ```bash
 kubectl get onion -n $NAME_SPACE

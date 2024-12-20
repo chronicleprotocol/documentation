@@ -160,7 +160,7 @@ Chronicle safeguards Oracle read functions with a whitelist, ensuring controlled
 
 To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[Getting Read Access to Contracts](../../Developers/Guides/whitelistAddress.md)**.
 
-**Please note that this is a mandatory step in ordr to be able to read from Chronicle Oracles.**
+**Please note that this is a mandatory step in order to be able to read from Chronicle Oracles.**
 :::
 
 
@@ -177,7 +177,7 @@ To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[G
 - [How To Use Read/Write Contract Features on Etherscan](https://info.etherscan.com/how-to-use-read-or-write-contract-features-on-etherscan/)
 
 :::tip
-You can view all the smart contract adresses below organized by chains:👇
+You can view all the smart contract addresses below organized by chains:👇
 :::
 
 <details>
