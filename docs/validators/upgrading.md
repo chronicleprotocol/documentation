@@ -18,13 +18,13 @@ Helm Chart details:
 
 ### Install CRD's
 
-Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.6/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+Starting from Chart Version `0.3.8`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.8/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
-If you are running an upgrade from a prior release (`< 0.3.4`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
+If you are running an upgrade from a prior release (`< 0.3.8`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
 
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.6/charts/validator/crds/tor-controller.yaml
+kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.8/charts/validator/crds/tor-controller.yaml
 ```
 
 It can take a few moments for the tor-controller to be in a ready state, but please make sure its running before upgrading your validator:
@@ -96,7 +96,7 @@ Make sure the [TOR crds](#install-crds) are installed.
 
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.6
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.8
 ```
 </details>
 
@@ -158,35 +158,40 @@ Verify the chart version has changed and matches what the latest feed version:
 
 ```
 helm list -n $FEED_NAME
-NAME     	NAMESPACE	REVISION	UPDATED                             	STATUS  	CHART          	APP VERSION
-validator	validator	2       	2024-08-27 23:44:34.801698 -0300 -03	deployed	validator-0.3.6	0.42.2
+NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
+validator  validator       2               2025-01-06 11:52:17.003793982 -0300 -03 deployed        validator-0.3.8 0.45.7
 ```
 
 #### View all resources created in the namespace
 ```bash
 kubectl get pods,deployment,service,secrets,onion -n demo
-NAME                                    READY   STATUS    RESTARTS   AGE
-pod/ghost-bc68cd645-tnvl9               1/1     Running   0          65s
-pod/ghost-tor-daemon-5bcbbf86b8-5gjh2   1/1     Running   0          5m23s
+NAME                                         READY   STATUS    RESTARTS   AGE
+pod/ghost-549b4c9fdd-mhsq5                   1/1     Running   0          98s
+pod/ghost-socks-tor-daemon-c96c789c9-hb8tf   1/1     Running   0          98s
+pod/ghost-tor-daemon-dbc555475-kmcpf         1/1     Running   0          7m54s
 
-NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/ghost              1/1     1            1           5m23s
-deployment.apps/ghost-tor-daemon   1/1     1            1           5m23s
+NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost                    1/1     1            1           7m55s
+deployment.apps/ghost-socks-tor-daemon   1/1     1            1           98s
+deployment.apps/ghost-tor-daemon         1/1     1            1           7m54s
 
-NAME                            TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)                                        AGE
-service/ghost                   LoadBalancer   10.43.56.4     172.18.0.3    8000:31288/TCP,9100:30705/TCP,8080:30220/TCP   5m23s
-service/ghost-tor-metrics-svc   ClusterIP      10.43.74.109   <none>        9035/TCP                                       5m23s
-service/ghost-tor-svc           ClusterIP      10.43.63.20    <none>        8888/TCP                                       5m23s
+NAME                            TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)                         AGE
+service/ghost                   LoadBalancer   10.43.253.3    172.18.0.3    8000:31800/TCP,8080:31117/TCP   7m55s
+service/ghost-metrics           ClusterIP      10.43.1.83     <none>        9100/TCP                        98s
+service/ghost-socks-tor-svc     ClusterIP      10.43.193.96   <none>        9050/TCP                        98s
+service/ghost-tor-metrics-svc   ClusterIP      10.43.208.96   <none>        9035/TCP                        7m54s
+service/ghost-tor-svc           ClusterIP      10.43.97.67    <none>        8888/TCP                        7m54s
 
-NAME                                     TYPE                                           DATA   AGE
-secret/eth-keys                          Opaque                                         3      7m50s
-secret/ghost-tor-auth                    tor.k8s.torproject.org/authorized-clients-v3   0      5m23s
-secret/ghost-tor-secret                  tor.k8s.torproject.org/onion-v3                5      5m23s
-secret/sh.helm.release.v1.validator.v1   helm.sh/release.v1                             1      5m23s
-secret/sh.helm.release.v1.validator.v2   helm.sh/release.v1                             1      65s
+NAME                                TYPE                                           DATA   AGE
+secret/eth-keys                     Opaque                                         3      3m23s
+secret/ghost-socks-tor-secret       tor.k8s.torproject.org/control-password        1      98s
+secret/ghost-tor-auth               tor.k8s.torproject.org/authorized-clients-v3   0      7m55s
+secret/ghost-tor-secret             tor.k8s.torproject.org/onion-v3                5      7m55s
+secret/sh.helm.release.v1.test.v1   helm.sh/release.v1                             1      7m55s
+secret/sh.helm.release.v1.test.v2   helm.sh/release.v1                             1      98s
 
 NAME                                        HOSTNAME                                                         AGE
-onionservice.tor.k8s.torproject.org/ghost   mhxzzlxk46vfht7t4mlawtpv6f6uaplh74bwdgchmvmtof7gf45juyqd.onion   5m23s
+onionservice.tor.k8s.torproject.org/ghost   qb3xcqs6v2v6srhp2prt2y2aww5rkzbea5djwkz3zd6stnnqqztj4jqd.onion   7m55s
 ```
 #### View pod logs:
 
