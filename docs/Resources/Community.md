@@ -1,3 +1,8 @@
+---
+sidebar_position: 2
+description: Community and Support
+keywords: [community]
+---
 # Community and Support
 
 ## Community
