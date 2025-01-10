@@ -565,3 +565,18 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 
 
 </details>
+
+<details>
+<summary> Smart Contract Addresses on **Plume Devnet** </summary>
+
+| Contract Name              | Contract Address on Plume Devnet                                                                                           |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1               | [0xF69De003115777B62c71846b13948CE05C07fe65](https://test-explorer.plumenetwork.xyz/address/0xF69De003115777B62c71846b13948CE05C07fe65) |
+| Chronicle_BTC_USD_1 |[0xE74C350FAfAa483E588B1a3eBE6F3A828444b390](https://test-explorer.plumenetwork.xyz//address/0xE74C350FAfAa483E588B1a3eBE6F3A828444b390) |
+| Chronicle_ETH_USD_1 |[0xF66629Ce89Df70876F436e43020F52C9014E39ED](https://test-explorer.plumenetwork.xyz//address/0xF66629Ce89Df70876F436e43020F52C9014E39ED) |
+|Chronicle_STONE_USD_1 |[0x68AA85aA47208db475935B2Ec7997D20A377Ab6C](https://test-explorer.plumenetwork.xyz//address/0x68AA85aA47208db475935B2Ec7997D20A377Ab6C) |
+| Chronicle_USDC_USD_1 |[0x86eD5E7dC5B1c036F0a2Bd15e49696407b728d8C](https://test-explorer.plumenetwork.xyz//address/0x86eD5E7dC5B1c036F0a2Bd15e49696407b728d8C) |
+| Chronicle_USDT_USD_1 |[0xe20165f58B507DF17187D6FCc12E741423075C5c](https://test-explorer.plumenetwork.xyz//address/0xe20165f58B507DF17187D6FCc12E741423075C5c) |
+| Chronicle_YLFBTC_FBTC_1 |[0x93AccFf0590797f2c67eDcbaDFb2c98920bd0704](https://test-explorer.plumenetwork.xyz//address/0x93AccFf0590797f2c67eDcbaDFb2c98920bd0704) |
+
+</details>
