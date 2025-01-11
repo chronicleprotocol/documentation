@@ -305,7 +305,7 @@ ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.3.10
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.3.11
 ```
 
 Add the helm repo if needed:
@@ -352,7 +352,7 @@ helm install $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.3.10
+ --version 0.3.11
 ```
 
 or to upgrade an existing helm release:
@@ -362,7 +362,7 @@ helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.3.10
+ --version 0.3.11
 ```
 
 :::tip

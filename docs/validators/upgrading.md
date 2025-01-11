@@ -18,13 +18,13 @@ Helm Chart details:
 
 ### Install CRD's
 
-Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.10/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.11/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
 If you are running an upgrade from a prior release (`< 0.3.4`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
 
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.10/charts/validator/crds/tor-controller.yaml
+kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.11/charts/validator/crds/tor-controller.yaml
 ```
 
 It can take a few moments for the tor-controller to be in a ready state, but please make sure its running before upgrading your validator:
@@ -96,7 +96,7 @@ Make sure the [TOR crds](#install-crds) are installed.
 
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.10
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.3.11
 ```
 </details>
 
@@ -159,7 +159,7 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME
 NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-validator  validator       2               2025-01-06 11:52:17.003793982 -0300 -03 deployed        validator-0.3.10 0.45.11
+validator  validator       2               2025-01-06 11:52:17.003793982 -0300 -03 deployed        validator-0.3.11 0.45.12
 ```
 
 #### View all resources created in the namespace
