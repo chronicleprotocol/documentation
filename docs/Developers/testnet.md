@@ -432,6 +432,7 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_POL_USD_1      | [0x227Bd05BbcE62a67529fE69e4340884D34e2CE62](https://bartio.beratrail.io//address/0x227Bd05BbcE62a67529fE69e4340884D34e2CE62) |
 | Chronicle_RETH_ETH_1       | [0x06C29Ef142345fF78A02658173EB4424d937a4F4](https://bartio.beratrail.io//address/0x06C29Ef142345fF78A02658173EB4424d937a4F4) |
 | Chronicle_RETH_USD_1       | [0x3e176Ea9da21A324E32514E0f8937425af67eFC6](https://bartio.beratrail.io//address/0x3e176Ea9da21A324E32514E0f8937425af67eFC6) |
+| Chronicle_RSETH_ETH_1     | [0xAe825c0666566aE4F26c2BEcE2Bf060d0f9760Af](https://bartio.beratrail.io//address/0xAe825c0666566aE4F26c2BEcE2Bf060d0f9760Af) |
 | Chronicle_SD_USD_1         | [0x45A340884e87270838dd8E276210e4826e4252cc](https://bartio.beratrail.io//address/0x45A340884e87270838dd8E276210e4826e4252cc) |
 | Chronicle_SDAI_DAI_1       | [0xF86bcf72D0D03650D9ad909aDA80bfA7fD744cd1](https://bartio.beratrail.io//address/0xF86bcf72D0D03650D9ad909aDA80bfA7fD744cd1) |
 | Chronicle_SDAI_ETH_1       | [0x0e339CB06a14CC78366569185C86F6378c7Cd37E](https://bartio.beratrail.io//address/0x0e339CB06a14CC78366569185C86F6378c7Cd37E) |
@@ -455,6 +456,8 @@ SelfKisser_1 | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbi
 | Chronicle_WUSDM_USD_1      | [0x5F6627955bD5f6d419702fecc9aa773814cb001e](https://bartio.beratrail.io//address/0x5F6627955bD5f6d419702fecc9aa773814cb001e) |
 | Chronicle_WUSDM_USDM_1     | [0x1fFA0852aec4DEd34F4c0Dc2225BCd013c4eb4D2](https://bartio.beratrail.io//address/0x1fFA0852aec4DEd34F4c0Dc2225BCd013c4eb4D2) |
 | Chronicle_YFI_USD_1        | [0xf78F0ebd880eCde82D4EEa9642D6c6d84f6B69ca](https://bartio.beratrail.io//address/0xf78F0ebd880eCde82D4EEa9642D6c6d84f6B69ca) |
+| Chronicle_YLFBTC_FBTC_1    |[0x91CBb47b2fD362Ad48A684f6Bc598C9d310Cb3e0](https://bartio.beratrail.io//address/0x91CBb47b2fD362Ad48A684f6Bc598C9d310Cb3e0) |
+| Chronicle_YLPUMPBTC_PUMPBTC_1 | [0x76dcf20838017005A6D270CE32E81B0048845AcB](https://bartio.beratrail.io//address/0x76dcf20838017005A6D270CE32E81B0048845AcB) |
 | Chronicle_ZK_USDT_1        | [0xF3A5fE18CD97fd2d828bE105245fF3Fe24ADA93b](https://bartio.beratrail.io//address/0xF3A5fE18CD97fd2d828bE105245fF3Fe24ADA93b) |
 
 </details>
