@@ -5,6 +5,7 @@ keywords: [Remix, read access]
 ---
 # Consuming Oracle Data
 
+import Button from '@site/src/components/Button';
 
 Chronicle oracles are read-protected by a whitelist, meaning you won't be able to read them on-chain without your address being added to the whitelist.
 
@@ -109,6 +110,7 @@ interface ISelfKisser {
     function selfKiss(address oracle) external;
 }
 ```
+<Button label="Try on Remix" link="https://remix.ethereum.org/#url=https://github.com/chronicleprotocol/chronicle-foundry-template/blob/main/src/OracleReader.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.26+commit.8a97fa7a.js" size="lg"/>
 
 Ensure your environment is set to **Remix VM - Sepolia Fork** (since this example is hardcoded for Sepolia).
 
