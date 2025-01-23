@@ -22,5 +22,5 @@ keywords: [resources, GitHub repo]
  | :file_cabinet: Repository Name                                                                                                                                  |  Description  |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | 
 | [`Scaffold-Oracle-Reader`](https://github.com/chronicleprotocol/scaffold-oracle-reader)             | An Oracle Reader based on Scaffold-ETH2, for easy prototyping. | 
-| [`Token Vendor`](https://github.com/biancabuzea200/TokenVendor)        | A token vendor example using a Chronicle price feed. | 
-| [`Chronicle Foundry Template`](https://github.com/biancabuzea200/chronicle-foundry-template) |  Template for seamlessly integrating Chronicle oracles to Foundry-based projects. | 
+| [`Chronicle Foundry Template`](https://github.com/chronicleprotocol/chronicle-foundry-template) |  Template for seamlessly integrating Chronicle oracles to Foundry-based projects. | 
+| [`Token Vendor`](https://github.com/biancabuzea200/TokenVendor)        | A token vendor example using Chronicle price feeds. | 
