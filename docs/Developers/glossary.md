@@ -20,12 +20,12 @@ An interface for Chronicle Protocol's oracle products.
 
 ### opPoke
 
-An opPoke reference refers to an Optimistic poke [More info here](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe). opPokes only finalize after a opChallengePeriod, instead of pokes that finalize directly.
+An opPoke reference refers to an Optimistic poke [More info here](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe). opPokes only finalize after an opChallengePeriod, instead of pokes that finalize directly.
 
 
 ### opChallenge
 
-Function to challenge an optimistic poke. A public callable opChallenge() function can be called at any time. The function verifies the current optimistically poked data and, if the Schnorr signature verification succeeds, finalizes the data. However, if the Schnorr signature verification fails, the feed bound to the data is automatically diss'ed, i.e. removed from the whitelist, and the data deleted. [More info here](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe)
+Function to challenge an optimistic poke. A public callable opChallenge() function can be called at any time. The function verifies the current optimistically poked data and, if the Schnorr signature verification succeeds, finalizes the data. However, if the Schnorr signature verification fails, the feed bound to the data is automatically dissed, i.e. removed from the whitelist, and the data deleted. [More info here](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe)
 
 
 ### wat 
