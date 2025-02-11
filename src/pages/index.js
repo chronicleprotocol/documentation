@@ -55,7 +55,7 @@ function FeaturesSection() {
         {
           title: "PRODUCTS",
           description:
-            "Discover Chronicle's Products: the PUSH Oracle, the Verified Asset Oracle, the Yield Rate Oracle, and more.",
+            "Explore Chronicle: DeFi Oracles, Verified Asset Oracles, and beyond.",
           icon: "🛠️",
           href: "./Products/productsOverview",
         },

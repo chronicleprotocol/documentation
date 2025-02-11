@@ -1,18 +1,26 @@
 ---
-sidebar_position: 5
-description: Yield Rate Oracle
-keywords: [Yield Rate Oracle]
+sidebar_position: 2
+description: DeFi Oracle Data
+keywords: [Yield Rate Oracle, DeFi Oracle Data]
 ---
 
-# Chronicle's Yield Rate Oracle
+# Types of Data for DeFi Oracles
 
-## Overview
+Chronicle provides data essential for DeFi protocols, including cryptocurrency prices, fiat exchange rates, staking yield rates, and more. This data is aggregated from multiple sources and verified by a decentralized network of [reputable validators](../../Intro/network.md). 
+
+## Cryptocurrencies Feeds
+Chronicle delivers cryptocurrency price feeds across all major EVM-compatible chains. These feeds aggregate pricing data from multiple onchain and offchain tier-one data sources to ensure accuracy and verifiability.
+
+## Fiat Currencies Feeds
+Chronicle provides feeds for fiat currencies such as [BRL](https://chroniclelabs.org/dashboard/oracle/BRL/USD?blockchain=), [GBP](https://chroniclelabs.org/dashboard/oracle/GBP/USD?blockchain=), and more.
+
+## Yield Rate Feeds
 
 In collaboration with [Block Analitica](https://blockanalitica.com/), Chronicle has developed a [Yield Rate Oracle](https://github.com/chronicleprotocol/scribe/blob/main/src/extensions/ScribeLST.sol) that tracks and delivers the value of the ETH staking yield onchain. This solution is designed to improve the DeFi user experience and reduce governance overhead.
 
 The Yield Rate Oracle is a Schnorr based Oracle with an additional functionality, `getAPR()` - callable by toll'ed (authorized) addresses.
 
-## Purpose
+### Purpose
 
 This Oracle provides lending protocols such as [Spark](https://spark.fi/) with a safe and automated way to customize the interest rate of ETH and ETH-backed derivatives. It eliminates the need for manual rate setting and updates, which are common in many decentralized lending protocols.
 
