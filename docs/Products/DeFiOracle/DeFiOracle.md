@@ -1,10 +1,14 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 description: How do PUSH Oracles Work?
-keywords: [PUSH Oracle, Data Source]
+keywords: [DeFi Oracle, Data Source, PUSH Oracle]
 ---
 
-# PUSH Oracle
+# DeFi Oracle
+
+You can use Chronicle's PUSH-based DeFi Oracles to connect your smart contracts to real-time asset pricing data. Our oracles proactively deliver fresh data without requiring explicit requests, ensuring your contracts always have the latest information.
+
+Data is aggregated from a decentralized network of reputable validators, sourcing from both onchain and offchain providers, including DEXs and CEXs. Chronicle Oracles support a wide range of data types, including cryptocurrencies, fiat currencies, yield rates, and more.
 
 ## How Does a  PUSH Oracle Work?
 
@@ -12,7 +16,7 @@ Protocol validators fetch data from different sources. The data used is verifiab
 
 <div style={{textAlign: 'center'}}>
     <img
-    src="  ../img/Products/push.png"
+    src="  ../../img/Products/push.png"
     alt="PUSH Oracle Illustration"
     />
 </div>

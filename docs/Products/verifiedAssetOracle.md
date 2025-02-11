@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 description: Verified Asset Oracle
 keywords: [Verified Asset Oracle]
 ---
@@ -7,7 +7,7 @@ keywords: [Verified Asset Oracle]
 # Chronicle's Verified Asset Oracle
 ## What are RWAs?
 
-In the context of blockchain, Real-World Assets (RWAs) refer to physical assets and traditional financial instruments represented as digital assets on a blockchain network. These assets can range from assets such as real estate, commodities, art, and even intellectual property, to financial assets such as bonds, stocks, or ETFs . RWAs provide a bridge between traditional and decentralized finance opening up new opportunities for market inclusion, accessibility, and innovation.
+In the context of blockchain, Real-World Assets (RWAs) refer to physical assets and traditional financial instruments represented as digital assets on a blockchain network. These assets can range from assets such as real estate, commodities, art, and even intellectual property, to financial assets such as bonds, stocks, or ETFs. RWAs provide a bridge between traditional and decentralized finance opening up new opportunities for market inclusion, accessibility, and innovation.
 
 <div style={{textAlign: 'center'}}>
 <img
