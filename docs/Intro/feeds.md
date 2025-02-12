@@ -33,5 +33,5 @@ In other words, an exchange rate oracle indicates how much an asset is worth bas
 This type of oracle uses a combination of exchange and market rates.
 
 For example, the
-[WUSDM / USD](https://chroniclelabs.org/dashboard/oracle/WUSDM/USD?blockchain=&txn=0x6134341c8146ba21fb9feca1c5f465d3d5b26dcad4874196b4425861c53666cc&contract=0xdC6720c996Fad27256c7fd6E0a271e2A4687eF18) oracle uses the market prices from DEXs for USDM, and transforms them using the fundamental value to the wrapped price. 
+[WUSDM / USD](https://chroniclelabs.org/dashboard/oracle/WUSDM/USD?blockchain=&txn=0x6134341c8146ba21fb9feca1c5f465d3d5b26dcad4874196b4425861c53666cc&contract=0xdC6720c996Fad27256c7fd6E0a271e2A4687eF18) oracle uses the market prices from DEXs for USDM, and transforms them using the fundamental value of the wrapped price. 
 
