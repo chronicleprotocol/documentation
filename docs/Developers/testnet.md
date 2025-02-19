@@ -226,6 +226,21 @@ Alternatively, you can also find here the addresses organized by chains:
 </details>
 
 <details>
+<summary> Smart Contract Addresses on **Monad Testnet** </summary>
+
+| Contract Name              | Contract Address on Monad Testnet
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1    | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://testnet.monadexplorer.com/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3)
+| Chronicle_ETH_USD_1    | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://testnet.monadexplorer.com/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6)
+| Chronicle_CBBTC_USD_1    | [0xcB0ABe397952844C379A29343cDb17c914F33e40](https://testnet.monadexplorer.com/address/0xcB0ABe397952844C379A29343cDb17c914F33e40)
+| Chronicle_SOLVBTC_USD_1    | [0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb](https://testnet.monadexplorer.com/address/0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb)
+| Chronicle_USDT_USD_1    | [0x09672B2a62Db1cd4cCE379bdde5BF41931177A72](https://testnet.monadexplorer.com/address/0x09672B2a62Db1cd4cCE379bdde5BF41931177A72)
+| Chronicle_PUMPBTC_USD_1    | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://testnet.monadexplorer.com/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578)
+| Chronicle_USDC_USD_1    | [0xd800ca44fFABecd159c7889c3bf64a217361AEc8](https://testnet.monadexplorer.com/address/0xd800ca44fFABecd159c7889c3bf64a217361AEc8)
+| Chronicle_WBTC_USD_1    | [0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0](https://testnet.monadexplorer.com/address/0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0)
+</details>
+
+<details>
 <summary> Smart Contract Addresses on **Superseed Sepolia Testnet** </summary>
 
 | Contract Name              | Contract Address on Superseed Sepolia Testnet
@@ -322,10 +337,12 @@ Alternatively, you can also find here the addresses organized by chains:
 | Contract Name              | Contract Address on Berachain bArtio
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | SelfKisser_1    | [0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd](https://bartio.beratrail.io/address/0x2FFCAfF4BcF6D425c424f303eff66954Aa3A27Fd)
+| Chronicle_SRUSD_USD_1    | [0xBe9521f84805B48A5C34787bb07C445D13c341b3](https://bartio.beratrail.io/address/0xBe9521f84805B48A5C34787bb07C445D13c341b3)
 | Chronicle_USDE_USD_1    | [0xd4a12eCfbe1BbE9E50B5CBFE675f173933221667](https://bartio.beratrail.io/address/0xd4a12eCfbe1BbE9E50B5CBFE675f173933221667)
 | Chronicle_AAVE_USD_1    | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://bartio.beratrail.io/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B)
 | Chronicle_USDE_NECT_1    | [0x450F6F025aD017f345CD17407Ee22d90E5F87441](https://bartio.beratrail.io/address/0x450F6F025aD017f345CD17407Ee22d90E5F87441)
 | Chronicle_SUSDE_USD_1    | [0xca86D0E037e9a705B114913983f35c54fa71C4f8](https://bartio.beratrail.io/address/0xca86D0E037e9a705B114913983f35c54fa71C4f8)
+| Chronicle_RUSD_USD_1    | [0x8CC03F0986410FC7B9B2675A5687A156dabE61bE](https://bartio.beratrail.io/address/0x8CC03F0986410FC7B9B2675A5687A156dabE61bE)
 | Chronicle_GBP_USD_1    | [0x80F468BDA926b356C4f33A47b7Ab86111d816bF3](https://bartio.beratrail.io/address/0x80F468BDA926b356C4f33A47b7Ab86111d816bF3)
 | Chronicle_EURC_USD_1    | [0x164aAE0356963212A3EE172D22785b4d0850EB92](https://bartio.beratrail.io/address/0x164aAE0356963212A3EE172D22785b4d0850EB92)
 | Chronicle_WUSDM_USDM_1    | [0x1fFA0852aec4DEd34F4c0Dc2225BCd013c4eb4D2](https://bartio.beratrail.io/address/0x1fFA0852aec4DEd34F4c0Dc2225BCd013c4eb4D2)
@@ -345,6 +362,7 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_ETHX_USD_1    | [0x4ED98cBdC6e4852c38B1941d9003bE20B2FB1B97](https://bartio.beratrail.io/address/0x4ED98cBdC6e4852c38B1941d9003bE20B2FB1B97)
 | Chronicle_USDY_USD_1    | [0xFE5a7ecE2F1133C4a46E6cF23630766E6173daEd](https://bartio.beratrail.io/address/0xFE5a7ecE2F1133C4a46E6cF23630766E6173daEd)
 | Chronicle_POL_USD_1    | [0x227Bd05BbcE62a67529fE69e4340884D34e2CE62](https://bartio.beratrail.io/address/0x227Bd05BbcE62a67529fE69e4340884D34e2CE62)
+| Chronicle_BERAETH_USD_1    | [0x7ee38C6A75cAcd570d88b314360DbB77F40decE9](https://bartio.beratrail.io/address/0x7ee38C6A75cAcd570d88b314360DbB77F40decE9)
 | Chronicle_STONE_USD_1    | [0x1830B6F64F9B7d21E419Bf3806d5fBe9f5476E42](https://bartio.beratrail.io/address/0x1830B6F64F9B7d21E419Bf3806d5fBe9f5476E42)
 | Chronicle_SNX_USD_1    | [0x757D766272A5b66EB9312f34E41AfEc3E77942bB](https://bartio.beratrail.io/address/0x757D766272A5b66EB9312f34E41AfEc3E77942bB)
 | Chronicle_WEETH_USD_1    | [0xC78e6de6f2cC41B6f86C6bAD0ED7A04744b27642](https://bartio.beratrail.io/address/0xC78e6de6f2cC41B6f86C6bAD0ED7A04744b27642)
@@ -354,6 +372,7 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_ETHX_ETH_1    | [0xC4692D7535FEE25e8b439ffdA8fDA466654Ed460](https://bartio.beratrail.io/address/0xC4692D7535FEE25e8b439ffdA8fDA466654Ed460)
 | Chronicle_LIDO_LST_2DAYS_1    | [0xcDf3e0873f297beEe2F0CA920Df893763bAf10cC](https://bartio.beratrail.io/address/0xcDf3e0873f297beEe2F0CA920Df893763bAf10cC)
 | Chronicle_EBTCetherfi_BTC_1    | [0x11d0D3cCa7BB95522D01e5fd349f6696eE52D185](https://bartio.beratrail.io/address/0x11d0D3cCa7BB95522D01e5fd349f6696eE52D185)
+| Chronicle_YLSTETH_ETH_1    | [0xdAeE7f3A9aD49CEc4491129cEDab6b39712B5FF1](https://bartio.beratrail.io/address/0xdAeE7f3A9aD49CEc4491129cEDab6b39712B5FF1)
 | Chronicle_CBETH_USDC_1    | [0x866aD7060Cc3A038302eFEC61fC2CE8575411137](https://bartio.beratrail.io/address/0x866aD7060Cc3A038302eFEC61fC2CE8575411137)
 | Chronicle_WUSDM_USD_1    | [0x5F6627955bD5f6d419702fecc9aa773814cb001e](https://bartio.beratrail.io/address/0x5F6627955bD5f6d419702fecc9aa773814cb001e)
 | Chronicle_BNB_USD_1    | [0xC73637228BF74d10Cf2D5DFeAB0964162488D5e1](https://bartio.beratrail.io/address/0xC73637228BF74d10Cf2D5DFeAB0964162488D5e1)
@@ -368,6 +387,7 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_STONEBTC_USD_1    | [0x6092f68D74F6c40D9825587E9A75778E51E38909](https://bartio.beratrail.io/address/0x6092f68D74F6c40D9825587E9A75778E51E38909)
 | Chronicle_SD_USD_1    | [0x45A340884e87270838dd8E276210e4826e4252cc](https://bartio.beratrail.io/address/0x45A340884e87270838dd8E276210e4826e4252cc)
 | Chronicle_WSTETH_ETH_1    | [0x3827809C7Dd6757b7473EC0f489Ac09024cF55dD](https://bartio.beratrail.io/address/0x3827809C7Dd6757b7473EC0f489Ac09024cF55dD)
+| Chronicle_BERA_ETH_1    | [0x1824fa29f849BE515667580d614d949aA5dD7ad1](https://bartio.beratrail.io/address/0x1824fa29f849BE515667580d614d949aA5dD7ad1)
 | Chronicle_SOL_USD_1    | [0xd1C9e6342e981E5dAef8F8fF34ec89717D1C92a0](https://bartio.beratrail.io/address/0xd1C9e6342e981E5dAef8F8fF34ec89717D1C92a0)
 | Chronicle_OP_USD_1    | [0x75b239A75B1D099A1f20Fa2A64D5481a319faCb7](https://bartio.beratrail.io/address/0x75b239A75B1D099A1f20Fa2A64D5481a319faCb7)
 | Chronicle_USDA_USD_1    | [0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0](https://bartio.beratrail.io/address/0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0)
@@ -377,9 +397,11 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GNO_USD_1    | [0xBADb0a87b57D0113997A216aC2CF2bBB367f7d8C](https://bartio.beratrail.io/address/0xBADb0a87b57D0113997A216aC2CF2bBB367f7d8C)
 | Chronicle_LDO_USD_1    | [0xfc5F6A9fbC769C4d22A0ad8936Ca8451a8E55D86](https://bartio.beratrail.io/address/0xfc5F6A9fbC769C4d22A0ad8936Ca8451a8E55D86)
 | Chronicle_CRVUSD_USD_1    | [0x9E22a39a0c35bf009Fd0083134EFED34514430dA](https://bartio.beratrail.io/address/0x9E22a39a0c35bf009Fd0083134EFED34514430dA)
+| Chronicle_EBTCetherfi_USD_1    | [0xe1f9E22Ef87FE0e621BfC8096aE380C01bFEc3DD](https://bartio.beratrail.io/address/0xe1f9E22Ef87FE0e621BfC8096aE380C01bFEc3DD)
 | Chronicle_EBTCbadger_ETH_1    | [0x36AD5e68082b6abC2B30749346530519C526764C](https://bartio.beratrail.io/address/0x36AD5e68082b6abC2B30749346530519C526764C)
 | Chronicle_SUPR_USD_1    | [0xCAa0170A5991F183231fCBcB52f62624524EA0Ac](https://bartio.beratrail.io/address/0xCAa0170A5991F183231fCBcB52f62624524EA0Ac)
 | Chronicle_METH_USD_1    | [0x3C2d199642aDa13794F2304ecc7A83A1aEdc3462](https://bartio.beratrail.io/address/0x3C2d199642aDa13794F2304ecc7A83A1aEdc3462)
+| Chronicle_NECT_HONEY_1    | [0xEfd628E4e667caB96aDdbf3342c1e6318e8fB9a8](https://bartio.beratrail.io/address/0xEfd628E4e667caB96aDdbf3342c1e6318e8fB9a8)
 | Chronicle_OSETH_ETH_1    | [0xd789C2Fd3B617b236669f2B63054e8CA0332fe97](https://bartio.beratrail.io/address/0xd789C2Fd3B617b236669f2B63054e8CA0332fe97)
 | Chronicle_SDAI_ETH_1    | [0x0e339CB06a14CC78366569185C86F6378c7Cd37E](https://bartio.beratrail.io/address/0x0e339CB06a14CC78366569185C86F6378c7Cd37E)
 | Chronicle_RETH_ETH_1    | [0x06C29Ef142345fF78A02658173EB4424d937a4F4](https://bartio.beratrail.io/address/0x06C29Ef142345fF78A02658173EB4424d937a4F4)
@@ -397,11 +419,14 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_USDC_USD_1    | [0xf0d1fAF5Fa3e7bA6D710948Bab227361772E1Af0](https://bartio.beratrail.io/address/0xf0d1fAF5Fa3e7bA6D710948Bab227361772E1Af0)
 | Chronicle_USR_USD_1    | [0xE884135436Db7853bA9417Ec3B895138020A48a0](https://bartio.beratrail.io/address/0xE884135436Db7853bA9417Ec3B895138020A48a0)
 | Chronicle_METH_ETH_1    | [0x88a42c95115F21deAdfD9e983FA28BEE95A431b2](https://bartio.beratrail.io/address/0x88a42c95115F21deAdfD9e983FA28BEE95A431b2)
+| Chronicle_FBTC_USD_1    | [0x5460ff4e4087a28315C661B49f133DaAcDcE7b3d](https://bartio.beratrail.io/address/0x5460ff4e4087a28315C661B49f133DaAcDcE7b3d)
 | Chronicle_WSTETH_USD_1    | [0x5446e2a284943d36D021f4BC3608913b508DC25E](https://bartio.beratrail.io/address/0x5446e2a284943d36D021f4BC3608913b508DC25E)
 | Chronicle_BRL_USD_1    | [0xE87FAAC65b56fBbA50f5C69Cea4D1E7F5DD47301](https://bartio.beratrail.io/address/0xE87FAAC65b56fBbA50f5C69Cea4D1E7F5DD47301)
 | Chronicle_WSTETH_USDC_1    | [0xAdd88B455B0a56773F589982dF4C5f4982B9995B](https://bartio.beratrail.io/address/0xAdd88B455B0a56773F589982dF4C5f4982B9995B)
+| Chronicle_BERA_USD_1    | [0xED913dA00DBE946b72520eB0B304b1De7C84e47A](https://bartio.beratrail.io/address/0xED913dA00DBE946b72520eB0B304b1De7C84e47A)
 | Chronicle_EZETH_USD_1    | [0x8CA61d6275a33041C26d0EaF671279890286f563](https://bartio.beratrail.io/address/0x8CA61d6275a33041C26d0EaF671279890286f563)
 | Chronicle_GYD_USD_1    | [0xAB2eE8b72EB4a31163F904E0D50F387f3bA8B2B8](https://bartio.beratrail.io/address/0xAB2eE8b72EB4a31163F904E0D50F387f3bA8B2B8)
+| Chronicle_UNIBTC_WBTC_1    | [0xF988E95cDb7f7bc4D7Ddb20EF5EC23435589F332](https://bartio.beratrail.io/address/0xF988E95cDb7f7bc4D7Ddb20EF5EC23435589F332)
 | Chronicle_WBTC_USD_1    | [0x02a2f7F3109A4c6706A91C7c880225b440e3c8d7](https://bartio.beratrail.io/address/0x02a2f7F3109A4c6706A91C7c880225b440e3c8d7)
 | Chronicle_BTC_USD_1    | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://bartio.beratrail.io/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578)
 | Chronicle_ETH_BTC_1    | [0xb9CeA677F4a3e0866649FAe0e698D0945605aBcE](https://bartio.beratrail.io/address/0xb9CeA677F4a3e0866649FAe0e698D0945605aBcE)
@@ -934,19 +959,4 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_BTC_USD_1    | [0x152598809FB59db55cA76f89a192Fb23555531D8](https://testnet.cornscan.io/address/0x152598809FB59db55cA76f89a192Fb23555531D8)
 | Chronicle_ETH_BTC_1    | [0x5c5B0EFDdcFb3A487F0FC3357A4046e9c563Bba8](https://testnet.cornscan.io/address/0x5c5B0EFDdcFb3A487F0FC3357A4046e9c563Bba8)
 | Chronicle_BTCN_USD_1    | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://testnet.cornscan.io/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578)
-</details>
-
-<details>
-<summary> Smart Contract Addresses on **Monad Testnet** </summary>
-
-| Contract Name              | Contract Address on Monad Testnet
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://testnet.monadexplorer.com/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3?tab=Contract)
-| Chronicle_CBBTC_USD_1  | [0xcB0ABe397952844C379A29343cDb17c914F33e40](https://testnet.monadexplorer.com/address/0xcB0ABe397952844C379A29343cDb17c914F33e40?tab=Contract)
-| Chronicle_ETH_USD_1 | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://testnet.monadexplorer.com/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6?tab=Contract)
-| Chronicle_SOLVBTC_USD_1 | [0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb](https://testnet.monadexplorer.com/address/0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb?tab=Contract)
-| Chronicle_USDC_USD_1| [0xd800ca44fFABecd159c7889c3bf64a217361AEc8](https://testnet.monadexplorer.com/address/0xd800ca44fFABecd159c7889c3bf64a217361AEc8?tab=Contract)
-| Chronicle_USDT_USD_1| [0x09672B2a62Db1cd4cCE379bdde5BF41931177A72](https://testnet.monadexplorer.com/address/0x09672B2a62Db1cd4cCE379bdde5BF41931177A72?tab=Contract)
-| Chronicle_WBTC_USD_1| [0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0](https://testnet.monadexplorer.com/address/0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0?tab=Contract)
-
 </details>
