@@ -30,6 +30,10 @@ data = {}
 with open('tmp/chronicles/deployments/chains.json') as json_data:
     o = json.load(json_data)
     for chain in o['chains']:
+        # We may get a chain from chains.json which does not have any contracts
+        # deployed. We do not want a section for these
+        if not os.path.exists(f"tmp/chronicles/deployments/stage/{chain['name']}"):
+            continue
         data[chain['name']] = {}
         data[chain['name']]['info'] = chain
 
@@ -53,19 +57,18 @@ print(header)
 for key in data:
     if not data[key]['info']['mainnet']:
         chain = data[key]['info']['niceName']
-        oracles = data[key]['oracles']
-
+        # Template header output
         th = Template(table_header)
         print(th.substitute(chain=chain))
-
-        # Force SelfKisser contract to top of out
-        if 'selfkisser' in data[key]:
+        # Force SelfKisser contract to top of output
+        if 'selfkisser' in data[key] and len(data[key]['selfkisser']) > 0:
             kisser = data[key]['selfkisser']
             tr = Template(row)
             print(tr.substitute(address=kisser['address'], name=kisser['name'], etherscan=data[key]['info']['etherscan']))
-
-        for oracle in oracles:
-            tr = Template(row)
-            print(tr.substitute(address=oracle['address'], name=oracle['name'], etherscan=data[key]['info']['etherscan']))
-
+        # Now, print all the oracles
+        if 'oracles' in data[key] and len(data[key]['oracles']) > 0:
+            for oracle in data[key]['oracles']:
+                tr = Template(row)
+                print(tr.substitute(address=oracle['address'], name=oracle['name'], etherscan=data[key]['info']['etherscan']))
+        # Template footer
         print(table_footer)
