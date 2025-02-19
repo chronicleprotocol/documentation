@@ -935,3 +935,18 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_ETH_BTC_1    | [0x5c5B0EFDdcFb3A487F0FC3357A4046e9c563Bba8](https://testnet.cornscan.io/address/0x5c5B0EFDdcFb3A487F0FC3357A4046e9c563Bba8)
 | Chronicle_BTCN_USD_1    | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://testnet.cornscan.io/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578)
 </details>
+
+<details>
+<summary> Smart Contract Addresses on **Monad Testnet** </summary>
+
+| Contract Name              | Contract Address on Monad Testnet
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1    | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://testnet.monadexplorer.com/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3?tab=Contract)
+| Chronicle_CBBTC_USD_1  | [0xcB0ABe397952844C379A29343cDb17c914F33e40](https://testnet.monadexplorer.com/address/0xcB0ABe397952844C379A29343cDb17c914F33e40?tab=Contract)
+| Chronicle_ETH_USD_1 | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://testnet.monadexplorer.com/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6?tab=Contract)
+| Chronicle_SOLVBTC_USD_1 | [0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb](https://testnet.monadexplorer.com/address/0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb?tab=Contract)
+| Chronicle_USDC_USD_1| [0xd800ca44fFABecd159c7889c3bf64a217361AEc8](https://testnet.monadexplorer.com/address/0xd800ca44fFABecd159c7889c3bf64a217361AEc8?tab=Contract)
+| Chronicle_USDT_USD_1| [0x09672B2a62Db1cd4cCE379bdde5BF41931177A72](https://testnet.monadexplorer.com/address/0x09672B2a62Db1cd4cCE379bdde5BF41931177A72?tab=Contract)
+| Chronicle_WBTC_USD_1| [0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0](https://testnet.monadexplorer.com/address/0x8f01f70bE5DeEA5D4273D9a299A1A609BF1649c0?tab=Contract)
+
+</details>
