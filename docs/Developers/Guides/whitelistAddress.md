@@ -31,6 +31,7 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 | Superseed Sepolia             | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia-explorer.superseed.xyz/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B#code) |
 | Corn Sepolia             | [0x8CA2E3a09c79233127dC21955e28A6b9C4bf166E](https://testnet.cornscan.io/address/0x8CA2E3a09c79233127dC21955e28A6b9C4bf166E) |
 | Plume Devnet            | [0xF69De003115777B62c71846b13948CE05C07fe65](https://test-explorer.plumenetwork.xyz/address/0xF69De003115777B62c71846b13948CE05C07fe65) |
+| Monad Testnet           | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://monad-testnet.socialscan.io/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3) |
 
 # Whitelisting Yourself on Testnet and Reading from Smart Contracts
 
