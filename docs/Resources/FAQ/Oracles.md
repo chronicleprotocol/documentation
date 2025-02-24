@@ -9,8 +9,8 @@ If you are using Chainlink, you would only have to change the address of your or
 One thing to keep an eye on is the number of decimals. Chronicle always uses 18 decimals, whereas Chainlink uses different decimals for different oracles. However, if implemented correctly, one can check the decimals and scale them up or down accordingly. Please conduct integration tests and feel free to [reach out](https://discord.com/invite/CjgvJ9EspJ) if there are any issues.
 
 ## How can I deploy a Chronicle Oracle for Morpho markets?
-Chronicle Oracles are compatible with the Morpho Chainlink adaptor. Morpho can dynamically handle differences in Feed decimals using the [SCALE_FACTOR](https://github.com/jar-o/morpho-blue-oracles/blob/b6c8ddb4666a6b7fe0b568ea3a5238bc8335de2a/src/morpho-chainlink/MorphoChainlinkOracleV2.sol#L145). This is important because Chronicle operates with 18 decimal places for all its Oracles, while most Chainlink's Oracles use 8 decimal places.
-- You can find a tutorial for deploying the the adapters in [Morpho's documentation](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol).
+Chronicle Oracles are compatible with the [Morpho Chainlink adaptor](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol). Morpho can dynamically handle differences in Feed decimals using the [SCALE_FACTOR](https://github.com/jar-o/morpho-blue-oracles/blob/b6c8ddb4666a6b7fe0b568ea3a5238bc8335de2a/src/morpho-chainlink/MorphoChainlinkOracleV2.sol#L145). This is important because Chronicle operates with 18 decimal places for all its Oracles, while most Chainlink's Oracles use 8 decimal places.
+- You can find a tutorial for deploying the the adapters in [Morpho's documentation](https://docs.morpho.org/morpho/tutorials/deploy-an-oracle/).
 - Once the adapter is deployed, you will need to request it to be whitelisted by Chronicle in order to get read-access. After that, you'll be ready to use the adapter's `price()` function. 
 
 ## How do I check if an Oracle becomes inactive/ gets deprecated?
