@@ -8,6 +8,11 @@ If you are using Chainlink, you would only have to change the address of your or
 
 One thing to keep an eye on is the number of decimals. Chronicle always uses 18 decimals, whereas Chainlink uses different decimals for different oracles. However, if implemented correctly, one can check the decimals and scale them up or down accordingly. Please conduct integration tests and feel free to [reach out](https://discord.com/invite/CjgvJ9EspJ) if there are any issues.
 
+## How can I deploy a Chronicle Oracle for Morpho markets?
+Chronicle Oracles are compatible with the Morpho Chainlink adaptor. Morpho can dynamically handle differences in Feed decimals using the [SCALE_FACTOR](https://github.com/jar-o/morpho-blue-oracles/blob/b6c8ddb4666a6b7fe0b568ea3a5238bc8335de2a/src/morpho-chainlink/MorphoChainlinkOracleV2.sol#L145). This is important because Chronicle operates with 18 decimal places for all its Oracles, while most Chainlink's Oracles use 8 decimal places.
+- You can find a tutorial for deploying the the adapters in [Morpho's documentation](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol).
+- Once the adapter is deployed, you will need to request it to be whitelisted by Chronicle in order to get read-access. After that, you'll be ready to use the adapter's `price()` function. 
+
 ## How do I check if an Oracle becomes inactive/ gets deprecated?
 In the event that an Oracle gets deprecated, we will notify all whitelisted customers before offboarding it.
 From a technical point of view, if an oracle becomes inactive, the price is set to `0`, and the validators (also known as feeds), are removed from the contract. Therefore, the `read()` function will revert with `0`, the `tryRead()` function will return `(false, 0)`, and the `latestRoundData()` will return `0` as well. 
