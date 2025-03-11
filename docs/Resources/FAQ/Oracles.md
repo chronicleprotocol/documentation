@@ -74,3 +74,7 @@ A new aggregation round is triggered after a specified amount of time since the 
 ## Can the update threshold parameters be modified?
 
 Yes, the update parameters, including the update and deviation thresholds, can be modified. For the most up-to-date parameters, please check the specific Oracle on the [Dashboard](https://chroniclelabs.org/dashboard/oracles). If you'd like to request different parameters, please get in touch.
+
+## Does Chronicle support contract upgrades?
+
+Chronicle contracts are not upgradeable. If oracles are switched, new contracts are deployed, and customers must update the oracle addresses in their contracts accordingly.
