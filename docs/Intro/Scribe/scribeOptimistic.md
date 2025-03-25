@@ -68,6 +68,8 @@ ScribeOptimistic Oracles are tailored for Layer 1 (L1) networks, where computati
     alt="Scribe Optimistic"
   
 />
+*Scribe Optimistic example with a 20-minute challenge period.*
 </div>
 
-Currently, Chronicle's challenge period is set to 20 minutes, though this value is customizable. Once the challenge period ends, the optimistic price is finalized and published on the oracle, even if the market price has shifted in the meantime.
+
+Currently, Chronicle's challenge period is set to **10 minutes**, though this value is customizable. Once the challenge period ends, the optimistic price is finalized and published on the oracle, even if the market price has shifted in the meantime.
