@@ -147,3 +147,41 @@ Hit `Query`. The data returned should look like this:
 />
 </div>
 Once you verify that you are whitelisted, you are ready to read from the Oracle's smart contract.
+
+
+## Option 3: Directly on the Chronicle Dashboard
+
+You can also whitelist addresses directly on the Chronicle Dashboard.
+
+Simply select the Oracle you want read-access to, then click the 'Use this oracle for free' option in the top right corner, as shown in the image below.
+Please keep in mind that you'll need some native gas tokens from the selected testnet to cover the gas costs for the whitelisting process, as it's a write operation. You can find a list of faucets for different networks [here](/Resources/Utils.md).
+
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/guides/useOracle.png"
+    alt="Use this oracle for free"
+    width="400" 
+/>
+</div>
+A window will pop up to connect your wallet.
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/guides/connectWallet.png"
+    alt="Connect Wallet" 
+    width="400"
+/>
+</div>
+
+After selecting and connecting your wallet, you’ll be prompted to paste the address you want to whitelist.
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/guides/pasteAddr.png"
+    alt="Paste address to whitelist" 
+    width="400"
+/>
+</div>
+
+Press the 'Use Oracle' button, confirm, and then wait a few seconds for the process to finalize. 
+Your address is now whitelisted and ready to read from the oracle.
