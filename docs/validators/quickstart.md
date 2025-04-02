@@ -4,7 +4,15 @@ description: Running a Chronicle validator using k3s.
 keywords: [k3s, Chronicle validator]
 ---
 
+
 # Quickstart
+
+:::info
+
+Chronicle operates a distributed network of validators run by reputable projects in the space, including MakerDAO/Sky, Etherscan, Gnosis, Bitcoin Suisse, and others. This structure reinforces both security and decentralization, setting Chronicle apart from other oracle solutions.
+
+**Note: Running a validator is a permissioned process.** This documentation is intended for projects that have already been approved to run a validator.
+:::
 
 A single script installation from baremetal to running validator, using k3s.
 
