@@ -60,15 +60,18 @@ for key in data:
         # Template header output
         th = Template(table_header)
         print(th.substitute(chain=chain))
+        etherscan = data[key]['info']['etherscan']
+        if etherscan == '':
+            etherscan = data[key]['info']['explorers'][0]['url']
         # Force SelfKisser contract to top of output
         if 'selfkisser' in data[key] and len(data[key]['selfkisser']) > 0:
             kisser = data[key]['selfkisser']
             tr = Template(row)
-            print(tr.substitute(address=kisser['address'], name=kisser['name'], etherscan=data[key]['info']['etherscan']))
+            print(tr.substitute(address=kisser['address'], name=kisser['name'], etherscan=etherscan))
         # Now, print all the oracles
         if 'oracles' in data[key] and len(data[key]['oracles']) > 0:
             for oracle in data[key]['oracles']:
                 tr = Template(row)
-                print(tr.substitute(address=oracle['address'], name=oracle['name'], etherscan=data[key]['info']['etherscan']))
+                print(tr.substitute(address=oracle['address'], name=oracle['name'], etherscan=etherscan))
         # Template footer
         print(table_footer)
