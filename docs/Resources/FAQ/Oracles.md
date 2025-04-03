@@ -10,7 +10,7 @@ One thing to keep an eye on is the number of decimals. Chronicle always uses 18 
 
 ## How can I deploy a Chronicle Oracle for Morpho markets?
 Chronicle Oracles are compatible with the [Morpho Chainlink adaptor](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol). Morpho can dynamically handle differences in Feed decimals using the [SCALE_FACTOR](https://github.com/jar-o/morpho-blue-oracles/blob/b6c8ddb4666a6b7fe0b568ea3a5238bc8335de2a/src/morpho-chainlink/MorphoChainlinkOracleV2.sol#L145). This is important because Chronicle operates with 18 decimal places for all its Oracles, while most Chainlink's Oracles use 8 decimal places.
-- You can find a tutorial for deploying the the adapters in [Morpho's documentation](https://docs.morpho.org/morpho/tutorials/deploy-an-oracle/).
+- You can find a tutorial for deploying the adapters in [Morpho's documentation](https://docs.morpho.org/morpho/tutorials/deploy-an-oracle/).
 - Once the adapter is deployed, you will need to request it to be whitelisted by Chronicle in order to get read-access. After that, you'll be ready to use the adapter's `price()` function. 
 
 ## How do I check if an Oracle becomes inactive/ gets deprecated?
@@ -27,7 +27,7 @@ On mainnet, the whitelisting mechanism is permissioned. To request access, open 
 
 ## What happens if I try to read from an address that is not whitelisted?
 
-If you try to read from and address that is not tolled (whitelisted), the transaction reverts.
+If you try to read from an address that is not tolled (whitelisted), the transaction reverts.
 
 
 ## How can I check the validators of an Oracle? 
