@@ -73,3 +73,7 @@ ScribeOptimistic Oracles are tailored for Layer 1 (L1) networks, where computati
 
 
 Currently, Chronicle's challenge period is set to **10 minutes**, though this value is customizable. Once the challenge period ends, the optimistic price is finalized and published on the oracle, even if the market price has shifted in the meantime.
+
+## Running a Challenger
+
+Users who want to actively participate in the network can look into [running a challenger](https://github.com/chronicleprotocol/challenger-rs). Monitoring optimistic pokes and, if necessary, challenging them is incentivized via [ETH rewards](https://github.com/chronicleprotocol/scribe/blob/main/src/IScribeOptimistic.sol).
