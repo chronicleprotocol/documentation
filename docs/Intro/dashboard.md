@@ -9,7 +9,7 @@ The **[Chronicle Dashboard](https://chroniclelabs.org/dashboard)** enables full 
 
 ## Where is the Data Sourced From?
 
-Using the dashboard, users can select a time interval on the graph and, for each validator, use the drop-down arrow to see the different data sources that have been used. Typically, the data sources are a mix of onchain and off-chain data sources with high liquidity.
+Using the dashboard, users can select a time interval on the graph they’re interested in. For a given value, they can view the different validators that provided data for that value. Furthermore, once a user selects a particular validator, a drop-down will display the various data sources that validator used. These sources are typically a mix of offchain data (e.g., centralized exchanges) and onchain data (e.g., decentralized exchanges).
 
 
 <div style={{textAlign: 'center'}}>
@@ -31,7 +31,7 @@ Using the dashboard, users can select a time interval on the graph and, for each
 
 Users can cryptographically verify in the browser using the Dashboard any **Validator's Signature**, as well as the **Schnorr Signature** used to push the price onchain to the corresponding Oracle.
 
-### The Validator Signature
+### Verify the Validator Signature
 The validator's signature allows users to verify the behaviour of the validator. Users can check the message that has been signed by each validator to calculate the price for the Oracle.
 
 <div style={{textAlign: 'center'}}>
@@ -51,7 +51,7 @@ Modifying even one character of the signature will result in invalidating the si
 />
 </div>
 
-### The Schnorr Signature of the Oracle
+### Verify the Schnorr Signature of the Oracle
 
 Users can also verify the authenticity of the Schnorr signature of the Oracle. This value is used to push data onchain. Unlike the validator's signature, the Schnorr signature allows to verify the Oracle instead of a single validator.
 <div style={{textAlign: 'center'}}>
