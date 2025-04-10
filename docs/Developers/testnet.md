@@ -16,7 +16,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on zkSync Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x25f594edde4f58A14970b2ef6616badBa4B1CdDD](https://sepolia-era.zksync.network/address/0x25f594edde4f58A14970b2ef6616badBa4B1CdDD)
+| SelfKisser_2    | [0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb](https://sepolia-era.zksync.network/address/0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb)
 | Chronicle_AAVE_USD_1    | [0x6dc3D077E795d1faCEAEb94B2396471A91Be5498](https://sepolia-era.zksync.network/address/0x6dc3D077E795d1faCEAEb94B2396471A91Be5498)
 | Chronicle_SDAI_DAI_1    | [0x7e7Df5117f5A6E8Cf82a0F80F06fE1119FC9b741](https://sepolia-era.zksync.network/address/0x7e7Df5117f5A6E8Cf82a0F80F06fE1119FC9b741)
 | Chronicle_UNI_USD_1    | [0x52485646EF15dB99504965de37494440Be862685](https://sepolia-era.zksync.network/address/0x52485646EF15dB99504965de37494440Be862685)
@@ -57,7 +57,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Unichain Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia.uniscan.xyz/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B)
+| SelfKisser_2    | [0x7AB42CC558fc92EC990B22E663E5a7bc5879fc9f](https://sepolia.uniscan.xyz/address/0x7AB42CC558fc92EC990B22E663E5a7bc5879fc9f)
 | Chronicle_OHM_USD_1    | [0xA230C7e2504d7417ac733b1Ac368A5D9b5Cdb066](https://sepolia.uniscan.xyz/address/0xA230C7e2504d7417ac733b1Ac368A5D9b5Cdb066)
 | Chronicle_SRUSD_USD_1    | [0x9A2E34c0cA4FA46EB5357535c89e18D4b2025587](https://sepolia.uniscan.xyz/address/0x9A2E34c0cA4FA46EB5357535c89e18D4b2025587)
 | Chronicle_USDE_USD_1    | [0x19B189628E97485A5107676dE1409790b9079287](https://sepolia.uniscan.xyz/address/0x19B189628E97485A5107676dE1409790b9079287)
@@ -89,7 +89,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_LIQ_TRI_YEET_USD_1    | [0x04061DD3807c0cD50F05dC3176519426136Aa18C](https://sepolia.uniscan.xyz/address/0x04061DD3807c0cD50F05dC3176519426136Aa18C)
 | Chronicle_STONE_USD_1    | [0x11D25F0CBE619Bf6C83C6B8C3eaD0f6ba84993de](https://sepolia.uniscan.xyz/address/0x11D25F0CBE619Bf6C83C6B8C3eaD0f6ba84993de)
 | Chronicle_CBBTC_USD_1    | [0x3F7aFfEcFF6eB003Aef8c67Bf513dDa7807e01Ca](https://sepolia.uniscan.xyz/address/0x3F7aFfEcFF6eB003Aef8c67Bf513dDa7807e01Ca)
-| Chronicle_SDAI_MATIC_1    | [0xF3019e82422500E51275DD177b32a5f3be410018](https://sepolia.uniscan.xyz/address/0xF3019e82422500E51275DD177b32a5f3be410018)
 | Chronicle_SNX_USD_1    | [0x28eA7C321B15B97242C920a777cA80254C0CB234](https://sepolia.uniscan.xyz/address/0x28eA7C321B15B97242C920a777cA80254C0CB234)
 | Chronicle_WEETH_USD_1    | [0x31281720029fe2d955042B621feF316fF2a561fb](https://sepolia.uniscan.xyz/address/0x31281720029fe2d955042B621feF316fF2a561fb)
 | Chronicle_SOLVBTC_USD_1    | [0x0a9B45b85aD7f6ccb0E59427cFEd19E5Ab3F6D89](https://sepolia.uniscan.xyz/address/0x0a9B45b85aD7f6ccb0E59427cFEd19E5Ab3F6D89)
@@ -172,7 +171,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Polygon zkEVM Cardona Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0xCce64A8127c051E784ba7D84af86B2e6F53d1a09](https://cardona-zkevm.polygonscan.com/address/0xCce64A8127c051E784ba7D84af86B2e6F53d1a09)
+| SelfKisser_2    | [0xbd3992B580E7c55848705301BCc5B8Ac440257d6](https://cardona-zkevm.polygonscan.com/address/0xbd3992B580E7c55848705301BCc5B8Ac440257d6)
 | Chronicle_USDE_USD_1    | [0x56713bad1c09A3E63e150306cad8cE8c3eEE8E6C](https://cardona-zkevm.polygonscan.com/address/0x56713bad1c09A3E63e150306cad8cE8c3eEE8E6C)
 | Chronicle_AAVE_USD_1    | [0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F](https://cardona-zkevm.polygonscan.com/address/0xC1A83Bed9d7E434a3E8608f7C5438F805D404F8F)
 | Chronicle_SUSDE_USD_1    | [0x2658Edb19EbE16E368cf76745283fAd356d036Bc](https://cardona-zkevm.polygonscan.com/address/0x2658Edb19EbE16E368cf76745283fAd356d036Bc)
@@ -257,7 +256,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Mantle Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x935Bf0e5255576814F9284B93ed3252B088FD6C7](https://sepolia.mantlescan.xyz/address/0x935Bf0e5255576814F9284B93ed3252B088FD6C7)
+| SelfKisser_2    | [0x165dC3e99E3491b8914CF65b4CBC4E98755da53e](https://sepolia.mantlescan.xyz/address/0x165dC3e99E3491b8914CF65b4CBC4E98755da53e)
 | Chronicle_USDE_USD_1    | [0x39dBd4B7D2A303914780e47554e782013Ab5352E](https://sepolia.mantlescan.xyz/address/0x39dBd4B7D2A303914780e47554e782013Ab5352E)
 | Chronicle_AAVE_USD_1    | [0xdcb8a2D1182B41bdD3536a1327416269A22194B0](https://sepolia.mantlescan.xyz/address/0xdcb8a2D1182B41bdD3536a1327416269A22194B0)
 | Chronicle_SUSDE_USD_1    | [0x3f6B3a60a6C6D30008e4B9204eCFA7B5c5650b3a](https://sepolia.mantlescan.xyz/address/0x3f6B3a60a6C6D30008e4B9204eCFA7B5c5650b3a)
@@ -346,7 +345,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Monad Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://testnet.monadexplorer.com/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3)
+| SelfKisser_2    | [0x262034B41F0C33b67e96b6495b7Bf650dC85acda](https://testnet.monadexplorer.com/address/0x262034B41F0C33b67e96b6495b7Bf650dC85acda)
 | Chronicle_ETH_USD_1    | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://testnet.monadexplorer.com/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6)
 | Chronicle_CBBTC_USD_1    | [0xcB0ABe397952844C379A29343cDb17c914F33e40](https://testnet.monadexplorer.com/address/0xcB0ABe397952844C379A29343cDb17c914F33e40)
 | Chronicle_SOLVBTC_USD_1    | [0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb](https://testnet.monadexplorer.com/address/0xC991e18E3f167F7457e06B780e92EA94a6b3c1bb)
@@ -361,7 +360,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Superseed Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia-explorer.superseed.xyz/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B)
+| SelfKisser_2    | [0x174d08990e95aa7C025cA7B44e41768c15616041](https://sepolia-explorer.superseed.xyz/address/0x174d08990e95aa7C025cA7B44e41768c15616041)
 | Chronicle_USDE_USD_1    | [0xB818cC3A64755D195b95f5308759D90AA5c5b0C2](https://sepolia-explorer.superseed.xyz/address/0xB818cC3A64755D195b95f5308759D90AA5c5b0C2)
 | Chronicle_AAVE_USD_1    | [0x2D5C5Aead4D46D30e43E79Aa721a8293e34eebbf](https://sepolia-explorer.superseed.xyz/address/0x2D5C5Aead4D46D30e43E79Aa721a8293e34eebbf)
 | Chronicle_SUSDE_USD_1    | [0x8B1e6Ea81502D2d010169819b138f6b8C6e960Fb](https://sepolia-explorer.superseed.xyz/address/0x8B1e6Ea81502D2d010169819b138f6b8C6e960Fb)
@@ -452,7 +451,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Berachain Bepolia
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x3827809C7Dd6757b7473EC0f489Ac09024cF55dD](https://bepolia.beratrail.io//address/0x3827809C7Dd6757b7473EC0f489Ac09024cF55dD)
+| SelfKisser_2    | [0x584914a893aBefB95abC02A5604338c0390F328B](https://bepolia.beratrail.io//address/0x584914a893aBefB95abC02A5604338c0390F328B)
 | Chronicle_OHM_USD_1    | [0xA2Ec6a9A1C7701c0BC8132a1A569C5721c23d4Fb](https://bepolia.beratrail.io//address/0xA2Ec6a9A1C7701c0BC8132a1A569C5721c23d4Fb)
 | Chronicle_SRUSD_USD_1    | [0xC19FB675E00E2e88ef7C334Cc99a1A79b294b36A](https://bepolia.beratrail.io//address/0xC19FB675E00E2e88ef7C334Cc99a1A79b294b36A)
 | Chronicle_USDE_USD_1    | [0x6B5463295FeC645729F74C7471952c61913b990d](https://bepolia.beratrail.io//address/0x6B5463295FeC645729F74C7471952c61913b990d)
@@ -484,7 +483,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_LIQ_TRI_YEET_USD_1    | [0xFEEB25a9d92014B4D5F7D9D4BA3Cd26057d50591](https://bepolia.beratrail.io//address/0xFEEB25a9d92014B4D5F7D9D4BA3Cd26057d50591)
 | Chronicle_STONE_USD_1    | [0x3A324B8604f8520725096f1a1c82Cb2CF9e78B41](https://bepolia.beratrail.io//address/0x3A324B8604f8520725096f1a1c82Cb2CF9e78B41)
 | Chronicle_CBBTC_USD_1    | [0x3067a804e35F6E60895A69D9F957257fcfc02c73](https://bepolia.beratrail.io//address/0x3067a804e35F6E60895A69D9F957257fcfc02c73)
-| Chronicle_SDAI_MATIC_1    | [0x1ba3fe2d1d5346c7eAcF7A98186B66079EDB176C](https://bepolia.beratrail.io//address/0x1ba3fe2d1d5346c7eAcF7A98186B66079EDB176C)
 | Chronicle_SNX_USD_1    | [0x02d2b7A4e623270B3E101A975AE4B9EFB58F7ba9](https://bepolia.beratrail.io//address/0x02d2b7A4e623270B3E101A975AE4B9EFB58F7ba9)
 | Chronicle_WEETH_USD_1    | [0x4c02da38C2a06236769B6A5543CD8AC96c8c7034](https://bepolia.beratrail.io//address/0x4c02da38C2a06236769B6A5543CD8AC96c8c7034)
 | Chronicle_SOLVBTC_USD_1    | [0xC4f6C0782129266e6010818EEdE340716Cc510fd](https://bepolia.beratrail.io//address/0xC4f6C0782129266e6010818EEdE340716Cc510fd)
@@ -571,7 +569,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Base Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.basescan.org/address/0x70E58b7A1c884fFFE7dbce5249337603a28b8422)
+| SelfKisser_2    | [0x7D62Def8478c21B82aA7fcbc2E7f8B404Ac6c565](https://sepolia.basescan.org/address/0x7D62Def8478c21B82aA7fcbc2E7f8B404Ac6c565)
 | Chronicle_USDE_USD_1    | [0xd9c2fC66C39e4ac6F9c93092E0A8e8522eaB0456](https://sepolia.basescan.org/address/0xd9c2fC66C39e4ac6F9c93092E0A8e8522eaB0456)
 | Chronicle_AAVE_USD_1    | [0x094962A33737c0ca3DA1395DA8F5914BF5A776B7](https://sepolia.basescan.org/address/0x094962A33737c0ca3DA1395DA8F5914BF5A776B7)
 | Chronicle_SUSDE_USD_1    | [0x7F171a490121515690479990e7262e67c9055B39](https://sepolia.basescan.org/address/0x7F171a490121515690479990e7262e67c9055B39)
@@ -658,17 +656,121 @@ Alternatively, you can also find here the addresses organized by chains:
 </details>
 
 <details>
-<summary> Smart Contract Addresses on **Plume Testnet (Legacy)** </summary>
+<summary> Smart Contract Addresses on **Plume Testnet** </summary>
 
-| Contract Name              | Contract Address on Plume Testnet (Legacy)
+| Contract Name              | Contract Address on Plume Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0xF69De003115777B62c71846b13948CE05C07fe65](https://test-explorer.plumenetwork.xyz//address/0xF69De003115777B62c71846b13948CE05C07fe65)
-| Chronicle_ETH_USD_1    | [0xF66629Ce89Df70876F436e43020F52C9014E39ED](https://test-explorer.plumenetwork.xyz//address/0xF66629Ce89Df70876F436e43020F52C9014E39ED)
-| Chronicle_STONE_USD_1    | [0x68AA85aA47208db475935B2Ec7997D20A377Ab6C](https://test-explorer.plumenetwork.xyz//address/0x68AA85aA47208db475935B2Ec7997D20A377Ab6C)
-| Chronicle_USDT_USD_1    | [0xe20165f58B507DF17187D6FCc12E741423075C5c](https://test-explorer.plumenetwork.xyz//address/0xe20165f58B507DF17187D6FCc12E741423075C5c)
-| Chronicle_YLFBTC_FBTC_1    | [0x93AccFf0590797f2c67eDcbaDFb2c98920bd0704](https://test-explorer.plumenetwork.xyz//address/0x93AccFf0590797f2c67eDcbaDFb2c98920bd0704)
-| Chronicle_USDC_USD_1    | [0x86eD5E7dC5B1c036F0a2Bd15e49696407b728d8C](https://test-explorer.plumenetwork.xyz//address/0x86eD5E7dC5B1c036F0a2Bd15e49696407b728d8C)
-| Chronicle_BTC_USD_1    | [0xE74C350FAfAa483E588B1a3eBE6F3A828444b390](https://test-explorer.plumenetwork.xyz//address/0xE74C350FAfAa483E588B1a3eBE6F3A828444b390)
+| SelfKisser_2    | [0xd6de00f82738c966c88F55017e8aCcA192AF42a1](https://testnet-explorer.plumenetwork.xyz//address/0xd6de00f82738c966c88F55017e8aCcA192AF42a1)
+| Chronicle_OHM_USD_1    | [0x6391E64B21184817F424b2C7dD68ce25E1764FB4](https://testnet-explorer.plumenetwork.xyz//address/0x6391E64B21184817F424b2C7dD68ce25E1764FB4)
+| Chronicle_SRUSD_USD_1    | [0x36F5496c9eba4BA87Afe567D3ecd3634abB6F312](https://testnet-explorer.plumenetwork.xyz//address/0x36F5496c9eba4BA87Afe567D3ecd3634abB6F312)
+| Chronicle_USDE_USD_1    | [0x2A4CAFFF25841364D4B9b5327D191BeaAf080655](https://testnet-explorer.plumenetwork.xyz//address/0x2A4CAFFF25841364D4B9b5327D191BeaAf080655)
+| Chronicle_AAVE_USD_1    | [0x1379e638f51271E7D0C4446D329E2d1DD22E45D7](https://testnet-explorer.plumenetwork.xyz//address/0x1379e638f51271E7D0C4446D329E2d1DD22E45D7)
+| Chronicle_SUSDE_USD_1    | [0x80fCc863e931957F8DF8e0a031702402C2C70241](https://testnet-explorer.plumenetwork.xyz//address/0x80fCc863e931957F8DF8e0a031702402C2C70241)
+| Chronicle_RUSD_USD_1    | [0x3E9FbA20d1324DEB1C7d82BA4E33BeA790F2B5c6](https://testnet-explorer.plumenetwork.xyz//address/0x3E9FbA20d1324DEB1C7d82BA4E33BeA790F2B5c6)
+| Chronicle_GBP_USD_1    | [0x6Ab6e904D9A7165655D164e85a6a7DCF747eA680](https://testnet-explorer.plumenetwork.xyz//address/0x6Ab6e904D9A7165655D164e85a6a7DCF747eA680)
+| Chronicle_EURC_USD_1    | [0xd2cCf28f7b653417ff643b2Ce1F74871FeD226ca](https://testnet-explorer.plumenetwork.xyz//address/0xd2cCf28f7b653417ff643b2Ce1F74871FeD226ca)
+| Chronicle_WUSDM_USDM_1    | [0x1D109e6a78d4b90BE0661C0D17502B630812cA5a](https://testnet-explorer.plumenetwork.xyz//address/0x1D109e6a78d4b90BE0661C0D17502B630812cA5a)
+| Chronicle_SDAI_DAI_1    | [0x01A347137b33aE68d9544262af8170A480773122](https://testnet-explorer.plumenetwork.xyz//address/0x01A347137b33aE68d9544262af8170A480773122)
+| Chronicle_USDM_USD_1    | [0xf9378938c4041BCFe49cf6E1D8381Fb7C919E941](https://testnet-explorer.plumenetwork.xyz//address/0xf9378938c4041BCFe49cf6E1D8381Fb7C919E941)
+| Chronicle_UNI_USD_1    | [0x51a086F9211212D0C08381dBd6C7821780808C20](https://testnet-explorer.plumenetwork.xyz//address/0x51a086F9211212D0C08381dBd6C7821780808C20)
+| Chronicle_IBERA_USD_1    | [0x602F06d739DFE00C96476E40dc4E317733406452](https://testnet-explorer.plumenetwork.xyz//address/0x602F06d739DFE00C96476E40dc4E317733406452)
+| Chronicle_USDS_USD_1    | [0x781872810d9c94B8793f922D4D6ECe7E52D4Db89](https://testnet-explorer.plumenetwork.xyz//address/0x781872810d9c94B8793f922D4D6ECe7E52D4Db89)
+| Chronicle_STONE_ETH_1    | [0xcB9d1A94ebFf012680B7145f7E4fD7d3e05ABB46](https://testnet-explorer.plumenetwork.xyz//address/0xcB9d1A94ebFf012680B7145f7E4fD7d3e05ABB46)
+| Chronicle_DSR_RATE_1    | [0x848FA7dEa3ec0CE8295b22656DAE7b081042F8f0](https://testnet-explorer.plumenetwork.xyz//address/0x848FA7dEa3ec0CE8295b22656DAE7b081042F8f0)
+| Chronicle_MKR_USD_1    | [0x4AC8490188F3afC5C9244a4515101858a36F2927](https://testnet-explorer.plumenetwork.xyz//address/0x4AC8490188F3afC5C9244a4515101858a36F2927)
+| Chronicle_WETH_USDC_1    | [0x8A2cb91a53aAA389097067e7e0bFfd1373588317](https://testnet-explorer.plumenetwork.xyz//address/0x8A2cb91a53aAA389097067e7e0bFfd1373588317)
+| Chronicle_ZK_USDT_1    | [0x16540025C95a1E0eDAb3cE73Baa9dBf5B23c67b1](https://testnet-explorer.plumenetwork.xyz//address/0x16540025C95a1E0eDAb3cE73Baa9dBf5B23c67b1)
+| Chronicle_WEETH_ETH_1    | [0x60B7cA22B4FBC3fCe48B4E41F1120950871B69B1](https://testnet-explorer.plumenetwork.xyz//address/0x60B7cA22B4FBC3fCe48B4E41F1120950871B69B1)
+| Chronicle_IBTA_USD_1    | [0x813d45f7cb9C78E285986395Ce91807c3C731279](https://testnet-explorer.plumenetwork.xyz//address/0x813d45f7cb9C78E285986395Ce91807c3C731279)
+| Chronicle_ETH_USD_1    | [0x8A83E41318f62709B07FE0ef95567307Df2969FB](https://testnet-explorer.plumenetwork.xyz//address/0x8A83E41318f62709B07FE0ef95567307Df2969FB)
+| Chronicle_WETH_USD_1    | [0x3F6316D8611ab1E91bd818fc30233B03190903dc](https://testnet-explorer.plumenetwork.xyz//address/0x3F6316D8611ab1E91bd818fc30233B03190903dc)
+| Chronicle_SUSDS_USD_1    | [0x6BA96db2CE28b0EfbAC3F4B7393933abB6F5E680](https://testnet-explorer.plumenetwork.xyz//address/0x6BA96db2CE28b0EfbAC3F4B7393933abB6F5E680)
+| Chronicle_ETHX_USD_1    | [0xc344dA27c606E8Eb7F819411C2D16A9ff659cDe3](https://testnet-explorer.plumenetwork.xyz//address/0xc344dA27c606E8Eb7F819411C2D16A9ff659cDe3)
+| Chronicle_USDY_USD_1    | [0x6f6e019ed8Ae1338b1F58bB6436fC075A80652a8](https://testnet-explorer.plumenetwork.xyz//address/0x6f6e019ed8Ae1338b1F58bB6436fC075A80652a8)
+| Chronicle_POL_USD_1    | [0x449d4B5C67f0c67fFda445aF8e7e0580f29A5a59](https://testnet-explorer.plumenetwork.xyz//address/0x449d4B5C67f0c67fFda445aF8e7e0580f29A5a59)
+| Chronicle_BERAETH_USD_1    | [0x0204883ac8EE88752840008cac90623332B3440E](https://testnet-explorer.plumenetwork.xyz//address/0x0204883ac8EE88752840008cac90623332B3440E)
+| Chronicle_LIQ_TRI_YEET_USD_1    | [0x696809792536654ed9c1d5054dC35f8731877293](https://testnet-explorer.plumenetwork.xyz//address/0x696809792536654ed9c1d5054dC35f8731877293)
+| Chronicle_STONE_USD_1    | [0x4696Aa015EBbba4B15aD786Dd58e010499A46317](https://testnet-explorer.plumenetwork.xyz//address/0x4696Aa015EBbba4B15aD786Dd58e010499A46317)
+| Chronicle_CBBTC_USD_1    | [0x7951eF08e565FBDbF57e27aDD016CA6458BA05f6](https://testnet-explorer.plumenetwork.xyz//address/0x7951eF08e565FBDbF57e27aDD016CA6458BA05f6)
+| Chronicle_SNX_USD_1    | [0xBE3e6173E4B2bEcc32226b98e7Eb1e79de9E37Fe](https://testnet-explorer.plumenetwork.xyz//address/0xBE3e6173E4B2bEcc32226b98e7Eb1e79de9E37Fe)
+| Chronicle_WEETH_USD_1    | [0x7e8058D5A2a1E3e9C7D17DB887dea03E58c228bA](https://testnet-explorer.plumenetwork.xyz//address/0x7e8058D5A2a1E3e9C7D17DB887dea03E58c228bA)
+| Chronicle_SOLVBTC_USD_1    | [0xB5511F947815B59Bc08d77AC45114dcbFead032c](https://testnet-explorer.plumenetwork.xyz//address/0xB5511F947815B59Bc08d77AC45114dcbFead032c)
+| Chronicle_CRV_USD_1    | [0x78Aa573a8a5f195108C996761A8eB7148497E376](https://testnet-explorer.plumenetwork.xyz//address/0x78Aa573a8a5f195108C996761A8eB7148497E376)
+| Chronicle_USDT_USD_1    | [0x2D72d5F9eD8128e6bf71E6b1b19C9DF82D36F200](https://testnet-explorer.plumenetwork.xyz//address/0x2D72d5F9eD8128e6bf71E6b1b19C9DF82D36F200)
+| Chronicle_LBTC_BTC_1    | [0xC4B4446082b671eE54177fF33e8C86017D21AD98](https://testnet-explorer.plumenetwork.xyz//address/0xC4B4446082b671eE54177fF33e8C86017D21AD98)
+| Chronicle_ETHX_ETH_1    | [0x6A0A5688fb6375960552Ae1c557Ce6746F90b6F1](https://testnet-explorer.plumenetwork.xyz//address/0x6A0A5688fb6375960552Ae1c557Ce6746F90b6F1)
+| Chronicle_UNIBTC_BTC_1    | [0x7B5a6AF1647Fea4fb3C62DC382966E84Ce7Ac9dA](https://testnet-explorer.plumenetwork.xyz//address/0x7B5a6AF1647Fea4fb3C62DC382966E84Ce7Ac9dA)
+| Chronicle_LIDO_LST_2DAYS_1    | [0x33DfFE1963fD00dE0E101d7A515917f05570D3A2](https://testnet-explorer.plumenetwork.xyz//address/0x33DfFE1963fD00dE0E101d7A515917f05570D3A2)
+| Chronicle_USDS_USDC_1    | [0xc3FF100bA05CF22934f5A0732e3F2255A87E6Ae9](https://testnet-explorer.plumenetwork.xyz//address/0xc3FF100bA05CF22934f5A0732e3F2255A87E6Ae9)
+| Chronicle_EBTCetherfi_BTC_1    | [0x99d3d97598E8Ea5B23ee9E9dD00A3606cc0BD117](https://testnet-explorer.plumenetwork.xyz//address/0x99d3d97598E8Ea5B23ee9E9dD00A3606cc0BD117)
+| Chronicle_YLSTETH_ETH_1    | [0x4704F8cafFc793E1bE76850751Bb7f33Ff9374d5](https://testnet-explorer.plumenetwork.xyz//address/0x4704F8cafFc793E1bE76850751Bb7f33Ff9374d5)
+| Chronicle_CBETH_USDC_1    | [0xc8b5718E263767F8179915d9084f4677670484ad](https://testnet-explorer.plumenetwork.xyz//address/0xc8b5718E263767F8179915d9084f4677670484ad)
+| Chronicle_WUSDM_USD_1    | [0x15aC38EC8Ca5A2E2aC5e1d4b2c12D432e8B5F8da](https://testnet-explorer.plumenetwork.xyz//address/0x15aC38EC8Ca5A2E2aC5e1d4b2c12D432e8B5F8da)
+| Chronicle_BNB_USD_1    | [0x5ea9BD3253328Ae78bD4E39Df78d282e9540f033](https://testnet-explorer.plumenetwork.xyz//address/0x5ea9BD3253328Ae78bD4E39Df78d282e9540f033)
+| Chronicle_YLFBTC_FBTC_1    | [0xA604b577d7DC0FA6Dd85a85C894126484c8DBa96](https://testnet-explorer.plumenetwork.xyz//address/0xA604b577d7DC0FA6Dd85a85C894126484c8DBa96)
+| Chronicle_HONEY_USD_1    | [0xd0dC9f7966CC993f753A143e149C67af85252475](https://testnet-explorer.plumenetwork.xyz//address/0xd0dC9f7966CC993f753A143e149C67af85252475)
+| Chronicle_HYUSD_USD_1    | [0xCF8E9F7781DacB29ADde8c820e7B9d1D43dC1F43](https://testnet-explorer.plumenetwork.xyz//address/0xCF8E9F7781DacB29ADde8c820e7B9d1D43dC1F43)
+| Chronicle_RSETH_ETH_1    | [0x018Ec45D90284456cd9c22339e0f524512559480](https://testnet-explorer.plumenetwork.xyz//address/0x018Ec45D90284456cd9c22339e0f524512559480)
+| Chronicle_MOG_USD_1    | [0xdE6Bb5d6624207bc94c92BdFDfBD178800a3A888](https://testnet-explorer.plumenetwork.xyz//address/0xdE6Bb5d6624207bc94c92BdFDfBD178800a3A888)
+| Chronicle_PUMPBTC_USD_1    | [0xC3B1272a77722320749089cdC89420806D785ccA](https://testnet-explorer.plumenetwork.xyz//address/0xC3B1272a77722320749089cdC89420806D785ccA)
+| Chronicle_YLPUMPBTC_PUMPBTC_1    | [0x88fbfD95941893CD0b257Bc177fd014ef84D7DF0](https://testnet-explorer.plumenetwork.xyz//address/0x88fbfD95941893CD0b257Bc177fd014ef84D7DF0)
+| Chronicle_SUSDA_USD_1    | [0x09296eaAe199d2698C11Ec945B07E2AA2717eC42](https://testnet-explorer.plumenetwork.xyz//address/0x09296eaAe199d2698C11Ec945B07E2AA2717eC42)
+| Chronicle_SD_USD_1    | [0x3b05537c630641274eBBEe8A1bFdb5F1964C78D5](https://testnet-explorer.plumenetwork.xyz//address/0x3b05537c630641274eBBEe8A1bFdb5F1964C78D5)
+| Chronicle_WSTETH_ETH_1    | [0xC16Cb3A934BB70B3827faA186f79e5F64eB5AC58](https://testnet-explorer.plumenetwork.xyz//address/0xC16Cb3A934BB70B3827faA186f79e5F64eB5AC58)
+| Chronicle_CBBTC_USDC_1    | [0x52820965889CFb2B45F9A3063bFa9d841196226f](https://testnet-explorer.plumenetwork.xyz//address/0x52820965889CFb2B45F9A3063bFa9d841196226f)
+| Chronicle_BERA_ETH_1    | [0x581C5a83A4e7DCbCfeaBCb1009c0CD96eb7a448f](https://testnet-explorer.plumenetwork.xyz//address/0x581C5a83A4e7DCbCfeaBCb1009c0CD96eb7a448f)
+| Chronicle_SOL_USD_1    | [0x4391e02F3cf9b32739D77B458A8Fff87982E920e](https://testnet-explorer.plumenetwork.xyz//address/0x4391e02F3cf9b32739D77B458A8Fff87982E920e)
+| Chronicle_OP_USD_1    | [0xC62863e93661838f05BF2820a8A677E67573E0DE](https://testnet-explorer.plumenetwork.xyz//address/0xC62863e93661838f05BF2820a8A677E67573E0DE)
+| Chronicle_USDA_USD_1    | [0x24A870b1a7EC09097bD1BD73E193920D96EC2522](https://testnet-explorer.plumenetwork.xyz//address/0x24A870b1a7EC09097bD1BD73E193920D96EC2522)
+| Chronicle_WETH_USDT_1    | [0x1c9BBeDB9F93FfCB8Fa1AE1780f94aa06b879356](https://testnet-explorer.plumenetwork.xyz//address/0x1c9BBeDB9F93FfCB8Fa1AE1780f94aa06b879356)
+| Chronicle_SOLVBTC_BTC_1    | [0x2f53c3208a62840F2dA4FF67f81308f03EB5c475](https://testnet-explorer.plumenetwork.xyz//address/0x2f53c3208a62840F2dA4FF67f81308f03EB5c475)
+| Chronicle_PEPE_USD_1    | [0xd0553B924404f86810A5fa3b81cB9c568EFf7C26](https://testnet-explorer.plumenetwork.xyz//address/0xd0553B924404f86810A5fa3b81cB9c568EFf7C26)
+| Chronicle_CBETH_USD_1    | [0xEe2610f3B0cBbDA7bcaf1DDFff979a56622D2132](https://testnet-explorer.plumenetwork.xyz//address/0xEe2610f3B0cBbDA7bcaf1DDFff979a56622D2132)
+| Chronicle_GNO_USD_1    | [0x6628c13B20A7Ec0be2b8a4dc0d5284DD25d8392D](https://testnet-explorer.plumenetwork.xyz//address/0x6628c13B20A7Ec0be2b8a4dc0d5284DD25d8392D)
+| Chronicle_LDO_USD_1    | [0x5B3f39912f8aa8EdEf9D7c0814a8398d1507C128](https://testnet-explorer.plumenetwork.xyz//address/0x5B3f39912f8aa8EdEf9D7c0814a8398d1507C128)
+| Chronicle_CRVUSD_USD_1    | [0x248003998a0A9b1167b2ef5da82b7927d2985346](https://testnet-explorer.plumenetwork.xyz//address/0x248003998a0A9b1167b2ef5da82b7927d2985346)
+| Chronicle_EBTCetherfi_USD_1    | [0xF2B5bC0f4cB2D1A08bd3710b1928325d606a0b8d](https://testnet-explorer.plumenetwork.xyz//address/0xF2B5bC0f4cB2D1A08bd3710b1928325d606a0b8d)
+| Chronicle_EBTCbadger_ETH_1    | [0xf1BC1E32790aaD2455248A8A6859F20f1Ea0E07a](https://testnet-explorer.plumenetwork.xyz//address/0xf1BC1E32790aaD2455248A8A6859F20f1Ea0E07a)
+| Chronicle_SUPR_USD_1    | [0x70ca3AD37e9ccF2541689915203fB27A0A939205](https://testnet-explorer.plumenetwork.xyz//address/0x70ca3AD37e9ccF2541689915203fB27A0A939205)
+| Chronicle_METH_USD_1    | [0xE1600A9707f7E04f4CC3c6Fa18B7BC7452252262](https://testnet-explorer.plumenetwork.xyz//address/0xE1600A9707f7E04f4CC3c6Fa18B7BC7452252262)
+| Chronicle_NECT_HONEY_1    | [0x310807Db9684805Bd5051dde073C09FBEd44A00F](https://testnet-explorer.plumenetwork.xyz//address/0x310807Db9684805Bd5051dde073C09FBEd44A00F)
+| Chronicle_OSETH_ETH_1    | [0xCC2cB774c43d7F4287968Da5360B52657b019A71](https://testnet-explorer.plumenetwork.xyz//address/0xCC2cB774c43d7F4287968Da5360B52657b019A71)
+| Chronicle_SDAI_ETH_1    | [0x8a4a12f314d045A88B50a28C2edbCb6DFb7949cD](https://testnet-explorer.plumenetwork.xyz//address/0x8a4a12f314d045A88B50a28C2edbCb6DFb7949cD)
+| Chronicle_USDC_ETH_1    | [0x297fd6eD6B289d4Df9c2AF654f59D60f4332917e](https://testnet-explorer.plumenetwork.xyz//address/0x297fd6eD6B289d4Df9c2AF654f59D60f4332917e)
+| Chronicle_PUMPBTC_BTC_1    | [0x16E131445ff5Da0BDf574d21F53EaCb779689f21](https://testnet-explorer.plumenetwork.xyz//address/0x16E131445ff5Da0BDf574d21F53EaCb779689f21)
+| Chronicle_RETH_ETH_1    | [0x2cEFdEb7AB887C61a98Bf57cAa27198b7dAD2eB1](https://testnet-explorer.plumenetwork.xyz//address/0x2cEFdEb7AB887C61a98Bf57cAa27198b7dAD2eB1)
+| Chronicle_SKY_USD_1    | [0x685F0C2b2c91E9CC2DFd56A1388f7247F4e4dFf0](https://testnet-explorer.plumenetwork.xyz//address/0x685F0C2b2c91E9CC2DFd56A1388f7247F4e4dFf0)
+| Chronicle_AVAX_USD_1    | [0x07BE409c9C22ac4FF6a2dcAE15a443dfe7c30bB9](https://testnet-explorer.plumenetwork.xyz//address/0x07BE409c9C22ac4FF6a2dcAE15a443dfe7c30bB9)
+| Chronicle_FBTC_WBTC_1    | [0x00a12DFe23c7E46984E70d0564d68121b3127Bd8](https://testnet-explorer.plumenetwork.xyz//address/0x00a12DFe23c7E46984E70d0564d68121b3127Bd8)
+| Chronicle_CMETH_METH_1    | [0xa8fd712eFBF7a6eA7139e1B426Db1D313b215787](https://testnet-explorer.plumenetwork.xyz//address/0xa8fd712eFBF7a6eA7139e1B426Db1D313b215787)
+| Chronicle_PLUME_USD_1    | [0x68EcD256B919d4Ee390c0ab36e62c4498d24B788](https://testnet-explorer.plumenetwork.xyz//address/0x68EcD256B919d4Ee390c0ab36e62c4498d24B788)
+| Chronicle_DAI_USD_1    | [0xe5E84320e8B968A261af1E024AAa3ebA63dbda38](https://testnet-explorer.plumenetwork.xyz//address/0xe5E84320e8B968A261af1E024AAa3ebA63dbda38)
+| Chronicle_YFI_USD_1    | [0xa6cB5f124bF61cf38215845e46a0645B0EaCe3B1](https://testnet-explorer.plumenetwork.xyz//address/0xa6cB5f124bF61cf38215845e46a0645B0EaCe3B1)
+| Chronicle_ARB_USD_1    | [0xd173e5bD391C0ae52Fc797b7bb72A8e8E46669DD](https://testnet-explorer.plumenetwork.xyz//address/0xd173e5bD391C0ae52Fc797b7bb72A8e8E46669DD)
+| Chronicle_LINK_USD_1    | [0xC745571d5b6b90b9252a16628CdaE998C50df4b9](https://testnet-explorer.plumenetwork.xyz//address/0xC745571d5b6b90b9252a16628CdaE998C50df4b9)
+| Chronicle_IBGT_USD_1    | [0x692cEA59f26c8C3C8458159D4406A0aC33c71986](https://testnet-explorer.plumenetwork.xyz//address/0x692cEA59f26c8C3C8458159D4406A0aC33c71986)
+| Chronicle_RETH_USD_1    | [0x1CED92659755cf775Cc94B0114495035c7ab5C3D](https://testnet-explorer.plumenetwork.xyz//address/0x1CED92659755cf775Cc94B0114495035c7ab5C3D)
+| Chronicle_STETH_BTC_1    | [0xef0b9e96eFBeAD75Da5363498afDC4a21B9F463e](https://testnet-explorer.plumenetwork.xyz//address/0xef0b9e96eFBeAD75Da5363498afDC4a21B9F463e)
+| Chronicle_MNT_USD_1    | [0x946E11193be24763b8d5dDc48890633105BA3D02](https://testnet-explorer.plumenetwork.xyz//address/0x946E11193be24763b8d5dDc48890633105BA3D02)
+| Chronicle_SDAI_USD_1    | [0x02C5aeBBf88540eedb1Ea95Ae602a3b5b4C0f59F](https://testnet-explorer.plumenetwork.xyz//address/0x02C5aeBBf88540eedb1Ea95Ae602a3b5b4C0f59F)
+| Chronicle_USDC_USD_1    | [0x3BBfA6C6125A676338b3e914e5A40DeeBDFA3Bf1](https://testnet-explorer.plumenetwork.xyz//address/0x3BBfA6C6125A676338b3e914e5A40DeeBDFA3Bf1)
+| Chronicle_PYUSD_USD_1    | [0x3F01d836D9581B8a6A6e06A8dDe6D7d468B36ceE](https://testnet-explorer.plumenetwork.xyz//address/0x3F01d836D9581B8a6A6e06A8dDe6D7d468B36ceE)
+| Chronicle_AUSD_USD_1    | [0x3a30cBF6e4816c02c9A25740f8613ef8C79A5282](https://testnet-explorer.plumenetwork.xyz//address/0x3a30cBF6e4816c02c9A25740f8613ef8C79A5282)
+| Chronicle_USR_USD_1    | [0xe4cc1fd5Ed0e3F485FA059949FEaE7Ec7362A6AF](https://testnet-explorer.plumenetwork.xyz//address/0xe4cc1fd5Ed0e3F485FA059949FEaE7Ec7362A6AF)
+| Chronicle_METH_ETH_1    | [0x75cB1f1D4f059a9Ff7Be8b39E87Be86bBC700407](https://testnet-explorer.plumenetwork.xyz//address/0x75cB1f1D4f059a9Ff7Be8b39E87Be86bBC700407)
+| Chronicle_FBTC_USD_1    | [0x919470f38942C02445306c5E5220372A67FAc8b2](https://testnet-explorer.plumenetwork.xyz//address/0x919470f38942C02445306c5E5220372A67FAc8b2)
+| Chronicle_WSTETH_USD_1    | [0x2eCb85D0aF9763C792A06D9465353a2c0b4e3E7F](https://testnet-explorer.plumenetwork.xyz//address/0x2eCb85D0aF9763C792A06D9465353a2c0b4e3E7F)
+| Chronicle_BRL_USD_1    | [0xDB19fbfe66613c0a080b1143aAB1d1581E416e5D](https://testnet-explorer.plumenetwork.xyz//address/0xDB19fbfe66613c0a080b1143aAB1d1581E416e5D)
+| Chronicle_WSTETH_USDC_1    | [0xBB670a7a7bfdE89470419AFdE46C7c12978cB1e4](https://testnet-explorer.plumenetwork.xyz//address/0xBB670a7a7bfdE89470419AFdE46C7c12978cB1e4)
+| Chronicle_BERA_USD_1    | [0xB1cD15200930CC32517d2A12CeeF343CA8F33581](https://testnet-explorer.plumenetwork.xyz//address/0xB1cD15200930CC32517d2A12CeeF343CA8F33581)
+| Chronicle_EZETH_USD_1    | [0xc6D31697b96f1BC9f3A1e5995661BA8e55d0c14b](https://testnet-explorer.plumenetwork.xyz//address/0xc6D31697b96f1BC9f3A1e5995661BA8e55d0c14b)
+| Chronicle_GYD_USD_1    | [0xC7515bd32F05Eb2D15F56a3404427D8a14d4C6d2](https://testnet-explorer.plumenetwork.xyz//address/0xC7515bd32F05Eb2D15F56a3404427D8a14d4C6d2)
+| Chronicle_UNIBTC_WBTC_1    | [0xc4A94085Ac3c4B452Ea06C9C34656ED06773D3e1](https://testnet-explorer.plumenetwork.xyz//address/0xc4A94085Ac3c4B452Ea06C9C34656ED06773D3e1)
+| Chronicle_WBTC_USD_1    | [0x0983821b1d976584a35d002e061D4d066Fc1fBDC](https://testnet-explorer.plumenetwork.xyz//address/0x0983821b1d976584a35d002e061D4d066Fc1fBDC)
+| Chronicle_MTBILL_USD_1    | [0x105852320eaB4864021364447F215DcbCaCa6438](https://testnet-explorer.plumenetwork.xyz//address/0x105852320eaB4864021364447F215DcbCaCa6438)
+| Chronicle_BTC_USD_1    | [0xbd7eE87193A995F6757AbbCEd91af02c2712dB83](https://testnet-explorer.plumenetwork.xyz//address/0xbd7eE87193A995F6757AbbCEd91af02c2712dB83)
+| Chronicle_ETH_BTC_1    | [0xAEe3E87BD61f2419Db38bF41919b3DDa05beed30](https://testnet-explorer.plumenetwork.xyz//address/0xAEe3E87BD61f2419Db38bF41919b3DDa05beed30)
+| Chronicle_BTCN_USD_1    | [0x5f13A1cf90FD2869669A58eE97e1916729877Fb5](https://testnet-explorer.plumenetwork.xyz//address/0x5f13A1cf90FD2869669A58eE97e1916729877Fb5)
 </details>
 
 <details>
@@ -676,7 +778,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Arbitrum Sepolia
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbiscan.io/address/0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f)
+| SelfKisser_2    | [0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5](https://sepolia.arbiscan.io/address/0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5)
 | Chronicle_USDE_USD_1    | [0x0bf345909314E324e1B53861e867c77c03Da4907](https://sepolia.arbiscan.io/address/0x0bf345909314E324e1B53861e867c77c03Da4907)
 | Chronicle_AAVE_USD_1    | [0xC7E4AA2860BEc0054A8A2D3bb1fc5359FEA13FdA](https://sepolia.arbiscan.io/address/0xC7E4AA2860BEc0054A8A2D3bb1fc5359FEA13FdA)
 | Chronicle_SUSDE_USD_1    | [0x8e9eE346ab57519742F8426e6D24F3DAd7180513](https://sepolia.arbiscan.io/address/0x8e9eE346ab57519742F8426e6D24F3DAd7180513)
@@ -764,7 +866,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Scroll Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.scrollscan.com/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d)
+| SelfKisser_2    | [0xCE26246F859512CD22faE6037fb0371960B68a0C](https://sepolia.scrollscan.com/address/0xCE26246F859512CD22faE6037fb0371960B68a0C)
 | Chronicle_AAVE_USD_1    | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://sepolia.scrollscan.com/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717)
 | Chronicle_SDAI_DAI_1    | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://sepolia.scrollscan.com/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491)
 | Chronicle_UNI_USD_1    | [0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5](https://sepolia.scrollscan.com/address/0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5)
@@ -825,10 +927,11 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Sepolia
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d)
+| SelfKisser_2    | [0x9eE458DefDc50409DbF153515DA54Ff5B744e533](https://sepolia.etherscan.io/address/0x9eE458DefDc50409DbF153515DA54Ff5B744e533)
 | Chronicle_USDE_USD_1    | [0x7ee38C6A75cAcd570d88b314360DbB77F40decE9](https://sepolia.etherscan.io/address/0x7ee38C6A75cAcd570d88b314360DbB77F40decE9)
 | Chronicle_AVAX_USD_3    | [0x7F56CdaAdB1c5230Fcab3E20D3A15BDE26cb6C2b](https://sepolia.etherscan.io/address/0x7F56CdaAdB1c5230Fcab3E20D3A15BDE26cb6C2b)
 | Chronicle_SUSDE_USD_1    | [0xe1f9E22Ef87FE0e621BfC8096aE380C01bFEc3DD](https://sepolia.etherscan.io/address/0xe1f9E22Ef87FE0e621BfC8096aE380C01bFEc3DD)
+| Chronicle_RUSD_USD_1    | [0x1981F2F42FbF273c48c7BD4579FaB2405DD263E9](https://sepolia.etherscan.io/address/0x1981F2F42FbF273c48c7BD4579FaB2405DD263E9)
 | Chronicle_GBP_USD_1    | [0x11d0D3cCa7BB95522D01e5fd349f6696eE52D185](https://sepolia.etherscan.io/address/0x11d0D3cCa7BB95522D01e5fd349f6696eE52D185)
 | Chronicle_USDC_USD_3    | [0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC](https://sepolia.etherscan.io/address/0xb34d784dc8E7cD240Fe1F318e282dFdD13C389AC)
 | Chronicle_EURC_USD_1    | [0x72A9942a9C597d167F70fbC0E1FF1caf1333550d](https://sepolia.etherscan.io/address/0x72A9942a9C597d167F70fbC0E1FF1caf1333550d)
@@ -849,6 +952,7 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_ETH_BTC_3    | [0xf95d3B8Ae567F4AA9BEC822931976c117cdf836a](https://sepolia.etherscan.io/address/0xf95d3B8Ae567F4AA9BEC822931976c117cdf836a)
 | Chronicle_BTC_USD_3    | [0x6edF073c4Bd934d3916AA6dDAC4255ccB2b7c0f0](https://sepolia.etherscan.io/address/0x6edF073c4Bd934d3916AA6dDAC4255ccB2b7c0f0)
 | Chronicle_WBTC_USD_3    | [0xdc3ef3E31AdAe791d9D5054B575f7396851Fa432](https://sepolia.etherscan.io/address/0xdc3ef3E31AdAe791d9D5054B575f7396851Fa432)
+| Chronicle_WETH_USD_1    | [0x3b8Cd6127a6CBEB9336667A3FfCD32B3509Cb5D9](https://sepolia.etherscan.io/address/0x3b8Cd6127a6CBEB9336667A3FfCD32B3509Cb5D9)
 | Chronicle_SUSDS_USD_1    | [0x8bAD38ddc424f865B1fe41E3bf4cF9c864d00aBA](https://sepolia.etherscan.io/address/0x8bAD38ddc424f865B1fe41E3bf4cF9c864d00aBA)
 | Chronicle_ETHX_USD_1    | [0xc6639C0591d632Bf689ceab617A0377072e7f524](https://sepolia.etherscan.io/address/0xc6639C0591d632Bf689ceab617A0377072e7f524)
 | Chronicle_SOL_USD_3    | [0x39eC7D193D1Aa282b8ecCAC9B791b09c75D30491](https://sepolia.etherscan.io/address/0x39eC7D193D1Aa282b8ecCAC9B791b09c75D30491)
@@ -912,7 +1016,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on OP Sepolia Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0xfF619a90cDa4020897808D74557ce3b648922C37](https://sepolia-optimism.etherscan.io/address/0xfF619a90cDa4020897808D74557ce3b648922C37)
+| SelfKisser_2    | [0x84c2dD149026327f95A7947d788Dff49D8B24E26](https://sepolia-optimism.etherscan.io/address/0x84c2dD149026327f95A7947d788Dff49D8B24E26)
 | Chronicle_USDE_USD_1    | [0x0420355d6EDe0107054De722B9D7EC0Fb0d0a62d](https://sepolia-optimism.etherscan.io/address/0x0420355d6EDe0107054De722B9D7EC0Fb0d0a62d)
 | Chronicle_AAVE_USD_1    | [0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717](https://sepolia-optimism.etherscan.io/address/0xa38C2B5408Eb1DCeeDBEC5d61BeD580589C6e717)
 | Chronicle_SUSDE_USD_1    | [0xC73be66EEF245dfbf51271EB300Ea7Bab5B0503b](https://sepolia-optimism.etherscan.io/address/0xC73be66EEF245dfbf51271EB300Ea7Bab5B0503b)
@@ -1000,7 +1104,7 @@ Alternatively, you can also find here the addresses organized by chains:
 
 | Contract Name              | Contract Address on Corn Testnet
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| SelfKisser_1    | [0x8CA2E3a09c79233127dC21955e28A6b9C4bf166E](https://testnet.cornscan.io/address/0x8CA2E3a09c79233127dC21955e28A6b9C4bf166E)
+| SelfKisser_2    | [0xa4AAf1dE120A11164Da527baB7dEf772973c5715](https://testnet.cornscan.io/address/0xa4AAf1dE120A11164Da527baB7dEf772973c5715)
 | Chronicle_USDE_USD_1    | [0x3d97ad50ce86a1Fc3425B46ac799074b0Fa35570](https://testnet.cornscan.io/address/0x3d97ad50ce86a1Fc3425B46ac799074b0Fa35570)
 | Chronicle_AAVE_USD_1    | [0xaF5a3Fd707d5f3Ddfa8d79159563Bba03114D996](https://testnet.cornscan.io/address/0xaF5a3Fd707d5f3Ddfa8d79159563Bba03114D996)
 | Chronicle_SUSDE_USD_1    | [0x348842C8FAAe382F13e162b6e3e69910Dd5415EC](https://testnet.cornscan.io/address/0x348842C8FAAe382F13e162b6e3e69910Dd5415EC)
@@ -1024,7 +1128,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_USDY_USD_1    | [0x5a7965a30bef8CEc4678F71Bb84e11a5e52b72F6](https://testnet.cornscan.io/address/0x5a7965a30bef8CEc4678F71Bb84e11a5e52b72F6)
 | Chronicle_POL_USD_1    | [0x04cC0F88bFd32Edc7f1139Bb7102c4588ad350fE](https://testnet.cornscan.io/address/0x04cC0F88bFd32Edc7f1139Bb7102c4588ad350fE)
 | Chronicle_STONE_USD_1    | [0xaee933E2D537aBcddE910A9A2a6f5e43821aB408](https://testnet.cornscan.io/address/0xaee933E2D537aBcddE910A9A2a6f5e43821aB408)
-| Chronicle_SDAI_MATIC_1    | [0x2A232eD6963184Cd7E9fd972C578d92B3BB73044](https://testnet.cornscan.io/address/0x2A232eD6963184Cd7E9fd972C578d92B3BB73044)
 | Chronicle_SNX_USD_1    | [0x1824fa29f849BE515667580d614d949aA5dD7ad1](https://testnet.cornscan.io/address/0x1824fa29f849BE515667580d614d949aA5dD7ad1)
 | Chronicle_WEETH_USD_1    | [0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6](https://testnet.cornscan.io/address/0xC32753217DcC7Bb2F449bD6f1bC384d1AC72a7B6)
 | Chronicle_SOLVBTC_USD_1    | [0x8CB3e6AD836b57DBfc980afAd7E6940bb63FE79e](https://testnet.cornscan.io/address/0x8CB3e6AD836b57DBfc980afAd7E6940bb63FE79e)
