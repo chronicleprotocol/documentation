@@ -33,7 +33,7 @@
 
 .heroTitle {
   font-size: 3rem;
-  color: #2FD05B;
+  color: #2fd05b;
   margin-bottom: 0.5rem;
 }
 
@@ -80,7 +80,6 @@
   .heroBanner {
     gap: 0rem;
   }
-
 }
 
 .features {
@@ -106,12 +105,13 @@
   color: var(--ifm-font-color-base) !important;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+
 }
 
 .featureItem:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 20px #2FD05B;
-  border-color: #2FD05B;
+  box-shadow: 0 4px 20px #2fd05b;
+  border-color: #2fd05b;
 }
 
 .featureIcon {
@@ -201,7 +201,7 @@
     padding: 1.5rem;
   }
 
-  .heroImageContainer{
+  .heroImageContainer {
     margin: 0px;
   }
 
@@ -212,8 +212,39 @@
   .heroContent {
     margin-bottom: 0.5rem;
   }
-  
+
   .getStartedButton {
     display: none;
   }
 }
+
+.stickyButton {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  overflow: hidden;
+}
+.stickyButton a,
+.stickyButton label {
+  display: flex;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.chatMenuHidden{display:none}
+
+
