@@ -57,7 +57,7 @@ The `opChallenge()` function is a public callable function that can be called at
 - If the verification succeeds, the data is finalized.
 - If the verification fails, the validator bound to the data is removed, the data is deleted, and the challenger gets an ETH reward.
 
-## How does ScribeOptmistic differ from Scribe?
+## How does ScribeOptimistic differ from Scribe?
 Scribe Oracles provide instant updates and are optimized for Layer 2 (L2) networks that prioritize speed, where gas costs are low. This means that as soon as a new price is published, it becomes available.
 
 ScribeOptimistic Oracles are tailored for Layer 1 (L1) networks, where computation costs are significantly higher. With ScribeOptimistic, an incoming price is not finalized until the challenge period has concluded.  You can think of it as a delayed oracle. The shorter the challenge period, the less phase-shifted the oracle becomes.
