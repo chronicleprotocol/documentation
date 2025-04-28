@@ -76,4 +76,4 @@ Currently, Chronicle's challenge period is set to **10 minutes**, though this va
 
 ## Running a Challenger
 
-Users who want to actively participate in the network can look into [running a challenger](https://github.com/chronicleprotocol/challenger-rs). Monitoring optimistic pokes and, if necessary, challenging them is incentivized via [ETH rewards](https://github.com/chronicleprotocol/scribe/blob/main/src/IScribeOptimistic.sol).
+Users who want to actively participate in the network can look into running a challenger. You can choose from either the [Rust implementation](https://github.com/chronicleprotocol/challenger-rs) or the [Go implementation](https://github.com/chronicleprotocol/charts/tree/main/charts/challenger). Monitoring optimistic pokes and, if necessary, challenging them is incentivized via [ETH rewards](https://github.com/chronicleprotocol/scribe/blob/main/src/IScribeOptimistic.sol).
