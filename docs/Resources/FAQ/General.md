@@ -55,7 +55,7 @@ Chronicle operates using a PUSH model.
 ## Who are the validators for Chronicle?
 
 The validators of Chronicle are represented by a community of the leading blockchain protocols including:
-[MakerDAO](https://makerdao.com), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [DeFi Saver](https://defisaver.com/), [Gnosis](https://www.gnosis.io/), [Nethermind](https://www.nethermind.io/), [Euler](https://www.euler.finance/), [Mantle](https://www.mantle.xyz/), [ETH Global](https://ethglobal.com/).
+[MakerDAO](https://makerdao.com), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [DeFi Saver](https://defisaver.com/), [Gnosis](https://www.gnosis.io/), [Nethermind](https://www.nethermind.io/), [Euler](https://www.euler.finance/), [Mantle](https://www.mantle.xyz/), [ETH Global](https://ethglobal.com/), [SteakHouse Financial](www.steakhouse.financial), [Bitcoin Suisse](bitcoinsuisse.com), [Block Analitica](blockanalitica.com).
 
 This approach to validators is unique to Chronicle, and ensures that the Oracle data is being signed by some of the most trusted and reputable brands in the blockchain space, further reinforcing trust in the protocol.
 
