@@ -60,9 +60,7 @@ for key in data:
         # Template header output
         th = Template(table_header)
         print(th.substitute(chain=chain))
-        etherscan = data[key]['info']['etherscan']
-        if etherscan == '':
-            etherscan = data[key]['info']['explorers'][0]['url']
+        etherscan = data[key]['info']['explorers'][0]['url']
         # Force SelfKisser contract to top of output
         if 'selfkisser' in data[key] and len(data[key]['selfkisser']) > 0:
             kisser = data[key]['selfkisser']
