@@ -4,6 +4,24 @@ description: Reading from Chronicle Oracles on Testnet
 keywords: [oracles, read]
 ---
 # Getting Read Access to Chronicle Oracles - Process Explained
+
+:::info
+We know how much builders have to juggle when bringing a project to life. To support builders, Chronicle has partnered with several ecosystems to offer **waived-fee access to existing oracles on select chains.**
+
+This currently applies to:
+
+   - **Mantle**
+
+   - **Optimism**
+
+   - **Polygon zkEVM**
+
+   - **zkSync**
+
+If you're building on any of these chains and need production oracle access, reach out in the 🆘｜support channel—we're here to help.
+
+:::
+
 ## Reading from Chronicle Oracles on Testnet in 4 Steps
 
 <div style={{textAlign: 'center'}}>
