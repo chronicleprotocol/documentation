@@ -8,7 +8,13 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: ['docusaurus-plugin-sass',  [
+    "docusaurus-plugin-generate-llms-txt",
+    {
+      outputFile: "llms.txt", // defaults to llms.txt if not specified
+    },
+  ],
+],
   title: 'Chronicle Docs',
   tagline: 'Cost-efficient. Verifiable Data.',
   favicon: 'img/favicon.ico',
@@ -206,6 +212,7 @@ const config = {
         indexName: 'chroniclelabs',
         contextualSearch: false,
       },
+      
     }),
 };
 
