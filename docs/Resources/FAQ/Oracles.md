@@ -75,6 +75,16 @@ A new aggregation round is triggered after a specified amount of time since the 
 
 Yes, the update parameters, including the update and deviation thresholds, can be modified. For the most up-to-date parameters, please check the specific Oracle on the [Dashboard](https://chroniclelabs.org/dashboard/oracles). If you'd like to request different parameters, please get in touch.
 
+## Should I implement a stale price check in my dApp?
+
+We highly recommend so. Don't trust - verify!
+
+You can check how fresh an oracle’s value is using:
+
+`readWithAge() (uint val, uint age)` and check 
+
+`block.timestamp - age  > MAX_STALENESS { /* failure handling */`. 
+
 ## Does Chronicle support contract upgrades?
 
 Chronicle contracts are not upgradeable. If oracles are switched, new contracts are deployed, and customers must update the oracle addresses in their contracts accordingly.
