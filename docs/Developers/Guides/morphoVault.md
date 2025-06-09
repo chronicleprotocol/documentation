@@ -11,7 +11,7 @@ To integrate Chronicle Oracles into Morpho Markets, you can deploy the [Morpho C
 For easier deployment, you can use the [MorphoChainlinkOracleV2Factory](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol). A step-by-step guide is available in [Morpho’s documentation](https://docs.morpho.org/curation/tutorials/deploying-oracle/).
 
 :::warning
-    **Before deploying the Morpho Chainlink Adapter using the MorphoChainlinkOracleV2Factory, the target address of the Adapter must be whitelisted (also referred to as "kissed")** by the Chronicle team. Otherwise, read access will fail due to whitelist protection. This is because Chronicle's oracles are read protected by a whitelist. To do so, get in touch with the team by [opening a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ), and check below the details needed for the whitelist.
+    **Before deploying the Morpho Chainlink Adapter using the MorphoChainlinkOracleV2Factory, the target address of the Adapter must be whitelisted (also referred to as "kissed")** by the Chronicle team. Read access will fail if the requesting address is not whitelisted, as Chronicle's oracles are protected by a whitelist. To get the address whitelisted, get in touch with the team by [opening a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ), and check below the details needed for the whitelist.
 :::
 ## Getting Read Access for the Adapter
 
@@ -37,6 +37,9 @@ If you prefer not to simulate the deployment, send the following instead:
 
     - The [salt](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2Factory.sol#L37) you intend to use for the oracle deployment.
 
-The Chronicle team will use this information to whitelist the address in advance of its deployment.
+The Chronicle team will use this information to whitelist the address ahead of time.
+:::note
+If you need any additional help with the process mentioned above, feel free to mention it in the [Discord ticket]((https://discord.com/invite/CjgvJ9EspJ)) you open — we're happy to support you with the deployment.
+:::
 
 Once you receive the confirmation form the Chronicle team that the target address has been whitelisted, you can proceed with the actual deployment of the Adapter using the Factory. 
