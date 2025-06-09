@@ -39,7 +39,7 @@ If you prefer not to simulate the deployment, send the following instead:
 
 The Chronicle team will use this information to whitelist the address ahead of time.
 :::note
-If you need any additional help with the process mentioned above, feel free to mention it in the [Discord ticket]((https://discord.com/invite/CjgvJ9EspJ)) you open — we're happy to support you with the deployment.
+If you need any additional help with the process mentioned above, feel free to mention it in the [Discord ticket](https://discord.com/invite/CjgvJ9EspJ) you open — we're happy to support you with the deployment.
 :::
 
 Once you receive the confirmation form the Chronicle team that the target address has been whitelisted, you can proceed with the actual deployment of the Adapter using the Factory. 
