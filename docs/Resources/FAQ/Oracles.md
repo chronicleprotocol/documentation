@@ -45,6 +45,14 @@ Alternatively, if you prefer to check on Etherscan, navigate to the `Read Contra
 
 Returns either `true` or `false`.
 
+## Which address do I need to whitelist if I want to deploy a Curve StableSwap pool?
+
+To use a Chronicle oracle for a [Curve StableSwap pool](https://docs.curve.finance/stableswap-exchange/stableswap/pools/overview/), the pool's address needs to be whitelisted.
+
+Share the address of your Curve pool with the Chronicle team—once whitelisted, you’ll have read access to the specified oracle.
+If you need access to multiple oracles, you'll need to whitelist the pool address separately for each one.
+
+
 ## How can I check how many validators have signed a price message?
 
 On Etherscan, navigate to the `Read Contract` section of the Oracle you want to check, and run the `bar()` function. This returns the number of signatures required for an Oracle update. 
