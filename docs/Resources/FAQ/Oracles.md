@@ -10,8 +10,7 @@ One thing to keep an eye on is the number of decimals. Chronicle always uses 18 
 
 ## How can I deploy a Chronicle Oracle for Morpho markets?
 Chronicle Oracles are compatible with the [Morpho Chainlink adaptor](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol). Morpho can dynamically handle differences in Feed decimals using the [SCALE_FACTOR](https://github.com/jar-o/morpho-blue-oracles/blob/b6c8ddb4666a6b7fe0b568ea3a5238bc8335de2a/src/morpho-chainlink/MorphoChainlinkOracleV2.sol#L145). This is important because Chronicle operates with 18 decimal places for all its Oracles, while most Chainlink's Oracles use 8 decimal places.
-- You can find a tutorial for deploying the adapters in [Morpho's documentation](https://docs.morpho.org/morpho/tutorials/deploy-an-oracle/).
-- Once the adapter is deployed, you will need to request it to be whitelisted by Chronicle in order to get read-access. After that, you'll be ready to use the adapter's `price()` function. 
+- You can find a tutorial on deploying a Chronicle Oracle for Morpho Markets in the [following section](docs/Developers/Guides/morphoVault.md).
 
 ## How do I check if an Oracle becomes inactive/ gets deprecated?
 In the event that an Oracle gets deprecated, we will notify all whitelisted customers before offboarding it.
@@ -93,6 +92,14 @@ You can check how fresh an oracle’s value is using:
 
 `block.timestamp - age  > MAX_STALENESS { /* failure handling */`. 
 
-## Does Chronicle support contract upgrades?
+## What is the difference between the different read functions: latestAnswer(), read(), and tryRead()?
 
-Chronicle contracts are not upgradeable. If oracles are switched, new contracts are deployed, and customers must update the oracle addresses in their contracts accordingly.
+While all of these functions can be used to read data from the oracle, they differ slightly in behavior:
+
+   - `latestAnswer()` – primarily intended for legacy use or when compatibility with Chainlink is required
+   - `read()` – will revert if the returned value is 0
+   - `tryRead()` – will not revert, even if the value is 0
+
+We recommend using the tryXXX functions (e.g., tryRead()) because they are safer to use since they never revert.
+
+For full specifications for each of the functions, please check the [Scribe contract](https://github.com/chronicleprotocol/scribe/blob/main/src/Scribe.sol).

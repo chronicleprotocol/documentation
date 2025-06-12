@@ -52,6 +52,10 @@ A push oracle proactively provides data to smart contracts without being explici
 
 Chronicle operates using a PUSH model.
 
+## Does Chronicle support contract upgrades?
+
+Chronicle contracts are not upgradeable. If oracles are switched, new contracts are deployed, and customers must update the oracle addresses in their contracts accordingly.
+
 ## Who are the validators for Chronicle?
 
 The validators of Chronicle are represented by a community of the leading blockchain protocols including:
