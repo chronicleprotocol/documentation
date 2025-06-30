@@ -51,6 +51,7 @@ It will attempt to install:
 |----------|------|----------------|
 | TCP     | 6443  | K3s supervisor and Kubernetes API Server |
 | TCP     | 8000  | chronicle/ghost |
+| TCP     | 8001  | chronicle/ghost-vao |
 | UDP     | 8472  | Required for Flannel VXLAN |
 
 * Optional ports that need to be open:
@@ -91,6 +92,7 @@ There are alternative RPC providers that you can use as well which aim to be as 
 - [https://www.grove.city](https://www.grove.city)
 - [https://blastapi.io](https://blastapi.io)
 - [https://ankr.com](https://ankr.com)
+- [https://www.dwellir.com/](https://www.dwellir.com/)z
 
 
 #### Some DIY approaches:
@@ -308,26 +310,26 @@ If the script fails to find any of these values, it will prompt you for them whe
 Make sure the `chronicle` helm repository has been added:
 
 ```bash
+helm repo add chronicle https://chronicleprotocol.github.io/charts/
+helm repo update
+```
+
+```bash
 export $VALIDATOR_NAME
 ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.3.24
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.4.3
 ```
 
-Add the helm repo if needed:
-
-```bash
-helm repo add chronicle https://chronicleprotocol.github.io/charts/
-helm repo update
-```
-
-the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own values.yaml file populated with config as show below:
+the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
 
 ```
-ghost:
+global:
   logLevel: "debug"
+
+ghost:
   ethConfig:
     ethFrom:
       existingSecret: 'demo-eth-keys'
@@ -346,11 +348,16 @@ ghost:
   ethRpcUrl: "https://eth.llamarpc.com"
   rpcUrl: "https://eth.llamarpc.com"
 
+vao:
+  env:
+    normal:
+      CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/64.46.13.31'
+
 ```
 
 You can view all values available for the [validator chart](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/README.md#values), however the values provided with the installer are enough to get you going.
 
-A useful value to add is `.Values.ghost.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
+A useful value to add is `.Values.global.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
 
 With a valid `values.yaml` file created, you should be able to install a feed:
 
@@ -360,7 +367,7 @@ helm install $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.3.24
+ --version 0.4.3
 ```
 
 or to upgrade an existing helm release:
@@ -370,7 +377,7 @@ helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.3.24
+ --version 0.4.3
 ```
 
 :::tip

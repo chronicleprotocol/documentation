@@ -22,9 +22,7 @@ Deploying the validator into an existing kubernetes cluster.
 <div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 ## Notable changes include:
-
-- `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
-- Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
+- `ChartVersion=>0.4` includes a new service named `vao`, and requires a change to `generated-values.yaml`, or your helm `values.yaml` file.
 - Starting from Chart Version 0.3.6, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
 <br/>
@@ -131,12 +129,21 @@ ghost:
     normal:
       # please place your nodes actual public ip address here
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4'
+      # if using a LoadBalancer that has DNS:
+      # CFG_LIBP2P_EXTERNL_ADDR" '/dns/my.hostname.xyz`
+vao:
+  env:
+    normal:
+      # please place your nodes actual public ip address here
+      CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4'
+      # if using a LoadBalancer that has DNS:
+      # CFG_LIBP2P_EXTERNL_ADDR" '/dns/my.hostname.xyz`
 ```
 
 Then install the helm release using this values file:
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.3.9
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.4.3
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
@@ -171,7 +178,7 @@ onionservice.tor.k8s.torproject.org/ghost   areallylongonaddressescreatedformeby
 You can view the logs the pods to verify no errors:
 
 ```bash
-kubectl logs deployments/ghost --namespace my-feed-namespace         
+kubectl logs deployments/ghost --namespace my-feed-namespace        
 time="2023-08-30T13:47:15Z" level=info msg="Ethereum Key" address=0x3fe0e49b5daa14f4ddc60e296270cedd702ce76c name=default tag=CONFIG_ETHEREUM
 time="2023-08-30T13:47:15Z" level=info msg="Ethereum Client" name=default tag=CONFIG_ETHEREUM url="https://eth.public-rpc.com"
 time="2023-08-30T13:47:15Z" level=info msg="Ethereum Client" name=ethereum tag=CONFIG_ETHEREUM url="https://eth.public-rpc.com"

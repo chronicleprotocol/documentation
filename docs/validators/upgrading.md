@@ -77,13 +77,16 @@ ghost:
     ethPass:
       existingSecret: '<somesecret>'
       key: "ethPass"
-
+  ethRpcUrl: "https://MY_L1_RPC_URL"
+  rpcUrl: "https://MY_L1_RPC_URL"
   env:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node
 
-  ethRpcUrl: "https://MY_L1_RPC_URL"
-  rpcUrl: "https://MY_L1_RPC_URL"
+vao:
+  env:
+    normal:
+      CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node
 
 ```
 :::danger
