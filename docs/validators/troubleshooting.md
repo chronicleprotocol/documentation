@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: General Troubleshooting guide for Chronicle validators.
 keywords: [kubectl, helm, Troubleshooting]
 ---
@@ -68,7 +68,7 @@ Make sure that you set `FEED_NAME` to match your feed in question, and run these
 export FEED_NAME=<CHANGE_ME>
 cd /tmp
 kubectl logs deployment/ghost -n $FEED_NAME > ghost.log
-kubectl logs deployment.apps/ghost-tor-daemon -n $FEED_NAME > tor-proxy.log
+kubectl logs deployment/ghost-vao -n $FEED_NAME > ghost.log
 kubectl get pods,deployment,service,secrets,onion --all-namespaces > kbom.txt
 helm list --all-namespaces > all-helm-releases.log
 tar czf chronicle-debug.tar.gz ghost.log tor-proxy.log all-helm-releases.log kbom.txt $HOME/$FEED_NAME/generated-values.yaml
