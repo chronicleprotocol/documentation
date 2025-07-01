@@ -20,9 +20,7 @@ A single script installation from baremetal to running validator, using k3s.
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
-
-<br/>
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="dark" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 
 This documentation covers how to run a validator as part of the Chronicle Protocol oracle network. Running a validator is a great way to contribute to the network.
@@ -92,7 +90,7 @@ There are alternative RPC providers that you can use as well which aim to be as 
 - [https://www.grove.city](https://www.grove.city)
 - [https://blastapi.io](https://blastapi.io)
 - [https://ankr.com](https://ankr.com)
-- [https://www.dwellir.com/](https://www.dwellir.com/)z
+- [https://www.dwellir.com/](https://www.dwellir.com/)
 
 
 #### Some DIY approaches:

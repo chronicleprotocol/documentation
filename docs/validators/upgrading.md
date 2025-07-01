@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 description: Upgrading a Chronicle validator.
 keywords: [upgrade, validator]
 ---
@@ -12,13 +12,19 @@ Helm Chart details:
 
 ![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="dark" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
 
 <br/>
 
+
+:::warning
+The validator `ChartVersion: 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
+:::
+
+
 ### Install CRD's
 
-Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.24/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/refs/heads/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
 
 If you are running an upgrade from a prior release (`< 0.3.4`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
 
@@ -58,10 +64,6 @@ The values.yaml file is used to configure the validator. The file is generated b
 
 With the latest version of the chart, there are a few changes that need to be made to the `values.yaml` / `generated-values.yaml` file:
 
-:::warning
-- `musig` is now embedded in the `ghost` deployment, and all `.Values.musig` can be removed from the values.yaml file
-- Please remove `.Values.ghost.env.CFG_WEB_URL` from your values, as this will be dynamically referenced in the [Ghost deployment spec](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/templates/deployment.yaml#L87-L91).
-:::
 
 Please structure your helm values like this:
 
