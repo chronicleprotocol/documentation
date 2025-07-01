@@ -241,36 +241,47 @@ The install script can be run multiple times with the same values. It will attem
 ### Verify that the helm release has been successful:
 
 #### View all resources created in the namespace
+
 ```bash
 kubectl  get pods,deployment,service,secrets,onion -n demo
-NAME                                   READY   STATUS    RESTARTS   AGE
-pod/ghost-tor-daemon-b77466d7f-flnm7   1/1     Running   0          4m28s
-pod/ghost-77b46586d5-fdcgm             1/1     Running   0          4m29s
+NAME                                                    READY   STATUS             RESTARTS        AGE
+pod/ghost-688b6864b5-w92sd                              1/1     Running            0               2m
+pod/ghost-socks-tor-daemon-549c447f9c-75c26             1/1     Running            0               2m
+pod/ghost-tor-daemon-c648899bb-67rnd                    1/1     Running            0               2m
+pod/ghost-vao-f568684d9-74nb5                           1/1     Running            0               2m
 
-NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/ghost-tor-daemon   1/1     1            1           4m28s
-deployment.apps/ghost              1/1     1            1           4m30s
+NAME                                                    READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost                                   1/1     1            1           2m
+deployment.apps/ghost-socks-tor-daemon                  1/1     1            1           2m
+deployment.apps/ghost-tor-daemon                        1/1     1            1           2m
+deployment.apps/ghost-vao                               1/1     1            1           2m
 
-NAME                            TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                        AGE
-service/ghost-tor-svc           ClusterIP      10.43.197.59   <none>           8888/TCP                                       4m28s
-service/ghost-tor-metrics-svc   ClusterIP      10.43.85.148   <none>           9035/TCP                                       4m28s
-service/ghost                   LoadBalancer   10.43.21.41    64.46.13.31      8000:31359/TCP,9100:32481/TCP,8080:30963/TCP   4m30s
+NAME                                           TYPE                CLUSTER-IP           EXTERNAL-IP          PORT(S)                              AGE
+service/ghost                                  LoadBalancer        10.43.181.34         64.46.13.31          8000:31501/TCP,8080:30746/TCP        2m
+service/ghost-metrics                          ClusterIP           10.43.21.230         <none>               9090/TCP                             2m
+service/ghost-metrics-vao                      ClusterIP           10.43.23.37          <none>               9090/TCP                             2m
+service/ghost-socks-tor-svc                    ClusterIP           10.43.87.120         <none>               9050/TCP                             2m
+service/ghost-tor-metrics-svc                  ClusterIP           10.43.142.233        <none>               9035/TCP                             2m
+service/ghost-tor-svc                          ClusterIP           10.43.194.155        <none>               8888/TCP                             2m
+service/ghost-vao                              LoadBalancer        10.43.1.126          64.46.13.31          8001:31468/TCP                       2m
 
-NAME                                TYPE                                           DATA   AGE
-secret/demo-eth-keys                Opaque                                         3      5m2s
-secret/ghost-tor-auth               tor.k8s.torproject.org/authorized-clients-v3   0      4m29s
-secret/ghost-tor-secret             tor.k8s.torproject.org/onion-v3                5      4m29s
-secret/sh.helm.release.v1.demo.v1   helm.sh/release.v1                             1      4m30s
+NAME                                           TYPE                                           DATA   AGE
+secret/ghost-eth-keys                          Opaque                                         3      2m
+secret/ghost-socks-tor-secret                  tor.k8s.torproject.org/control-password        1      2m
+secret/ghost-tor-auth                          tor.k8s.torproject.org/authorized-clients-v3   0      2m
+secret/ghost-tor-secret                        tor.k8s.torproject.org/onion-v3                5      2m
+secret/sh.helm.release.v1.ghost.v1             helm.sh/release.v1                             1      2m
 
-NAME                                        HOSTNAME                                                         AGE
-onionservice.tor.k8s.torproject.org/ghost   areallylongonaddressescreatedformebythetorcontrollercrd.onion    4m30s
+
+NAME                                              HOSTNAME                      AGE
+onionservice.tor.k8s.torproject.org/ghost         mylongtoronionaddress.onion   28m
 ```
 
 #### View pod logs:
 
 ```bash
 kubectl logs -n demo deployment/ghost
-kubectl logs -n demo deployment/ghost-tor-daemon
+kubectl logs -n demo deployment/ghost-vao
 ```
 
 Make sure that the `EXTERNAL-IP` shown for the `ghost` service, matches your server's IP address.
@@ -325,7 +336,7 @@ helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values
 
 the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
 
-```
+```bash
 global:
   logLevel: "debug"
 
