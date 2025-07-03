@@ -19,6 +19,36 @@ Helm Chart details:
 
 :::warning
 The validator `ChartVersion: 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
+Please make sure you update your `values.yaml` or `generated_values.yaml` to include `.Values.vao`.
+
+Sample config:
+
+```yaml
+global:
+  logLevel: "warn"
+  
+ghost:
+  ethConfig:
+    ethFrom:
+      existingSecret: '<somesecret>'
+      key: "ethFrom"
+    ethKeys:
+      existingSecret: '<somesecret>'
+      key: "ethKeyStore"
+    ethPass:
+      existingSecret: '<somesecret>'
+      key: "ethPass"
+  ethRpcUrl: "https://MY_L1_RPC_URL"
+  rpcUrl: "https://MY_L1_RPC_URL"
+  env:
+    normal:
+      CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`
+
+vao:
+  env:
+    normal:
+      CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`
+```
 :::
 
 
