@@ -32,7 +32,7 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 | Monad Testnet           | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://monad-testnet.socialscan.io/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3) |
 | Unichain Sepolia        | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://unichain-sepolia.blockscout.com/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
 
-You can find the Oracles' smart contract addresses using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard), by toggling the `<dev mode>` option located in the top right corner.
+You can find the Oracles' smart contract addresses using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard), under the `Oracles` tab, by selecting `Testnets`.
 
 Alternatively, you can also find here the addresses organized by chains:
 
