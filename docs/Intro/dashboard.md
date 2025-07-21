@@ -16,9 +16,25 @@ In the top left corner, you can find three tabs: Dashboard, Oracles, and Validat
 
 The Dashboard tab provides an overview of the Chronicle Dashboard. You can see the total number of oracles, a summary of the oracles available, and a snapshot of the validator set.
 
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/Intro/dashboard.png"
+    alt="Check Sources"
+    width="600"
+/>
+</div>
+
 **Oracles**
 
 The Oracles tab allows users to find oracle addresses for specific chains. Inside this tab, you can toggle between Mainnets and Testnets to view oracle addresses for production and test environments. For each, you can select the specific chain you're interested in.
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="/img/Intro/oracles.png"
+    alt="Check Sources"
+    width="600"
+/>
+</div>
 
 **Validators**
 
