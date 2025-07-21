@@ -32,7 +32,6 @@ You only need to submit your project once.
   - Ethereum Sepolia
   - Arbitrum Sepolia
   - Base Sepolia
-  - Polygon zkEVM Sepolia
   - Gnosis Chain Mainnet
   - Scroll Sepolia
   - zkSync Sepolia 

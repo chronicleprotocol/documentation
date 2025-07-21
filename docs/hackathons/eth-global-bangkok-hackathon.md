@@ -83,7 +83,7 @@ Integrate Chronicle Oracles into your project to qualify for the Chronicle Pool 
 
 
 ### 📜 Qualification rules:
-Projects must demonstrate a good-faith effort to integrate Chronicle Oracles to be eligible for the Pool Prize. This is a great add-on bounty as Chronicle is compatible with many chains (Ethereum, Arbitrum, Mantle, Polygon zkEVM, Gnosis Chain, zkSync, Base, Optimism, Scroll, Berachain).
+Projects must demonstrate a good-faith effort to integrate Chronicle Oracles to be eligible for the Pool Prize. This is a great add-on bounty as Chronicle is compatible with many chains (Ethereum, Arbitrum, Mantle, Gnosis Chain, zkSync, Base, Optimism, Scroll, Berachain).
 
 
 ### 🏁 Assets to submit:
@@ -155,7 +155,6 @@ Say hi 👋 when you spot the team in their Chronicle t-shirts and feel free to 
   - [Gnosis Mainnet](https://chainlist.org/chain/100)
   - [Mantle Testnet](https://chainlist.org/chain/5003)
   - [Scroll-Sepolia](https://chainlist.org/chain/534351)
-  - [Polygon testnet-ZKEVM-mango](https://chainlist.org/chain/1442)
 
   </details>
 
