@@ -11,7 +11,6 @@ At the moment, Chronicle Protocol is integrated on fifteen blockchains:
 - Ethereum
 - Arbitrum
 - Mantle
-- Polygon zkEVM
 - Gnosis Chain
 - zkSync
 - Base

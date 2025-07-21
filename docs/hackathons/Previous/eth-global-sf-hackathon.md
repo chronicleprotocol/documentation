@@ -185,7 +185,6 @@ Say hi 👋 when you spot the team in their Chronicle t-shirts and feel free to 
   - [Gnosis Mainnet](https://chainlist.org/chain/100)
   - [Mantle Testnet](https://chainlist.org/chain/5003)
   - [Scroll-Sepolia](https://chainlist.org/chain/534351)
-  - [Polygon testnet-ZKEVM-mango](https://chainlist.org/chain/1442)
 
   </details>
 

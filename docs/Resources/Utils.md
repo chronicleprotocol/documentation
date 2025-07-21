@@ -13,7 +13,6 @@ This page provides useful information, including testnet faucets for various cha
 | Ethereum Sepolia              | https://cloud.google.com/application/web3/faucet/ethereum/sepolia          |
 | Base Sepolia                  | https://www.alchemy.com/faucets/base-sepolia           |
 | Arbitrum Sepolia              | https://arbitrum.faucet.dev/ArbSepolia          |
-| Polygon zkEVM Testnet Cardona | https://faucet.polygon.technology/  |
 | Gnosis Mainnet                | https://faucet.gnosischain.com/               |
 | Mantle Testnet                | https://faucet.testnet.mantle.xyz/  |
 | Scroll Sepolia                | https://docs.scroll.io/en/user-guide/faucet/        |

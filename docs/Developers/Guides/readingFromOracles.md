@@ -14,8 +14,6 @@ This currently applies to:
 
    - **Optimism**
 
-   - **Polygon zkEVM**
-
    - **zkSync**
 
 If you're building on any of these chains and need production oracle access, reach out in the 🆘｜support channel—we're here to help.
@@ -46,7 +44,6 @@ Chronicle Oracles are read protected by a whitelist. On Testnet networks, you ca
 | Ethereum Sepolia              | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)           |
 | Base Sepolia                  | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.basescan.org/address/0x70E58b7A1c884fFFE7dbce5249337603a28b8422#code)           |
 | Arbitrum Sepolia              | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbiscan.io/address/0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f#code)            |
-| Polygon zkEVM Testnet Cardona | [0xCce64A8127c051E784ba7D84af86B2e6F53d1a09](https://cardona-zkevm.polygonscan.com/address/0xCce64A8127c051E784ba7D84af86B2e6F53d1a09)       |
 | Gnosis Mainnet                | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://gnosisscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d)                       |
 | Mantle Testnet                | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://explorer.sepolia.mantle.xyz/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578)         |
 | Scroll Sepolia                | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.scrollscan.com/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)         |
