@@ -20,7 +20,7 @@ If you're building on any of these chains and need production oracle access, rea
 
 :::
 
-## Reading from Chronicle Oracles on Testnet in 4 Steps
+## Reading from Chronicle Oracles on **Testnet** in 4 Steps
 
 <div style={{textAlign: 'center'}}>
 <img
@@ -31,10 +31,10 @@ If you're building on any of these chains and need production oracle access, rea
 
 
 ### 1 Select the chain you want to use.
-Chronicle Oracles are live on 10 chains, with more integrations rolling out regularly. Using the [Dashboard](https://chroniclelabs.org/dashboard/oracles), you can quickly find the available chains.
+Chronicle Oracles are live on several chains, with more integrations rolling out regularly. Using the [Dashboard](https://chroniclelabs.org/dashboard/oracles), you can quickly find the available chains.
 
 ### 2 Select the Oracle(s) to use and its address
-Once on the desired chain, find the oracle address that you need for that chain. Before reading from an Oracle, the address making the call needs to be whitelisted for that Oracle. To find the Testnet addresses for the Oracles, simply toggle the `<dev mode>` on the [Dashboard](https://chroniclelabs.org/dashboard/oracles).
+Before reading from an Oracle, the address making the call needs to be whitelisted for that Oracle. To find the Testnet addresses for the Oracles, simply select the `Testnets` tab on the [Dashboard](https://chroniclelabs.org/dashboard/oracles), then select the desired chain.
 
 ### 3 Get the address of the SelfKisser for the selected chain
 Chronicle Oracles are read protected by a whitelist. On Testnet networks, you can whitelist yourself using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser/blob/main/src/SelfKisser.sol) contract. **Ensure you're using the correct SelfKisser address for each chain.**

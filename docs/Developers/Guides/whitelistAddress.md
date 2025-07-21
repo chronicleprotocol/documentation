@@ -39,7 +39,7 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 
 This example demonstrates the whitelisting process on **Ethereum Sepolia**. The addresses used correspond to the SelfKisser and Oracles on Ethereum Sepolia.
 
-Depending on the Testnet network you select, **please make sure to use the appropriate addresses for that specific chain. To find a specific Oracle address for your chosen chain use the [Chronicle Dashboard](https://chroniclelabs.org/dashboard)** by toggling the `<dev mode>` from the top right corner for Testnet Oracles.
+Depending on the testnet you select, make sure to use the appropriate oracle address for that specific chain. You can find the correct address by visiting the [Chronicle Dashboard](https://chroniclelabs.org/dashboard) and selecting the `Testnets` tab to view available testnets and their corresponding oracle addresses.
 
 The address of the **SelfKisser** for each chain can be found in the table at the top of this page.
 
@@ -75,7 +75,7 @@ For quick testing, feel free to use the following Oracle address:
 
     - Chronicle_ETH_USD_3: `0xdd6D76262Fd7BdDe428dcfCd94386EbAe0151603` on Ethereum Sepolia.
 
-**Alternatively, you can find a specific Oracle address for your chosen chain using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard)** by toggling the `<dev mode>` from the top right corner for Testnet Oracles.
+**Alternatively, you can find a specific Oracle address for your chosen chain using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard)** by selecting `Testnets` and then selecting the desired Testnet chain.
 
 ```bash
 $ cast call <oracle address> "tolled(address)(bool)" <your address> --rpc-url $rpc

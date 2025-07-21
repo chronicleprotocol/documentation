@@ -39,8 +39,9 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 An example contract named `OracleReader.sol` allows you to consume Oracle data and can be quickly deployed on [Remix](https://remix.ethereum.org/). Remix is a web-based integrated development environment (IDE) for creating, running, and debugging smart contracts directly in your browser. 
 
 :::info
-Addresses in this contract are hardcoded for the **Sepolia testnet**.
-For other supported networks, please check the [Dashboard](https://chroniclelabs.org/dashboard). By toggling the `<dev mode>` option located in the top right corner, you can find the Oracles' addresses for different chains on Testnet. In the table above you can find the address of the SelfKisser on different chains.
+- In the table above you can find the address of the SelfKisser on different chains.
+- Addresses in this contract are hardcoded for the **Sepolia testnet**.
+- For other supported networks, please check the [Dashboard](https://chroniclelabs.org/dashboard), under the `Testnets` tab. 
 :::
 
 ```js
