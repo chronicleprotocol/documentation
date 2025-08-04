@@ -32,6 +32,7 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 | Plume Testnet            | [0xd6de00f82738c966c88F55017e8aCcA192AF42a1](https://testnet-explorer.plumenetwork.xyz/address/0xd6de00f82738c966c88F55017e8aCcA192AF42a1) |
 | Monad Testnet           | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://monad-testnet.socialscan.io/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3) |
 | Unichain Sepolia           | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://unichain-sepolia.blockscout.com/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
+| Avalanche Fuji Testnet|[0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://testnet.snowtrace.io/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
 
 # Whitelisting Yourself on Testnet and Reading from Smart Contracts
 
