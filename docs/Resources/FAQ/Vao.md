@@ -5,7 +5,7 @@ keywords: [VAO, Verified Asset Oracle]
 ---
 # Chronicle's Verified Asset Oracle (VAO)
 ## What is Chronicle's Verified Asset Oracle (VAO)?
-The Verified Asset Oracle (VAO) delivers cryptographically signed data onchain for tokenized assets, ensuring each asset reflects accurate, real-world value with  transparency and verifiable provenance.
+The Verified Asset Oracle (VAO) delivers cryptographically signed data onchain for tokenized assets, ensuring each asset reflects accurate, real-world value with transparency and verifiable provenance.
 
 ## Who has integrated Chronicle's VAO?
 Chronicle’s VAO launched with an initial integration by M0. Additionally, Chronicle powers the winning projects of Spark’s $1 billion Tokenization Grand Prix: [Superstate, Centrifuge, and BlackRock’s BUIDL](https://chroniclelabs.org/blog/chronicle-powers-grand-prix-winners-with-innovative-verified-asset-oracle-technology)
