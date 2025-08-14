@@ -4,7 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import Link from "@docusaurus/Link";
 import LinkButton from "../components/LinkButton";
-
+import { BsRobot } from "react-icons/bs";
 function HeroSection() {
   const { siteConfig } = useDocusaurusContext();
 
@@ -16,10 +16,15 @@ function HeroSection() {
           Decentralized, Verifiable Oracles
         </h2>
         <p className={styles.heroDescription}>
-         Integrate Chronicle's Decentralized, Verifiable Oracles into your dApp.
+          Integrate Chronicle's Decentralized, Verifiable Oracles into your
+          dApp.
         </p>
         <div className={styles.getStartedButton}>
-          <LinkButton text="Start Now" link="./Developers/tutorials/Remix" small={true} />
+          <LinkButton
+            text="Start Now"
+            link="./Developers/tutorials/Remix"
+            small={true}
+          />
         </div>
       </div>
     </header>
@@ -37,28 +42,28 @@ function FeatureItem({ title, description, href, icon }) {
 }
 
 function FeaturesSection() {
-    const features = [
-        {
-          title: "LEARN",
-          description:
-            "Explore Chronicle's decentralized, verifiable oracles, what sets them apart from other oracle solutions, and dive into their architecture.",
-          icon: "📚",
-          href: "./understandingChronicle",
-        },
-        {
-          title: "DEVELOPERS",
-          description:
-            "Discover how to integrate Chronicle's Oracles and power your dApp with data.",
-          icon: "🧩",
-          href: "./Developers/start",
-        },
-        {
-          title: "PRODUCTS",
-          description:
-            "Explore Chronicle: DeFi Oracles, Verified Asset Oracles, and beyond.",
-          icon: "🛠️",
-          href: "./Products/productsOverview",
-        },
+  const features = [
+    {
+      title: "LEARN",
+      description:
+        "Explore Chronicle's decentralized, verifiable oracles, what sets them apart from other oracle solutions, and dive into their architecture.",
+      icon: "📚",
+      href: "./understandingChronicle",
+    },
+    {
+      title: "DEVELOPERS",
+      description:
+        "Discover how to integrate Chronicle's Oracles and power your dApp with data.",
+      icon: "🧩",
+      href: "./Developers/start",
+    },
+    {
+      title: "PRODUCTS",
+      description:
+        "Explore Chronicle: DeFi Oracles, Verified Asset Oracles, and beyond.",
+      icon: "🛠️",
+      href: "./Products/productsOverview",
+    },
   ];
 
   return (
@@ -76,11 +81,18 @@ export default function Home() {
       title="Home"
       description="Chronicle Docs"
       noFooter={true}
-      wrapperClassName="homepage"
+      wrapperclassName="homepage"
     >
       <main className={styles.main}>
         <HeroSection />
         <FeaturesSection />
+        <div>
+          <div className={styles.stickyButton} id="sticky-button">
+            <label htmlFor="offchat-menu">
+              <BsRobot size={25} color="black" />
+            </label>
+          </div>
+        </div>
       </main>
     </Layout>
   );
