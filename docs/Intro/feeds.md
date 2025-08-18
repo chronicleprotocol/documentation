@@ -18,6 +18,7 @@ Market rate oracles aggregate data from multiple sources, including onchain data
 
 
 
+
 ## Exchange Rate Oracles
 
 Also called **Fundamental Oracles**, Exchange Rate Oracles are computed based on the value of underlying assets. They provide stable reference rates but they may not always reflect real-time market fluctuations. These are most frequently associated with LSTs (Liquid Staked Tokens) and yield-earning token wrappers (e.g. ERC4626 tokens). 
@@ -32,5 +33,4 @@ In other words, an exchange rate oracle indicates how much an asset is worth bas
 This type of oracle uses a combination of exchange and market rates.
 
 For example, the
-[WUSDM / USD](https://chroniclelabs.org/dashboard/oracle/WUSDM/USD?blockchain=&txn=0x6134341c8146ba21fb9feca1c5f465d3d5b26dcad4874196b4425861c53666cc&contract=0xdC6720c996Fad27256c7fd6E0a271e2A4687eF18) oracle uses the market prices from DEXs for USDM, and transforms them using the fundamental value of the wrapped price. 
-
+[WSTETH/USD](https://chroniclelabs.org/dashboard/oracle/WSTETH/USD#blockchain=ETH&contract=0xA770582353b573CbfdCC948751750EeB3Ccf23CF&txn=0x729386eca08be935623c5ca6bac032cb01d4bb2c1ab221f307d5275af24bc6c3) oracle uses both market prices for WSTETH as well as the fundamental value of the unwrapping WSTETH to STETH along with STETH market prices.
