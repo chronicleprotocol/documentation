@@ -16,6 +16,7 @@
   "dependencies": {
     "@cookbookdev/docsbot": "^4.21.5",
     "@docusaurus/core": "3.0.1",
+    "@docusaurus/plugin-sitemap": "^3.8.1",
     "@docusaurus/preset-classic": "3.0.1",
     "@docusaurus/theme-mermaid": "3.0.1",
     "@iconify/react": "^5.0.2",
