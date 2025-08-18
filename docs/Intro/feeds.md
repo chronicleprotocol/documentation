@@ -18,13 +18,12 @@ Market rate oracles aggregate data from multiple sources, including onchain data
 
 
 
-
 ## Exchange Rate Oracles
 
-Also called Fundamental Oracles, Exchange Rate Oracles are computed based on the value of underlying assets. They provide stable reference rates but they may not always reflect real-time market fluctuations. These are most frequently associated with LSTs (Liquid Staked Tokens) and yield-earning token wrappers (e.g. ERC4626 tokens). 
+Also called **Fundamental Oracles**, Exchange Rate Oracles are computed based on the value of underlying assets. They provide stable reference rates but they may not always reflect real-time market fluctuations. These are most frequently associated with LSTs (Liquid Staked Tokens) and yield-earning token wrappers (e.g. ERC4626 tokens). 
 
 In other words, an exchange rate oracle indicates how much an asset is worth based on what the asset is backed by.
-- [SUSDS/USD](https://chroniclelabs.org/dashboard/oracle/SUSDS/USD?blockchain=ETH&txn=0x0029c6679f8ffbfabac2bce41a60a372f2fdd3a72de94ca0b29a89531e13774c&contract=0x496470F4835186bF118545Bd76889F123D608E84)
+- [WSTETH / ETH](https://chroniclelabs.org/dashboard/oracle/WSTETH%23fundamental/ETH#blockchain=UNICHAIN&contract=0x74661a9ea74fD04975c6eBc6B155Abf8f885636c&txn=0x41b689e145fa7983df6f979c2191cf4c10c927f6ec835b199ec08fcddddfb455)
 
 
 
