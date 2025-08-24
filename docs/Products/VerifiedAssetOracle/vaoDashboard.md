@@ -5,7 +5,7 @@ keywords: [dashboard, Verified Asset Oracle, VAO, RWA Oracle Data]
 ---
  # Verified Asset Oracle Dashboard
 
-The Verified Asset Oracle Dashboard enables users to visualize data verified by Chronicle's Verified Asset Oracle. It provides insights into key financial metrics associated with verified assets such as Net Asset Value per Share (NAV/S), 7-day average annualized yield, custodian information, and more.
+The Verified Asset Oracle Dashboard enables users to visualize data verified by [Chronicle's Verified Asset Oracle](/Products/VerifiedAssetOracle/verifiedAssetOracle.md). It provides insights into key financial metrics associated with verified assets such as Net Asset Value per Share (NAV/S), 7-day average annualized yield, custodian information, and more.
 
 This dashboard is designed to enhance transparency and trust in onchain representations of real-world assets by offering a clear visualization of their value and underlying assets.
 
