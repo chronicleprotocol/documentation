@@ -38,20 +38,55 @@ When someone downloads the document from the link:
 
 This module shows the contract addresses of all oracles deployed for the asset. These contracts are responsible for reporting the price of the asset on the chain where they are deployed.
 
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/blockchains.png"
+    alt="Blockchains card Illustration"
+/>
+</div>
+
 ## Administration
 
 The administration module outlines the asset's traditional finance infrastructure. It includes identifiers like the CUSIP, details of the asset's custodial bank, identifies the independent auditor/s ensuring reporting accuracy. It will also identify the asset's investment manager and any sub-advisors handling portfolio decisions and specify the fund’s legal structure, domicile, and eligibility requirements for investors.
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/administration.png"
+    alt="Administration card Illustration"
+/>
+</div>
 ## Token supply
 
 Contains the addresses for all ERC20 token contracts for the asset, which chains they live on, and how many tokens have been minted by each contract.  
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/tokenSupply.png"
+    alt="token supply card Illustration"
+/>
+</div>
 
 ## Latest Oracle Events
 
 The latest oracle events module displays all blockchain transactions that have included any of the asset's oracle contracts. These are primarily price updates but other transactions may appear here such as the whitelisting of new validators.
 
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/oracleEvents.png"
+    alt="Oracle events card Illustration"
+/>
+</div>
+
 ## Holdings
 
 This section displays all underlying real-world asset holdings that contribute to the asset’s value, AUM and NAV. It allows users to see the precise composition of the fund. Information may include each asset’s value, purchase price, and, where applicable (such as for bonds or warrants), the expiry date.
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/holdings.png"
+    alt="Holdings card Illustration"
+/>
+</div>
 
 
 
@@ -65,6 +100,12 @@ In the "Administration" section, users can access additional insights, including
 ## Transfers
 
 This section shows all ERC-20 token transfers related to the fund’s tokenized representation. These may correspond to key events such as issuance, purchases, transfers to other accounts, or deposits into DeFi protocols.
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/transfers.png"
+    alt="Transfers card Illustration"
+/>
+</div>
 
 ## Onchain Activity
 
@@ -77,3 +118,10 @@ The onchain activity section provides a transparent view of all onchain events a
 - Date – The timestamp of when the activity occurred.
 
 These records enable users to trace and verify all relevant token activity directly onchain, ensuring transparency across networks.
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/onchainActivity.png"
+    alt="Onchain activity card Illustration"
+/>
+</div>
