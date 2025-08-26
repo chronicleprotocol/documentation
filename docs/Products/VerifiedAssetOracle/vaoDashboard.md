@@ -16,7 +16,7 @@ The signature process has two layers:
 
  **1. Publishing to IPFS:** Data is fetched from the custodian, formatted, and published to IPFS. The IPFS URL is content-based, so any change in the data alters the URL, helping detect potential manipulation.
 
-Data is pulled from the IPFS document stored which can be accessed using a unique [CID (Content Identifier).](https://docs.ipfs.tech/concepts/content-addressing#) The CID itself is a hash of the document, meaning that if the content changes even slightly, the CID will change. This acts like a built-in verification layer, if the CID matches, the content matches as well. There is also a **`?checksum=`** parameter in the URL, which is a hash of the document’s actual contents.
+Data is pulled from the IPFS document stored which can be accessed using a unique [CID (Content Identifier).](https://docs.ipfs.tech/concepts/content-addressing#) The CID itself is based on a hash of the document, meaning that if the content changes **at all** (even a single byte), the CID will change. This acts like a built-in verification layer, if the CID matches, the content matches as well. There is also a **`?checksum=`** parameter in the URL, which is a keccak256 hash of the document’s actual contents expressed as a JSON string.
 
 `e.g.: ipfs://QmPv8UFfZAk7CiNLAW16ZBic741aWtFMXjbU3KkxrRR8Ma?checksum=0xd3e407f7243336f4ba79027b439bcf6a534ffed8fb4d1cc3acfe014d28127774`
 
