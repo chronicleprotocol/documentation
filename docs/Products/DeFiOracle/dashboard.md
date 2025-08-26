@@ -69,7 +69,7 @@ The validator's signature allows users to verify the behaviour of the validator.
 
 <div style={{textAlign: 'center'}}>
 <img
-    src="/img/Intro/non-manipulated.png"
+    src="../img/Products/DeFi/non-manipulated.png"
     alt="Check Sources"
     width="600"
 />
