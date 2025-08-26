@@ -40,6 +40,7 @@ It will attempt to install:
 ## Requirements:
 
 * Ubuntu 22.04 / Ubuntu 23.04 / Ubuntu 24.04
+* 2 vCPU **at least**
 * 2Gb RAM
 * 20Gb storage
 * Server needs to be deployed into a public subnet (ie have a public IP)
@@ -86,11 +87,10 @@ Managed RPC providers can become costly if they are heavily utilized. We recomme
 There are alternative RPC providers that you can use as well which aim to be as decentralized as possible:
 
 - [https://drpc.org](https://drpc.org/)
+- [https://www.dwellir.com/](https://www.dwellir.com/)
 - [https://www.nodies.app](https://www.nodies.app)
 - [https://www.grove.city](https://www.grove.city)
-- [https://blastapi.io](https://blastapi.io)
 - [https://ankr.com](https://ankr.com)
-- [https://www.dwellir.com/](https://www.dwellir.com/)
 
 
 #### Some DIY approaches:
@@ -98,7 +98,7 @@ There are alternative RPC providers that you can use as well which aim to be as 
 - [https://dappnode.com/](https://dappnode.com/)
 - [ethpandaops/ethereum](https://github.com/ethpandaops/ethereum-helm-charts/tree/master/charts/ethereum-node) (helm chart, requires beacon)
 - [chronicle/ethereum](https://github.com/chronicleprotocol/charts/tree/main/charts/ethereum) (helm chart, requires [beacon](https://github.com/chronicleprotocol/charts/tree/main/charts/beacons))
-
+- [eRPC](https://docs.erpc.cloud/free)
 * this list is not exhaustive, and Chronicle is in no way affiliated with any managed providers, these are just suggestions.
 
 You can provide these variables with `.env` as well Take a look at the `.env` section. The installer will create kubernetes secrets that are used in the helm release and feed services.
@@ -329,7 +329,7 @@ ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.4.4
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.4.6
 ```
 
 the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
@@ -376,7 +376,7 @@ helm install $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.4.4
+ --version 0.4.6
 ```
 
 or to upgrade an existing helm release:
@@ -386,7 +386,7 @@ helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.4.4
+ --version 0.4.6
 ```
 
 :::tip
