@@ -40,4 +40,10 @@ It is a unique identifier for securities issued in the United States. A CUSIP is
 The total return anticipated on a bond if the bond is held until it matures. 
 To compute [YTM](https://www.investopedia.com/terms/y/yieldtomaturity.asp), the following formula can be used:
 
-[(FaceValue - MarketValue)/MarketValue] x [365/DaysToMaturity]
+YTM = [ C+ (FV - PV) ÷ t ] ÷ [ (FV + PV) ÷ 2 ]
+
+Where:
+C = Coupon Payment
+FV = Face Value
+PV = Present Value/Current Price
+t = Years to Maturity

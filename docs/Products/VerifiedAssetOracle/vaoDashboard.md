@@ -99,7 +99,7 @@ In the "Administration" section, users can access additional insights, including
 
 ## Transfers
 
-This section shows all ERC-20 token transfers related to the fund’s tokenized representation. These may correspond to key events such as issuance, purchases, transfers to other accounts, or deposits into DeFi protocols.
+This section shows all ERC-20 token transfers related to the fund’s tokenized representation. 
 <div style={{textAlign: 'center'}}>
 <img
     src="  ../../img/Products/VAO/transfers.png"
@@ -109,7 +109,7 @@ This section shows all ERC-20 token transfers related to the fund’s tokenized 
 
 ## Onchain Activity
 
-The onchain activity section provides a transparent view of all onchain events associated with the fund’s tokenized representation. Each entry includes details such as:
+The onchain activity section provides a transparent view of all onchain events associated with the fund’s tokenized representation. These may correspond to key events such as issuance, purchases, or deposits into DeFi protocols. Each entry includes details such as:
 
 - Type – The kind of activity, such as Offchain Redeem (redeeming tokenized assets against underlying holdings) or Approval (granting smart contract permissions).
 - Blockchain – The network where the transaction occurred (e.g.: Ethereum, Plume Mainnet).
