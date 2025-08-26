@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 description: Verified Asset Oracle
 keywords: [Verified Asset Oracle]
 ---
@@ -41,3 +41,5 @@ Verified Asset’s unique advantages are imbued by Chronicle Protocol, the infra
 - [Chronicle partnered with Superstate](https://chroniclelabs.org/blog/superstate-opts-for-chronicle-verified-asset-oracle-for-ustb-fund), an asset management firm focused on modernizing investing for institutional investors through tokenized financial product, to integrate the Verified Asset Oracle, raising the standard of verification of ‘real-world assets’. Initially, this integration will provide the onchain net asset value (NAV) data for Superstate’s Short Duration US Government Securities Fund (USTB).
 
 - Chronicle announced that its Verified Asset Oracle (VAO) technology is [enabling all winners of the Spark $1 Billion Tokenization Grand Prix](https://chroniclelabs.org/blog/chronicle-powers-grand-prix-winners-with-innovative-verified-asset-oracle-technology) to verify and manage their tokenized assets. BlackRock’s BUIDL, Superstate, and Centrifuge were named as the winners of the Spark Tokenization Grand Prix, securing allocations from Sky’s planned $1 Billion investment in tokenized real-world assets.
+
+- [Chronicle has been named the Exclusive Oracle Partner to Grove]((https://chroniclelabs.org/blog/chronicle-named-exclusive-oracle-partner-to-grove-enabling-a-new-era-of-onchain-credit)), an institutional-grade credit protocol. [Grove]((https://www.grove.finance/)) is a new star in the Sky ecosystem and recently announced a $1B commitment to a tokenized asset strategy including initial allocations to the Janus Henderson Anemoy AAA CLO Fund (JAAA) and the JTRSY Treasury Fund (JTRSY), both issued natively through Centrifuge. As Grove prepares to launch tokenized yield strategies backed by real-world assets (RWAs), Chronicle will provide the oracle infrastructure required to safely and transparently scale credit allocation across the ecosystem they serve.

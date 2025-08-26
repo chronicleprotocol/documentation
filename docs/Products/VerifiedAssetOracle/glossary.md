@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: Verified Asset Oracle Glossary
 keywords: [glossary, Verified Asset Oracle, VAO]
 ---
@@ -43,7 +43,11 @@ To compute [YTM](https://www.investopedia.com/terms/y/yieldtomaturity.asp), the 
 YTM = [ C+ (FV - PV) ÷ t ] ÷ [ (FV + PV) ÷ 2 ]
 
 Where:
+
 C = Coupon Payment
+
 FV = Face Value
+
 PV = Present Value/Current Price
+
 t = Years to Maturity

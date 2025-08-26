@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: Verified Asset Oracle Dashboard
 keywords: [dashboard, Verified Asset Oracle, VAO, RWA Oracle Data]
 ---
