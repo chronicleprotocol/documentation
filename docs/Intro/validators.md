@@ -17,7 +17,7 @@ By participating in this distributed network, validators enhance the protocol’
 
 ## What Makes Chronicle Different
 
-A core differentiator of Chronicle is who the validators are. Instead of anonymous or unproven actors, the validator set is composed of reputable, battle-tested organizations across Web3.
+Chronicle's validator set is composed of reputable, battle-tested organizations across Web3.
 
 This approach ensures that:
 - Validators are aligned with the long-term success of Web3.
@@ -25,7 +25,6 @@ This approach ensures that:
 - They bring deep expertise and proven security practices, ensuring reliable onchain data flows.
 - Each new validator strengthens the network’s resilience while contributing unique expertise.
 
-## Trusted Organizations in the Validator Set
 
 The validator network includes some of the most respected names in the ecosystem, such as:
 
