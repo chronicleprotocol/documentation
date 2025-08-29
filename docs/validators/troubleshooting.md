@@ -68,10 +68,10 @@ Make sure that you set `FEED_NAME` to match your feed in question, and run these
 export FEED_NAME=<CHANGE_ME>
 cd /tmp
 kubectl logs deployment/ghost -n $FEED_NAME > ghost.log
-kubectl logs deployment/ghost-vao -n $FEED_NAME > ghost.log
+kubectl logs deployment/ghost-vao -n $FEED_NAME > ghost-vao.log
 kubectl get pods,deployment,service,secrets,onion --all-namespaces > kbom.txt
 helm list --all-namespaces > all-helm-releases.log
-tar czf chronicle-debug.tar.gz ghost.log tor-proxy.log all-helm-releases.log kbom.txt $HOME/$FEED_NAME/generated-values.yaml
+tar czf chronicle-debug.tar.gz ghost.log ghost-vao.log all-helm-releases.log kbom.txt $HOME/$FEED_NAME/generated-values.yaml
 ```
 
 The above commands will get logs for each of the pods running, the state of the services, as well as the generated-values.yaml for your feed, and bundle it into a tarball `chronicle-debug.tar.gz` (Please change the values / paths accordingly)
