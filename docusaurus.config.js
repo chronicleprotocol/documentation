@@ -150,6 +150,10 @@ const config = {
                 label: 'Careers',
                 href: 'https://chroniclelabs.org/careers#open_roles',
               },
+                {
+                label: 'LLM Docs',
+                href: 'https://docs.chroniclelabs.org/llms.txt',
+              },
             ],
           },
           {
