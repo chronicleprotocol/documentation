@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 description: How do PUSH Oracles Work?
 keywords: [DeFi Oracle, Data Source, PUSH Oracle]
 ---
