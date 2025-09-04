@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 description: Verified Asset Oracle
 keywords: [Verified Asset Oracle]
 ---
@@ -34,7 +34,8 @@ Verified Asset’s unique advantages are imbued by Chronicle Protocol, the infra
 
 ## Chronicle's Verified Asset Oracle Integrations
 
-- Chronicle launched its Verified Asset Oracle (formerly known as Real World Asset Oracle) with an integration with [M^0](https://www.m0.org/), a decentralized onchain protocol, as well as a set of off-chain standards and APIs, that allows multiple Minters to issue a fully fungible cryptodollar called $M. This collaboration allows to provide onchain information on the presence of offchain collateral (currently short term T-bills) used by Minters to generate $M cryptodollar. To learn more, please refer to the following [article](https://chroniclelabs.org/blog/m-0-and-chronicle-raising-the-standard-in-collateral-verification-with-the-rwa-oracle).
+- Chronicle launched its Verified Asset Oracle (formerly known as Real World Asset Oracle) with an integration with [M0](https://www.m0.org/). M0 uses Chronicle’s Verified Asset Oracle to provide proof of reserves for the M0 network supply, which is backed by U.S. Treasuries. By verifying offchain collateral before minting, Chronicle enables M0's stablecoin platform to scale with continuous solvency guarantees, eliminating unbacked issuance risk and supporting programmable digital dollars.
+To learn more, please refer to the following [article](https://chroniclelabs.org/blog/m-0-and-chronicle-raising-the-standard-in-collateral-verification-with-the-rwa-oracle).
 
 - [Chronicle partnered with Centrifuge](https://chroniclelabs.org/blog/raising-the-standard-of-real-world-assets-with-centrifuge-anemoy-and-the-rwa-oracle), a leading platform for innovative financial technology, to enhance the transparency of the Anemoy Liquid Treasury Fund (LTF). By integrating Chronicle’s Verified Asset Oracle, Centrifuge can now provide real-time price updates and third-party verification for LTF, bringing unprecedented transparency to the fund’s operations.
 
