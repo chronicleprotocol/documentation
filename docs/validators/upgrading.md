@@ -196,7 +196,7 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME
 NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART            APP VERSION
-validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.4.6	0.61.8
+validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.4.6	0.61.13
 ```
 
 #### View all resources created in the namespace
