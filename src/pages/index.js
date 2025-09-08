@@ -4,6 +4,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import Link from "@docusaurus/Link";
 import LinkButton from "../components/LinkButton";
+import CommunityResourcesSection from "../components/CommunityCard";
 
 function HeroSection() {
   const { siteConfig } = useDocusaurusContext();
@@ -39,21 +40,21 @@ function FeatureItem({ title, description, href, icon }) {
 function FeaturesSection() {
     const features = [
         {
-          title: "LEARN",
+          title: "Learn",
           description:
             "Explore Chronicle's decentralized, verifiable oracles, what sets them apart from other oracle solutions, and dive into their architecture.",
           icon: "📚",
           href: "./understandingChronicle",
         },
         {
-          title: "DEVELOPERS",
+          title: "Developers",
           description:
             "Discover how to integrate Chronicle's Oracles and power your dApp with data.",
           icon: "🧩",
           href: "./Developers/start",
         },
         {
-          title: "PRODUCTS",
+          title: "Products",
           description:
             "Explore Chronicle: DeFi Oracles, Verified Asset Oracles, and beyond.",
           icon: "🛠️",
@@ -81,6 +82,7 @@ export default function Home() {
       <main className={styles.main}>
         <HeroSection />
         <FeaturesSection />
+        <CommunityResourcesSection />
       </main>
     </Layout>
   );
