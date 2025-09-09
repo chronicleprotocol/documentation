@@ -52,31 +52,6 @@ vao:
 :::
 
 
-### Install CRD's
-
-Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/refs/heads/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
-
-If you are running an upgrade from a prior release (`< 0.3.4`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
-
-
-```
-kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.24/charts/validator/crds/tor-controller.yaml
-```
-
-It can take a few moments for the tor-controller to be in a ready state, but please make sure its running before upgrading your validator:
-
-```
-kubectl get pods -n tor-controller-system
-```
-
-You should see something like this:
-```
-NAME                                                 READY   STATUS    RESTARTS   AGE
-tor-controller-controller-manager-6648f44cc8-g6c68   2/2     Running   0          16m
-```
-
-We now have the CRD's deployed (ie `kubectl get crds` will show the tor custom resource definitions), and our values.yaml updated, we can perform the upgrade:
-
 <details>
 <summary>Upgrading manually (`helm upgrade`)</summary>
 
@@ -137,18 +112,10 @@ helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml 
 ```
 </details>
 
-:::danger
-If upgrading from 0.2.x to 0.3.x, please use the helper script, or manually update your `generated-values.yaml` as per the steps above
-:::
-
 <details>
 <summary>Upgrading using the helper script (`upgrade.sh`)</summary>
 
 ## Upgrading using `upgrade.sh`
-
-:::warning
-Please be aware that the latest helm chart has been renamed from `feed` to `validator`. Please use the `upgrade.sh` script to upgrade your validator to the latest version. This version embeds `musig` into the `ghost` pod. The upgrader script will clean up the generated `values.yaml` file and remove the unecessary musig values.
-:::
 
 To simplify the upgrade process, we have created a helper script that will upgrade your validator to the latest version. 
 
@@ -181,6 +148,39 @@ chmod a+x upgrade.sh
 :::tip You can set the expected variables in the `.env` file, or export them as environment variables. If the script fails to find any of these values, it will prompt you for them when running the script.
 :::
 
+</details>
+
+<details>
+<summary>Upgrading from `0.3`</summary>
+
+:::danger
+If upgrading from 0.2.x to 0.3.x, please use the helper script, or manually update your `generated-values.yaml` as per the steps above
+:::
+
+### Install CRD's
+
+Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/refs/heads/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
+
+If you are running an upgrade from a prior release (`< 0.3.4`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
+
+
+```
+kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.24/charts/validator/crds/tor-controller.yaml
+```
+
+It can take a few moments for the tor-controller to be in a ready state, but please make sure its running before upgrading your validator:
+
+```
+kubectl get pods -n tor-controller-system
+```
+
+You should see something like this:
+```
+NAME                                                 READY   STATUS    RESTARTS   AGE
+tor-controller-controller-manager-6648f44cc8-g6c68   2/2     Running   0          16m
+```
+
+We now have the CRD's deployed (ie `kubectl get crds` will show the tor custom resource definitions), and our values.yaml updated, we can perform the upgrade:
 </details>
 ---
 
