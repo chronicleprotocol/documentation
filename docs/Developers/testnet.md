@@ -6,7 +6,7 @@ keywords: [testnet, Chronicle, addresses]
 
 # Testnet Addresses
 
-You can find the Oracles' smart contract addresses using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard), by selecting "testnets" above the blockchain list.
+You can find the Oracles' smart contract addresses using the [Chronicle Dashboard](https://chroniclelabs.org/dashboard), by selecting "Testnets" above the blockchain list.
 
 Alternatively, you can also find here the addresses organized by chains:
 
@@ -99,7 +99,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0x75b239A75B1D099A1f20Fa2A64D5481a319faCb7](https://sepolia.uniscan.xyz/address/0x75b239A75B1D099A1f20Fa2A64D5481a319faCb7)
 | Chronicle_EURC_USD_1    | [0xB594139741BBC8801c3dA38bFA8Af18A8cB6298A](https://sepolia.uniscan.xyz/address/0xB594139741BBC8801c3dA38bFA8Af18A8cB6298A)
 | Chronicle_SDAI_DAI_1    | [0x7B91B3Be54567a4114eb53a53D21A6aA8a624d90](https://sepolia.uniscan.xyz/address/0x7B91B3Be54567a4114eb53a53D21A6aA8a624d90)
-| Chronicle_USDM_USD_1    | [0x0420355d6EDe0107054De722B9D7EC0Fb0d0a62d](https://sepolia.uniscan.xyz/address/0x0420355d6EDe0107054De722B9D7EC0Fb0d0a62d)
 | Chronicle_UNI_USD_1    | [0xde68bc59833B7531a9F98F993545C0732Fd69266](https://sepolia.uniscan.xyz/address/0xde68bc59833B7531a9F98F993545C0732Fd69266)
 | Chronicle_IBERA_USD_1    | [0xe37ffD4895e63aD21113924B6f9a7F4aBF802Df9](https://sepolia.uniscan.xyz/address/0xe37ffD4895e63aD21113924B6f9a7F4aBF802Df9)
 | Chronicle_USDS_USD_1    | [0x2f8D572Ca1153C8ed6Cb8EDCE43e8112a39f7e5f](https://sepolia.uniscan.xyz/address/0x2f8D572Ca1153C8ed6Cb8EDCE43e8112a39f7e5f)
@@ -216,7 +215,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0x2FaB27CFc96C4EbB2f367620F5C746bC83508917](https://sepolia.mantlescan.xyz/address/0x2FaB27CFc96C4EbB2f367620F5C746bC83508917)
 | Chronicle_EURC_USD_1    | [0xF7Fa3Fd43d90C25106fcA4aBea9237547618ffcE](https://sepolia.mantlescan.xyz/address/0xF7Fa3Fd43d90C25106fcA4aBea9237547618ffcE)
 | Chronicle_SDAI_DAI_1    | [0x6C163C8bbbf25F0a5DA22840EC97D82771D1B673](https://sepolia.mantlescan.xyz/address/0x6C163C8bbbf25F0a5DA22840EC97D82771D1B673)
-| Chronicle_USDM_USD_1    | [0xE87FAAC65b56fBbA50f5C69Cea4D1E7F5DD47301](https://sepolia.mantlescan.xyz/address/0xE87FAAC65b56fBbA50f5C69Cea4D1E7F5DD47301)
 | Chronicle_UNI_USD_1    | [0x3b47e1470A468572fD885a2005e0a5E734CE55ac](https://sepolia.mantlescan.xyz/address/0x3b47e1470A468572fD885a2005e0a5E734CE55ac)
 | Chronicle_USDS_USD_1    | [0x5dF70B9c321A6BB89A1baEff898B31789C2B3749](https://sepolia.mantlescan.xyz/address/0x5dF70B9c321A6BB89A1baEff898B31789C2B3749)
 | Chronicle_STONE_ETH_1    | [0x9922Fd5cBB16B5d85751AA0a03e509d20ba0d996](https://sepolia.mantlescan.xyz/address/0x9922Fd5cBB16B5d85751AA0a03e509d20ba0d996)
@@ -383,7 +381,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0xE9Ef84D03d3edcF16C2AA5F2E5765cAa57bCA51d](https://sepolia-explorer.superseed.xyz/address/0xE9Ef84D03d3edcF16C2AA5F2E5765cAa57bCA51d)
 | Chronicle_EURC_USD_1    | [0xB77ab957c63c6f6EF2e9673f6752Ce2B4C493065](https://sepolia-explorer.superseed.xyz/address/0xB77ab957c63c6f6EF2e9673f6752Ce2B4C493065)
 | Chronicle_SDAI_DAI_1    | [0x4Fe669e98fD38F361482c7FC5D052a2b3B3Db050](https://sepolia-explorer.superseed.xyz/address/0x4Fe669e98fD38F361482c7FC5D052a2b3B3Db050)
-| Chronicle_USDM_USD_1    | [0xDdD177c09DadfE778d91AF309F41A4CAc21a41A2](https://sepolia-explorer.superseed.xyz/address/0xDdD177c09DadfE778d91AF309F41A4CAc21a41A2)
 | Chronicle_UNI_USD_1    | [0x16519432736f3c4783B25080afd6C871E2CD63dE](https://sepolia-explorer.superseed.xyz/address/0x16519432736f3c4783B25080afd6C871E2CD63dE)
 | Chronicle_USDS_USD_1    | [0x5E56465419830fC871117e643ED84434aC7680b3](https://sepolia-explorer.superseed.xyz/address/0x5E56465419830fC871117e643ED84434aC7680b3)
 | Chronicle_STONE_ETH_1    | [0x796F62da66e6372d9413938BAb0F00448360ac6e](https://sepolia-explorer.superseed.xyz/address/0x796F62da66e6372d9413938BAb0F00448360ac6e)
@@ -469,6 +466,18 @@ Alternatively, you can also find here the addresses organized by chains:
 </details>
 
 <details>
+<summary> Smart Contract Addresses on **Linea Sepolia** </summary>
+
+| Contract Name              | Contract Address on Linea Sepolia
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| SelfKisser_1    | [0xBa1386329Dea3850Aedc07D387014494619F615D](https://sepolia.lineascan.build/address/0xBa1386329Dea3850Aedc07D387014494619F615D)
+| Chronicle_ETH_USD_1    | [0x41A502Ac14c9c56e48dFbDCB46a18bB7F87FaB6b](https://sepolia.lineascan.build/address/0x41A502Ac14c9c56e48dFbDCB46a18bB7F87FaB6b)
+| Chronicle_USDC_ETH_1    | [0x57993f2843dBcd5F30db3bF98Fd0E187261E72e5](https://sepolia.lineascan.build/address/0x57993f2843dBcd5F30db3bF98Fd0E187261E72e5)
+| Chronicle_USDC_USD_1    | [0xeD6F1454e63C49C7Ee83B7b959d6B58B335e2e40](https://sepolia.lineascan.build/address/0xeD6F1454e63C49C7Ee83B7b959d6B58B335e2e40)
+| Chronicle_BTC_USD_1    | [0x36a2E70563A3046FAd5a687b0f6128C095AeA788](https://sepolia.lineascan.build/address/0x36a2E70563A3046FAd5a687b0f6128C095AeA788)
+</details>
+
+<details>
 <summary> Smart Contract Addresses on **Berachain Bepolia** </summary>
 
 | Contract Name              | Contract Address on Berachain Bepolia
@@ -486,7 +495,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_EURC_USD_1    | [0x3525f5e53B64384921Fe4657262e29DDfc2a8Af4](https://bepolia.beratrail.io//address/0x3525f5e53B64384921Fe4657262e29DDfc2a8Af4)
 | Chronicle_IBERA_WBERA_1    | [0x0cFD0177ECBd369f91A0A22D7C7c559dDBE4a0E2](https://bepolia.beratrail.io//address/0x0cFD0177ECBd369f91A0A22D7C7c559dDBE4a0E2)
 | Chronicle_SDAI_DAI_1    | [0x5d6D219588F29E05E86cB3E72C1DbF70528a18cB](https://bepolia.beratrail.io//address/0x5d6D219588F29E05E86cB3E72C1DbF70528a18cB)
-| Chronicle_USDM_USD_1    | [0xa802cc5cc91E0448f2b0A0C95E4a6722bA58FBFD](https://bepolia.beratrail.io//address/0xa802cc5cc91E0448f2b0A0C95E4a6722bA58FBFD)
 | Chronicle_UNI_USD_1    | [0xDf4c077733412cc04545a629Dea389663BFaDb4E](https://bepolia.beratrail.io//address/0xDf4c077733412cc04545a629Dea389663BFaDb4E)
 | Chronicle_IBERA_USD_1    | [0xeA146Ab19E9AFfDCd91C6381b01067da0687E42a](https://bepolia.beratrail.io//address/0xeA146Ab19E9AFfDCd91C6381b01067da0687E42a)
 | Chronicle_USDS_USD_1    | [0x11E9F9c38EAD2D19dcAEAd07E5100d9786321129](https://bepolia.beratrail.io//address/0x11E9F9c38EAD2D19dcAEAd07E5100d9786321129)
@@ -615,7 +623,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_JPM_USD_1    | [0x57ca873A4619332A16a7E6B48dE61ACe0eeF16d7](https://sepolia.basescan.org/address/0x57ca873A4619332A16a7E6B48dE61ACe0eeF16d7)
 | Chronicle_CVX_USD_1    | [0x7F2D393Ac665c89298C38A652d3020975024a401](https://sepolia.basescan.org/address/0x7F2D393Ac665c89298C38A652d3020975024a401)
 | Chronicle_SDAI_DAI_1    | [0x78Ff387176F31b3C4eE44ffe4c4Ce2fd9BB44a79](https://sepolia.basescan.org/address/0x78Ff387176F31b3C4eE44ffe4c4Ce2fd9BB44a79)
-| Chronicle_USDM_USD_1    | [0xF127538aD9BD476a78d2e2FE092931Bba2a396cf](https://sepolia.basescan.org/address/0xF127538aD9BD476a78d2e2FE092931Bba2a396cf)
 | Chronicle_UNI_USD_1    | [0xe78154D755110662E540F524ef04BF774f21C8Ba](https://sepolia.basescan.org/address/0xe78154D755110662E540F524ef04BF774f21C8Ba)
 | Chronicle_USDS_USD_1    | [0x6fBbA660E4D62868D4f79Dc3877F3d7D0Be5c0c9](https://sepolia.basescan.org/address/0x6fBbA660E4D62868D4f79Dc3877F3d7D0Be5c0c9)
 | Chronicle_STONE_ETH_1    | [0x37C4141Bce04a7DF0E4A2C9248AD28Da9DFC809f](https://sepolia.basescan.org/address/0x37C4141Bce04a7DF0E4A2C9248AD28Da9DFC809f)
@@ -730,7 +737,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0x6Ab6e904D9A7165655D164e85a6a7DCF747eA680](https://testnet-explorer.plume.org/address/0x6Ab6e904D9A7165655D164e85a6a7DCF747eA680)
 | Chronicle_EURC_USD_1    | [0xd2cCf28f7b653417ff643b2Ce1F74871FeD226ca](https://testnet-explorer.plume.org/address/0xd2cCf28f7b653417ff643b2Ce1F74871FeD226ca)
 | Chronicle_SDAI_DAI_1    | [0x01A347137b33aE68d9544262af8170A480773122](https://testnet-explorer.plume.org/address/0x01A347137b33aE68d9544262af8170A480773122)
-| Chronicle_USDM_USD_1    | [0xf9378938c4041BCFe49cf6E1D8381Fb7C919E941](https://testnet-explorer.plume.org/address/0xf9378938c4041BCFe49cf6E1D8381Fb7C919E941)
 | Chronicle_UNI_USD_1    | [0x51a086F9211212D0C08381dBd6C7821780808C20](https://testnet-explorer.plume.org/address/0x51a086F9211212D0C08381dBd6C7821780808C20)
 | Chronicle_IBERA_USD_1    | [0x602F06d739DFE00C96476E40dc4E317733406452](https://testnet-explorer.plume.org/address/0x602F06d739DFE00C96476E40dc4E317733406452)
 | Chronicle_USDS_USD_1    | [0x781872810d9c94B8793f922D4D6ECe7E52D4Db89](https://testnet-explorer.plume.org/address/0x781872810d9c94B8793f922D4D6ECe7E52D4Db89)
@@ -848,7 +854,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0xa45542FeD19375D01053D4EB75F2BC7984DeDCe7](https://sepolia.arbiscan.io/address/0xa45542FeD19375D01053D4EB75F2BC7984DeDCe7)
 | Chronicle_EURC_USD_1    | [0x8270B1e14f0D0b7F7B89C19Ba74Cf41A0C79B66e](https://sepolia.arbiscan.io/address/0x8270B1e14f0D0b7F7B89C19Ba74Cf41A0C79B66e)
 | Chronicle_SDAI_DAI_1    | [0x4f1C907d2f506f007F61eba89640C8069c6b39dB](https://sepolia.arbiscan.io/address/0x4f1C907d2f506f007F61eba89640C8069c6b39dB)
-| Chronicle_USDM_USD_1    | [0x4ce226e81a5DC3FC35EbF2C69947E93db04a9846](https://sepolia.arbiscan.io/address/0x4ce226e81a5DC3FC35EbF2C69947E93db04a9846)
 | Chronicle_UNI_USD_1    | [0x7Cb721f729563016F3384714221C982f75143EA2](https://sepolia.arbiscan.io/address/0x7Cb721f729563016F3384714221C982f75143EA2)
 | Chronicle_USDS_USD_1    | [0x1759d656B7C881802c3e8c569619C178eD6b62fd](https://sepolia.arbiscan.io/address/0x1759d656B7C881802c3e8c569619C178eD6b62fd)
 | Chronicle_STONE_ETH_1    | [0xbdbe43D438E78301F8179B3B80bB686f804e92CC](https://sepolia.arbiscan.io/address/0xbdbe43D438E78301F8179B3B80bB686f804e92CC)
@@ -1034,7 +1039,7 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_ARB_USD_3    | [0x9Bf0C1ba75C9d7b6Bf051cc7f7dCC7bfE5274302](https://sepolia.etherscan.io/address/0x9Bf0C1ba75C9d7b6Bf051cc7f7dCC7bfE5274302)
 | Chronicle_YFI_USD_3    | [0xdF54aBf0eF88aB7fFf22e21eDD9AE1DA89A7DefC](https://sepolia.etherscan.io/address/0xdF54aBf0eF88aB7fFf22e21eDD9AE1DA89A7DefC)
 | Chronicle_DAI_USD_3    | [0xaf900d10f197762794C41dac395C5b8112eD13E1](https://sepolia.etherscan.io/address/0xaf900d10f197762794C41dac395C5b8112eD13E1)
-| Chronicle_USDM_USD_1    | [0xe971B2aF139Ad803656533059Bc028b61C00F67F](https://sepolia.etherscan.io/address/0xe971B2aF139Ad803656533059Bc028b61C00F67F)
+| Chronicle_CRO_USD_1    | [0xCa1590cb2794CeC6b5792a214e16729Dda3FD64d](https://sepolia.etherscan.io/address/0xCa1590cb2794CeC6b5792a214e16729Dda3FD64d)
 | Chronicle_USDS_USD_1    | [0x272E08174895e1E41770BE13e2Ac9831208eff7a](https://sepolia.etherscan.io/address/0x272E08174895e1E41770BE13e2Ac9831208eff7a)
 | Chronicle_STONE_ETH_1    | [0x1828Ff1b291AF88Cc2883133AC475ADA904A213F](https://sepolia.etherscan.io/address/0x1828Ff1b291AF88Cc2883133AC475ADA904A213F)
 | Chronicle_WSTETH_USD_3    | [0x89822dd9D74dF50BFba8764DC9bE25E9B8d554A1](https://sepolia.etherscan.io/address/0x89822dd9D74dF50BFba8764DC9bE25E9B8d554A1)
@@ -1128,7 +1133,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0xBFcF6426e16126BCD794e0eC50BA6e8236DEaD76](https://sepolia-optimism.etherscan.io/address/0xBFcF6426e16126BCD794e0eC50BA6e8236DEaD76)
 | Chronicle_EURC_USD_1    | [0xd9c2fC66C39e4ac6F9c93092E0A8e8522eaB0456](https://sepolia-optimism.etherscan.io/address/0xd9c2fC66C39e4ac6F9c93092E0A8e8522eaB0456)
 | Chronicle_SDAI_DAI_1    | [0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491](https://sepolia-optimism.etherscan.io/address/0xD93c56Aa71923228cDbE2be3bf5a83bF25B0C491)
-| Chronicle_USDM_USD_1    | [0xe971B2aF139Ad803656533059Bc028b61C00F67F](https://sepolia-optimism.etherscan.io/address/0xe971B2aF139Ad803656533059Bc028b61C00F67F)
 | Chronicle_UNI_USD_1    | [0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5](https://sepolia-optimism.etherscan.io/address/0x2aFF768F5d6FC63fA456B062e02f2049712a1ED5)
 | Chronicle_USDS_USD_1    | [0x00883b68A6EcF2ea3D47BD735E5125a0B7625B53](https://sepolia-optimism.etherscan.io/address/0x00883b68A6EcF2ea3D47BD735E5125a0B7625B53)
 | Chronicle_STONE_ETH_1    | [0x9d26f52bBec67a712214921db978209dA25590BE](https://sepolia-optimism.etherscan.io/address/0x9d26f52bBec67a712214921db978209dA25590BE)
@@ -1227,7 +1231,6 @@ Alternatively, you can also find here the addresses organized by chains:
 | Chronicle_GBP_USD_1    | [0x0Dc109a253B34f8172F30d1b92A78e874c6E600f](https://testnet-explorer.usecorn.com/address/0x0Dc109a253B34f8172F30d1b92A78e874c6E600f)
 | Chronicle_EURC_USD_1    | [0x3f3e185c00B4a287a2B5EF6140e012F226405E5C](https://testnet-explorer.usecorn.com/address/0x3f3e185c00B4a287a2B5EF6140e012F226405E5C)
 | Chronicle_SDAI_DAI_1    | [0x2750e4CB635aF1FCCFB10C0eA54B5b5bfC2759b6](https://testnet-explorer.usecorn.com/address/0x2750e4CB635aF1FCCFB10C0eA54B5b5bfC2759b6)
-| Chronicle_USDM_USD_1    | [0x06C29Ef142345fF78A02658173EB4424d937a4F4](https://testnet-explorer.usecorn.com/address/0x06C29Ef142345fF78A02658173EB4424d937a4F4)
 | Chronicle_UNI_USD_1    | [0xBC7DB56eB938b876c8Af5A08c1C7F162aec57014](https://testnet-explorer.usecorn.com/address/0xBC7DB56eB938b876c8Af5A08c1C7F162aec57014)
 | Chronicle_USDS_USD_1    | [0xC4dBDa30aFEB7eA5A1F7d2060e01374cD1a96Ac2](https://testnet-explorer.usecorn.com/address/0xC4dBDa30aFEB7eA5A1F7d2060e01374cD1a96Ac2)
 | Chronicle_STONE_ETH_1    | [0x1D4774e44bCa2CF4a8bB24449e510c5a9b3072d0](https://testnet-explorer.usecorn.com/address/0x1D4774e44bCa2CF4a8bB24449e510c5a9b3072d0)
