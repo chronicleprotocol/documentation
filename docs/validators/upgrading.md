@@ -195,44 +195,42 @@ Verify the chart version has changed and matches what the latest feed version:
 
 ```
 helm list -n $FEED_NAME
-NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-validator  demo            1               2025-07-01 11:52:17.003793982 -0300 -03 deployed        validator-0.4.4 0.60
+NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART            APP VERSION
+validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.4.6	0.61.13
 ```
 
 #### View all resources created in the namespace
 ```bash
-kubectl  get pods,deployment,service,secrets,onion -n demo
-NAME                                                    READY   STATUS             RESTARTS        AGE
-pod/ghost-688b6864b5-w92sd                              1/1     Running            0               2m
-pod/ghost-socks-tor-daemon-549c447f9c-75c26             1/1     Running            0               2m
-pod/ghost-tor-daemon-c648899bb-67rnd                    1/1     Running            0               2m
-pod/ghost-vao-f568684d9-74nb5                           1/1     Running            0               2m
+kubectl  get pods,deployment,service,secrets,onion
+NAME                                         READY   STATUS    RESTARTS   AGE
+pod/ghost-5c4cfb47bf-wvsvf                   1/1     Running   0          14s
+pod/ghost-socks-tor-daemon-ff98bb7c4-tm7f5   1/1     Running   0          14s
+pod/ghost-tor-daemon-579444b8df-ndfdx        1/1     Running   0          14s
+pod/ghost-vao-79d77454c7-l5qch               1/1     Running   0          14s
 
-NAME                                                    READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/ghost                                   1/1     1            1           2m
-deployment.apps/ghost-socks-tor-daemon                  1/1     1            1           2m
-deployment.apps/ghost-tor-daemon                        1/1     1            1           2m
-deployment.apps/ghost-vao                               1/1     1            1           2m
+NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost                    1/1     1            1           14s
+deployment.apps/ghost-socks-tor-daemon   1/1     1            1           14s
+deployment.apps/ghost-tor-daemon         1/1     1            1           14s
+deployment.apps/ghost-vao                1/1     1            1           14s
 
-NAME                                           TYPE                CLUSTER-IP           EXTERNAL-IP          PORT(S)                              AGE
-service/ghost                                  LoadBalancer        10.43.181.34         192.168.10.27        8000:31501/TCP,8080:30746/TCP        2m
-service/ghost-metrics                          ClusterIP           10.43.21.230         <none>               9090/TCP                             2m
-service/ghost-metrics-vao                      ClusterIP           10.43.23.37          <none>               9090/TCP                             2m
-service/ghost-socks-tor-svc                    ClusterIP           10.43.87.120         <none>               9050/TCP                             2m
-service/ghost-tor-metrics-svc                  ClusterIP           10.43.142.233        <none>               9035/TCP                             2m
-service/ghost-tor-svc                          ClusterIP           10.43.194.155        <none>               8888/TCP                             2m
-service/ghost-vao                              LoadBalancer        10.43.1.126          192.168.10.27        8001:31468/TCP                       2m
+NAME                            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)             AGE
+service/ghost                   ClusterIP   10.43.109.192   <none>        8000/TCP,8080/TCP   14s
+service/ghost-socks-tor-svc     ClusterIP   10.43.222.127   <none>        9050/TCP            14s
+service/ghost-tor-metrics-svc   ClusterIP   10.43.244.109   <none>        9035/TCP            14s
+service/ghost-tor-svc           ClusterIP   10.43.204.2     <none>        8888/TCP            14s
+service/ghost-vao               ClusterIP   10.43.44.21     <none>        8001/TCP            14s
+service/kubernetes              ClusterIP   10.43.0.1       <none>        443/TCP             287d
 
-NAME                                           TYPE                                           DATA   AGE
-secret/ghost-eth-keys                          Opaque                                         3      2m
-secret/ghost-socks-tor-secret                  tor.k8s.torproject.org/control-password        1      2m
-secret/ghost-tor-auth                          tor.k8s.torproject.org/authorized-clients-v3   0      2m
-secret/ghost-tor-secret                        tor.k8s.torproject.org/onion-v3                5      2m
-secret/sh.helm.release.v1.ghost.v1             helm.sh/release.v1                             1      2m
+NAME                                        TYPE                                           DATA   AGE
+secret/ghost-socks-tor-secret               tor.k8s.torproject.org/control-password        1      14s
+secret/ghost-tor-auth                       tor.k8s.torproject.org/authorized-clients-v3   0      14s
+secret/ghost-tor-secret                     tor.k8s.torproject.org/onion-v3                5      14s
+secret/somesecretname-eth-keys              Opaque                                         3      30s
+secret/sh.helm.release.v1.my-validator.v1   helm.sh/release.v1                             1      14s
 
-
-NAME                                              HOSTNAME                      AGE
-onionservice.tor.k8s.torproject.org/ghost         mylongtoronionaddress.onion   28m
+NAME                                        HOSTNAME                           AGE
+onionservice.tor.k8s.torproject.org/ghost   mylongonionaddress.onion           14s
 ```
 
 #### View pod logs:
