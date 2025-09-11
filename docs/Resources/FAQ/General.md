@@ -41,7 +41,7 @@ GNO on Gnosis: [https://gnosisscan.io/address/0xA28dCaB66FD25c668aCC7f232aa71DA1
 
 ## Where does the data come from?
 
-The data originates from primary on-chain sources such as DEXes (e.g., Uniswap, dYdX, Balancer) and off-chain CEXes (e.g., Kraken, Binance, Coinbase). Only high-quality sources are used in Chronicle’s data models.
+The data originates from primary onchain sources such as DEXes (e.g., Uniswap, dYdX, Balancer) and offchain CEXes (e.g., Kraken, Binance, Coinbase). Only high-quality sources are used in Chronicle’s data models.
 
 ## What types of Oracles does Chronicle Protocol enable?
 In addition to the core price feed Oracles, two new products have been introduced: the [Yield Rate Oracle](https://chroniclelabs.org/blog/the-yield-rate-oracle) and the [Verified Asset Oracle](https://chroniclelabs.org/blog/m-0-and-chronicle-raising-the-standard-in-collateral-verification-with-the-rwa-oracle) (formerly known as the Real World Asset Oracle).
@@ -65,9 +65,29 @@ The validators of Chronicle are represented by a community of the leading blockc
 
 This approach to validators is unique to Chronicle, and ensures that the Oracle data is being signed by some of the most trusted and reputable brands in the blockchain space, further reinforcing trust in the protocol.
 
+## How do Oracles work?
+Smart contracts on blockchains can’t directly fetch external data such as asset prices because they’re isolated environments. Oracles act as bridges between the blockchain and the outside world.
+
+**Here’s how it works:**
+
+Validators monitor data sources — These can be onchain sources (DEXes) or offchain sources (CEXes). Each validator collects data, aggregates it (using [median](https://en.wikipedia.org/wiki/Median)), and signs it.
+
+Validators exchange their signed data within a peer-to-peer network. They reach consensus on the final value that should be published using median. In each round, one validator is chosen as the leader.
+
+The leader submits the aggregated and verified value to the blockchain. This is a write operation, so it consumes gas.
+
+Once the data is available onchain, smart contracts can query it and use it to trigger actions such as liquidations, settlements, or payouts.
+
+## Why do Oracles need gas?
+When the validator network reaches consensus on a data point, such as the price of ETH to USD, one validator is selected to push that value onchain. This involves writing to the blockchain’s state in the same way as sending tokens or updating a smart contract variable, and that action consumes gas.
+
+Without gas, the oracle’s data could not be written onchain and smart contracts would not have access to verified and up to date information.
+
+In short, gas is the cost of making offchain data available onchain.
+
 ## Does the Chronicle dashboard pull data from the Chronicle Archive?
 
-The Dashboard pulls from a combination of on-chain sources and off-chain network traffic that is the basis for the Oracle updates. Specifically, the feeds pass cryptographically (ECDSA)-signed price messages that are then computed into a median value for on-chain updates. Those messages are ephemeral, so our archiving system saves them in a database for historical preservation.
+The Dashboard pulls from a combination of onchain sources and offchain network traffic that is the basis for the Oracle updates. Specifically, the validators pass cryptographically (ECDSA)-signed price messages that are then computed into a median value for onchain updates. Those messages are ephemeral, so our archiving system saves them in a database for historical preservation.
 
 ## Can you provide a comparison of gas usage for a Chronicle Oracle update versus competitors that use a PUSH-based model?
 
