@@ -67,7 +67,7 @@ Smart contracts on blockchains can’t directly fetch external data such as asse
 
 **Here’s how it works:**
 
-Validators monitor data sources — These can be onchain sources (DEXes) or offchain sources (CEXes). Each validator collects data, aggregates it (using median), and signs it.
+Validators monitor data sources — These can be onchain sources (DEXes) or offchain sources (CEXes). Each validator collects data, aggregates it (using [median](https://en.wikipedia.org/wiki/Median)), and signs it.
 
 Validators exchange their signed data within a peer-to-peer network. They reach consensus on the final value that should be published using median. In each round, one validator is chosen as the leader.
 
