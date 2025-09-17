@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 description: Deploying a Chronicle validator into an existing kubernetes cluster.
 keywords: [K8s, kubernetes cluster]
 ---

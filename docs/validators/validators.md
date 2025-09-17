@@ -1,5 +1,5 @@
 ---
-sidebar_position: 9
+sidebar_position: 1
 description: Chronicle's Validator Set
 keywords: [validators, node operators]
 ---
