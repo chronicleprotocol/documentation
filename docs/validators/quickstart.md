@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 description: Running a Chronicle validator using k3s.
 keywords: [k3s, Chronicle validator]
 ---
