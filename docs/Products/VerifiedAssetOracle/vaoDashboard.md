@@ -14,17 +14,34 @@ Chronicle provides end-to-end data about a tokenized fund by connecting directly
 
 The signature process has two layers:
 
- **1. Publishing to IPFS:** Data is fetched from the custodian, formatted, and published to IPFS. The IPFS URL is content-based, so any change in the data alters the URL, helping detect potential manipulation.
+ **1. Publishing to IPFS:** Data is fetched from the custodian, formatted, and published to [IPFS](https://docs.ipfs.tech/). The IPFS URL is content-based, so any change in the data alters the URL, helping detect potential manipulation.
 
 Data is pulled from the IPFS document stored which can be accessed using a unique [CID (Content Identifier).](https://docs.ipfs.tech/concepts/content-addressing#) The CID itself is based on a hash of the document, meaning that if the content changes **at all** (even a single byte), the CID will change. This acts like a built-in verification layer, if the CID matches, the content matches as well. There is also a **`?checksum=`** parameter in the URL, which is a keccak256 hash of the document’s actual contents expressed as a JSON string.
 
 `e.g.: ipfs://QmPv8UFfZAk7CiNLAW16ZBic741aWtFMXjbU3KkxrRR8Ma?checksum=0xd3e407f7243336f4ba79027b439bcf6a534ffed8fb4d1cc3acfe014d28127774`
 
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/verify.png"
+    alt="Verify data from IPFS"
+    width={750}
+/>
+</div>
+
+
 The **CID ensures the data hasn’t been tampered with**, as it won’t resolve if the content changes.
 
-**2. Checksum verification:** A checksum of the data is added and verified on-chain via a verifier contract.
+**2. Checksum verification:** A checksum of the data is added and verified onchain via a verifier contract.
 
 The checksum proves that the content of the document has remained the same since its initial publication.
+
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/verify2.png"
+    alt="Verify signature"
+    width={650}
+/>
+</div>
 
 ### Verification Flow
 
