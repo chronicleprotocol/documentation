@@ -24,7 +24,7 @@ Deploying the validator into an existing kubernetes cluster.
 ## Notable changes include:
 
 :::warning
-The validator `ChartVersion: 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
+The validator `ChartVersion: > 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
 Please make sure you update your `values.yaml` or `generated_values.yaml` to include `.Values.vao`.
 
 Sample config:

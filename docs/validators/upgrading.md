@@ -108,7 +108,7 @@ Make sure the [TOR crds](#install-crds) are installed.
 
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.4.4
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.4.6
 ```
 </details>
 

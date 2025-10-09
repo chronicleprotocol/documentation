@@ -51,6 +51,7 @@ To fix this, run the following commands:
 # as your validator user (eg demo-user)
 
 rm $KUBECONFIG
+sudo systemctl restart k3s
 sudo cp /etc/rancher/k3s/k3s.yaml $KUBECONFIG
 sudo chown $USER $KUBECONFIG
 ```
