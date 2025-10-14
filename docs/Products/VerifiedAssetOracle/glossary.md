@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-description: Verified Asset Oracle Glossary
-keywords: [glossary, Verified Asset Oracle, VAO]
+description: Proof of Assets Oracle Glossary
+keywords: [glossary, Proof of Assets Oracle]
 ---
 
  # Glossary
