@@ -56,7 +56,7 @@ function FeaturesSection() {
         {
           title: "Products",
           description:
-            "Explore Chronicle: DeFi Oracles, Verified Asset Oracles, and beyond.",
+            "Explore Chronicle: DeFi Oracles, Proof of Assets, and beyond.",
           icon: "🛠️",
           href: "./Products/productsOverview",
         },
