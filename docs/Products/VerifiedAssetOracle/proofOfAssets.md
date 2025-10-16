@@ -84,7 +84,7 @@ With Chronicle Proof of Assets, developers can design protocols that respond aut
 
 **Token Issuers:** Provide verifiable guarantees of solvency, ensuring that tokens cannot be minted beyond the assets held in reserves. Examples include tokenized assets and stablecoin issuers.
 
-**Token Holders:** Increase confidence in the backing of onchain tokens that are collateralized by offchain reserves, promoting trust and transparency.
+**Token Holders:** Increase confidence in the backing of tokenized assets that are collateralized by offchain reserves, promoting trust and transparency.
 
 **Institutions:** Access reliable, verifiable asset data to make informed investment, lending, and custody decisions while reducing counterparty and operational risk.
 
