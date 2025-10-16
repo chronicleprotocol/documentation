@@ -52,6 +52,8 @@ Offchain assets are traditional financial instruments or real-world assets that 
 
 One such example is Midas-issued [mTBILL token](https://chroniclelabs.org/dashboard/oracle/MTBILL/USD#blockchain=BASE&contract=0x70E58b7A1c884fFFE7dbce5249337603a28b8422&txn=0x15960b385f3d495440731fbca9da2b9a44d0274398c15ac028c58e6b0a43b78f) that provides investors with onchain exposure to the Federal Reserve's rate. Each mTBILL represents one share in the BlackRock Treasury Bond (fund) that exclusively holds short-dated U.S. government debt. 
 
+Another example is [USTB (Superstate Short Duration US Government Securities Fund)](https://chroniclelabs.org/dashboard/vao/superstate-ustb). The Superstate Short Duration US Government Securities Fund offers Qualified Purchasers access to short-duration Treasury Bills.
+
 ### Tokenized Equities
 As the broader ecosystem pushes toward tokenization, equities represent one of the largest untapped categories. By bringing equities onchain, developers unlock 24/7 trading as well as new use cases across lending, synthetic assets, indices, and more.
 
@@ -60,7 +62,6 @@ Liquid staking derivatives are tokenized representations of staked native assets
 
 Chronicle Proof of Assets provides verifiable proof of backing for liquid staking derivative tokens, allowing developers, users, and protocols to confirm that each derivative is fully backed by the corresponding staked native assets.
 
-You can view a live example of WSTETH collateralization against ETH on the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/oracle/WSTETH%23fundamental/ETH#blockchain=UNICHAIN&contract=0x74661a9ea74fD04975c6eBc6B155Abf8f885636c&txn=0x5dac41704457f9033b280e5a6ac5eec3f27898312c085f6fcacd96463c7c5551).
 
 ### Commodities
 Physical commodities or commodity-backed tokens, such as gold, silver, or oil, can be transparently verified using Chronicle Proof of Assets. Each token can be traced to the underlying asset held in custody, with attestations confirming quantity, quality, and storage conditions.
@@ -80,7 +81,7 @@ Chronicle Proof of Assets enables secure and transparent integration of Real-Wor
 With Chronicle Proof of Assets, developers can design protocols that respond automatically to real-world asset data, creating a safer, more transparent, and trust-minimized DeFi ecosystem.
 
 
-## Ecosystem Players that Benefit from Proof of Asset
+## Ecosystem Participants and Their Benefits
 
 **Token Issuers:** Provide verifiable guarantees of solvency, ensuring that tokens cannot be minted beyond the assets held in reserves. Examples include tokenized assets and stablecoin issuers.
 
