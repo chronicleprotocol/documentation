@@ -82,7 +82,7 @@ With Chronicle Proof of Assets, developers can design protocols that respond aut
 
 ## Ecosystem Players that Benefit from Proof of Asset
 
-**Token Issuers:** Provide verifiable guarantees of solvency, ensuring that tokens cannot be minted beyond the assets held in reserves. Examples include wrapped tokens and stablecoin issuers.
+**Token Issuers:** Provide verifiable guarantees of solvency, ensuring that tokens cannot be minted beyond the assets held in reserves. Examples include tokenized assets and stablecoin issuers.
 
 **Token Holders:** Increase confidence in the backing of onchain tokens that are collateralized by offchain reserves, promoting trust and transparency.
 
