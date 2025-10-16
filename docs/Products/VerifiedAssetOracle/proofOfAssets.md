@@ -11,7 +11,9 @@ Chronicle Proof of Assets provides a decentralized, automated solution that leve
 
 Proof of Assets is Chronicle's institutional-grade oracle that provides cryptographic attestations for tokenized assets, verifying their reserves at the source. 
 Data is fetched from custodians, NAV administrators, or authorized agents, independently validated, and published onchain. The result is a continuous, verifiable, onchain audit trail that removes reliance on self-reporting or quarterly reviews.
+## Why It Matters
 
+As traditional finance converges with DeFi, transparent verification of reserves becomes critical for trust, compliance, and interoperability. Proof of Assets ensures that tokenized instruments are not only programmable, but provably backed — forming the foundation of institutional-grade onchain finance.
 
 ## Independent Source-Level Verification
 
