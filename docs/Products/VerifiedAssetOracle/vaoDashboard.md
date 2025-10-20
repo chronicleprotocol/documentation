@@ -1,15 +1,15 @@
 ---
 sidebar_position: 3
-description: Proof of Assets Dashboard
-keywords: [dashboard, Proof of Assets Dashboard]
+description: Proof of Asset Dashboard
+keywords: [dashboard, Proof of Asset Dashboard]
 ---
- # Proof of Assets Dashboard
+ # Proof of Asset Dashboard
 
-The Proof of Assets Dashboard enables users to visualize data verified by [Chronicle's Proof of Assets Oracle](/Products/VerifiedAssetOracle/verifiedAssetOracle.md). It provides insights into key financial metrics associated with verified assets such as Net Asset Value per Share (NAV/S), 7-day average annualized yield, custodian information, and more.
+The Chronicle Proof of Asset Dashboard enables users to visualize data verified by [Chronicle's Proof of Asset Oracle](/Products/VerifiedAssetOracle/verifiedAssetOracle.md). It provides insights into key financial metrics associated with verified assets such as Net Asset Value per Share (NAV/S), 7-day average annualized yield, custodian information, and more.
 
 This dashboard is designed to enhance transparency and trust in onchain representations of real-world assets by offering a clear visualization of their value and underlying assets.
 
-# How is the Proof of Assets Dashboard different from other RWA Dashboards?
+# How is the Proof of Asset Dashboard different from other RWA Dashboards?
 Chronicle provides end-to-end data about a tokenized fund by connecting directly to the custodian. Users can verify attestation signatures in the browser via the `Verify` button.
 
 The signature process has two layers:
