@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-description: Proof of Assets Oracle Glossary
-keywords: [glossary, Proof of Assets Oracle]
+description: Proof of Asset Oracle Glossary
+keywords: [glossary, Proof of Asset Oracle]
 ---
 
  # Glossary

@@ -1,14 +1,14 @@
 ---
 sidebar_position: 3
 description: Bringing Transparency to Tokenized Assets
-keywords: [transparency, Proof of Assets]
+keywords: [transparency, Proof of Asset]
 ---
 # Bringing Transparency to Tokenized Assets
 
- Proof of Assets provides onchain, cryptographic attestations that verify the reserves behind tokenized assets (stablecoins, wrapped tokens, RWAs, and more), ensuring transparent backing for depositors and protocols.
+ Proof of Asset provides onchain, cryptographic attestations that verify the reserves behind tokenized assets (stablecoins, wrapped tokens, RWAs, and more), ensuring transparent backing for depositors and protocols.
 
 
-## Why Chronicle Proof of Assets?
+## Why Chronicle Proof of Asset?
 -  Customizable inputs – Accepts data in any format: API (preferred), email, SFTP, or other formats
 - Cryptographic integrity – End-to-end verifiability through signature validation and consensus among independent validators
 - Institutional alignment – Designed to meet the operational needs and privacy considerations of regulated financial entities
@@ -18,7 +18,7 @@ keywords: [transparency, Proof of Assets]
 
 
 ## How It Works
-The Proof of Assets Dashboard pipeline has three core roles:
+The Proof of Asset Dashboard pipeline has three core roles:
 ### 1. Agent
 The Agent is responsible for retrieving your data, performing computations, and preparing the payload to be verified and published onchain.
 - Pulls data from your preferred source (ideally an web API, but it can also be an email, SFTP, or other formats given our modular components that are able to adapt to enterprise environments)
