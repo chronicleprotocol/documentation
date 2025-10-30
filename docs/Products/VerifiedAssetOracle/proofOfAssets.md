@@ -46,6 +46,14 @@ Because of their stability and liquidity, stablecoins are a preferred form of co
 
 One such example is [M0](https://chroniclelabs.org/dashboard/vao/m-by-m0), a universal platform enabling builders to create application-specific stablecoins. M0's reserves are continuously validated by Chronicle's Proof of Asset, providing smart contracts with proof that each collateralized stablecoin is fully backed by an equal amount of collateral.
 
+:::info
+Given that Chronicle verifies the collateral backing of every M0-based stablecoin, it is uniquely positioned to provide NAV-based price feeds for assets built on M0, such as USDai, UsualM, MetaMask USD, Noble Dollar, pUSD, and more.
+
+NAV-based price feeds reflect the fundamental value of the underlying reserves rather than real-time market prices, making them immune to the manipulation risks that affect market-based feeds during periods of volatility.
+
+If you require such a feed, open a ticket on [Discord](https://discord.com/invite/CjgvJ9EspJ).
+:::
+
 ### Offchain Assets
 
 Offchain assets are traditional financial instruments or real-world assets that exist outside the blockchain but can be tokenized to be integrated in DeFi and other onchain ecosystems. These assets often include bonds, real estate, commodities, or other financial instruments, allowing investors to gain blockchain-native exposure while retaining ties to underlying real-world value. Verifying the composition, valuation, and collateralization of these assets is critical to maintaining trust and transparency.
