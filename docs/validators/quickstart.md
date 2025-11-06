@@ -329,7 +329,7 @@ ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.4.6
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.4.8
 ```
 
 the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
@@ -376,7 +376,7 @@ helm install $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.4.6
+ --version 0.4.8
 ```
 
 or to upgrade an existing helm release:
@@ -386,7 +386,7 @@ helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.4.6
+ --version 0.4.8
 ```
 
 :::tip
