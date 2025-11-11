@@ -93,7 +93,7 @@ Contains the addresses for all ERC20 token contracts for the asset, which chains
 />
 </div>
 
-The `Verify` button enables users to check the value of the underlying assets onchain. By searching for the contract on a blockchain explorer, navigating to the `Read as Proxy` section, and locating the `totalSupply` function, users can run a query to view the underlying assets value. The result should match the reported total supply, keeping in mind that the number may appear in wei (requiring division by 10¹⁸ for tokens with 18 decimals).
+The `Verify` button enables users to check the value of the underlying assets onchain. By searching for the contract on a blockchain explorer, navigating to the `Read as Proxy` section, and locating the `totalSupply` function, users can run a query to view the issued token supply. The result should match the reported total supply, keeping in mind that the number may appear in wei (requiring division by 10¹⁸ for tokens with 18 decimals).
 ## Latest Oracle Events
 
 The latest oracle events module displays all blockchain transactions that have included any of the asset's oracle contracts. These are primarily price updates but other transactions may appear here such as the whitelisting of new validators.
