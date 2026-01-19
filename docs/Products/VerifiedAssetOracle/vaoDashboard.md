@@ -9,6 +9,21 @@ The Chronicle Proof of Asset Dashboard enables users to visualize data verified 
 
 This dashboard is designed to enhance transparency and trust in onchain representations of real-world assets by offering a clear visualization of their value and underlying assets.
 
+**Learn more about Chronicle's Proof of Asset Dashboard in this video:**
+
+<div class="video-container">
+  <iframe
+   width="672"
+   height="378"
+    src="https://www.youtube.com/embed/aegegvIEYzs?si=tGCa7z_17mVpPKNzy"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
+
 # How is the Proof of Asset Dashboard different from other RWA Dashboards?
 Chronicle provides end-to-end data about a tokenized fund by connecting directly to the custodian. Users can verify attestation signatures in the browser via the `Verify` button.
 
