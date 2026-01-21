@@ -7211,6 +7211,11 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
+docusaurus-plugin-copy-page-button@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/docusaurus-plugin-copy-page-button/-/docusaurus-plugin-copy-page-button-0.3.5.tgz#a7fbed7aed346f6dfa82eb95b78216ca834c10b2"
+  integrity sha512-QwveQb/WM9r8E8qVqXOrZ6uz9YFOPQGV87RpemiemcDg5gQHyhSFenPP5twSrSRkIbT0D7f54lUbl3bbuVJfHg==
+
 docusaurus-plugin-generate-llms-txt@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/docusaurus-plugin-generate-llms-txt/-/docusaurus-plugin-generate-llms-txt-0.0.1.tgz#e2104a73bdf59ea9f576f319e73e7d9c664e6ea8"
