@@ -5,7 +5,7 @@ keywords: [transparency, Proof of Asset]
 ---
 # Bringing Transparency to Tokenized Assets
 
- Proof of Asset provides onchain, cryptographic attestations that verify the reserves behind tokenized assets (stablecoins, wrapped tokens, RWAs, and more), ensuring transparent backing for depositors and protocols.
+Proof of Asset delivers onchain, cryptographic attestations that verify the underlying assets behind tokenized products such as stablecoins, wrapped tokens, and tokenized funds, providing transparent backing for depositors and protocols.
 
 
 ## Why Chronicle Proof of Asset?
@@ -37,3 +37,11 @@ The Relay submits the verified payload to the onchain uScribe contract:
 - uScribe is a universal oracle contract that can publish any arbitrary data (not just prices) which is built on top of Scribe, Chronicle’s gas-efficient oracle framework
 - Enables integration with smart contracts, dashboards, proof-of-reserve systems, and more
 
+<div style={{textAlign: 'center'}}>
+<img
+    src="  ../../img/Products/VAO/diagram2.png"
+    alt="Verify signature"
+    width={4000}
+
+/>
+</div>
