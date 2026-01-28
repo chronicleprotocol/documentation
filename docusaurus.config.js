@@ -14,7 +14,20 @@ const config = {
       outputFile: "llms.txt", // defaults to llms.txt if not specified
     },
   ],
+[
+  'docusaurus-plugin-copy-page-button',
+  {
+    customStyles: {
+      container: {
+        className: 'copyPageButtonContainer',
+      },
+      button: {
+        style: { marginLeft: '8px' },
+      },
+    },
+  },
 ],
+  ],
   title: 'Chronicle Docs',
   tagline: 'Cost-efficient. Verifiable Data.',
   favicon: 'img/favicon.ico',

@@ -54,3 +54,23 @@
 [data-theme='dark']:root .menu {
   background-color: #1F2937;
 }
+
+/* Hide the copy button by default */
+.copyPageButtonContainer {
+  display: none !important;
+}
+
+/* Show it only on desktop TOC */
+@media (min-width: 996px) {
+  .theme-doc-toc-desktop .copyPageButtonContainer,
+  .table-of-contents .copyPageButtonContainer {
+    display: block !important;
+  }
+}
+
+/* Stays hidden on mobile */
+@media (max-width: 995px) {
+  .theme-doc-toc-mobile .copyPageButtonContainer {
+    display: none !important;
+  }
+}
