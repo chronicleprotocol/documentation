@@ -66,3 +66,10 @@
 .table-of-contents .copyPageButtonContainer {
   display: block !important;
 }
+
+/* Keep it hidden on mobile even in TOC */
+@media (max-width: 996px) {
+  .copyPageButtonContainer {
+    display: none !important;
+  }
+}
