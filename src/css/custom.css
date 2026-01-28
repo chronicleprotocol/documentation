@@ -60,16 +60,17 @@
   display: none !important;
 }
 
-/* Reenable only when it's inside the TOC sidebar */
-.theme-doc-toc-desktop .copyPageButtonContainer,
-.theme-doc-toc-mobile .copyPageButtonContainer,
-.table-of-contents .copyPageButtonContainer {
-  display: block !important;
+/* Show it only on desktop TOC */
+@media (min-width: 996px) {
+  .theme-doc-toc-desktop .copyPageButtonContainer,
+  .table-of-contents .copyPageButtonContainer {
+    display: block !important;
+  }
 }
 
-/* Keep it hidden on mobile even in TOC */
-@media (max-width: 996px) {
-  .copyPageButtonContainer {
+/* Stays hidden on mobile */
+@media (max-width: 995px) {
+  .theme-doc-toc-mobile .copyPageButtonContainer {
     display: none !important;
   }
 }
