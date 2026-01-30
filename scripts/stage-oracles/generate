@@ -6,11 +6,12 @@ rm -fr tmp/chronicles
 # NOTE you need to have your Github auth setup or this will fail
 git clone https://github.com/chronicleprotocol/chronicles.git tmp/chronicles
 
-python scripts/stage-oracles/generate.py
+python scripts/stage-oracles/generate.py # Test run
 [[ "$?" = "0" ]] || {
     echo
     echo "!!!! Something went wrong, not updating ..."
     exit 1
 }
+# Do for realz
 python scripts/stage-oracles/generate.py > ./docs/Developers/testnet.md
 git status
