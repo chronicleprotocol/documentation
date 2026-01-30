@@ -41,7 +41,7 @@ Chronicle Oracles are read protected by a whitelist. On Testnet networks, you ca
 
 | Testnet Network               | SelfKisser Address                                                                                                                           |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ethereum Sepolia              | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)           |
+| Ethereum Sepolia              | [0x9eE458DefDc50409DbF153515DA54Ff5B744e533](https://sepolia.etherscan.io/address/0x9eE458DefDc50409DbF153515DA54Ff5B744e533#code)           |
 | Base Sepolia                  | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.basescan.org/address/0x70E58b7A1c884fFFE7dbce5249337603a28b8422#code)           |
 | Arbitrum Sepolia              | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbiscan.io/address/0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f#code)            |
 | Gnosis Mainnet                | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://gnosisscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d)                       |
