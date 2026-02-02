@@ -24,15 +24,19 @@ table_footer = '</details>'
 
 from string import Template
 from pathlib import Path
-import os, re, json
+import os, re, json, sys
 
 data = {}
+def err(m):
+    print(m, file=sys.stderr)
+
 with open('tmp/chronicles/deployments/chains.json') as json_data:
     o = json.load(json_data)
     for chain in o['chains']:
         # We may get a chain from chains.json which does not have any contracts
         # deployed. We do not want a section for these
-        if not os.path.exists(f"tmp/chronicles/deployments/stage/{chain['name']}"):
+        if chain['mainnet'] is False and not os.path.exists(f"tmp/chronicles/deployments/stage/{chain['name']}"):
+            err(f"Path does not seem to exist? tmp/chronicles/deployments/stage/{chain['name']}")
             continue
         data[chain['name']] = {}
         data[chain['name']]['info'] = chain
