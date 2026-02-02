@@ -58,20 +58,20 @@ The address of the **SelfKisser** for each chain can be found in the table at th
 #### Whitelist the Address That Sends the Request
 
 ```bash
-$ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address)()" <oracle address you want you use> --rpc-url $rpc
+$ cast send 0x9eE458DefDc50409DbF153515DA54Ff5B744e533 "selfKiss(address)()" <oracle address you want you use> --rpc-url $rpc
 ```
 
-Here, `0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that sends the request.
+Here, `0x9eE458DefDc50409DbF153515DA54Ff5B744e533` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that sends the request.
 
 #### Whitelist a Different Address
 
 If you need to whitelist a different address than the one sending the request, use:
 
 ```bash
-$ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address, address)()" <oracle address you want you use> <contract address to be whitelisted> --rpc-url $rpc
+$ cast send 0x9eE458DefDc50409DbF153515DA54Ff5B744e533 "selfKiss(address, address)()" <oracle address you want you use> <contract address to be whitelisted> --rpc-url $rpc
 ```
 
-Here, `0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that you provide as a parameter.
+Here, `0x9eE458DefDc50409DbF153515DA54Ff5B744e533` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that you provide as a parameter.
 
 #### Verify Whitelist Status:
 
@@ -108,7 +108,7 @@ Note that Chronicle Oracles use 18 decimal places of precision, so the price is 
 
 If you do not want to use the CLI, you can whitelist yourself directly on Etherscan.
 
-1. Navigate to the SelfKisser contract address on Etherscan Ethereum Sepolia: [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code). If you are using a different Testnet, make sure to use the right corresponding blockchain explorer for that chain as well as the right SelfKisser address (you can find the SelfKisser address on different Testnet chains in the table at the top of this page).
+1. Navigate to the SelfKisser contract address on Etherscan Ethereum Sepolia: [0x9eE458DefDc50409DbF153515DA54Ff5B744e533](https://sepolia.etherscan.io/address/0x9eE458DefDc50409DbF153515DA54Ff5B744e533#code). If you are using a different Testnet, make sure to use the right corresponding blockchain explorer for that chain as well as the right SelfKisser address (you can find the SelfKisser address on different Testnet chains in the table at the top of this page).
 
 2. Click on the `Contract` tab and then on `Write Contract`
 

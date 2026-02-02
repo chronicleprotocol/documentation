@@ -69,10 +69,10 @@ contract OracleReader {
 
     /** 
     * @notice The SelfKisser granting access to Chronicle oracles.
-    * SelfKisser_1:0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d
+    * SelfKisser_2:0x9eE458DefDc50409DbF153515DA54Ff5B744e533
     * Network: Sepolia
     */
-    ISelfKisser public selfKisser = ISelfKisser(address(0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d));
+    ISelfKisser public selfKisser = ISelfKisser(address(0x9eE458DefDc50409DbF153515DA54Ff5B744e533));
 
     constructor() {
         // Note to add address(this) to chronicle oracle's whitelist.
@@ -132,7 +132,7 @@ Deploy the `OracleReader.sol` contract and you should see the following:
 
 Note: the price uses 18 decimals, meaning that the actual price is 3533.995. Age uses Unix Timestamp, meaning that 1718091840 corresponds to 'Tue Jun 11 2024 07:44:00 GMT'.
 
-- **selfKisser**: returns the address of the SelfKisser `0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d`
+- **selfKisser**: returns the address of the SelfKisser `0x9eE458DefDc50409DbF153515DA54Ff5B744e533`
 
 <div style={{textAlign: 'center'}}>
 <img
