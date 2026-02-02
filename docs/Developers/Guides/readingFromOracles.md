@@ -44,7 +44,7 @@ Chronicle Oracles are read protected by a whitelist. On Testnet networks, you ca
 | Ethereum Sepolia              | [0x9eE458DefDc50409DbF153515DA54Ff5B744e533](https://sepolia.etherscan.io/address/0x9eE458DefDc50409DbF153515DA54Ff5B744e533#code)           |
 | Base Sepolia                  | [0x7D62Def8478c21B82aA7fcbc2E7f8B404Ac6c565](https://sepolia.basescan.org/address/0x7D62Def8478c21B82aA7fcbc2E7f8B404Ac6c565#code)           |
 | Arbitrum Sepolia              | [0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5](https://sepolia.arbiscan.io/address/0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5#code)            |
-| Gnosis Mainnet                | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://gnosisscan.io/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B#code)                  |
+| Gnosis Mainnet                | [0xE24c5cd952193eDA44BE71c19b35a9CB83cd1E24](https://gnosisscan.io/address/0xE24c5cd952193eDA44BE71c19b35a9CB83cd1E24#code)                  |
 | Mantle Testnet                | [0x165dC3e99E3491b8914CF65b4CBC4E98755da53e](https://explorer.sepolia.mantle.xyz/address/0x165dC3e99E3491b8914CF65b4CBC4E98755da53e#code)    |
 | Scroll Sepolia                | [0xCE26246F859512CD22faE6037fb0371960B68a0C](https://sepolia.scrollscan.com/address/0xCE26246F859512CD22faE6037fb0371960B68a0C#code)         |
 | zkSync Sepolia                | [0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb](https://sepolia.explorer.zksync.io/address/0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb#contract) |
