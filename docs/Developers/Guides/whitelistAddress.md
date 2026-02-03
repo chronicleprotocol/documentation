@@ -18,23 +18,24 @@ On Mainnet, to get access to production Oracles, please open a ticket on [Discor
 
 | Testnet Network               | SelfKisser Address                                                                                                                           |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ethereum Sepolia              | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)           |
-| Base Sepolia                  | [0x70E58b7A1c884fFFE7dbce5249337603a28b8422](https://sepolia.basescan.org/address/0x70E58b7A1c884fFFE7dbce5249337603a28b8422#code)           |
-| Arbitrum Sepolia              | [0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f](https://sepolia.arbiscan.io/address/0xc0fe3a070Bc98b4a45d735A52a1AFDd134E0283f#code)            |
-| Gnosis Mainnet                | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://gnosisscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d)                       |
-| Mantle Testnet                | [0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578](https://explorer.sepolia.mantle.xyz/address/0x9ee0DC1f7cF1a5c083914e3de197Fd1F484E0578)         |
-| Scroll Sepolia                | [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.scrollscan.com/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code)         |
-| zkSync Sepolia                | [0x25f594edde4f58A14970b2ef6616badBa4B1CdDD](https://sepolia.explorer.zksync.io/address/0x25f594edde4f58A14970b2ef6616badBa4B1CdDD#contract) |
-| Optimism Sepolia              | [0xfF619a90cDa4020897808D74557ce3b648922C37](https://sepolia-optimism.etherscan.io/address/0xfF619a90cDa4020897808D74557ce3b648922C37#code)  |
+| Ethereum Sepolia              | [0x9eE458DefDc50409DbF153515DA54Ff5B744e533](https://sepolia.etherscan.io/address/0x9eE458DefDc50409DbF153515DA54Ff5B744e533#code)           |
+| Base Sepolia                  | [0x7D62Def8478c21B82aA7fcbc2E7f8B404Ac6c565](https://sepolia.basescan.org/address/0x7D62Def8478c21B82aA7fcbc2E7f8B404Ac6c565#code)           |
+| Arbitrum Sepolia              | [0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5](https://sepolia.arbiscan.io/address/0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5#code)            |
+| Gnosis Mainnet                | [0xE24c5cd952193eDA44BE71c19b35a9CB83cd1E24](https://gnosisscan.io/address/0xE24c5cd952193eDA44BE71c19b35a9CB83cd1E24#code)                  |
+| Mantle Testnet                | [0x165dC3e99E3491b8914CF65b4CBC4E98755da53e](https://explorer.sepolia.mantle.xyz/address/0x165dC3e99E3491b8914CF65b4CBC4E98755da53e#code)    |
+| Scroll Sepolia                | [0xCE26246F859512CD22faE6037fb0371960B68a0C](https://sepolia.scrollscan.com/address/0xCE26246F859512CD22faE6037fb0371960B68a0C#code)         |
+| zkSync Sepolia                | [0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb](https://sepolia.explorer.zksync.io/address/0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb#contract) |
+| Optimism Sepolia              | [0x84c2dD149026327f95A7947d788Dff49D8B24E26](https://sepolia-optimism.etherscan.io/address/0x84c2dD149026327f95A7947d788Dff49D8B24E26#code)  |
 | Berachain Bepolia              | [0x584914a893aBefB95abC02A5604338c0390F328B](https://bepolia.beratrail.io/address/0x584914a893aBefB95abC02A5604338c0390F328B)            |
-| Superseed Sepolia             | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://sepolia-explorer.superseed.xyz/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B#code) |
-| Corn Sepolia             | [0x8CA2E3a09c79233127dC21955e28A6b9C4bf166E](https://testnet.cornscan.io/address/0x8CA2E3a09c79233127dC21955e28A6b9C4bf166E) |
+| Superseed Sepolia             | [0x174d08990e95aa7C025cA7B44e41768c15616041](https://sepolia-explorer.superseed.xyz/address/0x174d08990e95aa7C025cA7B44e41768c15616041#code) |
 | Plume Testnet            | [0xd6de00f82738c966c88F55017e8aCcA192AF42a1](https://testnet-explorer.plumenetwork.xyz/address/0xd6de00f82738c966c88F55017e8aCcA192AF42a1) |
-| Monad Testnet           | [0x9a0de663c20127a229891eA0C7Db99c785BF91e3](https://monad-testnet.socialscan.io/address/0x9a0de663c20127a229891eA0C7Db99c785BF91e3) |
-| Unichain Sepolia           | [0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://unichain-sepolia.blockscout.com/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
-| Avalanche Fuji Testnet|[0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://testnet.snowtrace.io/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
+| Monad Testnet           | [0xFdDB9A201d8E0E7fF6Fe835cfa0105efe6275EA1](https://monad-testnet.socialscan.io/address/0xFdDB9A201d8E0E7fF6Fe835cfa0105efe6275EA1) |
+| Unichain Sepolia        | [0x7AB42CC558fc92EC990B22E663E5a7bc5879fc9f](https://unichain-sepolia.blockscout.com/address/0x7AB42CC558fc92EC990B22E663E5a7bc5879fc9f) |
+| Avalanche Fuji Testnet|	[0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://testnet.snowtrace.io/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
 |Linea Testnet|[0xBa1386329Dea3850Aedc07D387014494619F615D](https://sepolia.lineascan.build/address/0xBa1386329Dea3850Aedc07D387014494619F615D#code) |
-|Plasma Testnet|[0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0](https://testnet.plasmascan.to/address/0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0/contract/9746_5/code) |
+|Plasma Testnet|[0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0](https://testnet.plasmascan.to/address/0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0) |
+                                        |
+
 
 # Whitelisting Yourself on Testnet and Reading from Smart Contracts
 
@@ -57,20 +58,20 @@ The address of the **SelfKisser** for each chain can be found in the table at th
 #### Whitelist the Address That Sends the Request
 
 ```bash
-$ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address)()" <oracle address you want you use> --rpc-url $rpc
+$ cast send 0x9eE458DefDc50409DbF153515DA54Ff5B744e533 "selfKiss(address)()" <oracle address you want you use> --rpc-url $rpc
 ```
 
-Here, `0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that sends the request.
+Here, `0x9eE458DefDc50409DbF153515DA54Ff5B744e533` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that sends the request.
 
 #### Whitelist a Different Address
 
 If you need to whitelist a different address than the one sending the request, use:
 
 ```bash
-$ cast send 0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d "selfKiss(address, address)()" <oracle address you want you use> <contract address to be whitelisted> --rpc-url $rpc
+$ cast send 0x9eE458DefDc50409DbF153515DA54Ff5B744e533 "selfKiss(address, address)()" <oracle address you want you use> <contract address to be whitelisted> --rpc-url $rpc
 ```
 
-Here, `0x0dcc19657007713483a5ca76e6a7bbe5f56ea37d` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that you provide as a parameter.
+Here, `0x9eE458DefDc50409DbF153515DA54Ff5B744e533` is the SelfKisser contract address on Ethereum Sepolia. This command will whitelist the address that you provide as a parameter.
 
 #### Verify Whitelist Status:
 
@@ -107,7 +108,7 @@ Note that Chronicle Oracles use 18 decimal places of precision, so the price is 
 
 If you do not want to use the CLI, you can whitelist yourself directly on Etherscan.
 
-1. Navigate to the SelfKisser contract address on Etherscan Ethereum Sepolia: [0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d](https://sepolia.etherscan.io/address/0x0Dcc19657007713483A5cA76e6A7bbe5f56EA37d#code). If you are using a different Testnet, make sure to use the right corresponding blockchain explorer for that chain as well as the right SelfKisser address (you can find the SelfKisser address on different Testnet chains in the table at the top of this page).
+1. Navigate to the SelfKisser contract address on Etherscan Ethereum Sepolia: [0x9eE458DefDc50409DbF153515DA54Ff5B744e533](https://sepolia.etherscan.io/address/0x9eE458DefDc50409DbF153515DA54Ff5B744e533#code). If you are using a different Testnet, make sure to use the right corresponding blockchain explorer for that chain as well as the right SelfKisser address (you can find the SelfKisser address on different Testnet chains in the table at the top of this page).
 
 2. Click on the `Contract` tab and then on `Write Contract`
 
