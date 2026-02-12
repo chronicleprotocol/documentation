@@ -56,9 +56,7 @@ This ultimately meant those looking to utilize oracles had to consider the pros 
 
 ### Enter Scribe
 
-The goal with Scribe was to eliminate this tradeoff. Creating the first Oracle that could support a huge number of validators and post updated data on-chain at a low cost.
-
-The result is an Oracle that can have unlimited validators and costs 6x less to update than Chainlink, and 3.5x less than Pyth (on L1 & L2), making it the most secure, decentralized, and cost-efficient option available.
+The goal with Scribe was to eliminate this tradeoff. Creating the first Oracle that could supports a huge number of validators and post updated data onchain at a low cost.
 
 
 To read more on Scribe, please see the links below

@@ -103,3 +103,9 @@ While all of these functions can be used to read data from the oracle, they diff
 We recommend using the tryXXX functions (e.g., tryRead()) because they are safer to use since they never revert.
 
 For full specifications for each of the functions, please check the [Scribe contract](https://github.com/chronicleprotocol/scribe/blob/main/src/Scribe.sol).
+
+## What is the difference between `poke` / `poke_optimized` and `opPoke` / `opPoke_optimized`?
+
+`Poke` and `poke_optimized` are functionally identical, as are `opPoke` and `opPoke_optimized`. The only difference between the standard and _optimized versions is that the `_optimized` functions are designed with selectors that contain more zero bytes. Since zero bytes are cheaper in calldata, these functions consume slightly less gas when called. The difference in gas is small, but beneficial for frequently executed transactions.
+
+`opPoke` is intended for use on Ethereum mainnet and follows an optimistic update mechanism that includes a challenge period. However, if the asset price becomes too volatile and moves out of the acceptable spread while the `opPoke` call is still within its challenge window, the update can be overridden by submitting a regular poke, which applies immediately without delay.
