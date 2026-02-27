@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
-description: Using a Chronicle Oracle for Morpho Markets
-keywords: [oracles, read]
+description: Deploy a Morpho Market Using a Single Chronicle Feed
+keywords: [oracles, Morpho, read]
 ---
 
 # Deploy a Morpho Market Using a Single Chronicle Feed

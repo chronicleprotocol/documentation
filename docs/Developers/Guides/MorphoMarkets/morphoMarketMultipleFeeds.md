@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
-description: Using a Chronicle Oracle for Morpho Markets
-keywords: [oracles, read]
+description:  Deploy a Morpho Market Using Multiple Data Feeds
+keywords: [Morpho, oracles, read]
 ---
 
 
