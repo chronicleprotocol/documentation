@@ -54,7 +54,7 @@ The Chronicle Chainlink Adapter component is only needed for Proof of Asset feed
 
 ### Want to Deploy It Yourself?
 
-If you prefer to handle the deployment yourself, you can follow the step-by-step instructions in the [Deploy a Morpho Market Using Multiple Feeds](./morphoVaults/morphoVaultMultipleFeeds.md) guide. The guide covers the full deployment process, including pre-computing the Morpho Adapter address and requesting whitelisting.
+If you prefer to handle the deployment yourself, you can follow the step-by-step instructions in the [Deploy a Morpho Market Using Multiple Feeds](./morphoMarketMultipleFeeds) guide. The guide covers the full deployment process, including pre-computing the Morpho Adapter address and requesting whitelisting.
 
 
 
