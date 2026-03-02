@@ -1,0 +1,8 @@
+{
+    "label": "Morpho Markets",
+    "position": 4,
+    "link": {
+      "type": "generated-index",
+      "description": "Deploy a Morpho Markets using Chronicle Oracles"
+    }
+  }
