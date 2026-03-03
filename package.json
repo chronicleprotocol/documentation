@@ -26,6 +26,7 @@
     "clsx": "^2.0.0",
     "docusaurus-plugin-copy-page-button": "^0.3.5",
     "docusaurus-plugin-generate-llms-txt": "^0.0.1",
+    "docusaurus-plugin-mcp-server": "^0.10.2",
     "docusaurus-plugin-sass": "^0.2.5",
     "prism-react-renderer": "^2.3.0",
     "pushfeedback-react": "^0.1.40",

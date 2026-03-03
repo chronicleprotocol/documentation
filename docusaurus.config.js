@@ -14,6 +14,15 @@ const config = {
       outputFile: "llms.txt", // defaults to llms.txt if not specified
     },
   ],
+   [
+      'docusaurus-plugin-mcp-server',
+      {
+        server: {
+          name: 'my-docs',
+          version: '1.0.0',
+        },
+      },
+    ],
 [
   'docusaurus-plugin-copy-page-button',
   {
