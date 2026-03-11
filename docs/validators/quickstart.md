@@ -34,7 +34,6 @@ It will attempt to install:
 * [k3s](https://docs.k3s.io/installation)
 * [Helm v3](https://helm.sh/docs/intro/install/)
 * Generate `generated-values.yaml` needed to install the [`chronicle/validator`](https://github.com/chronicleprotocol/charts/tree/main/charts/validator) helm chart
-* A tor daemon will be deployed using a [tor-controller](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml), which install some custom resource definitions. This is a requirement for the `WEB_API` transport layer which sends validator messages over tor networks. 
 
 
 ## Requirements:
@@ -86,10 +85,10 @@ Managed RPC providers can become costly if they are heavily utilized. We recomme
 
 There are alternative RPC providers that you can use as well which aim to be as decentralized as possible:
 
-- [https://drpc.org](https://drpc.org/)
-- [https://www.dwellir.com/](https://www.dwellir.com/)
-- [https://www.nodies.app](https://www.nodies.app)
-- [https://www.grove.city](https://www.grove.city)
+- [https://drpc.org](https://drpc.org)
+- [https://www.dwellir.com/](https://www.dwellir.com)
+- [https://thirdweb.com/](https://thirdweb.com)
+- [https://app.goldsky.com/](https://app.goldsky.com)
 - [https://ankr.com](https://ankr.com)
 
 
@@ -223,14 +222,7 @@ NOTES:
 [SUCCESS]: setup complete!
 ```
 
-Once the installation is completed, you can retrieve your tor onion address using this command:
-
-```bash
-kubectl get onion -n $NAME_SPACE
-```
-where `$NAME_SPACE` is the namespace where you deployed your validator in.
-
-> Please provide the `ETH_FROM` and `TOR onion` address to the Chronicle team so it can be whitelisted to receive `WEB_API` traffic.
+> Please provide your `ETH_FROM` address to the Chronicle team so it can be whitelisted.
 
 :::tip
 The install script can be run multiple times with the same values. It will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator` on your feed release, with any updated input variables. **Note**: it will delete secrets in an existing namespace, and recreate them as, secrets are generally immutable
@@ -241,38 +233,24 @@ The install script can be run multiple times with the same values. It will attem
 #### View all resources created in the namespace
 
 ```bash
-kubectl  get pods,deployment,service,secrets,onion -n demo
-NAME                                                    READY   STATUS             RESTARTS        AGE
-pod/ghost-688b6864b5-w92sd                              1/1     Running            0               2m
-pod/ghost-socks-tor-daemon-549c447f9c-75c26             1/1     Running            0               2m
-pod/ghost-tor-daemon-c648899bb-67rnd                    1/1     Running            0               2m
-pod/ghost-vao-f568684d9-74nb5                           1/1     Running            0               2m
+kubectl get pods,deployment,service,secrets -n demo
+NAME                                   READY   STATUS    RESTARTS   AGE
+pod/ghost-688b6864b5-w92sd             1/1     Running   0          2m
+pod/ghost-vao-f568684d9-74nb5          1/1     Running   0          2m
 
-NAME                                                    READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/ghost                                   1/1     1            1           2m
-deployment.apps/ghost-socks-tor-daemon                  1/1     1            1           2m
-deployment.apps/ghost-tor-daemon                        1/1     1            1           2m
-deployment.apps/ghost-vao                               1/1     1            1           2m
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost             1/1     1            1           2m
+deployment.apps/ghost-vao         1/1     1            1           2m
 
-NAME                                           TYPE                CLUSTER-IP           EXTERNAL-IP          PORT(S)                              AGE
-service/ghost                                  LoadBalancer        10.43.181.34         64.46.13.31          8000:31501/TCP,8080:30746/TCP        2m
-service/ghost-metrics                          ClusterIP           10.43.21.230         <none>               9090/TCP                             2m
-service/ghost-metrics-vao                      ClusterIP           10.43.23.37          <none>               9090/TCP                             2m
-service/ghost-socks-tor-svc                    ClusterIP           10.43.87.120         <none>               9050/TCP                             2m
-service/ghost-tor-metrics-svc                  ClusterIP           10.43.142.233        <none>               9035/TCP                             2m
-service/ghost-tor-svc                          ClusterIP           10.43.194.155        <none>               8888/TCP                             2m
-service/ghost-vao                              LoadBalancer        10.43.1.126          64.46.13.31          8001:31468/TCP                       2m
+NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)                      AGE
+service/ghost              LoadBalancer   10.43.181.34   64.46.13.31   8000:31501/TCP,8080:30746/TCP   2m
+service/ghost-metrics      ClusterIP      10.43.21.230   <none>        9090/TCP                       2m
+service/ghost-metrics-vao  ClusterIP      10.43.23.37    <none>        9090/TCP                       2m
+service/ghost-vao          LoadBalancer   10.43.1.126    64.46.13.31   8001:31468/TCP                 2m
 
-NAME                                           TYPE                                           DATA   AGE
-secret/ghost-eth-keys                          Opaque                                         3      2m
-secret/ghost-socks-tor-secret                  tor.k8s.torproject.org/control-password        1      2m
-secret/ghost-tor-auth                          tor.k8s.torproject.org/authorized-clients-v3   0      2m
-secret/ghost-tor-secret                        tor.k8s.torproject.org/onion-v3                5      2m
-secret/sh.helm.release.v1.ghost.v1             helm.sh/release.v1                             1      2m
-
-
-NAME                                              HOSTNAME                      AGE
-onionservice.tor.k8s.torproject.org/ghost         mylongtoronionaddress.onion   28m
+NAME                                   TYPE                 DATA   AGE
+secret/ghost-eth-keys                  Opaque               3      2m
+secret/sh.helm.release.v1.ghost.v1     helm.sh/release.v1   1      2m
 ```
 
 #### View pod logs:
@@ -316,6 +294,26 @@ If the script fails to find any of these values, it will prompt you for them whe
 
 ## Installing via helm (manually)
 
+### Create namespace and secrets
+
+Create a dedicated namespace for your feed:
+
+```bash
+kubectl create ns $VALIDATOR_NAME
+```
+
+Create the Kubernetes secret containing your ETH keys:
+
+```bash
+kubectl create secret generic $VALIDATOR_NAME-eth-keys \
+  --from-file=ethKeyStore=/path/to/keystore.json \
+  --from-literal=ethFrom=${ETH_FROM_ADDRESS} \
+  --from-literal=ethPass="" \
+  --namespace $VALIDATOR_NAME
+```
+
+### Add the helm repository
+
 Make sure the `chronicle` helm repository has been added:
 
 ```bash
@@ -329,10 +327,11 @@ ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.4.8
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.5.1
 ```
 
-the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
+### Prepare values.yaml
+The installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
 
 ```bash
 global:
@@ -368,6 +367,8 @@ You can view all values available for the [validator chart](https://github.com/c
 
 A useful value to add is `.Values.global.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
 
+### Helm install/upgrade
+
 With a valid `values.yaml` file created, you should be able to install a feed:
 
 ```bash
@@ -376,7 +377,7 @@ helm install $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.4.8
+ --version 0.5.1
 ```
 
 or to upgrade an existing helm release:
@@ -386,7 +387,7 @@ helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.4.8
+ --version 0.5.1
 ```
 
 :::tip

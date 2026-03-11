@@ -18,8 +18,15 @@ Helm Chart details:
 
 
 :::warning
-The validator `ChartVersion: 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
-Please make sure you update your `values.yaml` or `generated_values.yaml` to include `.Values.vao`.
+**ChartVersion `0.5.1`**: The `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
+
+```bash
+# Remove the onionservice resource (if present)
+kubectl delete onionservice ghost -n $FEED_NAME --ignore-not-found
+
+# If the tor-controller namespace was deployed, remove it
+kubectl delete namespace tor-controller-system --ignore-not-found
+```
 
 Sample config:
 
@@ -50,7 +57,6 @@ vao:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`
 ```
 :::
-
 
 <details>
 <summary>Upgrading manually (`helm upgrade`)</summary>
@@ -102,13 +108,9 @@ vao:
 Please ensure your values yaml file is updated to reflect the latest requirements for the validator chart, with the correct values for `ethConfig`, `ethRpcUrl` and `rpcUrl`.
 :::
 
-:::danger
-Make sure the [TOR crds](#install-crds) are installed.
-:::
-
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.4.8
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.5.1
 ```
 </details>
 
@@ -132,10 +134,6 @@ su - <FEED_USERNAME>
 export FEED_NAME=my-feed
 ```
 
-:::danger
-Make sure the [TOR crds](#install-crds) are installed.
-:::
-
 ### Download the latest `upgrade.sh`
 
 Get the latest upgrade.sh script:
@@ -148,39 +146,6 @@ chmod a+x upgrade.sh
 :::tip You can set the expected variables in the `.env` file, or export them as environment variables. If the script fails to find any of these values, it will prompt you for them when running the script.
 :::
 
-</details>
-
-<details>
-<summary>Upgrading from `0.3`</summary>
-
-:::danger
-If upgrading from 0.2.x to 0.3.x, please use the helper script, or manually update your `generated-values.yaml` as per the steps above
-:::
-
-### Install CRD's
-
-Starting from Chart Version `0.3.4`, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://raw.githubusercontent.com/chronicleprotocol/charts/refs/heads/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
-
-If you are running an upgrade from a prior release (`< 0.3.4`), chances are that Tor Custom Resource Definitions haven't been installed. Helm does not like installing CRD's during a helm upgrade, so we need to manually apply the CRD's like this:
-
-
-```
-kubectl apply -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.24/charts/validator/crds/tor-controller.yaml
-```
-
-It can take a few moments for the tor-controller to be in a ready state, but please make sure its running before upgrading your validator:
-
-```
-kubectl get pods -n tor-controller-system
-```
-
-You should see something like this:
-```
-NAME                                                 READY   STATUS    RESTARTS   AGE
-tor-controller-controller-manager-6648f44cc8-g6c68   2/2     Running   0          16m
-```
-
-We now have the CRD's deployed (ie `kubectl get crds` will show the tor custom resource definitions), and our values.yaml updated, we can perform the upgrade:
 </details>
 ---
 
@@ -195,42 +160,29 @@ Verify the chart version has changed and matches what the latest feed version:
 
 ```
 helm list -n $FEED_NAME
-NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART            APP VERSION
-validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.4.8	0.66.2
+NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART             APP VERSION
+validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.5.1   0.66.2
 ```
 
 #### View all resources created in the namespace
 ```bash
-kubectl  get pods,deployment,service,secrets,onion
-NAME                                         READY   STATUS    RESTARTS   AGE
-pod/ghost-5c4cfb47bf-wvsvf                   1/1     Running   0          14s
-pod/ghost-socks-tor-daemon-ff98bb7c4-tm7f5   1/1     Running   0          14s
-pod/ghost-tor-daemon-579444b8df-ndfdx        1/1     Running   0          14s
-pod/ghost-vao-79d77454c7-l5qch               1/1     Running   0          14s
+kubectl get pods,deployment,service,secrets -n $FEED_NAME
+NAME                                   READY   STATUS    RESTARTS   AGE
+pod/ghost-5c4cfb47bf-wvsvf             1/1     Running   0          14s
+pod/ghost-vao-79d77454c7-l5qch         1/1     Running   0          14s
 
-NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/ghost                    1/1     1            1           14s
-deployment.apps/ghost-socks-tor-daemon   1/1     1            1           14s
-deployment.apps/ghost-tor-daemon         1/1     1            1           14s
-deployment.apps/ghost-vao                1/1     1            1           14s
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost             1/1     1            1           14s
+deployment.apps/ghost-vao         1/1     1            1           14s
 
 NAME                            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)             AGE
 service/ghost                   ClusterIP   10.43.109.192   <none>        8000/TCP,8080/TCP   14s
-service/ghost-socks-tor-svc     ClusterIP   10.43.222.127   <none>        9050/TCP            14s
-service/ghost-tor-metrics-svc   ClusterIP   10.43.244.109   <none>        9035/TCP            14s
-service/ghost-tor-svc           ClusterIP   10.43.204.2     <none>        8888/TCP            14s
 service/ghost-vao               ClusterIP   10.43.44.21     <none>        8001/TCP            14s
 service/kubernetes              ClusterIP   10.43.0.1       <none>        443/TCP             287d
 
-NAME                                        TYPE                                           DATA   AGE
-secret/ghost-socks-tor-secret               tor.k8s.torproject.org/control-password        1      14s
-secret/ghost-tor-auth                       tor.k8s.torproject.org/authorized-clients-v3   0      14s
-secret/ghost-tor-secret                     tor.k8s.torproject.org/onion-v3                5      14s
-secret/somesecretname-eth-keys              Opaque                                         3      30s
-secret/sh.helm.release.v1.my-validator.v1   helm.sh/release.v1                             1      14s
-
-NAME                                        HOSTNAME                           AGE
-onionservice.tor.k8s.torproject.org/ghost   mylongonionaddress.onion           14s
+NAME                                        TYPE                 DATA   AGE
+secret/somesecretname-eth-keys              Opaque               3      30s
+secret/sh.helm.release.v1.my-validator.v1   helm.sh/release.v1   1      14s
 ```
 
 #### View pod logs:

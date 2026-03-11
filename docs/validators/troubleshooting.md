@@ -70,7 +70,7 @@ export FEED_NAME=<CHANGE_ME>
 cd /tmp
 kubectl logs deployment/ghost -n $FEED_NAME > ghost.log
 kubectl logs deployment/ghost-vao -n $FEED_NAME > ghost-vao.log
-kubectl get pods,deployment,service,secrets,onion --all-namespaces > kbom.txt
+kubectl get pods,deployment,service,secrets --all-namespaces > kbom.txt
 helm list --all-namespaces > all-helm-releases.log
 tar czf chronicle-debug.tar.gz ghost.log ghost-vao.log all-helm-releases.log kbom.txt $HOME/$FEED_NAME/generated-values.yaml
 ```
