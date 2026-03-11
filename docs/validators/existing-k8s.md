@@ -32,6 +32,9 @@ kubectl delete onionservice ghost -n $FEED_NAME --ignore-not-found
 
 # If the tor-controller namespace was deployed, remove it
 kubectl delete namespace tor-controller-system --ignore-not-found
+
+# Remove all CRD's IF NOT USED BY OTHER APPS
+kubectl delete -f https://raw.githubusercontent.com/chronicleprotocol/charts/validator-0.3.24/charts/validator/crds/tor-controller.yaml --ignore-not-found
 ```
 :::
 
