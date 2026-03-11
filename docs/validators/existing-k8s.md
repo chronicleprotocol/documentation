@@ -35,10 +35,6 @@ kubectl delete namespace tor-controller-system --ignore-not-found
 ```
 :::
 
-:::warning
-The validator `ChartVersion: > 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
-Please make sure you update your `values.yaml` or `generated_values.yaml` to include `.Values.vao`.
-
 Sample config:
 
 ```yaml
@@ -56,8 +52,11 @@ ghost:
     ethPass:
       existingSecret: '<somesecret>'
       key: "ethPass"
+
   ethRpcUrl: "https://MY_L1_RPC_URL"
+
   rpcUrl: "https://MY_L1_RPC_URL"
+  
   env:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`

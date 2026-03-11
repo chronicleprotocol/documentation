@@ -85,10 +85,10 @@ Managed RPC providers can become costly if they are heavily utilized. We recomme
 
 There are alternative RPC providers that you can use as well which aim to be as decentralized as possible:
 
-- [https://drpc.org](https://drpc.org/)
-- [https://www.dwellir.com/](https://www.dwellir.com/)
-- [https://www.nodies.app](https://www.nodies.app)
-- [https://www.grove.city](https://www.grove.city)
+- [https://drpc.org](https://drpc.org)
+- [https://www.dwellir.com/](https://www.dwellir.com)
+- [https://thirdweb.com/](https://thirdweb.com)
+- [https://app.goldsky.com/](https://app.goldsky.com)
 - [https://ankr.com](https://ankr.com)
 
 

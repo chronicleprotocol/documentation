@@ -29,9 +29,6 @@ kubectl delete namespace tor-controller-system --ignore-not-found
 ```
 :::
 
-:::warning
-The validator `ChartVersion: 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
-Please make sure you update your `values.yaml` or `generated_values.yaml` to include `.Values.vao`.
 
 Sample config:
 
@@ -162,7 +159,7 @@ If upgrading from 0.2.x to 0.3.x, please use the helper script, or manually upda
 :::
 
 :::info
-From `ChartVersion 0.5.1`, the `tor-controller` and its CRDs are no longer part of the chart. If you are upgrading from a `0.3.x` release, you do **not** need to install or maintain the tor CRDs. After upgrading, see the cleanup steps at the top of this page to remove any leftover tor resources.
+From `ChartVersion 0.5.1`, the `tor-controller` and its CRDs are no longer part of the chart. After upgrading, see the cleanup steps at the top of this page to remove any leftover tor resources.
 :::
 
 </details>
