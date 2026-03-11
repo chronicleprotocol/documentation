@@ -294,6 +294,26 @@ If the script fails to find any of these values, it will prompt you for them whe
 
 ## Installing via helm (manually)
 
+### Create namespace and secrets
+
+Create a dedicated namespace for your feed:
+
+```bash
+kubectl create ns $VALIDATOR_NAME
+```
+
+Create the Kubernetes secret containing your ETH keys:
+
+```bash
+kubectl create secret generic $VALIDATOR_NAME-eth-keys \
+  --from-file=ethKeyStore=/path/to/keystore.json \
+  --from-literal=ethFrom=${ETH_FROM_ADDRESS} \
+  --from-literal=ethPass="" \
+  --namespace $VALIDATOR_NAME
+```
+
+### Add the helm repository
+
 Make sure the `chronicle` helm repository has been added:
 
 ```bash
@@ -310,7 +330,8 @@ chronicle	https://chronicleprotocol.github.io/charts/
 helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.5.1
 ```
 
-the installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
+### Prepare values.yaml
+The installer will create `generated-values.yaml` which contains the configuration needed to deploy the helm feed. you can inspect the file, located in the `$HOME/$VALIDATOR_NAME`directory. Or you can create your own `values.yaml` file populated with config as show below:
 
 ```bash
 global:
@@ -345,6 +366,8 @@ vao:
 You can view all values available for the [validator chart](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/README.md#values), however the values provided with the installer are enough to get you going.
 
 A useful value to add is `.Values.global.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
+
+### Helm install/upgrade
 
 With a valid `values.yaml` file created, you should be able to install a feed:
 
