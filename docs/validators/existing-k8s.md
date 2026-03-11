@@ -56,7 +56,7 @@ ghost:
   ethRpcUrl: "https://MY_L1_RPC_URL"
 
   rpcUrl: "https://MY_L1_RPC_URL"
-  
+
   env:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`
@@ -66,7 +66,6 @@ vao:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`
 ```
-:::
 <br/>
 
 ### Requirements

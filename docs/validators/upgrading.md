@@ -27,8 +27,6 @@ kubectl delete onionservice ghost -n $FEED_NAME --ignore-not-found
 # If the tor-controller namespace was deployed, remove it
 kubectl delete namespace tor-controller-system --ignore-not-found
 ```
-:::
-
 
 Sample config:
 
@@ -58,8 +56,6 @@ vao:
     normal:
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4' # public/reachable ip address of node. If DNS hostname set to `/dns/my.validator.com`
 ```
-:::
-
 
 <details>
 <summary>Upgrading manually (`helm upgrade`)</summary>
@@ -147,19 +143,6 @@ chmod a+x upgrade.sh
 ```
 
 :::tip You can set the expected variables in the `.env` file, or export them as environment variables. If the script fails to find any of these values, it will prompt you for them when running the script.
-:::
-
-</details>
-
-<details>
-<summary>Upgrading from `0.3`</summary>
-
-:::danger
-If upgrading from 0.2.x to 0.3.x, please use the helper script, or manually update your `generated-values.yaml` as per the steps above
-:::
-
-:::info
-From `ChartVersion 0.5.1`, the `tor-controller` and its CRDs are no longer part of the chart. After upgrading, see the cleanup steps at the top of this page to remove any leftover tor resources.
 :::
 
 </details>
