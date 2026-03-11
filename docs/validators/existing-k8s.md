@@ -24,6 +24,18 @@ Deploying the validator into an existing kubernetes cluster.
 ## Notable changes include:
 
 :::warning
+**ChartVersion `0.5.1`**: The `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
+
+```bash
+# Remove the onionservice resource (if present)
+kubectl delete onionservice ghost -n $FEED_NAME --ignore-not-found
+
+# If the tor-controller namespace was deployed, remove it
+kubectl delete namespace tor-controller-system --ignore-not-found
+```
+:::
+
+:::warning
 The validator `ChartVersion: > 0.4.4` introduces a new pod and service, named `vao`. This Service will expose its service via `LoadBalancer` on port __8001__. Please make sure this port is open!
 Please make sure you update your `values.yaml` or `generated_values.yaml` to include `.Values.vao`.
 
@@ -32,7 +44,7 @@ Sample config:
 ```yaml
 global:
   logLevel: "warn"
-  
+
 ghost:
   ethConfig:
     ethFrom:
@@ -57,11 +69,6 @@ vao:
 ```
 :::
 <br/>
-
-<details>
-<summary>ChartVersion `0.3.6`</summary>
-- Starting from Chart Version 0.3.6, tor is deployed using the `tor-controller` operator, which installs some [custom resource definitions](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/crds/tor-controller.yaml). The controller will create a new onion key, which will be persisted as a secret. Please delete your previous secrets containing the tor keys, as they won't be needed. Retrieve the Ghost onion address using `kubectl get onion -n <namespace>` and notify the Chronicle team of your ETH address and the new Ghost onion address.
-</details> 
 
 ### Requirements
 
@@ -156,7 +163,7 @@ vao:
 Then install the helm release using this values file:
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.4.8
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.5.1
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
@@ -164,36 +171,23 @@ You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) b
 #### View all resources created in the namespace
 
 ```bash
-kubectl  get pods,deployment,service,secrets,onion
-NAME                                         READY   STATUS    RESTARTS   AGE
-pod/ghost-5c4cfb47bf-wvsvf                   1/1     Running   0          14s
-pod/ghost-socks-tor-daemon-ff98bb7c4-tm7f5   1/1     Running   0          14s
-pod/ghost-tor-daemon-579444b8df-ndfdx        1/1     Running   0          14s
-pod/ghost-vao-79d77454c7-l5qch               1/1     Running   0          14s
+kubectl get pods,deployment,service,secrets -n my-feed-namespace
+NAME                                   READY   STATUS    RESTARTS   AGE
+pod/ghost-5c4cfb47bf-wvsvf             1/1     Running   0          14s
+pod/ghost-vao-79d77454c7-l5qch         1/1     Running   0          14s
 
-NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/ghost                    1/1     1            1           14s
-deployment.apps/ghost-socks-tor-daemon   1/1     1            1           14s
-deployment.apps/ghost-tor-daemon         1/1     1            1           14s
-deployment.apps/ghost-vao                1/1     1            1           14s
+NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/ghost             1/1     1            1           14s
+deployment.apps/ghost-vao         1/1     1            1           14s
 
 NAME                            TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)             AGE
 service/ghost                   ClusterIP   10.43.109.192   <none>        8000/TCP,8080/TCP   14s
-service/ghost-socks-tor-svc     ClusterIP   10.43.222.127   <none>        9050/TCP            14s
-service/ghost-tor-metrics-svc   ClusterIP   10.43.244.109   <none>        9035/TCP            14s
-service/ghost-tor-svc           ClusterIP   10.43.204.2     <none>        8888/TCP            14s
 service/ghost-vao               ClusterIP   10.43.44.21     <none>        8001/TCP            14s
 service/kubernetes              ClusterIP   10.43.0.1       <none>        443/TCP             287d
 
-NAME                                        TYPE                                           DATA   AGE
-secret/ghost-socks-tor-secret               tor.k8s.torproject.org/control-password        1      14s
-secret/ghost-tor-auth                       tor.k8s.torproject.org/authorized-clients-v3   0      14s
-secret/ghost-tor-secret                     tor.k8s.torproject.org/onion-v3                5      14s
-secret/somesecretname-eth-keys              Opaque                                         3      30s
-secret/sh.helm.release.v1.my-validator.v1   helm.sh/release.v1                             1      14s
-
-NAME                                        HOSTNAME                           AGE
-onionservice.tor.k8s.torproject.org/ghost   mylongonionaddress.onion           14s
+NAME                                        TYPE                 DATA   AGE
+secret/somesecretname-eth-keys              Opaque               3      30s
+secret/sh.helm.release.v1.my-validator.v1   helm.sh/release.v1   1      14s
 ```
 
 #### View pod logs:
@@ -216,10 +210,7 @@ time="2023-08-30T13:47:15Z" level=info msg=Feed address=0x7.....................
 time="2023-08-30T13:47:15Z" level=info msg=Feed address=0xc....................................... tag=LIBP2P
 time="2023-08-30T13:47:15Z" level=info msg=Feed address=0x....................................... tag=LIBP2P
 time="2023-08-30T13:47:15Z" level=info msg=Bootstrap address=/dns/spire-bootstrap1.domain.com/tcp/8000/p2p/12D111222333aaaaabbbbbccccdddddeee tag=LIBP2P
-time="2023-08-30T13:47:15Z" level=info msg="SOCKS5 proxy" address="tor-proxy:9050" tag=CONFIG_WEB_API
 time="2023-08-30T13:47:16Z" level=debug msg=Call duration=861.851113ms method=eth_call name="https://eth.public-rpc.com" tag=RPCSPLITTER
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scubbed].onion:8888" tag=CONFIG_WEB_API
-time="2023-08-30T13:47:16Z" level=info msg=Consumer address="[scrubbed].onion:8888" tag=CONFIG_WEB_API
 
 ```
 
