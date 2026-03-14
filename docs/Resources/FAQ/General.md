@@ -18,7 +18,6 @@ At the moment, Chronicle Protocol has integrations for the following chains:
 - Scroll
 - Berachain
 - Superseed
-- Corn
 - Plume Network
 - Monad
 - Unichain
@@ -44,7 +43,7 @@ GNO on Gnosis: [https://gnosisscan.io/address/0xA28dCaB66FD25c668aCC7f232aa71DA1
 The data originates from primary onchain sources such as DEXes (e.g., Uniswap, dYdX, Balancer) and offchain CEXes (e.g., Kraken, Binance, Coinbase). Only high-quality sources are used in Chronicle’s data models.
 
 ## What types of Oracles does Chronicle Protocol enable?
-In addition to the core price feed Oracles, two new products have been introduced: the [Yield Rate Oracle](https://chroniclelabs.org/blog/the-yield-rate-oracle) and the [Verified Asset Oracle](https://chroniclelabs.org/blog/m-0-and-chronicle-raising-the-standard-in-collateral-verification-with-the-rwa-oracle) (formerly known as the Real World Asset Oracle).
+In addition to [DeFi Oracles](/Products/DeFiOracle/DeFiOracle.md), Chronicle offers data solutions for tokenized assets via the [Proof of Asset Framework](/Products/VerifiedAssetOracle/proofOfAssets.md).
 
 ## What is the difference between PUSH and PULL oracles?
 
