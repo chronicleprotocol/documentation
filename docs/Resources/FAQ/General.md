@@ -25,6 +25,7 @@ At the moment, Chronicle Protocol has integrations for the following chains:
 - Avalanche
 - Linea
 - Plasma
+- Tempo
 
 This is being updated all the time as new chains come online. Please check out the [dashboard](https://chroniclelabs.org/dashboard/oracles) for the most up-to-date overview of the blockchains we are currently integrated with.
 
