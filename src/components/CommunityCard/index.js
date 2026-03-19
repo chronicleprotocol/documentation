@@ -21,7 +21,7 @@ function CommunityResourcesSection() {
       icon: '/img/LandingPage/discord.png',
       title: 'Join the Community',
       description: 'Join the community on Discord',
-      link: ' https://discord.gg/H9rnwcU8p4 '
+      link: 'https://discord.gg/H9rnwcU8p4'
     },
   ];
 
