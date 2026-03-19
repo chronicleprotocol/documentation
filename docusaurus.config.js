@@ -95,7 +95,7 @@ const config = {
       announcementBar: {
         id: 'discordLink',
         content:
-          '<strong>🚀 Join the community on <a target="_blank" href="https://discord.gg/H9rnwcU8p4">Discord!</a><strong> 🚀',
+          '<strong>🚀 Join the community on <a target="_blank" href="https://discord.gg/H9rnwcU8p4">Discord!</a></strong> 🚀',
         backgroundColor: '#2FD05B',
         textColor: '#1C1E21',
         isCloseable: false,
