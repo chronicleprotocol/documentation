@@ -51,7 +51,7 @@ Given that Chronicle verifies the collateral backing of every M0-based stablecoi
 
 NAV-based price feeds reflect the fundamental value of the underlying reserves rather than real-time market prices, making them immune to the manipulation risks that affect market-based feeds during periods of volatility.
 
-If you require such a feed, open a ticket on [Discord](https://discord.com/invite/CjgvJ9EspJ).
+If you require such a feed, open a ticket on [Discord](https://discord.com/invite/H9rnwcU8p4).
 :::
 
 ### Offchain Assets

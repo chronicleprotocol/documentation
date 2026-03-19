@@ -6,7 +6,7 @@ keywords: [Oracles, FAQ]
 ## I am currently using Chainlink. How difficult is it to change to Chronicle?
 If you are using Chainlink, you would only have to change the address of your oracle to the Chronicle equivalent. This is because Scribe is partially Chainlink compatible, implementing the most widely, and not deprecated, used functions of the `IChainlinkAggregatorV3` interface such as `latestRoundData()`, `decimals()`, and `latestAnswer()`. 
 
-One thing to keep an eye on is the number of decimals. Chronicle always uses 18 decimals, whereas Chainlink uses different decimals for different oracles. However, if implemented correctly, one can check the decimals and scale them up or down accordingly. Please conduct integration tests and feel free to [reach out](https://discord.com/invite/CjgvJ9EspJ) if there are any issues.
+One thing to keep an eye on is the number of decimals. Chronicle always uses 18 decimals, whereas Chainlink uses different decimals for different oracles. However, if implemented correctly, one can check the decimals and scale them up or down accordingly. Please conduct integration tests and feel free to [reach out](https://discord.com/invite/H9rnwcU8p4) if there are any issues.
 
 ## How can I deploy a Chronicle Oracle for Morpho markets?
 Chronicle Oracles are compatible with the [Morpho Chainlink adaptor](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/MorphoChainlinkOracleV2.sol). Morpho can dynamically handle differences in Feed decimals using the [SCALE_FACTOR](https://github.com/jar-o/morpho-blue-oracles/blob/b6c8ddb4666a6b7fe0b568ea3a5238bc8335de2a/src/morpho-chainlink/MorphoChainlinkOracleV2.sol#L145). This is important because Chronicle operates with 18 decimal places for all its Oracles, while most Chainlink's Oracles use 8 decimal places.
@@ -23,7 +23,7 @@ Chronicle Oracles are read-protected by a whitelist. To read from an Oracle, the
 
 On testnet networks, the whitelisting mechanism is permissionless, anyone can whitelist an address using the [SelfKisser](/Developers/Guides/whitelistAddress.md).
 
-On mainnet, the whitelisting mechanism is permissioned. To request access, open a ticket on [Discord](https://discord.com/invite/CjgvJ9EspJ) in the 🆘｜support channel.
+On mainnet, the whitelisting mechanism is permissioned. To request access, open a ticket on [Discord](https://discord.com/invite/H9rnwcU8p4) in the 🆘｜support channel.
 
 ## What happens if I try to read from an address that is not whitelisted?
 

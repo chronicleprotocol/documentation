@@ -521,7 +521,7 @@ SelfKisser_1 | [0xfF619a90cDa4020897808D74557ce3b648922C37](https://sepolia-opti
 ## 🤝 Getting Help
 
 :::note
-If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/CjgvJ9EspJ)** and drop your question in the hackathons channel.
+If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/H9rnwcU8p4)** and drop your question in the hackathons channel.
 :::
 
 Say hi 👋 when you see them around and ask your questions directly to one of our team members who are on-site during the event:
