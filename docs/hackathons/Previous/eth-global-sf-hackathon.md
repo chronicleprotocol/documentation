@@ -156,7 +156,7 @@ Cast is a command-line interface (CLI) tool by the Foundry team to streamline yo
 ## 🤝 Getting Help
 
 :::note
-If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/CjgvJ9EspJ)** and drop your question in the hackathons channel.
+If you have any questions and would like support with your project, please join our **[Discord](https://discord.com/invite/H9rnwcU8p4)** and drop your question in the hackathons channel.
 :::
 
 Say hi 👋 when you spot the team in their Chronicle t-shirts and feel free to ask any questions directly to our on-site team members. You can also visit the Chronicle booth for hackathon support.

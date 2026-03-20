@@ -65,7 +65,7 @@ Currently, Chronicle Oracles provide real-time data to smart contract applicatio
 
 To get started, begin testing on Testnet and, once you're familiar, request access to Chronicle Oracles on Mainnet. **Chronicle contracts use a whitelist for read protection, so any address accessing Oracle data must first be whitelisted. On Testnet, you can [self-whitelist](../Developers/Guides/whitelistAddress.md) using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser) contract.**
 
-If you need an Oracle not yet integrated, feel free to submit a request via [this form](https://forms.gle/EANjn7THKKieSYaF7) or to reach out on [Discord](https://discord.com/invite/CjgvJ9EspJ) through the 🆘｜support channel. 
+If you need an Oracle not yet integrated, feel free to submit a request via [this form](https://forms.gle/EANjn7THKKieSYaF7) or to reach out on [Discord](https://discord.com/invite/H9rnwcU8p4) through the 🆘｜support channel. 
 
 **Note: Mainnet whitelisting is permissioned, so please contact us to proceed.**
 

@@ -95,7 +95,7 @@ const config = {
       announcementBar: {
         id: 'discordLink',
         content:
-          '<strong>🚀 Join the community on <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/CjgvJ9EspJ">Discord!</a><strong> 🚀',
+          '<strong>🚀 Join the community on <a target="_blank" rel="noopener noreferrer" href="https://discord.gg/H9rnwcU8p4">Discord!</a></strong> 🚀',
         backgroundColor: '#2FD05B',
         textColor: '#1C1E21',
         isCloseable: false,
@@ -174,7 +174,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/CjgvJ9EspJ',
+                href: 'https://discord.gg/H9rnwcU8p4',
               },
               {
                 label: 'Twitter',

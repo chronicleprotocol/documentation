@@ -7,7 +7,7 @@ keywords: [community]
 
 ## Community
 
-- Join the community on [Discord](https://discord.com/invite/CjgvJ9EspJ)
+- Join the community on [Discord](https://discord.com/invite/H9rnwcU8p4)
 - [Chronicle Points Program Announcement](https://chroniclelabs.org/blog/chronicle-points-have-arrived)
 
 ## Support
@@ -18,6 +18,6 @@ Get your questions answered in seconds using the Ask Chronicle AI chatbot integr
 
 ### Open a support ticket
 
-1. Join our [Discord](https://discord.com/invite/CjgvJ9EspJ)
+1. Join our [Discord](https://discord.com/invite/H9rnwcU8p4)
 2. Check the 🆘 | support Discord channel
 3. Open a ticket (General support or Integration request)
