@@ -57,6 +57,7 @@ Chronicle Oracles are read protected by a whitelist. On Testnet networks, you ca
 | Avalanche Fuji Testnet|	[0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B](https://testnet.snowtrace.io/address/0x371A53bB4203Ad5D7e60e220BaC1876FF3Ddda5B) |
 |Linea Testnet|[0xBa1386329Dea3850Aedc07D387014494619F615D](https://sepolia.lineascan.build/address/0xBa1386329Dea3850Aedc07D387014494619F615D#code) |
 |Plasma Testnet|[0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0](https://testnet.plasmascan.to/address/0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0) |
+| Tempo Testnet Moderato   | [0x617FF3943b4678Bf70F5D254B02407D1F29B2B55](https://explore.moderato.tempo.xyz/address/0x617FF3943b4678Bf70F5D254B02407D1F29B2B55)
 
 
 
