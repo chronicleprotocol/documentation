@@ -24,7 +24,7 @@ Protocol validators fetch data from different sources. The data used is verifiab
 
 ### When Does an Oracle Update? {#oracle-updates}
 
-PUSH oracles actively deliver data to smart contracts without requiring an explicit request. Upon the occurrence of a specific event or condition, the PUSH oracle automatically updates the oracle smart contract with the new data. For example, a PUSH Oracle might update price data every X minutes/hours, or whenever the underlying price deviates beyond a specified threshold.
+PUSH oracles actively deliver data to smart contracts without requiring an explicit request. Upon the occurrence of a specific event or condition, the PUSH oracle automatically updates the oracle smart contract with the new data.
 
 ```mermaid
 sequenceDiagram
@@ -41,4 +41,15 @@ sequenceDiagram
     OC->>SC: Deliver data to Smart Contract
     SC->>SC: Process and use data
 ```
+
+A PUSH Oracle updates price data every X minutes/hours, or whenever the underlying price deviates beyond a specified threshold — whichever occurs first.
+You can check the `update threshold` for a specific feed via the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/oracles) as seen below. This view is available when selecting an oracle for a given chain.
+<div style={{textAlign: 'center'}}>
+    <img
+    src="  ../../img/Products/DeFi/update.png"
+    alt="PUSH Oracle Illustration"
+    />
+</div>
+
+
 
