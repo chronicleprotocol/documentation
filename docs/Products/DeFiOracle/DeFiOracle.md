@@ -16,7 +16,7 @@ Protocol validators fetch data from different sources. The data used is verifiab
 
 <div style={{textAlign: 'center'}}>
     <img
-    src="  ../../img/Products/push.png"
+    src="../../img/Products/push.png"
     alt="PUSH Oracle Illustration"
     />
 </div>
@@ -47,7 +47,7 @@ You can check the `update threshold` for a specific feed via the [Chronicle Dash
 
 <div style={{textAlign: 'center'}}>
     <img
-    src="  ../../img/Products/DeFi/update.png"
+    src="../../img/Products/DeFi/update.png"
     alt="Update Threshold"
     />
 </div>
