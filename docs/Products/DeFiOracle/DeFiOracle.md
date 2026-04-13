@@ -44,10 +44,11 @@ sequenceDiagram
 
 A PUSH Oracle updates price data every X minutes/hours, or whenever the underlying price deviates beyond a specified threshold — whichever occurs first.
 You can check the `update threshold` for a specific feed via the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/oracles) as seen below. This view is available when selecting an oracle for a given chain.
+
 <div style={{textAlign: 'center'}}>
     <img
     src="  ../../img/Products/DeFi/update.png"
-    alt="PUSH Oracle Illustration"
+    alt="Update Threshold"
     />
 </div>
 
