@@ -18,7 +18,7 @@ Helm Chart details:
 
 
 :::warning
-**ChartVersion `0.5.1`**: The `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
+**ChartVersion `0.6.0`**: The `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
 
 ```bash
 # Remove the onionservice resource (if present)
@@ -113,7 +113,7 @@ Please ensure your values yaml file is updated to reflect the latest requirement
 
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.5.1
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.6.0
 ```
 </details>
 
@@ -164,7 +164,7 @@ Verify the chart version has changed and matches what the latest feed version:
 ```
 helm list -n $FEED_NAME
 NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART             APP VERSION
-validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.5.1   0.66.2
+validator  demo            1               2025-08-26 12:56:31.070821 -0300 -03    deployed        validator-0.6.0   0.66.2
 ```
 
 #### View all resources created in the namespace

@@ -24,7 +24,7 @@ Deploying the validator into an existing kubernetes cluster.
 ## Notable changes include:
 
 :::warning
-**ChartVersion `0.5.1`**: The `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
+**ChartVersion `0.6.0`**: The `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
 
 ```bash
 # Remove the onionservice resource (if present)
@@ -164,7 +164,7 @@ vao:
 Then install the helm release using this values file:
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.5.1
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.6.0
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
