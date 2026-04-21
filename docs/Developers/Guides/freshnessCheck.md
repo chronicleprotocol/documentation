@@ -6,7 +6,7 @@ keywords: [freshness, readWithAge, tryReadWithAge, oracle]
 
 # Verifying Oracle Data Freshness
 
-When consuming onchain oracle data, consumers should implement their own checks at the application level to verify that the data returned by the oracle is fresh enough for their use case. Oracle updates can be delayed due to network conditions, gas costs, or other factors, and acting on stale data can lead to incorrect behavior in your application.
+When consuming onchain oracle data, consumers should implement their own checks at the application level to confirm the data is fresh enough for their use case. Oracle updates can be delayed due to network conditions, gas costs, or other factors, and acting on stale data can lead to incorrect behavior in your application.
 
 Chronicle provides two functions that return both the oracle value and its **age** (the Unix timestamp of the last update), enabling builders to implement freshness checks at the application level.
 
@@ -55,6 +55,6 @@ if (!ok || block.timestamp - age > maxAge) {
 ```
 
 :::tip
-The right value for `maxAge` depends on the update frequency of the specific feed you're reading and the data freshness needs of your application. Check the feed's update threshold on the [Dashboard](https://chroniclelabs.org/dashboard/oracles) by selecting a given oracle, and then looking at its `Update Threshold`. Set `maxAge` to a value that accounts for acceptable latency beyond the expected update interval.
+The right value for `maxAge` depends on the update frequency of the specific feed you're reading and the data freshness needs of your application. Check the feed's update threshold on the [Dashboard](https://chroniclelabs.org/dashboard/oracles) by selecting a given oracle, and then looking at its `Update Threshold`.
 :::
 
