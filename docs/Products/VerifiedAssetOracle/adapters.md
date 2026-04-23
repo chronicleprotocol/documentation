@@ -6,12 +6,8 @@ keywords: [Proof of Asset, adapter, Chainlink, integration]
 
 # Adapters
 
-## What Is an Adapter?
-
-Chronicle's Proof of Asset oracles implement the most widely used, non-deprecated functions of the `IChainlinkAggregatorV3` interface including `latestRoundData()`, `decimals()`, and `latestAnswer()`. However, for integrations that depend strictly on a Chainlink-compatible interface, an adapter layer is required to bridge the two.
-
-
-## Integrating with Chainlink Adapters
+## Integrating a Chronicle Proof of Asset Oracles with a Chainlink Adapter
+Chronicle's ChainlinkAdapter enables compatibility between Chronicle's Proof of Asset Oracles and Chainlink's `IChainlinkAggregatorV3` interface, exposing the standard Chainlink read functions: `latestAnswer()`, `latestRoundData()`, and `decimals()`.
 
 :::important
 When integrating a Proof of Asset Oracle via a Chainlink adapter, your smart contract address will be whitelisted on the associated **Router** — not on the adapter itself. **Make sure to integrate the adapter address — not the oracle or router address directly — into your smart contract.**
