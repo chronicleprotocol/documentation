@@ -11,7 +11,6 @@ Chronicle's ChainlinkAdapter enables compatibility between Chronicle's Proof of 
 
 To read data from a Proof of Asset oracle via its adapter, call the standard Chainlink functions on the adapter contract. No additional configuration is required.
 
-If you are building a new integration, always use the adapter address rather than the router or uScribe oracle address directly.
 
 ## How Adapters Work
 
