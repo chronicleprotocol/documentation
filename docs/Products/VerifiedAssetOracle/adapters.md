@@ -9,10 +9,6 @@ keywords: [Proof of Asset, adapter, Chainlink, integration]
 ## Integrating a Chronicle Proof of Asset Oracles with a Chainlink Adapter
 Chronicle's ChainlinkAdapter enables compatibility between Chronicle's Proof of Asset Oracles and Chainlink's `IChainlinkAggregatorV3` interface, exposing the standard Chainlink read functions: `latestAnswer()`, `latestRoundData()`, and `decimals()`.
 
-:::important
-When integrating a Proof of Asset Oracle via a Chainlink adapter, your smart contract address will be whitelisted on the associated **Router** — not on the adapter itself. **Make sure to integrate the adapter address — not the oracle or router address directly — into your smart contract.**
-:::
-
 To read data from a Proof of Asset oracle via its adapter, call the standard Chainlink functions on the adapter contract. No additional configuration is required.
 
 If you are building a new integration, always use the adapter address rather than the router or uScribe oracle address directly.
@@ -25,6 +21,9 @@ Adapters wrap a [Chronicle Router](./routers.md) and expose it through the `ICha
 ```text
 Customer Contract --reads from→ ChainlinkAdapter --reads from→ Router --reads from→ uScribe Oracle
 ```
+:::important
+When using the ChainlinkAdapter for Chainlink compatibility, read from the adapter address in your smart contract — not the underlying oracle or router address directly. Note that whitelisting still happens at the Router level.
+:::
 
 ## Adapter Naming Convention
 
