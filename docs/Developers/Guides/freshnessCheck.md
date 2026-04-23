@@ -6,7 +6,8 @@ keywords: [freshness, readWithAge, tryReadWithAge, oracle]
 
 # Verifying Oracle Data Freshness
 
-When consuming onchain oracle data, consumers should implement their own checks at the application level to confirm the data is fresh enough for their use case. Oracle updates can be delayed due to network conditions, gas costs, or other factors, and acting on stale data can lead to incorrect behavior in your application.
+When consuming onchain oracle data, consumers should implement their own freshness checks at the application level to confirm the data meets their use case requirements. This includes verifying that the oracle's `Update Threshold` aligns with the data freshness your application requires.
+
 
 Chronicle provides two functions that return both the oracle value and its **age** (the Unix timestamp of the last update), enabling builders to implement freshness checks at the application level.
 
