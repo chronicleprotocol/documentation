@@ -32,6 +32,7 @@ To get started, [open a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ
 
 - The **Chronicle data feed** you want to use (e.g., ETH/USD).
 - The **chain** you are deploying on (e.g., Ethereum mainnet).
+- The **Token Addresses the Market will use**, specific to the chain where the Market will be created (those are needed to configure the base and quote decimals).
 
 
 ### What You Will Receive
