@@ -8,7 +8,7 @@ keywords: [Proof of Asset, uScribe, router, integration]
 
 ## What Is a Router?
 
-Every Proof of Asset oracle ([uScribe](../../Intro/Scribe/uScribe.md)) has an associated **Router contract**. Routers expose the same read interface as the underlying uScribe oracle, but serve as a stable integration point that decouples your contract from the oracle's internal verification logic.
+Every Proof of Asset oracle ([uScribe](../../../Intro/Scribe/uScribe.md)) has an associated **Router contract**. Routers expose the same read interface as the underlying uScribe oracle, but serve as a stable integration point that decouples your contract from the oracle's internal verification logic.
 
 ## Integrating Proof of Asset Oracles and Their Associated Router
 
@@ -20,7 +20,7 @@ To read data from a Proof of Asset oracle via its router, call the same read fun
 
 If you are building a new integration, always use the router address rather than the uScribe oracle address directly.
 
-For more details on available read functions, refer to the [uScribe documentation](../../Intro/Scribe/uScribe.md).
+For more details on available read functions, refer to the [uScribe documentation](../../../Intro/Scribe/uScribe.md).
 
 ## How Routers Work
 
