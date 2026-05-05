@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-description: Routers for Proof of Asset Oracles
+sidebar_position: 4
+description: Routers for Proof of Asset Feeds
 keywords: [Proof of Asset, uScribe, router, integration]
 ---
 

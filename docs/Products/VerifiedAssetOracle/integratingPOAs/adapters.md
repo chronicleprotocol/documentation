@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-description: Adapters for Proof of Asset Oracles
+description: Adapters for Proof of Asset Feeds
 keywords: [Proof of Asset, adapter, Chainlink, integration]
 ---
 

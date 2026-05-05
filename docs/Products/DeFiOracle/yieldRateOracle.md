@@ -4,7 +4,7 @@ description: DeFi Oracle Data
 keywords: [Yield Rate Oracle, DeFi Oracle Data]
 ---
 
-# Types of Data for DeFi Oracles
+# Oracle Data Types
 
 Chronicle provides data essential for DeFi protocols, including cryptocurrency prices, fiat exchange rates, staking yield rates, and more. This data is aggregated from multiple sources and verified by a decentralized network of [reputable validators](../../Intro/network.md). 
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 8
 description: Proof of Asset Oracle Glossary
 keywords: [glossary, Proof of Asset Oracle]
 ---
