@@ -1,14 +1,14 @@
 ---
 
-sidebar_position: 8
+sidebar_position: 2
 description: Type of Oracles
 keywords: [Feeds, Oracles, Market Rate, Exchange Rate]
 ---
 
 
-# Type of Oracles
+# Oracle Types
 
-When creating an oracle, customers have multiple configuration options. The following characterization is based on the sources the oracle uses.
+When creating a feed, customers have multiple configuration options. The following characterization is based on the sources the feed uses.
 
 
 ## Market Rate Oracles

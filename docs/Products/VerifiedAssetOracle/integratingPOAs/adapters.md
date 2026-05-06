@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-description: Adapters for Proof of Asset Oracles
+description: Adapters for Proof of Asset Feeds
 keywords: [Proof of Asset, adapter, Chainlink, integration]
 ---
 
@@ -14,7 +14,7 @@ To read data from a Proof of Asset oracle via its adapter, call the standard Cha
 
 ## How Adapters Work
 
-Adapters wrap a [Chronicle Router](./routers.md) and expose it through the `IChainlinkAggregatorV3` interface. When your contract calls a read function on an adapter, it forwards the request to the underlying Router, which in turn reads from the [uScribe oracle](../../Intro/Scribe/uScribe.md). The result is then returned in the format your integration expects.
+Adapters wrap a [Chronicle Router](./routers.md) and expose it through the `IChainlinkAggregatorV3` interface. When your contract calls a read function on an adapter, it forwards the request to the underlying Router, which in turn reads from the [uScribe oracle](../../../Intro/Scribe/uScribe.md). The result is then returned in the format your integration expects.
 
 
 ```text
