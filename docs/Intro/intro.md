@@ -8,8 +8,7 @@ keywords: [Chronicle, scalable Oracle, decentralized Oracle]
 # Understanding Chronicle
 
 ## **Welcome to Chronicle Protocol**
-
-Chronicle Protocol is a novel Oracle solution that has exclusively secured at times over $20B in assets for MakerDAO and its ecosystem since 2017. With a history of innovation, including the invention of the first Oracle on Ethereum, Chronicle Protocol continues to redefine Oracle networks. A blockchain-agnostic protocol, Chronicle overcomes the current limitations of transferring data on-chain by developing the first truly scalable, cost-efficient, decentralized, and verifiable Oracles, rewriting the rulebook on data transparency and accessibility.
+Chronicle is an independent verification infrastructure provider founded in 2017 within MakerDAO. Chronicle built the first oracle on Ethereum and has continuously operated onchain data infrastructure through multiple market cycles. Its products include Proof of Asset for institutional holdings verification and DeFi price feeds, collectively securing billions in assets across institutional and onchain financial platforms.
 
 ### **Why Chronicle**
 <details>
@@ -20,7 +19,7 @@ While other Oracles rely on the Elliptical Curve Digital Signature Algorithm (EC
 <details>
 <summary> Scalable</summary>
 
-The ingenious application of Schnorr Signature cryptography allows Chronicle Oracles to achieve scalability by **decoupling the validator number from the gas cost**. 
+The ingenious application of Schnorr Signature cryptography allows Chronicle Oracles to achieve scalability by **decoupling the number of validators from the gas cost**. 
 </details>
 <details>
 <summary> Verifiable Data</summary>
@@ -40,9 +39,8 @@ Chronicle’s validators are run by the community. Given the decoupling of the n
 <details>
 <summary>Reputable & Secure</summary>
 
-Chronicle’s **validators are represented by a community of leading blockchain protocols** including [MakerDAO](https://makerdao.com/), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [Gnosis](https://www.gnosis.io/), [DeFi Saver](https://defisaver.com/), and more. This approach is unique to Chronicle and ensures that the Oracle data is being signed by some of the most trusted and reputable projects in the blockchain space, further reinforcing trust in the protocol.
+Chronicle’s **validators are represented by a community of leading blockchain protocols** including [Sky](https://sky.money/), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [Gnosis](https://www.gnosis.io/), [DeFi Saver](https://defisaver.com/), and more. This approach is unique to Chronicle and ensures that the Oracle data is being signed by some of the most trusted and reputable projects in the blockchain space, further reinforcing trust in the protocol.
 
-Chronicle is the [second largest Oracle provider by Total Value Secured (TVS)](https://defillama.com/oracles) and currently secures over **$10B** in assets for reputable protocols such as MakerDAO, Spark, Morpho, and more.
-
+Chronicle is the [second-largest oracle provider by Total Value Secured (TVS)](https://defillama.com/oracles), currently securing over **$13B** in DeFi and tokenized assets. Please note that DefiLlama currently tracks only DeFi assets for oracle TVS metrics.
 </details>
 
