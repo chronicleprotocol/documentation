@@ -13,14 +13,20 @@ Every Proof of Asset oracle ([uScribe](../../Intro/Scribe/uScribe.md)) has an as
 ## Integrating Proof of Asset Oracles and Their Associated Router
 
 :::important
-When integrating a Proof of Asset Oracle, your smart contract address will be whitelisted on the associated Router. **Make sure to integrate the Router address — not the oracle address directly — into your smart contract.**
+When integrating a Proof of Asset Oracle, your smart contract address will be whitelisted on the associated Router. **Make sure to integrate the Router address — not the oracle address directly — into your smart contract.** 
 :::
 
-To read data from a Proof of Asset oracle via its router, call the same read functions you would on a uScribe oracle. No additional configuration is required.
+To read data from a Proof of Asset oracle via its router, call the same read functions you would on a uScribe oracle. No additional configuration is required. For more details on available read functions, refer to the [uScribe documentation](../../Intro/Scribe/uScribe.md).
 
-If you are building a new integration, always use the router address rather than the uScribe oracle address directly.
+ You can get the address of the Router for a given Proof of Asset Oracle via the [Proof of Asset Dashboard](https://chroniclelabs.org/dashboard/proofofassets). You will find the address of the associated `Router Contract` and of the `Consumer Contract` in the `Oracle Contracts` view as seen in the image below:
 
-For more details on available read functions, refer to the [uScribe documentation](../../Intro/Scribe/uScribe.md).
+<div style={{textAlign: 'center'}}>
+<img
+    src="../../img/Products/VAO/router.png"
+    alt="Router Contract view"
+/>
+</div>
+
 
 ## How Routers Work
 
