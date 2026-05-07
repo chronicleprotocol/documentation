@@ -5,12 +5,14 @@ keywords: [Chronicle Dashboard, verifiability]
 ---
 
 # The Chronicle Dashboard
-The **[Chronicle Dashboard](https://chroniclelabs.org/dashboard)** enables full transparency over where the Oracle-reported data was sourced and who reported/signed it.
-On the dashboard, you can find details such as the validator set used by Chronicle, the different oracles for the supported chains, and oracle-specific information like update thresholds, contract addresses, and data sources, among others.
+The **[Chronicle Dashboard](https://chroniclelabs.org/dashboard)** provides full transparency into Chronicle's oracle network.
+On the dashboard, you will find 5 sections:
+- **Dashbord:** high-level overview of Chronicle data
+- **Proof of Asset:** Chronicle's Proof of Asset visualization layer, turning cryptographic attestations into a clear, visual representation that anyone can inspect
+- **Oracles:** oracle-specific information like update thresholds, contract addresses, and data sources used for DeFi Oracles
+- **Validators:** information on Chronicle's Validator set 
+- **Points:**  track and manage your participation in Chronicle's Points program directly on the Chronicle Dashboard.
 
-# The Chronicle Dashboard Tabs and Functionality
-
-In the top left corner, you can find three tabs: Dashboard, Oracles, and Validators.
 
 **Dashboard**
 
@@ -18,9 +20,9 @@ The Dashboard tab provides an overview of the Chronicle Dashboard. You can see t
 
 <div style={{textAlign: 'center'}}>
 <img
-    src="/img/Intro/dashboard.png"
+    src="/img/Intro/dash.png"
     alt="Check Sources"
-    width="600"
+    width="700"
 />
 </div>
 
@@ -32,13 +34,10 @@ The Oracles tab allows users to find oracle addresses for specific chains. Insid
 <img
     src="/img/Intro/oracles.png"
     alt="Check Sources"
-    width="600"
+    width="800"
 />
 </div>
 
-**Validators**
-
-The Validators tab offers an overview of Chronicle’s validator set, which includes reputable Web3 projects such as Sky, Euler, ETHGlobal, and Etherscan, among others.
 
 ## Where is the Data Sourced From?
 
@@ -69,13 +68,13 @@ The validator's signature allows users to verify the behaviour of the validator.
 
 <div style={{textAlign: 'center'}}>
 <img
-    src="../img/Products/DeFi/non-manipulated.png"
+    src="/img/Intro/non-manipulated.png"
     alt="Check Sources"
-    width="600"
+
 />
 </div>
 
-Modifying even one character of the signature will result in invalidating the signature.
+Modifying even one character of the signature will result in an invalid signature. 
 <div style={{textAlign: 'center'}}>
 <img
     src="/img/Intro/manipulated.png"
@@ -86,7 +85,7 @@ Modifying even one character of the signature will result in invalidating the si
 
 ### The Schnorr Signature of the Oracle
 
-Users can also verify the authenticity of the Schnorr signature of the Oracle. This value is used to push data onchain. Unlike the validator's signature, the Schnorr signature allows to verify the Oracle instead of a single validator.
+Users can also verify the authenticity of the Schnorr signature of the Oracle. This value is used to push data onchain. Unlike the validator's signature, the Schnorr signature allows users to verify the Oracle instead of a single validator.
 <div style={{textAlign: 'center'}}>
 <img
     src="/img/Intro/checkOracle.png"
@@ -101,7 +100,3 @@ Users can also verify the authenticity of the Schnorr signature of the Oracle. T
     width="300"
 />
 </div>
-
-
-
-
