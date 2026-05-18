@@ -5,9 +5,16 @@ import styles from './CommunityResourcesSection.module.css';
 function CommunityResourcesSection() {
   const resources = [
     {
+      icon: '/img/LandingPage/dataD.png',
+      title: 'Request a new oracle',
+      description: 'Request an oracle for your project',
+      link: 'https://forms.gle/sPda9qGqQEkj6tms9'
+      
+    },
+      {
       icon: '/img/LandingPage/quote-request.png',
-      title: 'Request an Oracle',
-      description: 'Request an Oracle for your project',
+      title: 'Request access to an existing oracle',
+      description: 'Get access to onchain data to power your application',
       link: 'https://forms.gle/39vhXmFg88ti8HVC9'
       
     },
