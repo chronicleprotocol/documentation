@@ -78,3 +78,14 @@ For a full, up-to-date overview of all Proof of Asset integrations, see the [Chr
 | Centrifuge deSPXA        | `ChronicleVAO_Centrifuge_deSPXA_ChainlinkAdapter_1`       | [0x914b2E2953C4EdB87C164Fe1fddBdB3F6F34F971](https://basescan.org/address/0x914b2E2953C4EdB87C164Fe1fddBdB3F6F34F971#code)          |
 
 </details>
+
+<details>
+<summary>Monad</summary>
+
+| Oracle Name           | Adapter Name                                             | Chainlink Adapter Contract                                                                                                                   |
+| --------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Centrifuge deJTRSY    | `ChronicleVAO_Centrifuge_deJTRSY_ChainlinkAdapter_1`    | [0x1D2d52A40bDa48F2ae32F5f22F30C854A7312D96](https://monadvision.com/address/0x1D2d52A40bDa48F2ae32F5f22F30C854A7312D96)                     |
+| Centrifuge deJAAA     | `ChronicleVAO_Centrifuge_deJAAA_ChainlinkAdapter_1`     | [0x9ff1007cbb2D793C6837E67Cd6B3AfEb62529ED0](https://monadvision.com/address/0x9ff1007cbb2D793C6837E67Cd6B3AfEb62529ED0)                     |
+| Centrifuge deCRDX     | `ChronicleVAO_Centrifuge_deCRDX_ChainlinkAdapter_1`     | [0xAB13ABE3D2ecD94eB74DB2F35Cc4C5070CA949bB](https://monadvision.com/address/0xAB13ABE3D2ecD94eB74DB2F35Cc4C5070CA949bB)                     |
+
+</details>
