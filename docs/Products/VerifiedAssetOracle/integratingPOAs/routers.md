@@ -85,3 +85,14 @@ For a full, up-to-date overview of all Proof of Asset integrations, see the [Chr
 | Centrifuge deSPXA       | `ChronicleVAO_Centrifuge_deSPXA_Router_1`                     | [0x58AA442107ac268ffA1309D410fB9c6Be2b67783](https://basescan.org/address/0x58AA442107ac268ffA1309D410fB9c6Be2b67783#code)           |
 
 </details>
+
+<details>
+<summary>Monad</summary>
+
+| Oracle                  | Router Name                                                    | Router Address                                                                                                                       |
+| ----------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Centrifuge deCRDX       | `ChronicleVAO_Centrifuge_deCRDX_Router_1`                     | [0x3d0Ec176032beFff3BA0E193F98489D7A039cfB4](https://monadvision.com/address/0x3d0Ec176032beFff3BA0E193F98489D7A039cfB4)             |
+| Centrifuge deJAAA       | `ChronicleVAO_Centrifuge_deJAAA_Router_1`                     | [0x5fA50241513e15dBF680B8980fb041eB2135b781](https://monadvision.com/address/0x5fA50241513e15dBF680B8980fb041eB2135b781)             |
+| Centrifuge deJTRSY      | `ChronicleVAO_Centrifuge_deJTRSY_Router_1`                    | [0x6d0Df32190776224a9BD1e9AbF62b08D6f132905](https://monadvision.com/address/0x6d0Df32190776224a9BD1e9AbF62b08D6f132905)             |
+
+</details>
