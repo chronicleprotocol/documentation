@@ -16,6 +16,18 @@ Chronicle Oracles are compatible with the [Morpho Chainlink adaptor](https://git
 ## How do I check if an Oracle becomes inactive/ gets deprecated?
 In the event that an Oracle gets deprecated, we will notify all whitelisted customers before offboarding it.
 From a technical point of view, if an oracle becomes inactive, the price is set to `0`, and the validators (also known as feeds), are removed from the contract. Therefore, the `read()` function will revert with `0`, the `tryRead()` function will return `(false, 0)`, and the `latestRoundData()` will return `0` as well. 
+## How do I check the string identifier of an oracle?
+
+To view the string identifier of a given oracle, you can use the oracle's Router address. You can find the Router address on the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/oracles) after selecting the oracle you are interested in.
+
+Clicking the address will open it in a block explorer. On the block explorer page, navigate to Read Contract and look for the name() function. Calling this function returns the string identifier of the oracle.
+
+<img
+    src="/img/guides/router.png"
+    alt="Router Address"
+    width="500"
+   
+/>
 
 ## What do I need to do to read from a Chronicle Oracle?
 
