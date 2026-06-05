@@ -34,8 +34,15 @@ If you're building on any of these chains and need production oracle access, rea
 Chronicle Oracles are live on several chains, with more integrations rolling out regularly. Using the [Dashboard](https://chroniclelabs.org/dashboard/oracles), you can quickly find the available chains.
 
 ### 2 Select the Oracle(s) to use and its address
-Before reading from an Oracle, the address making the call needs to be whitelisted for that Oracle. To find the Testnet addresses for the Oracles, simply select the `Testnets` tab on the [Dashboard](https://chroniclelabs.org/dashboard/oracles), then select the desired chain.
-
+Before reading data from an oracle, the address making the request must be whitelisted to obtain read access. To find the Testnet addresses for Chronicle oracles, simply select the `Testnets` tab on the [Dashboard](https://chroniclelabs.org/dashboard/oracles), then select the desired chain.
+Once you have selected an individual oracle, locate its router contract address.
+The router contract address is the address you will integrate into your project to identify and interact with that oracle.
+<img
+    src="/img/guides/router.png"
+    alt="Router Address"
+    width="500"
+   
+/>
 ### 3 Get the address of the SelfKisser for the selected chain
 Chronicle Oracles are read protected by a whitelist. On Testnet networks, you can whitelist yourself using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser/blob/main/src/SelfKisser.sol) contract. **Ensure you're using the correct SelfKisser address for each chain.**
 
@@ -58,6 +65,7 @@ Chronicle Oracles are read protected by a whitelist. On Testnet networks, you ca
 |Linea Testnet|[0xBa1386329Dea3850Aedc07D387014494619F615D](https://sepolia.lineascan.build/address/0xBa1386329Dea3850Aedc07D387014494619F615D#code) |
 |Plasma Testnet|[0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0](https://testnet.plasmascan.to/address/0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0) |
 | Tempo Testnet Moderato   | [0x617FF3943b4678Bf70F5D254B02407D1F29B2B55](https://explore.moderato.tempo.xyz/address/0x617FF3943b4678Bf70F5D254B02407D1F29B2B55)
+| Arc Testnet                   | [0xDecd203Ef38DEce4553Fc9fD5C570c26bD34B07F](https://testnet.arcscan.app/address/0xDecd203Ef38DEce4553Fc9fD5C570c26bD34B07F) |
 
 
 
