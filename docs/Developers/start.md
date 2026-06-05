@@ -60,7 +60,7 @@ import CallToActionButton from '@site/src/components/CallToActionButton';
   link="https://forms.gle/EANjn7THKKieSYaF7"
   text="Request a New Oracle/Chain"
 />
-Currently, Chronicle Oracles provide real-time data to smart contract applications on sixteen chains. More ecosystems are coming soon!
+Currently, Chronicle Oracles provide real-time data to smart contract applications on eighteen chains. More ecosystems are coming soon!
 
 
 To get started, begin testing on Testnet and, once you're familiar, request access to Chronicle Oracles on Mainnet. **Chronicle contracts use a whitelist for read protection, so any address accessing Oracle data must first be whitelisted. On Testnet, you can [self-whitelist](../Developers/Guides/whitelistAddress.md) using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser) contract.**
