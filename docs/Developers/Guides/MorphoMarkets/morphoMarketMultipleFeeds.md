@@ -40,7 +40,7 @@ The Chronicle Chainlink Adapter is only needed for **Proof of Asset** feeds (e.g
 
 If your feed is a **Proof of Asset** feed, the Chronicle team will deploy a Chainlink Adapter for you and provide its address. [Open a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ) or reach out via your team's communication channel to request this.
 
-If your feed is a **DeFi feed**, skip this step and proceed to Step 2.
+If your feed is a **[DeFi feed](https://chroniclelabs.org/dashboard/oracles)**, skip this step and proceed to Step 2.
 
 ## Step 2: Deploying the Morpho Adapter
 
