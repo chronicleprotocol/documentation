@@ -16,7 +16,8 @@ In case of offboarding an oracle, Chronicle aims to provide at least two (2) wee
 ### Emergency offboarding
 In emergency circumstances – including but not limited to security incidents, technical integrity issues, sudden unavailability or material degradation of underlying data sources, or other comparable circumstances – the notice period may be shorter or, where necessary, offboarding may take effect immediately. In such cases, notice will be given as soon as practicable.
 Notice channels: Notice of a planned offboarding is given (i) by email to the contact address provided by Users during onboarding for whitelist access; and/or (ii) by announcement of the planned offboarding for the affected oracles on the [Chronicle dashboard](https://chroniclelabs.org/dashboard/oracles) on the affected oracle's page. Users are responsible for keeping their contact details current and periodically reviewing the Chronicle Dashboard.
-User Obligations: On receipt of an offboarding notice, Users must:
+### User Obligations:
+On receipt of an offboarding notice, Users must:
 Act on the offboarding notification within the applicable notice period, including the offboarding/migration away from affected oracles;
 if requested, submit a confirmation of offboarding/migration completion before the offboarding date; and
 otherwise ensure any of their integrations or use cases no longer rely on or are integrated with the affected oracles at the offboarding date.
