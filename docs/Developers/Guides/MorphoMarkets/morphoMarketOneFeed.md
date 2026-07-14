@@ -17,7 +17,7 @@ In the [next section](./morphoMarketMultipleFeeds) you will find information on 
 
 
 :::warning
-    **Before deploying the Morpho Chainlink Adapter using the MorphoChainlinkOracleV2Factory, the target address of the Adapter must be whitelisted (also referred to as "kissed")** by the Chronicle team. Read access will fail if the requesting address is not whitelisted, as Chronicle's oracles are protected by a whitelist. To get the address whitelisted, get in touch with the team by [opening a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ), or via your team's own communication channel with Chronicle.
+    **Before deploying the Morpho Chainlink Adapter using the MorphoChainlinkOracleV2Factory, the target address of the Adapter must be whitelisted (also referred to as "kissed")** by the Chronicle team. Read access will fail if the requesting address is not whitelisted, as Chronicle's oracles are protected by a whitelist. To get whitelisted, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
 :::
 
 # Deploying a Morpho Market with a Single Chronicle Feed
@@ -28,7 +28,7 @@ To streamline the process for Morpho market creation, **the Chronicle team will 
 
 ### What You Need to Provide
 
-To get started, [open a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ) or reach out via your team's communication channel with Chronicle, and share:
+To get started, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw), or via your team's communication channel and share:
 
 - The **Chronicle data feed** you want to use (e.g., ETH/USD).
 - The **chain** you are deploying on (e.g., Ethereum mainnet).

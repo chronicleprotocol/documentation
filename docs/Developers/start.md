@@ -60,14 +60,16 @@ import CallToActionButton from '@site/src/components/CallToActionButton';
   link="https://forms.gle/EANjn7THKKieSYaF7"
   text="Request a New Oracle/Chain"
 />
-Currently, Chronicle Oracles provide real-time data to smart contract applications on eighteen chains. More ecosystems are coming soon!
+Currently, Chronicle Oracles provide real-time data to smart contract applications on [several chains](https://chroniclelabs.org/dashboard/data-feeds), with new integrations and supported networks added on a regular basis.
 
 
-To get started, begin testing on Testnet and, once you're familiar, request access to Chronicle Oracles on Mainnet. **Chronicle contracts use a whitelist for read protection, so any address accessing Oracle data must first be whitelisted. On Testnet, you can [self-whitelist](../Developers/Guides/whitelistAddress.md) using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser) contract.**
+To get started, begin testing on Testnet networks. Once you're familiar, request access to Chronicle Oracles on Mainnet.
 
-If you need an Oracle not yet integrated, feel free to submit a request via [this form](https://forms.gle/EANjn7THKKieSYaF7) or to reach out on [Discord](https://discord.com/invite/H9rnwcU8p4) through the 🆘｜support channel. 
+ **Chronicle contracts use a whitelist for read protection. Any address that needs to read oracle data must first be whitelisted. On Testnet, you can [self-whitelist](../Developers/Guides/whitelistAddress.md) using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser) contract.**
 
-**Note: Mainnet whitelisting is permissioned, so please contact us to proceed.**
+**Note: Mainnet whitelisting is permissioned, so please [contact the Chronicle team](https://form.typeform.com/to/KvmNbtrw) to proceed.**
+
+To request access to an existing Chronicle oracle on Mainnet, request a new oracle, or discuss a new integration, please submit a request via [this form](https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
 
 # Developer Resources
 To integrate Chronicle Oracles, here are some helpful resources:
