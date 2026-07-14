@@ -105,12 +105,20 @@
   text-decoration: none !important;
   color: var(--ifm-font-color-base) !important;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 2px solid #000000;
 }
 
 .featureItem:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px #2FD05B;
+  border-color: #2FD05B;
+}
+
+[data-theme="dark"] .featureItem {
+  border-color: #ffffff;
+}
+
+[data-theme="dark"] .featureItem:hover {
   border-color: #2FD05B;
 }
 
