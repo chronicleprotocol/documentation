@@ -6,9 +6,9 @@ function CommunityResourcesSection() {
   const resources = [
     {
       icon: '/img/LandingPage/quote-request.png',
-      title: 'Request an Oracle',
-      description: 'Request an Oracle for your project',
-      link: 'https://forms.gle/39vhXmFg88ti8HVC9'
+      title: 'Request Onchain Data',
+      description: 'Request Access to Onchain Data for your project',
+      link: 'https://form.typeform.com/to/KvmNbtrw'
       
     },
     {
