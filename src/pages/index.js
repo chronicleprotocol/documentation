@@ -17,7 +17,7 @@ function HeroSection() {
           Decentralized, Verifiable Oracles
         </h2>
         <p className={styles.heroDescription}>
-         Integrate Chronicle's Decentralized, Verifiable Oracles into your dApp.
+       Integrate Chronicle's Onchain Data into Your dApp.
         </p>
         <div className={styles.getStartedButton}>
           <LinkButton text="Start Now" link="./Developers/tutorials/Remix" small={true} />

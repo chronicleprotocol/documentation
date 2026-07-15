@@ -1,10 +1,24 @@
 .section {
   width: 100%;
-  border-top: 1px solid #e9e9ed;
   padding: 80px 0 0 0;
   min-height: 436px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.section::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e9e9ed 20%, #e9e9ed 80%, transparent);
+  margin-bottom: 0;
+}
+
+[data-theme="dark"] .section::before {
+  background: linear-gradient(to right, transparent, #3a3a4a 20%, #3a3a4a 80%, transparent);
 }
 
 .container {

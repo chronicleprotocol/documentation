@@ -1,5 +1,5 @@
 .customButton {
-    border: none;
+    border: 2px solid transparent;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -12,15 +12,19 @@
     font-weight: 600;
     background: #2FD05B;
     color: white !important;
+    transition: all 0.3s ease;
   }
-  
+
   .customButton:hover {
     cursor: pointer;
     text-decoration: none;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px #2FD05B;
+    border-color: #2FD05B;
   }
-  
+
   .smallCustomButton {
-    border: none;
+    border: 2px solid transparent;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
@@ -33,15 +37,19 @@
     font-weight: 400;
     background: #2FD05B;
     color: white !important;
+    transition: all 0.3s ease;
   }
-  
+
   @media screen and (max-width: 768px) {
     .smallCustomButton {
       width: 50%;
     }
   }
-  
+
   .smallCustomButton:hover {
     cursor: pointer;
     text-decoration: none;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px #2FD05B;
+    border-color: #2FD05B;
   }
