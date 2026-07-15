@@ -38,7 +38,8 @@ The Chronicle Chainlink Adapter is only needed for **Proof of Asset** feeds (e.g
 
 ## Step 1: Get the Chainlink Adapter Address (Proof of Asset Feeds Only)
 
-If your feed is a **Proof of Asset** feed, the Chronicle team will deploy a Chainlink Adapter for you and provide its address. [Open a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ) or reach out via your team's communication channel to request this.
+If your feed is a **Proof of Asset** feed, the Chronicle team will deploy a Chainlink Adapter for you and provide its address. 
+Please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
 
 If your feed is a **[DeFi feed](https://chroniclelabs.org/dashboard/oracles)**, skip this step and proceed to Step 2.
 
@@ -46,7 +47,7 @@ If your feed is a **[DeFi feed](https://chroniclelabs.org/dashboard/oracles)**, 
 
 Here are are three alternative options for deploying the Morpho Adapter:
 :::warning
-    **Before deploying the Morpho Chainlink Adapter using the MorphoChainlinkOracleV2Factory, the target address of the Adapter must be whitelisted (also referred to as "kissed")** by the Chronicle team. Read access will fail if the requesting address is not whitelisted, as Chronicle's oracles are protected by a whitelist. To get the address whitelisted, get in touch with the team by [opening a ticket on Discord](https://discord.com/invite/CjgvJ9EspJ), or via your team's own communication channel with Chronicle.
+    **Before deploying the Morpho Chainlink Adapter using the MorphoChainlinkOracleV2Factory, the target address of the Adapter must be whitelisted (also referred to as "kissed")** by the Chronicle team. Read access will fail if the requesting address is not whitelisted, as Chronicle's oracles are protected by a whitelist.To get whitelisted, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
 :::
 
 
@@ -72,7 +73,7 @@ Note that the oracle will **not return data** until the whitelisting is complete
 If you prefer not to pre-compute the address, you can deploy the Morpho Adapter first, then share its address with the Chronicle team. The team will whitelist it, after which you can start reading from it. Unlike Options A and B, this means there will be an **extra step between deployment and read access**. Reading from the oracle will revert before the Chronicle team completes the whitelisting.
 
 
-If you need help with any of the options above, mention it in your [Discord ticket](https://discord.com/invite/CjgvJ9EspJ), or via your team's communication channel, we are happy to support you.
+If you need help with any of the options above, open a [Discord ticket](https://discord.com/invite/CjgvJ9EspJ), or use your team's communication channel, we are happy to support you.
 
 
 

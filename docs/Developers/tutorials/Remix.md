@@ -13,7 +13,7 @@ Chronicle oracles are read-protected by a whitelist, meaning you won't be able t
 
 On Testnet, the [SelfKisser contract](https://github.com/chronicleprotocol/self-kisser) allows users to whitelist themselves, whimsically termed 'kiss' themselves.
 
-On Mainnet, to get access to production Oracles, please open a ticket on [Discord](https://discord.com/invite/CjgvJ9EspJ) via the 🆘 ｜ support channel.
+ On Mainnet, to get access to production Oracles, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw).
 
 :::
 
