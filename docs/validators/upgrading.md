@@ -113,7 +113,7 @@ Please ensure your values yaml file is updated to reflect the latest requirement
 
 ```
 helm repo update
-helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.6.5
+helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml chronicle/validator --version 0.6.9
 ```
 </details>
 
