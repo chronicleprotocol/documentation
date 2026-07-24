@@ -39,8 +39,8 @@ Chronicle’s validators are run by the community. Given the decoupling of the n
 <details>
 <summary>Reputable & Secure</summary>
 
-Chronicle’s **validators are represented by a community of leading blockchain protocols** including [Sky](https://sky.money/), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [Gnosis](https://www.gnosis.io/), [DeFi Saver](https://defisaver.com/), and more. This approach is unique to Chronicle and ensures that the Oracle data is being signed by some of the most trusted and reputable projects in the blockchain space, further reinforcing trust in the protocol.
+Chronicle’s **validators are represented by a community of leading blockchain protocols** including [Sky](https://sky.money/), [Etherscan](https://etherscan.io/), [Gnosis](https://www.gnosis.io/), [DeFi Saver](https://defisaver.com/), and more. This approach is unique to Chronicle and ensures that the Oracle data is being signed by some of the most trusted and reputable projects in the blockchain space, further reinforcing trust in the protocol.
 
-Chronicle is the [second-largest oracle provider by Total Value Secured (TVS)](https://defillama.com/oracles), currently securing over **$13B** in DeFi and tokenized assets. Please note that DefiLlama currently tracks only DeFi assets for oracle TVS metrics.
+Chronicle is the [second-largest oracle provider by Total Value Secured (TVS)](https://defillama.com/oracles), currently securing over **$15B** in DeFi and tokenized assets. Please note that DefiLlama currently tracks only DeFi assets for oracle TVS metrics.
 </details>
 
