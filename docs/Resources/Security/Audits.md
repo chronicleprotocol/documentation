@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 description: Smart Contract Audits
 keywords: [audits]
 ---
@@ -14,3 +14,6 @@ You can access the different audit reports via GitHub in the [following reposito
 |Cantina |[Cantina report #2](https://github.com/chronicleprotocol/scribe/blob/main/audits/Cantina%40v2.0.0_2.pdf)| 
 |ChainSecurity |[ChainSecurity report](https://github.com/chronicleprotocol/scribe/blob/main/audits/Cantina%40v2.0.0_2.pdf)| 
 
+## Bug Bounty
+
+Chronicle runs a bug bounty program on Cantina to reward the responsible disclosure of security vulnerabilities. You can view the program details and submit findings on the [Cantina bug bounty page](https://cantina.xyz/bounties/5240b7c7-6fec-4902-bec0-8cad12f14ec4).
