@@ -8,7 +8,7 @@ keywords: [certifications, iso, iso 27001]
 
 # ISO/IEC 27001:2022
 
-Chronicle has achieved **ISO/IEC 27001:2022 certification,** a globally recognized standard for information security management. he certification was issued following an independent audit and confirms that Chronicle's security controls are comprehensive, documented, and continuously maintained.
+Chronicle has achieved **ISO/IEC 27001:2022 certification,** a globally recognized standard for information security management. The certification was issued following an independent audit and confirms that Chronicle's security controls are comprehensive, documented, and continuously maintained.
 <img
     src="/img/Resources/swisscert-iso27001.svg"
     alt="ISO/IEC 27001:2022 Certificate"
