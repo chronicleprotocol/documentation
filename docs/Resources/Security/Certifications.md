@@ -6,15 +6,28 @@ keywords: [certifications, iso, iso 27001]
 
 # Certifications
 
-## ISO/IEC 27001:2022
+# ISO/IEC 27001:2022
 
-Chronicle has achieved **ISO/IEC 27001:2022 certification,** a globally recognized standard for information security management, issued by Swiss Approval North America following an independent audit. 
-
-The certification covers the design, development, operation, and support of Chronicle's oracle services, including the ingestion, processing, validation, cryptographic signing, and publication of price feeds and Proof of Asset data, as well as associated APIs, dashboards, and supporting cloud infrastructure.
-<lb/>
-Certificate Expiration: July 30, 2027
+Chronicle has achieved **ISO/IEC 27001:2022 certification,** a globally recognized standard for information security management. The certification was issued following an independent audit and confirms that Chronicle's security controls are comprehensive, documented, and continuously maintained.
 <img
     src="/img/Resources/swisscert-iso27001.svg"
     alt="ISO/IEC 27001:2022 Certificate"
     width="200"
 />
+<lb/>
+Certificate Expiration: July 30, 2027
+## Scope
+
+The certification covers the design, development, operation, and support of Chronicle's oracle services. Chronicle's Information Security Management System (ISMS) includes:
+
+- Proof of Asset
+- DeFi Feeds
+- Dashboards
+<lb/>
+It also covers the supporting APIs, cloud environments, and other onchain and offchain infrastructure behind these products.
+
+## Verifying the certification
+
+Chronicle's ISO/IEC 27001:2022 certification can be independently verified through [IAF CertSearch](https://www.iafcertsearch.org/certification/akfsW6k8YBAuXDj2VsY23Myd).
+
+To request a copy of the certificate, contact Chronicle at hello@chroniclelabs.org.
