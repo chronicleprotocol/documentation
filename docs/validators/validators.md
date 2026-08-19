@@ -29,13 +29,10 @@ This approach ensures that:
 The validator network includes some of the most respected names in the ecosystem, such as:
 
 - [Sky](https://sky.money/)
-- [Infura](https://www.infura.io/)
-- [Gitcoin](https://www.gitcoin.co/)
 - [Etherscan](https://etherscan.io/)
 - [DeFi Saver](https://defisaver.com/)
 - [Gnosis](https://www.gnosis.io/)
 - [Nethermind](https://www.nethermind.io/)
-- [Euler](https://www.euler.finance/)
 - [Mantle](https://www.mantle.xyz/)
 - [ETH Global](https://ethglobal.com/)
 - [SteakHouse Financial](https://www.steakhouse.financial/)
