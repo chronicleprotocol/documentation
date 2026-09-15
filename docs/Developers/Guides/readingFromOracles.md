@@ -16,7 +16,7 @@ This currently applies to:
 
    - **zkSync**
 
-If you're building on any of these chains and need production oracle access, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw).
+If you're building on any of these chains and need production oracle access, please fill out the [following form]( https://form.typeform.com/to/LwlHi234).
 :::
 
 ## Reading from Chronicle Oracles on **Testnet** in 4 Steps
@@ -79,4 +79,4 @@ In most cases, you'll use the second option to whitelist another address.
 
 Ensure you have sufficient funds for the whitelisting process, as it’s a write operation requiring gas to complete.
 
-On Mainnet, the process is similar, but the whitelisting is permissioned. To get whitelisted, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
+On Mainnet, the process is similar, but the whitelisting is permissioned. To get whitelisted, please fill out the [following form]( https://form.typeform.com/to/LwlHi234). A member of the Chronicle team will get in touch with you.

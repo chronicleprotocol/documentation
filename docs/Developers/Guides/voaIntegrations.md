@@ -131,7 +131,7 @@ contract VAOConsumer {
        width="500"
    />
 
-2. **Get your consuming contract whitelisted.** Proof of Asset oracles are read-protected. Whitelisting happens on the Router, and is permissioned on production networks — fill out the [following form](https://form.typeform.com/to/KvmNbtrw) to request access for your contract address.
+2. **Get your consuming contract whitelisted.** Proof of Asset oracles are read-protected. Whitelisting happens on the Router, and is permissioned on production networks — fill out the [following form](https://form.typeform.com/to/LwlHi234) to request access for your contract address.
 3. **Read from the Router** using the interface shown above.
 
  
