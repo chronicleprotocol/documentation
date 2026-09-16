@@ -67,9 +67,9 @@ To get started, begin testing on Testnet networks. Once you're familiar, request
 
  **Chronicle contracts use a whitelist for read protection. Any address that needs to read oracle data must first be whitelisted. On Testnet, you can [self-whitelist](../Developers/Guides/whitelistAddress.md) using the [SelfKisser](https://github.com/chronicleprotocol/self-kisser) contract.**
 
-**Note: Mainnet whitelisting is permissioned, so please [contact the Chronicle team](https://form.typeform.com/to/KvmNbtrw) to proceed.**
+**Note: Mainnet whitelisting is permissioned, so please [contact the Chronicle team](https://form.typeform.com/to/LwlHi234) to proceed.**
 
-To request access to an existing Chronicle oracle on Mainnet, request a new oracle, or discuss a new integration, please submit a request via [this form](https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
+To request a new data feed, or discuss a new chain integration, please submit a request via [this form](https://form.typeform.com/to/mWnjjBxh). A member of the Chronicle team will get in touch with you.
 
 # Developer Resources
 To integrate Chronicle Oracles, here are some helpful resources:

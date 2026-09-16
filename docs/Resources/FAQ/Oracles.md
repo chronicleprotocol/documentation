@@ -36,7 +36,7 @@ Chronicle Oracles are read-protected by a whitelist. To read from an Oracle, the
 On testnet networks, the whitelisting mechanism is permissionless, anyone can whitelist an address using the [SelfKisser](/Developers/Guides/whitelistAddress.md).
 
 
-On Mainnet, the process is similar, but the whitelisting is permissioned. To get whitelisted, please fill out the [following form]( https://form.typeform.com/to/KvmNbtrw). A member of the Chronicle team will get in touch with you.
+On Mainnet, the process is similar, but the whitelisting is permissioned. To get whitelisted, please fill out the [following form]( https://form.typeform.com/to/LwlHi234). A member of the Chronicle team will get in touch with you.
 
 ## What happens if I try to read from an address that is not whitelisted?
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CommunityCard.module.css';
 
-function CommunityCard({ icon, title, description, link }) {
+function CommunityCard({ icon, title, description, link, iconBackground }) {
   // Split title and arrow
   const arrowIndex = title.lastIndexOf('→');
   const hasArrow = arrowIndex !== -1;
@@ -9,7 +9,10 @@ function CommunityCard({ icon, title, description, link }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className={styles.link}>
       <div className={styles.card}>
-        <div className={styles.iconWrapper}>
+        <div
+          className={styles.iconWrapper}
+          style={iconBackground ? { background: iconBackground } : undefined}
+        >
           <img src={icon} alt={title} className={styles.iconImg} />
         </div>
         <div className={styles.content}>

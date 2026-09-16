@@ -14,10 +14,10 @@ function HeroSection() {
       <div className={styles.heroContent}>
         <h1 className={styles.heroTitle}>{siteConfig.title}</h1>
         <h2 className={styles.heroSubtitle}>
-          Decentralized, Verifiable Oracles
+          Verification Infrastructure for Onchain Markets
         </h2>
         <p className={styles.heroDescription}>
-       Integrate Chronicle's Onchain Data into Your dApp.
+       Integrate onchain data powered by Chronicle into your application.
         </p>
         <div className={styles.getStartedButton}>
           <LinkButton text="Start Now" link="./Developers/tutorials/Remix" small={true} />
@@ -42,21 +42,21 @@ function FeaturesSection() {
         {
           title: "Learn",
           description:
-            "Explore Chronicle's decentralized, verifiable oracles, what sets them apart from other oracle solutions, and dive into their architecture.",
+            "Explore Chronicle’s verification infrastructure, discover what sets it apart from other solutions, and dive into its architecture.",
           icon: "📚",
           href: "./understandingChronicle",
         },
         {
           title: "Developers",
           description:
-            "Discover how to integrate Chronicle's Oracles and power your dApp with data.",
+            "Discover how to integrate Chronicle's onchain data to power your application.",
           icon: "🧩",
           href: "./Developers/start",
         },
         {
           title: "Products",
           description:
-            "Explore Chronicle: DeFi Oracles, Proof of Asset, and beyond.",
+            "Explore Chronicle: data feeds, Proof of Asset, and beyond.",
           icon: "🛠️",
           href: "./Products/productsOverview",
         },
