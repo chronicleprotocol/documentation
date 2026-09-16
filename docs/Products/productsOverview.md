@@ -11,4 +11,4 @@ Chronicle provides [DeFi Oracles](../Products/DeFiOracle/DeFiOracle.md) for vari
 For example, a PUSH oracle can provide real-time price updates at regular intervals (e.g., every X minutes or hours) or trigger updates when price fluctuations exceed a defined threshold.
 
 ## Chronicle's Proof of Asset Oracle
- [Proof of Asset](../Products/VerifiedAssetOracle/verifiedAssetOracle.md), formerly known as the Verified Asset Oracle (VAO), securely and transparently verifies the integrity and quality of offchain assets. It then transmits the resulting data onchain, distributing it directly to smart contracts and onchain products.
+ [Proof of Asset](../Products/proofOfAsset/proofOfAsset.md), formerly known as the Verified Asset Oracle (VAO), securely and transparently verifies the integrity and quality of offchain assets. It then transmits the resulting data onchain, distributing it directly to smart contracts and onchain products.

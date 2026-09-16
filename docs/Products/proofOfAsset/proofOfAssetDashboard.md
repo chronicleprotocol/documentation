@@ -5,7 +5,7 @@ keywords: [dashboard, Proof of Asset Dashboard]
 ---
  # Proof of Asset Dashboard
 
-The Chronicle Proof of Asset Dashboard enables users to visualize data verified by [Chronicle's Proof of Asset Oracle](/Products/VerifiedAssetOracle/verifiedAssetOracle.md). It provides insights into key financial metrics associated with verified assets such as Net Asset Value per Share (NAV/S), 7-day average annualized yield, custodian information, and more.
+The Chronicle Proof of Asset Dashboard enables users to visualize data verified by [Chronicle's Proof of Asset Oracle](/Products/proofOfAsset/proofOfAsset.md). It provides insights into key financial metrics associated with verified assets such as Net Asset Value per Share (NAV/S), 7-day average annualized yield, custodian information, and more.
 
 This dashboard is designed to enhance transparency and trust in onchain representations of real-world assets by offering a clear visualization of their value and underlying assets.
 

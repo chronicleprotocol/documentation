@@ -27,6 +27,24 @@ const config = {
     },
   },
 ],
+[
+  '@docusaurus/plugin-client-redirects',
+  {
+    redirects: [
+      // old name (Verified Asset Oracle / VAO) -> Proof of Asset
+      { from: '/Products/VerifiedAssetOracle/verifiedAssetOracle', to: '/Products/proofOfAsset/' },
+      { from: '/Products/VerifiedAssetOracle/data', to: '/Products/proofOfAsset/data' },
+      { from: '/Products/VerifiedAssetOracle/glossary', to: '/Products/proofOfAsset/glossary' },
+      { from: '/Products/VerifiedAssetOracle/proofOfAssets', to: '/Products/proofOfAsset/proofOfAssetOverview' },
+      { from: '/Products/VerifiedAssetOracle/vaoDashboard', to: '/Products/proofOfAsset/proofOfAssetDashboard' },
+      { from: '/Products/VerifiedAssetOracle/integratingPOAs/adapters', to: '/Products/proofOfAsset/integratingPOAs/adapters' },
+      { from: '/Products/VerifiedAssetOracle/integratingPOAs/routers', to: '/Products/proofOfAsset/integratingPOAs/routers' },
+      { from: '/Developers/Guides/voaIntegrations', to: '/Developers/Guides/proofOfAssetIntegrations' },
+      { from: '/Resources/FAQ/Vao', to: '/Resources/FAQ/proofOfAsset' },
+      { from: '/Resources/FAQ/VaoDash', to: '/Resources/FAQ/proofOfAssetDashboard' },
+    ],
+  },
+],
   ],
   title: 'Chronicle Docs',
   tagline: 'Cost-efficient. Verifiable Data.',
