@@ -11,7 +11,7 @@ Chronicle Proof of Asset oracles expose the `IChronicleVAO_Reader` interface —
 Proof of Asset oracles are built on [uScribe](../../Intro/Scribe/uScribe.md), Chronicle's universal oracle framework capable of delivering any arbitrary data payload onchain.
 
 :::important
-Always use the address of the [Router](../../Products/VerifiedAssetOracle/integratingPOAs/routers.md) corresponding to the Proof of Asset oracle you want to integrate. Whitelisting also happens at this level, not on the oracle itself.
+Always use the address of the [Router](../../Products/proofOfAsset/integratingPOAs/routers.md) corresponding to the Proof of Asset oracle you want to integrate. Whitelisting also happens at this level, not on the oracle itself.
 :::
 
 ## The `IChronicleVAO_Reader` Interface
@@ -119,11 +119,11 @@ contract VAOConsumer {
 }
 ```
 
-`vaoRouter` should be set to the address of the [Router](../../Products/VerifiedAssetOracle/integratingPOAs/routers.md) associated with the Proof of Asset oracle you want to integrate. You can find the Router address on the corresponding Proof of Asset page via [the dashboard](https://chroniclelabs.org/dashboard/proof-of-asset).
+`vaoRouter` should be set to the address of the [Router](../../Products/proofOfAsset/integratingPOAs/routers.md) associated with the Proof of Asset oracle you want to integrate. You can find the Router address on the corresponding Proof of Asset page via [the dashboard](https://chroniclelabs.org/dashboard/proof-of-asset).
 
 ## Integrating a Proof of Asset Oracle
 
-1. **Find the oracle and its Router address.** Browse the [Proof of Asset Dashboard](https://chroniclelabs.org/dashboard/proofofassets) to identify the oracle you want to consume, then locate its [Router](../../Products/VerifiedAssetOracle/integratingPOAs/routers.md) address.
+1. **Find the oracle and its Router address.** Browse the [Proof of Asset Dashboard](https://chroniclelabs.org/dashboard/proofofassets) to identify the oracle you want to consume, then locate its [Router](../../Products/proofOfAsset/integratingPOAs/routers.md) address.
 
    <img
        src="/img/guides/router.png"
