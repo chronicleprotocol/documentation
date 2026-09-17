@@ -1,6 +1,8 @@
 # Running a challenger in kubernetes
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/challenger" data-theme="dark" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>challenger</b>: A Helm chart for deploying the OpPoke Challenger Bot (go and rust) in Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/challenger">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+Challenger chart version: **0.1.0**
+
+Install exactly this version, not the latest version published to the Helm repository.
 
 ---
 
@@ -12,7 +14,7 @@ Challenger Implementations:
 - [chronicleprotocol/challenger-rs](https://github.com/chronicleprotocol/challenger-rs)
 
 Challenger helm chart:
-- [challenger helm chart](https://github.com/chronicleprotocol/charts/blob/main/charts/challenger/)
+- [challenger helm chart](https://github.com/chronicleprotocol/charts/tree/challenger-0.1.0/charts/challenger)
 
 ## Requirements
 - A Kubernetes cluster (Managed cluster like EKS, GKE, AKS, or something like K3s, K0s, kind, etc.)
@@ -52,9 +54,9 @@ You will now have a kuberenetes secret called `my-eth-keys`. this secret will ha
 The challenger has two different implemantations that can be run, in Go and Rust. Challengers all need a valid ethereum rpc node, and optionally a flashbots/mev protected rpc for submitting transactions to a private mempool.
 
 
-You can view the [default values](https://github.com/chronicleprotocol/charts/blob/main/charts/challenger/values.yaml) to see what the helm chart expects.
+You can view the [default values](https://github.com/chronicleprotocol/charts/blob/challenger-0.1.0/charts/challenger/values.yaml) to see what the helm chart expects.
 
-Examples of minimal values needed can be viewed [here](https://github.com/chronicleprotocol/charts/tree/main/charts/challenger/ci)
+Examples of minimal values needed can be viewed [here](https://github.com/chronicleprotocol/charts/tree/challenger-0.1.0/charts/challenger/ci)
 
 You will want to create a values file containg your challenger bot's config like this:
 

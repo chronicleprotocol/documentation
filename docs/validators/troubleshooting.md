@@ -27,7 +27,7 @@ The user-provided configs are sufficient for interacting with the k3s cluster an
 
 Make sure that you `$KUBECONFIG` is set to a file that is accessible by your system user with the correct permissions.
 
-You can view the functions responsible for setting kubeconfig [here](https://github.com/chronicleprotocol/scripts/blob/main/feeds/k3s-install/install.sh#L144-L149)
+You can view the functions responsible for setting kubeconfig [here](https://github.com/chronicleprotocol/scripts/blob/5e1970c5a1dc476ba9c1d0db7b8cbf5659e92876/feeds/k3s-install/install.sh#L154-L172)
 
 ### $KUBECONFIG file has expired
 
