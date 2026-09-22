@@ -84,6 +84,40 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/chronicleprotocol/documentation/tree/main/',
+          // Hide specific docs/categories from the sidebar without removing
+          // the underlying pages (still reachable via direct link).
+          sidebarItemsGenerator: async ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            const HIDDEN_CATEGORY_LABELS = ['Hackathons'];
+            const HIDDEN_DOC_IDS = ['Intro/mission'];
+            function prune(sidebarItems) {
+              return sidebarItems
+                .filter((item) => {
+                  if (
+                    item.type === 'category' &&
+                    HIDDEN_CATEGORY_LABELS.includes(item.label)
+                  ) {
+                    return false;
+                  }
+                  if (
+                    item.type === 'doc' &&
+                    HIDDEN_DOC_IDS.includes(item.id)
+                  ) {
+                    return false;
+                  }
+                  return true;
+                })
+                .map((item) =>
+                  item.type === 'category'
+                    ? { ...item, items: prune(item.items) }
+                    : item,
+                );
+            }
+            return prune(items);
+          },
         },
         blog: false,
         // blog: {
