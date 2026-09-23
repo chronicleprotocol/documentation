@@ -31,7 +31,7 @@ Upon a successful challenge, the challenger will receive a reward in ETH, the op
 />
 </div>
 
-The ETH reward is sent directly inside the `opChallenge()` transaction to the challenger if the opPoke is invalid. In other words, Chronicle Protocol will pay you to monitor their Oracles and challenge invalid data. 
+The ETH reward is sent directly inside the `opChallenge()` transaction to the challenger if the opPoke is invalid. In other words, Chronicle will pay you to monitor their Oracles and challenge invalid data. 
 
 To check the current challenge period, you can check the `opChallengePeriod`’s value using `opChallengePeriod()` which returns a value in seconds. Similarly, you can check the reward for successfully challenging the opPoke using the `challengeReward()`.
 
