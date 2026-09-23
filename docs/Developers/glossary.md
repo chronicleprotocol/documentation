@@ -10,12 +10,12 @@ Here is a growing list of some terminology you may find helpful as you explore o
 
 ### IChronicle
 
-An interface for Chronicle Protocol's oracle products.
+An interface for Chronicle's oracle products.
 
 
 ### Scribe
 
-[Scribe](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe) is an efficient Schnorr multi-signature based Oracle developed by the team at Chronicle Labs. 
+[Scribe](https://github.com/chronicleprotocol/scribe/blob/main/docs/Scribe.md#optimistic-flavored-scribe) is an efficient Schnorr multi-signature based Oracle developed by the team at Chronicle. 
 
 
 ### opPoke

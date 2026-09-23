@@ -1,13 +1,13 @@
 ---
 slug: /understandingChronicle
 sidebar_position: 1
-description: Why Chronicle Protocol?
+description: Why Chronicle?
 keywords: [Chronicle, scalable Oracle, decentralized Oracle]
 ---
 
 # Understanding Chronicle
 
-## **Welcome to Chronicle Protocol**
+## **Welcome to Chronicle**
 Chronicle is an independent verification infrastructure provider founded in 2017 within MakerDAO. Chronicle built the first oracle on Ethereum and has continuously operated onchain data infrastructure through multiple market cycles. Its products include Proof of Asset for institutional holdings verification and DeFi price feeds, collectively securing billions in assets across institutional and onchain financial platforms.
 
 ### **Why Chronicle**

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: Chronicle Protocol Testnet Addresses.
+description: Chronicle Testnet Addresses.
 keywords: [testnet, Chronicle, addresses]
 ---
 

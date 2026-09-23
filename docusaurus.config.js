@@ -268,7 +268,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Chronicle Labs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Chronicle, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

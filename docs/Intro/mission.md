@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: Chronicle Protocol's Mission and Value
+description: Chronicle's Mission and Value
 keywords: [verifiability, censorship-resistance, accessibility]
 ---
 
@@ -18,4 +18,4 @@ We are building the future of on-chain infrastructure. Verifiable and decentrali
 
 ### Who we work for
 
-Chronicle Protocol is being built for those who want to know where every element of their data comes from. For those who want to hedge against increased centralized control and censorship in the data space. And for those who think that access to on-chain data in its current form is too expensive, a barrier to growth, and a cost hard to predict and control. Ultimately, Chronicle Protocol has been designed to operate automatically and ubiquitously, connecting users that require immediate and verifiable data with a gold standard of Validators.
+Chronicle is being built for those who want to know where every element of their data comes from. For those who want to hedge against increased centralized control and censorship in the data space. And for those who think that access to on-chain data in its current form is too expensive, a barrier to growth, and a cost hard to predict and control. Ultimately, Chronicle has been designed to operate automatically and ubiquitously, connecting users that require immediate and verifiable data with a gold standard of Validators.

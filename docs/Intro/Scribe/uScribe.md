@@ -10,7 +10,7 @@ uScribe is a universal Oracle that is able to deliver any arbitrary data, buildi
 
 Unlike the original Scribe, which focuses on standard price feed updates, uScribe can support **any arbitrary data payload** onchain.
 
-The uScribe oracle allows for unique customization via its [consumer](#consumers) architecture, giving data providers a chance to define onchain enforced rules over their data - all while enjoying the high security of the underlying _Chronicle Protocol_.
+The uScribe oracle allows for unique customization via its [consumer](#consumers) architecture, giving data providers a chance to define onchain enforced rules over their data - all while enjoying the high security of the underlying _Chronicle_.
 
 This is achieved via separating the data integrity verification from the data update and access logic, giving data providers the ability to enforce unique rulesets about their data directly onchain. By separating the highly complex cryptographic verification from the application logic, uScribe enables building oracles with full flexibility.
 
@@ -18,7 +18,7 @@ This is achieved via separating the data integrity verification from the data up
 ## Key advantages:
 - **Supports arbitrary data types:** Supports any `bytes` payload of unrestricted size.
 - **Flexible consumer pattern:** Application-specific logic is implemented in downstream “consumer” contracts.
-- **High security:** Leverages the [Chronicle Protocol reputable validator set](https://chroniclelabs.org/validators) for verifying the data.
+- **High security:** Leverages the [Chronicle reputable validator set](https://chroniclelabs.org/validators) for verifying the data.
 - **Separation of concerns:** Cryptographic verification is handled in uScribe, leaving [consumer](#consumers) to define their own rules for data use.
 - **Customizable data access:** Consumers can implement arbitrary read functions (e.g.: provide access to historical data, grant access based on specific conditions an address must fulfill, or even restrict access during times of uncertainty).
 

@@ -19,15 +19,15 @@ In the context of blockchain, Real-World Assets (RWAs) refer to physical assets 
 ## Chronicle Proof of Asset
 Proof of Asset can securely and transparently verify the integrity and quality of any offchain asset, transport the resulting data onchain, and distribute it directly to smart contracts and onchain products.
 
-Proof of Asset leverages the unique advantages and long-standing reputation of Chronicle Protocol, extending them to any asset that originated offchain, such as Treasury Bills, FIAT currency, real estate, and gold, among others.
+Proof of Asset leverages the unique advantages and long-standing reputation of Chronicle, extending them to any asset that originated offchain, such as Treasury Bills, FIAT currency, real estate, and gold, among others.
 
-### Leveraging Chronicle Protocol
+### Leveraging Chronicle
 
-Chronicle Protocol powers Proof of Asset, providing the infrastructure behind its unique capabilities.
+Chronicle powers Proof of Asset, providing the infrastructure behind its unique capabilities.
 
     - **Industry-Leading Validators:** Chronicle’s decentralized and distributed network comprises reputable Validators like Gnosis, Etherscan, Sky (MakerDAO), ETHGlobal, Nethermind, and many more. This network enhances the typical Byzantine Fault Tolerance of decentralized Validators with a unique 'Proof of Reputation' model, where each Validator effectively stakes its reputation. The canonical value of an Oracle is derived through the majority consensus of this community consortium, making the trust requirements for using a Chronicle Oracle equivalent to the trust in the crypto applications people use every day. The more Validators that join, the stronger this trust guarantee becomes.
 
-    - **Unrivaled Transparency & Verifiability:** A uniquely transparent oracle network, every piece of information on Chronicle Protocol can be cryptographically verified by using the online dashboard, The Chronicle. This ensures the highest levels of transparency and data integrity, creating the first truly trustless Oracle network.
+    - **Unrivaled Transparency & Verifiability:** A uniquely transparent oracle network, every piece of information on Chronicle can be cryptographically verified by using the online dashboard, The Chronicle. This ensures the highest levels of transparency and data integrity, creating the first truly trustless Oracle network.
 
     - **Cost-efficient:** By using Schnorr signature aggregation, Chronicle [cuts gas costs for onchain data delivery by 79% compared to competitors](https://messari.io/report/state-of-chronicle-q2-2024#key-insights).
     

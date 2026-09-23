@@ -9,7 +9,7 @@ sidebar_position: 1
  This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. 
 
 :::tip
-### Chronicle Protocol Contracts
+### Chronicle Contracts
 You can view all the smart contract addresses [here](../../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
 :::
 :::important
@@ -27,10 +27,10 @@ To kiss yourself, i.e., `msg.sender`, please check out the following guide, **[G
 ## 💰 Bounties: 10K 
 
 <details>
-<summary>Track 1: Best Integration of Chronicle Protocol </summary>
+<summary>Track 1: Best Integration of Chronicle </summary>
 
-### Track 1: Best Integration of Chronicle Protocol 
-Unlock new possibilities with Scribe, Chronicle Protocol's cost-efficient oracles!
+### Track 1: Best Integration of Chronicle 
+Unlock new possibilities with Scribe, Chronicle's cost-efficient oracles!
 Leverage our diverse oracle solutions across 10 supported chains to power your next big idea. Whether you're building a game with dynamic pricing, crafting a reputation system, or designing an advanced analytics dashboard, Chronicle's robust, chain-agnostic infrastructure provides the flexibility and performance to fuel your innovation. Show us what you can create and surprise us with your unique use cases!
 
 - 🥇 1st: $2750
@@ -64,7 +64,7 @@ Make sure to include the following in your project submission:
 
 ### Track 2: Best DeFi Application Powered by Chronicle
 
-Build a DeFi application powered by Chronicle Protocol’s Oracles. Potential examples include lending protocols, decentralized exchanges, yield farming strategies, liquidity pools, stablecoins, prediction markets, decentralized insurance, decentralized credit score applications, trading bots, etc.
+Build a DeFi application powered by Chronicle’s Oracles. Potential examples include lending protocols, decentralized exchanges, yield farming strategies, liquidity pools, stablecoins, prediction markets, decentralized insurance, decentralized credit score applications, trading bots, etc.
 The prize will go to the top teams with the best DeFi integration of Chronicle's Scribe cost-efficient Oracles.
 
 - 🥇 1st: $2750
@@ -128,7 +128,7 @@ For this track you only need to submit a link to your content and its associated
 
 ## ✏️ Workshops
 
-- 🛠️ Crash Course on Oracles with Chronicle Protocol - Friday, 18th October, 04:00pm, Room 2
+- 🛠️ Crash Course on Oracles with Chronicle - Friday, 18th October, 04:00pm, Room 2
 
 ## 📤 Resources
 

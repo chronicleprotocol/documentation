@@ -9,7 +9,7 @@ sidebar_position: 1
  This document serves as a guide for integrating Chronicle Oracles into your hackathon projects. 
 
 :::tip
-### Chronicle Protocol Contracts
+### Chronicle Contracts
 You can view all the smart contract addresses [here](../Developers/testnet.md), or directly via the [Dashboard](https://chroniclelabs.org/dashboard). If you are using the Dashboard, you can find the Testnet addresses for different chains by toggling `<dev mode>`.
 :::
 :::important
@@ -36,7 +36,7 @@ You can find a step by step process for whitelisting an address to read from Chr
 <details>
 <summary> 🧩 Best Integration of Chronicle Oracles </summary>
 
-### 🧩 Best Integration of Chronicle Protocol ⸺ $6,500
+### 🧩 Best Integration of Chronicle ⸺ $6,500
 
 Use Chronicle Oracles to power up your DApp! You can utilize any of the oracles provided on the [Dashboard](https://chroniclelabs.org/dashboard/oracles) across any of the 10 chains where Chronicle is live.
 
