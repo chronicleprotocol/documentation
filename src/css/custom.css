@@ -54,7 +54,28 @@
 [data-theme='dark']:root .menu {
   background-color: #1F2937;
 }
+.offering-card {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
 
+.offering-card:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.offering-card h3 {
+  margin: 0;
+}
+
+.offering-description {
+  text-align: center;
+  margin-top: 1rem;
+}
 /* Hide the copy button by default */
 .copyPageButtonContainer {
   display: none !important;
