@@ -37,8 +37,7 @@ On Testnet, the [SelfKisser contract](https://github.com/chronicleprotocol/self-
 |Plasma Testnet|[0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0](https://testnet.plasmascan.to/address/0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0) |
 | Tempo Testnet Moderato   | [0x617FF3943b4678Bf70F5D254B02407D1F29B2B55](https://explore.moderato.tempo.xyz/address/0x617FF3943b4678Bf70F5D254B02407D1F29B2B55)|
 | Arc Testnet                   | [0xDecd203Ef38DEce4553Fc9fD5C570c26bD34B07F](https://testnet.arcscan.app/address/0xDecd203Ef38DEce4553Fc9fD5C570c26bD34B07F) |
-
-
+| BNB Testnet                   |[0xDd7113685379405af27E0c9Eef3a3B5E99d841E2](https://testnet.bscscan.com/address/0xDd7113685379405af27E0c9Eef3a3B5E99d841E2#code)|
 ### Consuming Oracle Data (Remix)
 
 An example contract named `OracleReader.sol` allows you to consume Oracle data and can be quickly deployed on [Remix](https://remix.ethereum.org/). Remix is a web-based integrated development environment (IDE) for creating, running, and debugging smart contracts directly in your browser. 
