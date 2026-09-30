@@ -17,9 +17,9 @@ Deploying the validator into an existing kubernetes cluster.
 
 ### Helm Chart details:
 
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
+Validator chart version: **0.6.11**
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+Operators must install exactly this version, not the latest version published to the Helm repository.
 
 ## Notable changes include:
 
@@ -86,7 +86,7 @@ vao:
 
 You will need to generate a new encrypted keystore with Ethereum address matching a specific first byte identifier.
 
-Please look at the script [here](https://github.com/chronicleprotocol/scripts/blob/main/feeds/keystore-generator.sh), which will help you do this
+Please look at the script [here](https://github.com/chronicleprotocol/scripts/blob/5e1970c5a1dc476ba9c1d0db7b8cbf5659e92876/feeds/keystore-generator.sh), which will help you do this
 
 
 #### Create Namespace
