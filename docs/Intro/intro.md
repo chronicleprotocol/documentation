@@ -68,6 +68,6 @@ Chronicle Proof of Asset underpins some of the largest tokenized funds in the wo
 <details>
 <summary>Cost-Efficient</summary>
 
-While other Oracles rely on the Elliptic Curve Digital Signature Algorithm (ECDSA), which creates a one-to-one relationship between the number of validators and their signatures, Scribe utilizes a novel application of **Schnorr Signature cryptography**. This allows the consolidation of signatures from a scalable set of validators into a single "super signature" that is then verified by ECDSA. The result? **A near-constant gas cost for Oracle updates, regardless of how many validators are involved.**
+While other Oracles rely on the Elliptic Curve Digital Signature Algorithm (ECDSA), which creates a one-to-one relationship between the number of validators and their signatures, Scribe utilizes a novel application of **Schnorr Signature cryptography**. This allows the consolidation of signatures from a scalable set of validators into a single "super signature" that is then verified onchain using secp256k1 elliptic-curve operations, including the EVM’s `ecrecover` precompile. The result? **A near-constant gas cost for Oracle updates, regardless of how many validators are involved.**
 </details>
 
