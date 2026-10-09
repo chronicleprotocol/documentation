@@ -17,7 +17,7 @@ Deploying the validator into an existing kubernetes cluster.
 
 ### Helm Chart details:
 
-Validator chart version: **0.6.11**
+Validator chart version: **0.8.2** (app version `0.81.0`)
 
 Operators must install exactly this version, not the latest version published to the Helm repository.
 
@@ -86,7 +86,7 @@ vao:
 
 You will need to generate a new encrypted keystore with Ethereum address matching a specific first byte identifier.
 
-Please look at the script [here](https://github.com/chronicleprotocol/scripts/blob/5e1970c5a1dc476ba9c1d0db7b8cbf5659e92876/feeds/keystore-generator.sh), which will help you do this
+Please look at the script [here](https://github.com/chronicleprotocol/scripts/blob/47ad1617ae4a13195ee331fd25619a359a80f5b7/feeds/keystore-generator.sh), which will help you do this
 
 
 #### Create Namespace
@@ -164,7 +164,7 @@ vao:
 Then install the helm release using this values file:
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.6.11
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.8.2
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
