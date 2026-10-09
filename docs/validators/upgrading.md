@@ -16,6 +16,13 @@ Operators must install exactly this version, not the latest version published to
 
 <br/>
 
+:::info
+**Upgrading to chart `0.8.2`**: no values changes are needed. A values file that works with chart `0.6.x` works unchanged with `0.8.2`, and the upgrade moves both the `ghost` and `ghost-vao` deployments to `ghcr.io/chronicleprotocol/ghost:0.81.0`. If your values file pins an image tag (`global.image.tag`, `ghost.image.tag` or `vao.image.tag`), remove it, otherwise the release keeps running the image you pinned.
+
+Chart `0.7.0` added an optional startup probe, off by default. Enable it with `global.startup.enabled: true` if the liveness probe restarts your validator while it is still starting. The default budget is 30 checks, 10 seconds apart (5 minutes).
+
+Chart `0.8.0` added `ghost.enabled`, `vao.enabled`, `vao.rpcUrl` and `vao.ethConfig`. Leave them unset unless the Chronicle team asks you to change them: both deployments keep running, and the `ghost-vao` deployment keeps using `ghost.rpcUrl` and `ghost.ethConfig`.
+:::
 
 :::warning
 **Upgrading from a chart older than `0.6.0`**: As of ChartVersion `0.6.0`, the `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
@@ -153,7 +160,7 @@ chmod a+x upgrade.sh
 ---
 
 :::tip
-If `kubectl/helm` commands fail, please ensure you have `$KUBECONFIG` set correctly. Take a look [here](quickstart#kubectl--helm-commands-fail) for more detail
+If `kubectl/helm` commands fail, please ensure you have `$KUBECONFIG` set correctly. Take a look [here](troubleshooting#kubectl--helm-commands-fail) for more detail
 :::
 
 
@@ -166,6 +173,14 @@ helm list -n $FEED_NAME
 NAME       NAMESPACE       REVISION        UPDATED                                 STATUS          CHART             APP VERSION
 validator  demo            2               2026-10-09 12:56:31.070821 -0300 -03    deployed        validator-0.8.2   0.81.0
 ```
+
+Check that both deployments run the pinned image:
+
+```bash
+kubectl get deployments -n $FEED_NAME -o wide
+```
+
+The `IMAGES` column must show `ghcr.io/chronicleprotocol/ghost:0.81.0@sha256:417b664eee72406bf1f36757b165135e0d71ce6321b9c0b463ec0d882a886de4` for both `ghost` and `ghost-vao`.
 
 #### View all resources created in the namespace
 ```bash
