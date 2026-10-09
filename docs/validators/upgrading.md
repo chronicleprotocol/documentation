@@ -22,6 +22,8 @@ Operators must install exactly this version, not the latest version published to
 Chart `0.7.0` added an optional startup probe, off by default. Enable it with `global.startup.enabled: true` if the liveness probe restarts your validator while it is still starting. The default budget is 30 checks, 10 seconds apart (5 minutes).
 
 Chart `0.8.0` added `ghost.enabled`, `vao.enabled`, `vao.rpcUrl` and `vao.ethConfig`. Leave them unset unless the Chronicle team asks you to change them: both deployments keep running, and the `ghost-vao` deployment keeps using `ghost.rpcUrl` and `ghost.ethConfig`.
+
+App `0.81.0` has no built-in fallback configuration. At start it reads the on-chain config registry through your Ethereum RPC (`ghost.rpcUrl`) and downloads its configuration from public IPFS gateways over HTTPS, so both must be reachable from the node. If you load your own configuration with `-c ipfs://...`, the URL must end with `?checksum=0x<keccak256 of the file>`. Some metrics were renamed: `musig_session_count` is now `chronicle_musig_session_count` and `musig_session_suppressed_total` is now `chronicle_musig_session_rejected_total`. Update any alerts built on them.
 :::
 
 :::warning
@@ -116,6 +118,8 @@ vao:
 ```
 :::danger
 Please ensure your values yaml file is updated to reflect the requirements of validator chart version `0.8.2`, with the correct values for `ethConfig` and `rpcUrl`.
+
+Always pass your values file with `-f`. Do not use `--reuse-values`: it keeps the defaults of the chart you are upgrading from, and with chart `0.8.x` Helm then reports a successful upgrade while it deletes both validator deployments and their services. If that happened, run `helm rollback $FEED_NAME -n $FEED_NAME`.
 :::
 
 ```
@@ -131,7 +135,7 @@ helm upgrade $FEED_NAME -n $FEED_NAME -f $HOME/$FEED_NAME/generated-values.yaml 
 
 To simplify the upgrade process, we have created a helper script that will upgrade your validator to the chart version pinned on this page (`0.8.2`).
 
-This script will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator --version 0.8.2` on your feed release, with any updated input variables.
+This script runs `helm upgrade <feedname> -n <feedname> -f $HOME/<feedname>/generated-values.yaml chronicle/validator --version 0.8.2` on your feed release. It runs a dry run first and asks for confirmation before it upgrades.
 
 :::caution
 Please use the correct `FEED_NAME`, which should be the same as your helm release name, if deployed using the `install.sh` script previously
@@ -153,7 +157,10 @@ chmod a+x upgrade.sh
 ./upgrade.sh
 ```
 
-:::tip You can set the expected variables in the `.env` file, or export them as environment variables. If the script fails to find any of these values, it will prompt you for them when running the script.
+:::tip
+You can set the expected variables in the `.env` file, or export them as environment variables. If the script fails to find any of these values, it will prompt you for them when running the script.
+
+Do not set `CHART_VERSION` in `.env`: when the script reads `.env`, a value there replaces the pinned chart version.
 :::
 
 </details>

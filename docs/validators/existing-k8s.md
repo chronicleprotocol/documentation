@@ -29,6 +29,10 @@ Operators must install exactly this version, not the latest version published to
 Chart `0.7.0` added an optional startup probe, off by default. Enable it with `global.startup.enabled: true` if the liveness probe restarts your validator while it is still starting. The default budget is 30 checks, 10 seconds apart (5 minutes).
 
 Chart `0.8.0` added `ghost.enabled`, `vao.enabled`, `vao.rpcUrl` and `vao.ethConfig`. Leave them unset unless the Chronicle team asks you to change them: both deployments keep running, and the `ghost-vao` deployment keeps using `ghost.rpcUrl` and `ghost.ethConfig`.
+
+App `0.81.0` has no built-in fallback configuration. At start it reads the on-chain config registry through your Ethereum RPC (`ghost.rpcUrl`) and downloads its configuration from public IPFS gateways over HTTPS, so both must be reachable from the node. If you load your own configuration with `-c ipfs://...`, the URL must end with `?checksum=0x<keccak256 of the file>`. Some metrics were renamed: `musig_session_count` is now `chronicle_musig_session_count` and `musig_session_suppressed_total` is now `chronicle_musig_session_rejected_total`. Update any alerts built on them.
+
+When upgrading an existing release, always pass your values file with `-f`. Do not use `--reuse-values`: it keeps the defaults of the chart you are upgrading from, and with chart `0.8.x` Helm then reports a successful upgrade while it deletes both validator deployments and their services. If that happened, run `helm rollback <release> -n <namespace>`.
 :::
 
 :::warning

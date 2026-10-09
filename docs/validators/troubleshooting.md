@@ -57,6 +57,15 @@ sudo chown $USER $KUBECONFIG
 ```
 You should be able to authenticate with the cluster and proceed with `kubectl` and `helm` commands.
 
+### Validator restarts in a loop after upgrading to chart 0.8.2
+
+Since app `0.81.0` the validator has no built-in fallback configuration. If at start it cannot read the on-chain config registry through your Ethereum RPC, or cannot download its configuration from IPFS, the container exits with code 0 and Kubernetes restarts it. The pod shows `Completed` and then `CrashLoopBackOff` instead of `Error`, and the log ends with `could not run app: no working config found`.
+
+- Check that the RPC URL in `ghost.rpcUrl` answers from the node, and that outbound HTTPS (port 443) is open.
+- Read the previous run: `kubectl logs deployment/ghost -n $FEED_NAME --previous` and `kubectl logs deployment/ghost-vao -n $FEED_NAME --previous`.
+- If the log shows `file name too long`, the key passphrase is longer than 255 characters, which app `0.81.0` cannot read. Roll back and contact the Chronicle team.
+- To go back to the previous release while you investigate: `helm rollback $FEED_NAME -n $FEED_NAME`.
+
 ### Debug Bundle
 
 If you need further debugging, please retrieve the container logs, and some base info and provide it to the chronicle team for assistance:
