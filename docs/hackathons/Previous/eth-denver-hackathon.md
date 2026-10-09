@@ -25,7 +25,7 @@ The prize will go to the top three teams with the most innovative integration of
 
 Must utilize the Oracle smart contract on one of the supported blockchains
 
-## Chronicle Protocol Contracts
+## Chronicle Contracts
 
 ### Scribe
 

@@ -136,7 +136,7 @@ For this track you only need to submit a link to your content and to complete th
 - Friday, 12th July, 04:30pm, Room 3
 - **[GitHub Repository for the workshop](https://github.com/biancabuzea200/TokenVendor)**
 
-## Chronicle Protocol Contracts
+## Chronicle Contracts
 
 ### Scribe
 

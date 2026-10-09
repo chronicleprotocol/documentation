@@ -24,7 +24,6 @@ On Testnet, the [SelfKisser contract](https://github.com/chronicleprotocol/self-
 | Arbitrum Sepolia              | [0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5](https://sepolia.arbiscan.io/address/0x4BAe02bED4b49DE3344878b0B0B2d6A58D47ddC5#code)            |
 | Gnosis Mainnet                | [0xE24c5cd952193eDA44BE71c19b35a9CB83cd1E24](https://gnosisscan.io/address/0xE24c5cd952193eDA44BE71c19b35a9CB83cd1E24#code)                  |
 | Mantle Testnet                | [0x165dC3e99E3491b8914CF65b4CBC4E98755da53e](https://explorer.sepolia.mantle.xyz/address/0x165dC3e99E3491b8914CF65b4CBC4E98755da53e#code)    |
-| Scroll Sepolia                | [0xCE26246F859512CD22faE6037fb0371960B68a0C](https://sepolia.scrollscan.com/address/0xCE26246F859512CD22faE6037fb0371960B68a0C#code)         |
 | zkSync Sepolia                | [0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb](https://sepolia.explorer.zksync.io/address/0x8253Bb923473E84D0C0013F3742D2F4E49D9f4eb#contract) |
 | Optimism Sepolia              | [0x84c2dD149026327f95A7947d788Dff49D8B24E26](https://sepolia-optimism.etherscan.io/address/0x84c2dD149026327f95A7947d788Dff49D8B24E26#code)  |
 | Berachain Bepolia              | [0x584914a893aBefB95abC02A5604338c0390F328B](https://bepolia.beratrail.io/address/0x584914a893aBefB95abC02A5604338c0390F328B)            |
@@ -37,8 +36,7 @@ On Testnet, the [SelfKisser contract](https://github.com/chronicleprotocol/self-
 |Plasma Testnet|[0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0](https://testnet.plasmascan.to/address/0xB3bf22c657a2d1EDEf447CA8D863C10989e047B0) |
 | Tempo Testnet Moderato   | [0x617FF3943b4678Bf70F5D254B02407D1F29B2B55](https://explore.moderato.tempo.xyz/address/0x617FF3943b4678Bf70F5D254B02407D1F29B2B55)|
 | Arc Testnet                   | [0xDecd203Ef38DEce4553Fc9fD5C570c26bD34B07F](https://testnet.arcscan.app/address/0xDecd203Ef38DEce4553Fc9fD5C570c26bD34B07F) |
-
-
+| BNB Testnet                   |[0xDd7113685379405af27E0c9Eef3a3B5E99d841E2](https://testnet.bscscan.com/address/0xDd7113685379405af27E0c9Eef3a3B5E99d841E2#code)|
 ### Consuming Oracle Data (Remix)
 
 An example contract named `OracleReader.sol` allows you to consume Oracle data and can be quickly deployed on [Remix](https://remix.ethereum.org/). Remix is a web-based integrated development environment (IDE) for creating, running, and debugging smart contracts directly in your browser. 

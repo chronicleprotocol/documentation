@@ -6,7 +6,7 @@ keywords: [Schnorr signature, Scribe]
 
 # Scribe 
 
-Scribe is the name for a new type of Oracle architecture developed by the team at Chronicle Labs. The design is built around 5 pillars:
+Scribe is the name for a new type of Oracle architecture developed by the team at Chronicle. The design is built around 5 pillars:
 
 - <b>S</b>calability
 - <b>T</b>ransparency

@@ -45,7 +45,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 
 **Type:** First and Second Prize
 
-## Chronicle Protocol Contracts
+## Chronicle Contracts
 
 ### Scribe
 

@@ -27,6 +27,24 @@ const config = {
     },
   },
 ],
+[
+  '@docusaurus/plugin-client-redirects',
+  {
+    redirects: [
+      // old name (Verified Asset Oracle / VAO) -> Proof of Asset
+      { from: '/Products/VerifiedAssetOracle/verifiedAssetOracle', to: '/Products/proofOfAsset/' },
+      { from: '/Products/VerifiedAssetOracle/data', to: '/Products/proofOfAsset/data' },
+      { from: '/Products/VerifiedAssetOracle/glossary', to: '/Products/proofOfAsset/glossary' },
+      { from: '/Products/VerifiedAssetOracle/proofOfAssets', to: '/Products/proofOfAsset/proofOfAssetOverview' },
+      { from: '/Products/VerifiedAssetOracle/vaoDashboard', to: '/Products/proofOfAsset/proofOfAssetDashboard' },
+      { from: '/Products/VerifiedAssetOracle/integratingPOAs/adapters', to: '/Products/proofOfAsset/integratingPOAs/adapters' },
+      { from: '/Products/VerifiedAssetOracle/integratingPOAs/routers', to: '/Products/proofOfAsset/integratingPOAs/routers' },
+      { from: '/Developers/Guides/voaIntegrations', to: '/Developers/Guides/proofOfAssetIntegrations' },
+      { from: '/Resources/FAQ/Vao', to: '/Resources/FAQ/proofOfAsset' },
+      { from: '/Resources/FAQ/VaoDash', to: '/Resources/FAQ/proofOfAssetDashboard' },
+    ],
+  },
+],
   ],
   title: 'Chronicle Docs',
   tagline: 'Cost-efficient. Verifiable Data.',
@@ -45,6 +63,25 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `window.tlumaConfig = {
+        source: 'chronicleprotocol/documentation',
+        theme: 'auto',
+        button: 'bottom-right',
+      };`,
+    },
+  ],
+
+  scripts: [
+    {
+      src: 'https://tluma.ai/widget.js',
+      async: true,
+    },
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -66,6 +103,40 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/chronicleprotocol/documentation/tree/main/',
+          // Hide specific docs/categories from the sidebar without removing
+          // the underlying pages (still reachable via direct link).
+          sidebarItemsGenerator: async ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) => {
+            const items = await defaultSidebarItemsGenerator(args);
+            const HIDDEN_CATEGORY_LABELS = ['Hackathons'];
+            const HIDDEN_DOC_IDS = ['Intro/mission'];
+            function prune(sidebarItems) {
+              return sidebarItems
+                .filter((item) => {
+                  if (
+                    item.type === 'category' &&
+                    HIDDEN_CATEGORY_LABELS.includes(item.label)
+                  ) {
+                    return false;
+                  }
+                  if (
+                    item.type === 'doc' &&
+                    HIDDEN_DOC_IDS.includes(item.id)
+                  ) {
+                    return false;
+                  }
+                  return true;
+                })
+                .map((item) =>
+                  item.type === 'category'
+                    ? { ...item, items: prune(item.items) }
+                    : item,
+                );
+            }
+            return prune(items);
+          },
         },
         blog: false,
         // blog: {
@@ -216,7 +287,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Chronicle Labs, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Chronicle, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

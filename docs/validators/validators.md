@@ -7,7 +7,7 @@ keywords: [validators, node operators]
 # Chronicle's Validator Set
 
 
-Validators are the backbone of the Chronicle Protocol, maintaining the decentralized infrastructure that powers the oracle network. Their responsibilities include:
+Validators are the backbone of the Chronicle, maintaining the decentralized infrastructure that powers the oracle network. Their responsibilities include:
 
 - Collecting data from diverse sources (onchain and offchain).
 - Aggregating inputs to ensure accuracy.

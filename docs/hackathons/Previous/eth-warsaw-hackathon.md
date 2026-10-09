@@ -10,7 +10,7 @@ This document provides documentation for integrating Chronicle Oracles into thei
 If you have any questions, don’t hesitate to reach out to our booth, or anyone wearing Chronicle hoodies
 :::
 
-## Chronicle Protocol Contracts
+## Chronicle Contracts
 
 ### Scribe
 

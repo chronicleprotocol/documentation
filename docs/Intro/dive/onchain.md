@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: Onchain components of Chronicle Protocol Architecture.
+description: Onchain components of Chronicle Architecture.
 keywords: [quorum, WatRegistry, ValidatorRegistry]
 ---
 
@@ -12,6 +12,6 @@ keywords: [quorum, WatRegistry, ValidatorRegistry]
 
     - **ValidatorRegistry** maintains a list of all Validators that are recognized as valid participants in the network/protocol. Validators, in this context, are trusted entities within the network that collaborate through a *peer-to-peer* (p2p) network to supply new oracle data.
 
-    - An onchain enforced consensus mechanism ensures that data provided by these Validators is validated by a specific number, known as the `bar` of Validators. The ValidatorRegistry provides functionalities such as filtering p2p connections based on the identities of Validators and translating validator addresses to/from their corresponding 1-byte identifier. By leveraging the ValidatorRegistry, Chronicle Protocol ensures that only authenticated and authorized Validators participate in the network activities, thereby enhancing the security and integrity of the oracle data provided by the protocol.
+    - An onchain enforced consensus mechanism ensures that data provided by these Validators is validated by a specific number, known as the `bar` of Validators. The ValidatorRegistry provides functionalities such as filtering p2p connections based on the identities of Validators and translating validator addresses to/from their corresponding 1-byte identifier. By leveraging the ValidatorRegistry, Chronicle ensures that only authenticated and authorized Validators participate in the network activities, thereby enhancing the security and integrity of the oracle data provided by the protocol.
 
 <!-- Technically its not at least 11 but exactly 11. This gives us some nice properties inside the Scribe contract itself, ie the verification runtime is not O(bar) but exactly bar. Also it helps with a feed maybe optimistically poking data with that many feeds that the challenge operation becomes too expensive to be economically reasonable for externals to perform...  -->

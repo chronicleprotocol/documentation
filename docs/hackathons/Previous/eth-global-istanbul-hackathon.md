@@ -34,7 +34,7 @@ For any inquiries, feel free to reach out at our booth, join our [Discord](https
 **Reward:** $3000 DAI <br/>
 **Type:** Pooled prize
 
-## Chronicle Protocol Contracts
+## Chronicle Contracts
 
 ### Scribe
 

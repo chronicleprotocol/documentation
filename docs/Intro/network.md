@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-description: Chronicle Protocol's - A Decentralized Oracle Network
+description: Chronicle's - A Decentralized Oracle Network
 keywords: [Validators, deviation threshold, components]
 ---
 

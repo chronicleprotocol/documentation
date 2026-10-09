@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: How do I get started with Chronicle Protocol?
+description: How do I get started with Chronicle?
 keywords: [getting started, Chronicle]
 ---
 import CallToActionButton from '@site/src/components/CallToActionButton';

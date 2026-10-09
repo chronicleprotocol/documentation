@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-description: Chronicle Protocol additional resources. 
+description: Chronicle additional resources. 
 keywords: [resources, GitHub repo]
 ---
 # Developer Resources
