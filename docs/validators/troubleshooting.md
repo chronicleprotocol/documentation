@@ -57,14 +57,15 @@ sudo chown $USER $KUBECONFIG
 ```
 You should be able to authenticate with the cluster and proceed with `kubectl` and `helm` commands.
 
-### Validator restarts in a loop after upgrading to chart 0.8.2
+### Validator restarts in a loop on chart 0.8.2
 
-Since app `0.81.0` the validator has no built-in fallback configuration. If at start it cannot read the on-chain config registry through your Ethereum RPC, or cannot download its configuration from IPFS, the container exits with code 0 and Kubernetes restarts it. The pod shows `Completed` and then `CrashLoopBackOff` instead of `Error`, and the log ends with `could not run app: no working config found`.
+Since app `0.81.0` the validator has no built-in fallback configuration. If at start it cannot read the on-chain config registry through your Ethereum RPC, or cannot download its configuration from IPFS, the container exits with code 0 and Kubernetes restarts it. The pod shows `Completed` and then `CrashLoopBackOff` instead of `Error`, and the log ends with `could not run app: no working config found`. This applies to new installs as well as upgrades.
 
-- Check that the RPC URL in `ghost.rpcUrl` answers from the node, and that outbound HTTPS (port 443) is open.
 - Read the previous run: `kubectl logs deployment/ghost -n $FEED_NAME --previous` and `kubectl logs deployment/ghost-vao -n $FEED_NAME --previous`.
-- If the log shows `file name too long`, the key passphrase is longer than 255 characters, which app `0.81.0` cannot read. Roll back and contact the Chronicle team.
-- To go back to the previous release while you investigate: `helm rollback $FEED_NAME -n $FEED_NAME`.
+- Check that `ghost.rpcUrl` is an Ethereum mainnet RPC that answers from the node (the config registry is on Ethereum mainnet), and that outbound HTTPS (port 443) is open.
+- If the log shows `ConfigDoesNotExist`, the config registry has no configuration for your validator address yet. The Chronicle team adds it when it onboards your address, and app `0.81.0` cannot start before that. Contact the Chronicle team.
+- If the log shows `file name too long`, app `0.81.0` tried to read your key passphrase as a file name and the passphrase is too long for one (over 255 bytes once URL encoded, where a space or a non-ASCII character takes 3 bytes or more). That log line contains the passphrase itself, so delete it from any log you share, including the debug bundle below. Roll back and contact the Chronicle team.
+- To go back to the chart you ran before while you investigate, run `helm history $FEED_NAME -n $FEED_NAME`, pick the last revision whose CHART column is older than `validator-0.8.2`, and run `helm rollback $FEED_NAME <revision> -n $FEED_NAME`. Without a revision number, `helm rollback` returns to the revision just before the current one, which is still chart `0.8.2` if you ran the upgrade more than once.
 
 ### Debug Bundle
 

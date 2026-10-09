@@ -223,8 +223,10 @@ NOTES:
 
 > Please provide your `ETH_FROM` address to the Chronicle team so it can be whitelisted.
 
+With chart `0.8.2` the validator pods restart in a loop until the Chronicle team has onboarded your address. See [Troubleshooting](troubleshooting).
+
 :::tip
-The install script can be run multiple times with the same values. It will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator --version 0.8.2` on your feed release, with any updated input variables. **Note**: it will delete secrets in an existing namespace, and recreate them as, secrets are generally immutable
+The install script can be run multiple times with the same values. If the release already exists, it asks whether to upgrade it, then runs `helm upgrade <feedname> -f $HOME/<feedname>/generated-values.yaml chronicle/validator --namespace <feedname> --version 0.8.2` with any updated input variables. **Note**: it regenerates `generated-values.yaml`, so edits you made to that file are lost, and it deletes and recreates the ETH keys secret in an existing namespace, because secrets are generally immutable.
 :::
 
 ### Verify that the helm release has been successful:
@@ -382,6 +384,7 @@ helm install $VALIDATOR_NAME \
 or to upgrade an existing helm release:
 
 ```bash
+helm repo update chronicle
 helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
@@ -389,8 +392,10 @@ helm upgrade $VALIDATOR_NAME \
  --version 0.8.2
 ```
 
+Always pass your values file with `-f` and do not add `--reuse-values`. See [Upgrading a Validator](upgrading) for why.
+
 :::tip
-you can perform a `dry-run` by passing `--debug --dry-run` to the `helm install`` `` ``/ ``helm upgrade`command. This will show you all resources that will be created or modified, and can be useful for catching issues before deploying.
+You can perform a dry run by passing `--debug --dry-run` to the `helm install` or `helm upgrade` command. This shows all resources that will be created or modified, and can be useful for catching issues before deploying.
 :::
 
 :::warning
