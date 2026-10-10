@@ -17,11 +17,25 @@ Deploying the validator into an existing kubernetes cluster.
 
 ### Helm Chart details:
 
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
+Validator chart version: **0.8.2** (app version `0.81.0`)
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+Operators must install exactly this version, not the latest version published to the Helm repository.
 
 ## Notable changes include:
+
+:::info
+**Upgrading to chart `0.8.2`**: no values changes are needed. A values file that works with chart `0.6.x` works unchanged with `0.8.2`, and the upgrade moves both the `ghost` and `ghost-vao` deployments to `ghcr.io/chronicleprotocol/ghost:0.81.0`. If your values file sets an image tag (`global.image.tag`, `ghost.image.tag` or `vao.image.tag`), remove it, even if it is empty: a pinned tag keeps the release on the image you pinned, and an empty `global.image.tag` makes the chart use `ghost:0.81.0` without the pinned digest.
+
+Chart `0.7.0` added an optional startup probe, off by default. Enable it with `global.startup.enabled: true` if the liveness probe restarts your validator while it is still starting. The default budget is 30 checks, 10 seconds apart (5 minutes).
+
+Chart `0.8.0` added `ghost.enabled`, `vao.enabled`, `vao.rpcUrl` and `vao.ethConfig`. Leave them unset unless the Chronicle team asks you to change them: both deployments keep running, and the `ghost-vao` deployment keeps using `ghost.rpcUrl` and `ghost.ethConfig`.
+
+App `0.81.0` has no built-in fallback configuration. At start it reads the on-chain config registry through your Ethereum RPC (`ghost.rpcUrl`) and downloads its configuration from public IPFS gateways over HTTPS, so both must be reachable from the node. If you load your own configuration with `-c ipfs://...`, the URL must end with `?checksum=0x<keccak256 of the file>`. Some metrics changed: `musig_session_count` is now `chronicle_musig_session_count` without the `coordinator` label, `musig_session_suppressed_total` is now `chronicle_musig_session_rejected_total` with different `reason` values, `musig_session_limit` was removed, and the WASM module memory gauges (`chronicle_wasm_module_mallocs`, `_max_alloc`, `_total_alloc` and `_uptime_seconds`) were replaced by new `chronicle_wasm_module_*` metrics. Update any alerts and dashboards built on them.
+:::
+
+:::warning
+**Do not use `--reuse-values`.** When upgrading an existing release, always pass your values file with `-f`. `--reuse-values` keeps the defaults of the chart you are upgrading from, and with chart `0.8.x` Helm then reports a successful upgrade while it deletes both validator deployments and their services. If that happened, run `helm rollback <release> -n <namespace>` straight away to return to the previous revision. If your Services use cloud load balancers, the recreated Services can come back with new external addresses, so update `CFG_LIBP2P_EXTERNAL_ADDR`, or the DNS record it points to, to match.
+:::
 
 :::warning
 **Upgrading from a chart older than `0.6.0`**: As of ChartVersion `0.6.0`, the `tor-controller` and its associated CRDs have been removed from the chart. The chart upgrade will automatically remove tor-related pods, services, and secrets that were previously managed by Helm. After upgrading, remove any remaining tor resources manually:
@@ -86,7 +100,7 @@ vao:
 
 You will need to generate a new encrypted keystore with Ethereum address matching a specific first byte identifier.
 
-Please look at the script [here](https://github.com/chronicleprotocol/scripts/blob/main/feeds/keystore-generator.sh), which will help you do this
+Please look at the script [here](https://github.com/chronicleprotocol/scripts/blob/47ad1617ae4a13195ee331fd25619a359a80f5b7/feeds/keystore-generator.sh), which will help you do this
 
 
 #### Create Namespace
@@ -141,9 +155,9 @@ ghost:
       existingSecret: 'somesecretname-eth-keys'
       key: "ethPass"
 
-  # ethereum RPC client (should always be ETH mainnet)
+  # not read by the chart, you can keep or remove it
   ethRpcUrl: "https://my.eth.rpc"
-  # default RPC client (target chain, eth mainnet or sepolia eg)
+  # Ethereum mainnet RPC: the validator reads its config registry on Ethereum mainnet through this URL
   rpcUrl: "https://my.eth.rpc"
 
   env:
@@ -151,20 +165,20 @@ ghost:
       # please place your nodes actual public ip address here
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4'
       # if using a LoadBalancer that has DNS:
-      # CFG_LIBP2P_EXTERNL_ADDR" '/dns/my.hostname.xyz`
+      # CFG_LIBP2P_EXTERNAL_ADDR: '/dns/my.hostname.xyz'
 vao:
   env:
     normal:
       # please place your nodes actual public ip address here
       CFG_LIBP2P_EXTERNAL_ADDR: '/ip4/1.2.3.4'
       # if using a LoadBalancer that has DNS:
-      # CFG_LIBP2P_EXTERNL_ADDR" '/dns/my.hostname.xyz`
+      # CFG_LIBP2P_EXTERNAL_ADDR: '/dns/my.hostname.xyz'
 ```
 
 Then install the helm release using this values file:
 
 ```bash
-helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.6.11
+helm install my-feed-name -f path/to/values.yaml chronicle/validator --namespace my-feed-namespace --version 0.8.2
 ```
 
 You can do a [dry-run](https://helm.sh/docs/chart\_template\_guide/debugging/) by passing `--debug` and `--dry-run` to the helm command. This is useful if you want to inspect the resources before deploying them to the cluster
@@ -194,8 +208,8 @@ secret/sh.helm.release.v1.my-validator.v1   helm.sh/release.v1   1      14s
 #### View pod logs:
 
 ```bash
-kubectl logs -n demo deployment/ghost
-kubectl logs -n demo deployment/ghost-vao
+kubectl logs -n my-feed-namespace deployment/ghost
+kubectl logs -n my-feed-namespace deployment/ghost-vao
 ```
 
 You can view the logs the pods to verify no errors:

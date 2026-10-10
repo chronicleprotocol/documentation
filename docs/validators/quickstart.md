@@ -18,9 +18,9 @@ A single script installation from baremetal to running validator, using k3s.
 
 ### Helm Chart details:
 
-![Dynamic YAML Badge](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fchronicleprotocol.github.io%2Fcharts%2Findex.yaml&query=%24.entries.validator%5B0%5D.version&label=Validator%20ChartVersion&color=green)
+Validator chart version: **0.8.2** (app version `0.81.0`)
 
-<div class="artifacthub-widget" data-url="https://artifacthub.io/packages/helm/chronicle/validator" data-theme="light" data-header="true" data-stars="true" data-responsive="true"><blockquote><p lang="en" dir="ltr"><b>validator</b>: A Helm chart for deploying Chronicle Validator on Kubernetes</p>&mdash; Open in <a href="https://artifacthub.io/packages/helm/chronicle/validator">Artifact Hub</a></blockquote></div><script async src="https://artifacthub.io/artifacthub-widget.js"></script>
+Operators must install exactly this version, not the latest version published to the Helm repository.
 
 
 This documentation covers how to run a validator as part of the Chronicle oracle network. Running a validator is a great way to contribute to the network.
@@ -33,7 +33,7 @@ It will attempt to install:
 
 * [k3s](https://docs.k3s.io/installation)
 * [Helm v3](https://helm.sh/docs/intro/install/)
-* Generate `generated-values.yaml` needed to install the [`chronicle/validator`](https://github.com/chronicleprotocol/charts/tree/main/charts/validator) helm chart
+* Generate `generated-values.yaml` needed to install the [`chronicle/validator`](https://github.com/chronicleprotocol/charts/tree/validator-0.8.2/charts/validator) helm chart
 
 
 ## Requirements:
@@ -114,7 +114,7 @@ Download the install bash script:
 
 ```bash
 cd /tmp
-wget -N https://raw.githubusercontent.com/chronicleprotocol/scripts/main/feeds/k3s-install/install.sh 
+wget -N https://raw.githubusercontent.com/chronicleprotocol/scripts/47ad1617ae4a13195ee331fd25619a359a80f5b7/feeds/k3s-install/install.sh
 chmod a+x install.sh
 ```
 
@@ -201,10 +201,9 @@ This is your Feed address:
 0x0000000111112222233333444444555556666677
 -----------------------------------------------------------------------------------------------------
 [INFO]:..........generate helm values file..........
-You need to install the helm chart with the following command:
--------------------------------------------------------------------------------------------------------------------------------
-|   helm install "demo" -f "/home/ubuntu/demo/generated-values.yaml"  chronicle/validator --namespace "demo"       |
--------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Script will attempt to run  ' helm install "demo" -f "/home/ubuntu/demo/generated-values.yaml"  chronicle/validator --namespace "demo" --version "0.8.2"'    |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 [INFO]:..........create helm release..........
 "chronicle" has been added to your repositories
 Hang tight while we grab the latest from your chart repositories...
@@ -224,8 +223,10 @@ NOTES:
 
 > Please provide your `ETH_FROM` address to the Chronicle team so it can be whitelisted.
 
+With chart `0.8.2` the validator pods restart in a loop until the Chronicle team has onboarded your address. See [Troubleshooting](troubleshooting).
+
 :::tip
-The install script can be run multiple times with the same values. It will attempt to run `helm upgrade <feedname> -n <feedname> chronicle/validator` on your feed release, with any updated input variables. **Note**: it will delete secrets in an existing namespace, and recreate them as, secrets are generally immutable
+The install script can be run multiple times with the same values. If the release already exists, it asks whether to upgrade it, then runs `helm upgrade <feedname> -f $HOME/<feedname>/generated-values.yaml chronicle/validator --namespace <feedname> --version 0.8.2` with any updated input variables. **Note**: it regenerates `generated-values.yaml`, so edits you made to that file are lost, and it deletes and recreates the ETH keys secret in an existing namespace, because secrets are generally immutable.
 :::
 
 ### Verify that the helm release has been successful:
@@ -327,7 +328,7 @@ ubuntu@local:/tmp$ helm repo list
 NAME     	URL                                        
 chronicle	https://chronicleprotocol.github.io/charts/
 
-helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.6.11
+helm install $VALIDATOR_NAME -f /home/chronicle/$VALIDATOR_NAME/generated-values.yaml -n $VALIDATOR_NAME chronicle/validator --version 0.8.2
 ```
 
 ### Prepare values.yaml
@@ -363,7 +364,7 @@ vao:
 
 ```
 
-You can view all values available for the [validator chart](https://github.com/chronicleprotocol/charts/blob/main/charts/validator/README.md#values), however the values provided with the installer are enough to get you going.
+You can view all values available for the [validator chart](https://github.com/chronicleprotocol/charts/blob/validator-0.8.2/charts/validator/README.md#values), however the values provided with the installer are enough to get you going.
 
 A useful value to add is `.Values.global.logLevel`as show above. setting `logLevel: debug`will provide more verbose logging and can help you identify issues with the services. Its advised to run the default values (`warning`) once you have your feed stable. Acceptable values are `debug, info, warning, error`
 
@@ -377,21 +378,24 @@ helm install $VALIDATOR_NAME \
   --create-namespace \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.6.11
+ --version 0.8.2
 ```
 
 or to upgrade an existing helm release:
 
 ```bash
+helm repo update chronicle
 helm upgrade $VALIDATOR_NAME \
   --namespace $VALIDATOR_NAME \
   -f path/to/values.yaml \
  chronicle/validator \
- --version 0.6.11
+ --version 0.8.2
 ```
 
+Always pass your values file with `-f` and do not add `--reuse-values`. See [Upgrading a Validator](upgrading) for why.
+
 :::tip
-you can perform a `dry-run` by passing `--debug --dry-run` to the `helm install`` `` ``/ ``helm upgrade`command. This will show you all resources that will be created or modified, and can be useful for catching issues before deploying.
+You can perform a dry run by passing `--debug --dry-run` to the `helm install` or `helm upgrade` command. This shows all resources that will be created or modified, and can be useful for catching issues before deploying.
 :::
 
 :::warning
