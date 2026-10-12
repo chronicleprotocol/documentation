@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1.5
+unlisted: true
 ---
 
 # 🇧🇪 Chronicle @ETHGlobal Brussels 
