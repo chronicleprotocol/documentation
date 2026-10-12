@@ -47,7 +47,7 @@ const config = {
 ],
   ],
   title: 'Chronicle Docs',
-  tagline: 'Cost-efficient. Verifiable Data.',
+  tagline: 'The data infrastructure layer for onchain capital markets',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
