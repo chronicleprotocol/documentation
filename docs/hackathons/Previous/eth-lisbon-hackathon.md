@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+unlisted: true
 ---
 
 # 🇵🇹 ETH Lisbon Hackathon Guide
