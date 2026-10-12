@@ -9,9 +9,9 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   plugins: ['docusaurus-plugin-sass',  [
-    "docusaurus-plugin-generate-llms-txt",
+    "docusaurus-plugin-llms",
     {
-      outputFile: "llms.txt", // defaults to llms.txt if not specified
+      llmsTxtFilename: "llms.txt", // defaults to llms.txt if not specified
     },
   ],
 [
