@@ -18,7 +18,8 @@ Access to Chronicle Points is currently governed by the eligibility criteria of 
 ## Is there a minimum requirement of USDS supplied to start collecting Chronicle Points?
 There is no minimum supply requirement for USDS.
 
-## Where can I get started? via [The Chronicle](https://chroniclelabs.org/dashboard).
+## Where can I get started?
+You can get started on [Sky](https://app.sky.money/?network=ethereum&widget=rewards&reward=0x10ab606B067C9C461d8893c47C7512472E19e2Ce&flow=supply), [Spark](https://app.spark.fi/farms/1/0x10ab606B067C9C461d8893c47C7512472E19e2Ce), or directly via [The Chronicle](https://chroniclelabs.org/dashboard/points).
 
 ## Where can I see the distribution of Chronicle Points so far?
 Users can see the current distribution of Chronicle Points on the following [dashboard](
