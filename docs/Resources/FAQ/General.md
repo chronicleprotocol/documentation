@@ -46,8 +46,8 @@ GNO on Gnosis: [https://gnosisscan.io/address/0xA28dCaB66FD25c668aCC7f232aa71DA1
 
 The data originates from primary onchain sources such as DEXes (e.g., Uniswap, dYdX, Balancer) and offchain CEXes (e.g., Kraken, Binance, Coinbase). Only high-quality sources are used in Chronicle’s data models.
 
-## What types of Oracles does Chronicle enable?
-In addition to the core price feed Oracles, two new products have been introduced: the [Yield Rate Oracle](https://chroniclelabs.org/blog/the-yield-rate-oracle) and the [Verified Asset Oracle](https://chroniclelabs.org/blog/m-0-and-chronicle-raising-the-standard-in-collateral-verification-with-the-rwa-oracle) (formerly known as the Real World Asset Oracle).
+## What types of Oracles does Chronicle offer?
+Chronicle offers [Data Feeds](https://chroniclelabs.org/dashboard/data-feeds), high-integrity oracle feeds built for DeFi, and [Proof of Asset](https://chroniclelabs.org/dashboard/proof-of-asset), a verification framework for tokenized assets.
 
 ## What is the difference between PUSH and PULL oracles?
 
@@ -55,7 +55,7 @@ A push oracle proactively provides data to smart contracts without being explici
 
 ## Does Chronicle use a PULL or a PUSH model for its Oracles?
 
-Chronicle operates using a PUSH model.
+Chronicle operates using the PUSH model.
 
 ## Does Chronicle support contract upgrades?
 
@@ -64,12 +64,12 @@ Chronicle contracts are not upgradeable. If oracles are switched, new contracts 
 ## Who are the validators for Chronicle?
 
 The validators of Chronicle are represented by a community of the leading blockchain protocols including:
-[MakerDAO](https://makerdao.com), [Infura](https://www.infura.io/), [Gitcoin](https://www.gitcoin.co/), [Etherscan](https://etherscan.io/), [DeFi Saver](https://defisaver.com/), [Gnosis](https://www.gnosis.io/), [Nethermind](https://www.nethermind.io/), [Euler](https://www.euler.finance/), [Mantle](https://www.mantle.xyz/), [ETH Global](https://ethglobal.com/), [SteakHouse Financial](https://www.steakhouse.financial/), [Bitcoin Suisse](https://bitcoinsuisse.com/), [Block Analitica](https://blockanalitica.com/).
+[Sky](https://sky.money/), [Etherscan](https://etherscan.io/), [DeFi Saver](https://defisaver.com/), [Gnosis](https://www.gnosis.io/), [Nethermind](https://www.nethermind.io/), [Euler](https://www.euler.finance/), [Mantle](https://www.mantle.xyz/), [ETH Global](https://ethglobal.com/), [SteakHouse Financial](https://www.steakhouse.financial/), [Bitcoin Suisse](https://bitcoinsuisse.com/), [Block Analitica](https://blockanalitica.com/).
 
-This approach to validators is unique to Chronicle, and ensures that the Oracle data is being signed by some of the most trusted and reputable brands in the blockchain space, further reinforcing trust in the protocol.
+This approach to validators is unique to Chronicle, and ensures that the Oracle data is being signed by some of the most trusted and reputable protocols in the blockchain space, further reinforcing trust in the protocol. The full list of validators can be found [here](https://chroniclelabs.org/dashboard/validators). 
 
 ## How do Oracles work?
-Smart contracts on blockchains can’t directly fetch external data such as asset prices because they’re isolated environments. Oracles act as bridges between the blockchain and the outside world.
+Smart contracts on blockchains can’t directly fetch external data such as asset prices because they’re isolated environments. Oracles act as data bridges between the blockchain and the outside world.
 
 **Here’s how it works:**
 

@@ -25,4 +25,4 @@ The Dashboard provides a full lifecycle view of tokenized assets, including:
 - Ecosystem participants: get confidence that reported reserves and NAV are trustworthy and tamper-proof.
 
 ## What makes the Proof of Asset Dashboard different from other RWA dashboards?
-While most RWA dashboards depend on secondary market issuers for reported values, the Proof of Asset Dashboard provides true end-to-end verifiability by sourcing data directly from custodians and publishing cryptographic attestations that anyone can independently verify.
+While other RWA dashboards rely on secondhand data from third-party aggregators, the Proof of Asset Dashboard sources its data directly from custodians, fund administrators, and authorized transfer agents. Each data point is published with its cryptographic attestation, so users can verify the data’s integrity themselves.
