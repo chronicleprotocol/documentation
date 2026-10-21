@@ -7,7 +7,7 @@ keywords: [Data Feeds, Push Oracle, Proof of Asset, Chronicle Products]
 # Products Overview 
 
 ## Data Feeds 
-Chronicle provides [data feeds](../Products/DeFiOracle/DeFiOracle.md) for various types of data, including cryptocurrencies, fiat currencies, yield rates, and more. The data feeds use the PUSH model: instead of waiting for a smart contract to request data, a new value is pushed onchain automatically whenever a set condition is met.
+Chronicle provides [data feeds](../Products/DataFeeds/DataFeeds.md) for various types of data, including cryptocurrencies, fiat currencies, yield rates, and more. The data feeds use the PUSH model: instead of waiting for a smart contract to request data, a new value is pushed onchain automatically whenever a set condition is met.
 
 Updates are triggered in two ways:
 
