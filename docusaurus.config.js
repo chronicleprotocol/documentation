@@ -43,7 +43,7 @@ const config = {
       { from: '/Resources/FAQ/Vao', to: '/Resources/FAQ/proofOfAsset' },
       { from: '/Resources/FAQ/VaoDash', to: '/Resources/FAQ/proofOfAssetDashboard' },
             // old name (DeFi Oracle) -> Data Feeds
-      { from: '/Products/DeFiOracle/DeFiOracle', to: '/Products/DataFeeds/DataFeeds' },
+      { from: '/Products/DeFiOracle/DeFiOracle', to: '/Products/DataFeeds/' },
       { from: '/Products/DeFiOracle/feeds', to: '/Products/DataFeeds/feeds' },
       { from: '/Products/DeFiOracle/dashboard', to: '/Products/DataFeeds/dashboard' },
       { from: '/Products/DeFiOracle/yieldRateOracle', to: '/Products/DataFeeds/yieldRateOracle' },
