@@ -1,10 +1,12 @@
 ---
 sidebar_position: 2
 description: How do PUSH Oracles Work?
-keywords: [Data Feeds, Data Source, PUSH Oracle]
+keywords: [Data Feeds, Data Source, PUSH Oracle, Oracles,DeFi Data, Cryptocurrency Data]
 ---
 
 # Data Feeds
+
+Chronicle Data Feeds provide high-integrity price data for onchain markets. Each feed uses defined data sources and transparent methodologies, with visibility into how prices are sourced, calculated, and delivered onchain.
 
 You can use Chronicle's PUSH-based Data Feeds (Oracles) to connect your smart contracts to real-time asset pricing data. Our feeds proactively deliver fresh data without requiring explicit requests, ensuring your contracts always have the latest information.
 

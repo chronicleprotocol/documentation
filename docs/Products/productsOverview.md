@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 description: Products Overview
-keywords: [Data Feeds, Push Oracle, Proof of Asset, Chronicle Products]
+keywords: [Data Feeds, Push Oracle, Proof of Asset, Chronicle Products, RWA Oracle, Tokenized Assets Oracle]
 ---
 
 # Products Overview 
