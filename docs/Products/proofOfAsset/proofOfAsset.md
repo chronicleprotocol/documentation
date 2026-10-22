@@ -1,10 +1,10 @@
 ---
 sidebar_position: 2
-description: Proof of Asset
-keywords: [Proof of Asset]
+description: Real-world asset (RWA) partnerships and case studies for Chronicle Proof of Asset, including BlackRock BUIDL, Superstate, Centrifuge, and M0.
+keywords: [Proof of Asset, RWA Oracle, Tokenized Assets Oracle, BlackRock BUIDL, Superstate, Centrifuge, M0]
 ---
 
-# Chronicle's Proof of Asset
+# Proof of Asset Integrations
 ## What are RWAs?
 
 In the context of blockchain, Real-World Assets (RWAs) refer to physical assets and traditional financial instruments represented as digital assets on a blockchain network. These assets can range from assets such as real estate, commodities, art, and even intellectual property, to financial assets such as bonds, stocks, or ETFs. RWAs provide a bridge between traditional and decentralized finance opening up new opportunities for market inclusion, accessibility, and innovation.

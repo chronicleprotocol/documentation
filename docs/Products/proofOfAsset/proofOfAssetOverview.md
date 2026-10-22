@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-description: Proof of Asset
-keywords: [Proof of Asset]
+description: Proof of Asset is the data infrastructure layer for tokenized assets.
+keywords: [Proof of Asset, RWA Oracle, Tokenized Assets Oracle]
 ---
-# Proof of Asset
+# Proof of Asset Overview
 ## What Is Proof of Asset?
 
 Traditionally, businesses relied on independent third-party audits to prove solvency, which are slow, manual, and centralized.

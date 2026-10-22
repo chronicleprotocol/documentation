@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
-description: DeFi Oracle Data
-keywords: [Yield Rate Oracle, DeFi Oracle Data]
+description: Data Feeds based on the type of data they provide.
+keywords: [Yield Data Feeds, DeFi Data, Cryptocurrency Data]
 ---
 
-# Oracle Data Types
+# Data Feed Types
 
-Chronicle provides data essential for DeFi protocols, including cryptocurrency prices, fiat exchange rates, staking yield rates, and more. This data is aggregated from multiple sources and verified by a decentralized network of [reputable validators](../../Intro/network.md). 
+Chronicle provides data essential for DeFi protocols, including cryptocurrency prices, fiat exchange rates, staking yield rates, and more. This data is aggregated from multiple sources and verified by a distributed network of [reputable validators](../../Intro/network.md). 
 
 ## Cryptocurrencies Feeds
 Chronicle delivers cryptocurrency price feeds across all major EVM-compatible chains. These feeds aggregate pricing data from multiple onchain and offchain tier-one data sources to ensure accuracy and verifiability.

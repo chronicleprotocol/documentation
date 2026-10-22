@@ -1,0 +1,58 @@
+---
+sidebar_position: 2
+description: How do PUSH Oracles Work?
+keywords: [Data Feeds, Data Source, PUSH Oracle, Oracles,DeFi Data, Cryptocurrency Data]
+---
+
+# Data Feeds
+
+Chronicle Data Feeds provide high-integrity price data for onchain markets. Each feed uses defined data sources and transparent methodologies, with visibility into how prices are sourced, calculated, and delivered onchain.
+
+You can use Chronicle's PUSH-based Data Feeds (Oracles) to connect your smart contracts to real-time asset pricing data. Our feeds proactively deliver fresh data without requiring explicit requests, ensuring your contracts always have the latest information.
+
+Data is aggregated from a decentralized network of reputable validators, sourcing from both onchain and offchain providers, including DEXs and CEXs. Chronicle data feeds support a wide range of data types, including cryptocurrencies, fiat currencies, yield rates, and more.
+
+## How Does a PUSH Data Feed (Oracle) Work?
+
+Protocol validators fetch data from different sources. The data used is verifiable and identifiable to its underlying source. This functionality is available to both decentralized sources (like DEXes) and centralized sources (like CEXes). Validators sign and publish this data on an offchain peer-to-peer network. After publication, the data is aggregated through an aggregation mechanism (e.g. the median of medians), to eliminate outliers and determine the final value to be published onchain. Data is then published onchain based on a [predefined threshold](#oracle-updates). Once onchain, this data can be consumed by any dApps that read from the oracle smart contract.
+
+<div style={{textAlign: 'center'}}>
+    <img
+    src="../../img/Products/push.png"
+    alt="PUSH Oracle Illustration"
+    />
+</div>
+    
+
+### When Does a Data Feed Update? {#oracle-updates}
+
+PUSH data feeds actively deliver data to smart contracts without requiring an explicit request. Upon the occurrence of a specific event or condition, the PUSH oracle automatically updates the oracle smart contract with the new data.
+
+```mermaid
+sequenceDiagram
+  
+    participant DS as Data Source<br />(offchain)
+    participant PO as PUSH Oracle<br />(offchain)
+    participant OC as Oracle Smart Contract<br />(onchain)
+    participant SC as Smart Contract
+
+    DS->>PO: Event or condition occurs
+    PO->>OC: Push data to Oracle Smart Contract
+    OC->>OC: Process data and update the state
+    SC->>OC: Request data from Oracle
+    OC->>SC: Deliver data to Smart Contract
+    SC->>SC: Process and use data
+```
+
+A PUSH Data Feed (Oracle) updates price data every X minutes/hours, or whenever the underlying price deviates beyond a specified threshold — whichever occurs first.
+You can check the `update threshold` for a specific feed via the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/oracles) as seen below. This view is available when selecting a data feed for a given chain.
+
+<div style={{textAlign: 'center'}}>
+    <img
+    src="../../img/Products/DeFi/update.png"
+    alt="Update Threshold"
+    />
+</div>
+
+
+
