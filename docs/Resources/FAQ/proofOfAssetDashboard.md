@@ -5,10 +5,10 @@ keywords: [Proof of Asset Dashboard]
 ---
 
 
-# Chronicle's Proof of Asset Dashboard
+# Proof of Asset Dashboard
 
 ## What is the Proof of Asset Dashboard?
-The [Proof of Asset Dashboard](https://chroniclelabs.org/dashboard/vaos) is the visualization layer of Proof of Asset Oracle. It transforms cryptographic attestations about tokenized asset reserves into clear, transparent, and verifiable insights that anyone can inspect.
+The [Proof of Asset Dashboard](https://chroniclelabs.org/dashboard/vaos) is a public interface for accessing and verifying the data behind assets powered by Chronicle Proof of Asset.
 
 ## What information can I see in the Proof of Asset Dashboard?
 
