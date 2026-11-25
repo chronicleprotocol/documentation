@@ -1,25 +1,25 @@
 ---
 sidebar_position: 3
-description: Tokenized Equities data feeds — customizable price feeds for blockchain tokens representing stocks and ETFs.
+description: Equity Feeds — customizable price feeds for blockchain tokens representing stocks and ETFs.
 keywords: [Tokenized Equities, Tokenized Stocks, RWA Oracle, Trading Sessions, Corporate Actions, Data Feeds, Chronicle Products]
 ---
 
-# Tokenized Equities
+# Equity Feeds
 
 ## What Are Tokenized Equities?
 
 Tokenized equities — also called tokenized stocks, or digital securities representing stock — are blockchain tokens that represent ownership of, or economic exposure to, traditional stocks and ETFs. These tokens are distinct financial instruments issued by token issuers, not the underlying equities themselves.
 
-Chronicle's tokenized equity feeds deliver the **primary market price**: the calculated, theoretical value of the equity token, which may account for long-term total return adjustments, e.g. dividends or corporate actions.
+Chronicle's equity feeds deliver the **primary market price**: the calculated, theoretical value of the equity token, which may account for long-term total return adjustments, e.g. dividends or corporate actions.
 
-## Feeds for Tokenized Equities
+## Equity Feeds
 For each tokenized US stock, Chronicle publishes the price onchain. The feed is aware of market hours, holidays, early closes, halts, and freezes, and applies configurable logic for each of these — in addition to how it handles corporate actions. Users can see the price alongside these market status details on the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/equity-feeds).
 
 ## Benefits
 
 Trading hours for equities differ fundamentally from onchain markets, which run 24/7: U.S. equity markets are limited to a 6.5-hour regular trading session (09:30–16:00 ET), on top of which banking hours, weekends, and holidays further restrict when fresh reference prices are available.
 
-Chronicle's tokenized equity feeds bridge this gap, enabling tokenized equities to integrate into onchain markets, by:
+Chronicle's equity feeds bridge this gap, enabling tokenized equities to integrate into onchain markets, by:
 
 - **Providing continuous pricing:** a single feed spans regular, pre-market, post-market, and overnight sessions, as well as holidays and weekends, so lending, collateral, and trading use cases always have a price to build on;
 - **Simplifying integration:** protocols consume one feed instead of managing multiple session-specific data sources;
@@ -43,7 +43,7 @@ Because token issuers can source data, handle off-hours, and manage corporate ac
 
 ## Trading Session Awareness
 
-Tokenized equity feeds are aware of which trading session the underlying equity is in, and can be configured to behave differently in each.
+Equity feeds are aware of which trading session the underlying equity is in, and can be configured to behave differently in each.
 
 | Session | Default US Hours (ET) |
 | --- | --- |
@@ -100,7 +100,7 @@ Corporate actions — splits, reverse splits, dividends, mergers, and spin-offs 
 
 ## Available Feeds
 
-You can check which tokenized equities are currently live on the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/equity-feeds).
+You can check which equity feeds are currently live on the [Chronicle Dashboard](https://chroniclelabs.org/dashboard/equity-feeds).
 
 :::info
 Don't see the equity you need? Request a new feed using the [following form](https://form.typeform.com/to/mWnjjBxh). A member of the Chronicle team will get in touch with you.

@@ -16,5 +16,5 @@ Updates are triggered in two ways:
 ## Proof of Asset
  [Proof of Asset](../Products/proofOfAsset/proofOfAsset.md) is Chronicle's verification framework for tokenized real-world assets. The data delivered onchain includes holdings-level data, composition, valuation, liquidity, and yield. This enables users to check not only what a tokenized asset is priced at, but also what it holds, expanding its utility and distribution and enabling automated risk management.
 
-## Tokenized Equities
-[Tokenized Equities](../Products/tokenizedEquities.md) feeds deliver the primary market price for blockchain tokens that represent ownership of, or economic exposure to, traditional stocks and ETFs. These feeds are customizable per client, supporting configurable data sources, trading session behavior, and corporate action handling.
+## Equity Feeds 
+[Equity Feeds](../Products/tokenizedEquities.md) deliver the primary market price for blockchain tokens that represent ownership of, or economic exposure to, traditional stocks and ETFs. These feeds are customizable per client, supporting configurable data sources, trading session behavior, and corporate action handling.
